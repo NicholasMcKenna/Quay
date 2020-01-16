@@ -1,0 +1,370 @@
+@import 'settings';
+
+@left-pane-width: 66%;
+
+.screen-content {
+    margin    : 0 auto;
+    margin-top: 65px;
+
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+#eventslist {
+    float: inherit;
+
+    @media @desktop {
+        float  : right;
+        padding: 0;
+    }
+}
+
+#description {
+    float: inherit;
+
+    @media @desktop {
+        width       : @left-pane-width;
+        padding-left: 5%;
+        float       : left;
+        width       : 66%;
+    }
+
+    @media @mobile {
+        padding: 0 5%;
+    }
+}
+
+#media {
+    @media @desktop {
+        right        : initial;
+        width        : @left-pane-width;
+        position     : static;
+        padding-left : 5%;
+        padding-right: 4%;
+    }
+}
+
+.ShowEventsitemsList .button.small_button_a A {
+    .action-button();
+    padding       : 5px 15px;
+    letter-spacing: 0.15px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        padding       : 5px 15px;
+        letter-spacing: 0.15px;
+    }
+}
+
+div#PH_breadcrumbs {
+    display: none;
+}
+
+.largeImage {
+    @media @desktop {
+        width : 100%;
+        height: auto;
+    }
+}
+
+.largeImageContainer {
+    @media @desktop {
+        width       : @left-pane-width;
+        max-height  : initial;
+        padding-top : 0;
+        padding-left: 5%;
+    }
+}
+
+.genresContainer {
+    display: none;
+}
+
+#eventslist {
+    @media @desktop {
+        width: 33%;
+    }
+}
+
+.showName {
+    position    : static;
+    padding-left: 5%;
+
+    @media @desktop {
+        width: 66%;
+        float: left;
+    }
+}
+
+span.previewFull {
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+}
+
+#eventslist {
+    background-color: #fff;
+}
+
+.carousel .itemsList .dataItem .item_image IMG {
+    width            : auto;
+    height           : 274px;
+    max-height       : 271px;
+    -webkit-transform: scale(1.05);
+    -moz-transform   : scale(1.05);
+    -ms-transform    : scale(1.05);
+    -o-transform     : scale(1.05);
+    transform        : scale(1.05);
+}
+
+.carousel .itemsList .dataItem {
+    width             : 378px;
+    height            : 440px;
+    background-color  : #2A2D34;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+
+    &:hover {
+        -webkit-transform : translateY(-10px);
+        -moz-transform    : translateY(-10px);
+        -ms-transform     : translateY(-10px);
+        -o-transform      : translateY(-10px);
+        transform         : translateY(-10px);
+        -webkit-transform : scale(1.03);
+        -moz-transform    : scale(1.03);
+        -ms-transform     : scale(1.03);
+        -o-transform      : scale(1.03);
+        transform         : scale(1.03);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+        .itemsDataContainer::before {
+            -webkit-transform: translateX(5px);
+            -moz-transform   : translateX(5px);
+            -ms-transform    : translateX(5px);
+            -o-transform     : translateX(5px);
+            transform        : translateX(5px);
+        }
+
+        .itemsDataContainer::after {
+            -webkit-transform: translateX(-10px);
+            -moz-transform   : translateX(-10px);
+            -ms-transform    : translateX(-10px);
+            -o-transform     : translateX(-10px);
+            transform        : translateX(-10px);
+        }
+    }
+}
+
+.carousel .item_image {
+    max-width  : 100%;
+    margin-left: 0;
+    margin-top : 0;
+    max-height : 100%;
+    width      : auto;
+    height     : 66%;
+}
+
+.carousel .itemsList .dataItem .itemsDataContainer,
+.carousel .itemsList .dataItem:hover .itemsDataContainer,
+.carousel .itemsList .dataItem.simulateHover .itemsDataContainer {
+    height          : 33%;
+    background-color: transparent;
+}
+
+.carousel .itemsList .dataItem .itemsDateRange {
+    position   : static;
+    width      : 100%;
+    color      : #26B5BB;
+    font-size  : 18px;
+    margin-left: 12px;
+}
+
+.carousel .dataItem .itemsDataContainer .description {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.carousel .dataItem .previewFull,
+.carousel .dataItem .itemsDataContainer .description {
+    display: none;
+}
+
+.carousel .innerdescription {
+    display: block;
+}
+
+.carousel .itemsList .dataItem .itemsDataContainer .name,
+.carousel .itemsList .dataItem .itemsDataContainer .description {
+    color           : #fff;
+    font-weight     : bold;
+    position        : static;
+    background-color: transparent;
+    font-size       : 28px;
+    margin-top      : 15px;
+    text-align      : left;
+    margin-left     : 10px;
+}
+
+.carousel .itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
+
+.carousel .itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    width             : 100px;
+    content           : "";
+    height            : 130px;
+    position          : absolute;
+    bottom            : 10px;
+    right             : 10px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 0.1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    opacity: 1;
+}
+
+.carousel .itemsList .dataItem .name {
+    width: 58%;
+}
+
+.carousel .itemsList .dataItem .itemsButtonsContainer {
+    display: none;
+
+}
+
+.carousel.recommendedShows .itemsList .dataItem {
+    background-image: none;
+}
+
+.largeImage {
+    width     : auto;
+    height    : auto;
+    max-height: 400px;
+}
+
+div#pickadate {
+    @media @mobile {
+        padding: 0 5%;
+    }
+
+    @media @desktop {
+        float   : right;
+        position: absolute;
+        top     : 0;
+        right   : 0;
+        width   : 33%;
+    }
+}
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    border          : none;
+    width           : 100%;
+    height          : 350px;
+    font-size       : 16px;
+    background-color: @box-bgcolor;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border     : none;
+    background : none;
+    font-weight: normal;
+    text-align : center;
+    color      : #555;
+}
+
+select#dateSelect {
+    display: none;
+}
+
+/* TODO: TEMP - for demo */
+.promoBox {
+    display: none;
+}
+
+.ShowEventsitemsList .dataItem {
+    background-color: #2A2D34;
+    border          : none;
+    padding         : 3%;
+}
+
+.ShowEventsitemsList .itemsDateRange SPAN {
+    color           : #fff;
+    background-color: transparent;
+    display         : block;
+    text-align      : left;
+    margin-top      : 0;
+    padding         : 0;
+}
+
+.ShowEventsitemsList .itemsDateRange {
+    color      : @button-color;
+    font-weight: bold;
+}
+
+.ShowEventsitemsList .dataItem .extras {
+    display: none;
+}
+
+.ShowEventsitemsList .itemsDataContainer {
+    display: none;
+}
+
+#eventslist .itemsButtonsContainer {
+    margin-right: 0;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    background-color: #fff;
+}
+
+#media>DIV {
+    padding-left: 0;
+}
+
+.ui-state-disabled .ui-state-default {
+    background: #ecf0f1;
+}
+
+.extras {
+    display: none;
+}
+
+#media .video {
+    border-bottom: none;
+}
+
+#eventslist {
+    margin-top: -5px;
+}

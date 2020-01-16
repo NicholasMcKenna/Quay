@@ -1,0 +1,334 @@
+@import 'settings';
+
+#group_main,
+#group_Header #PH_Menu>* {
+    width: 100%;
+    float: left;
+}
+
+video#bgvid {
+    width: 100%;
+}
+
+.c-site-welcome-text {
+    position         : absolute;
+    top              : 50%;
+    left             : 50%;
+    width            : 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform   : translate(-50%, -50%);
+    -ms-transform    : translate(-50%, -50%);
+    -o-transform     : translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    color            : #ffffff;
+    text-shadow      : rgba(0, 0, 0, 0.4) 4px 4px 5px;
+    text-align       : center;
+}
+
+.c-site-welcome-text__surtitle {
+    @media @desktop {
+        margin-bottom: 20px;
+        font-size    : 45px;
+        line-height  : 100%;
+        font-weight  : 700;
+    }
+}
+
+.c-site-welcome-text__title {
+    @media @desktop {
+        font-size  : 120px;
+        line-height: 100%;
+        margin     : 0;
+        font-weight: 800;
+    }
+}
+
+.c-site-welcome-text__title::after {
+    background-color : #26B5BB;
+    width            : 100%;
+    -webkit-transform: scaleX(100%);
+    -moz-transform   : scaleX(100%);
+    -ms-transform    : scaleX(100%);
+    -o-transform     : scaleX(100%);
+    transform        : scaleX(100%);
+    max-width        : 400px;
+    height           : 3px;
+    content          : "";
+    display          : block;
+    margin           : 30px auto;
+    animation        : animateBorder 1.5s ease-out 4s backwards;
+}
+
+.c-site-welcome-text__subtitle {
+    @media @desktop {
+        margin-top : 20px;
+        font-size  : 45px;
+        line-height: 100%;
+        font-weight: 700;
+    }
+}
+
+.recommendedShows.showslist {
+    width : 85%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1660px) {
+        width: 100%;
+    }
+}
+
+.dataItem .item_image IMG {
+    height           : auto;
+    width            : 100%;
+    max-height       : 328px;
+    -webkit-transform: scale(1.05);
+    -moz-transform   : scale(1.05);
+    -ms-transform    : scale(1.05);
+    -o-transform     : scale(1.05);
+    transform        : scale(1.05);
+}
+
+.itemsList .dataItem {
+    width             : 436px;
+    height            : auto;
+    background-color  : #2A2D34;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+    &:hover {
+        -webkit-transform : translateY(-10px);
+        -moz-transform    : translateY(-10px);
+        -ms-transform     : translateY(-10px);
+        -o-transform      : translateY(-10px);
+        transform         : translateY(-10px);
+        -webkit-transform : scale(1.03);
+        -moz-transform    : scale(1.03);
+        -ms-transform     : scale(1.03);
+        -o-transform      : scale(1.03);
+        transform         : scale(1.03);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+        .itemsDataContainer::before {
+            -webkit-transform: translateX(5px);
+            -moz-transform   : translateX(5px);
+            -ms-transform    : translateX(5px);
+            -o-transform     : translateX(5px);
+            transform        : translateX(5px);
+        }
+
+        .itemsDataContainer::after {
+            -webkit-transform: translateX(-10px);
+            -moz-transform   : translateX(-10px);
+            -ms-transform    : translateX(-10px);
+            -o-transform     : translateX(-10px);
+            transform        : translateX(-10px);
+        }
+
+    }
+}
+
+.itemsList .dataItem div.item_image {
+    height          : 500px;
+    background-image: none;
+}
+
+.itemsList .dataItem:nth-child(4n+2) {
+    margin-left: 2.2%;
+}
+
+.itemsList .dataItem:nth-child(4n+5) {
+    margin-right: 2.2%;
+}
+
+
+.dataItem .itemsDataContainer,
+.dataItem:hover .itemsDataContainer,
+.dataItem.simulateHover .itemsDataContainer {
+    height          : 33%;
+    background-color: transparent;
+}
+
+.dataItem .itemsDateRange {
+    position   : static;
+    width      : 100%;
+    color      : #26b5bb;
+    font-size  : 16px;
+    margin-left: 12px;
+    text-align : left;
+}
+
+.dataItem .itemsDataContainer .description {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.dataItem .previewFull,
+.dataItem .itemsDataContainer .description {
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+}
+
+.dataItem .name {
+    color           : #fff;
+    font-weight     : bold;
+    position        : static;
+    background-color: transparent;
+    font-size       : 28px;
+    margin-top      : 15px;
+    text-align      : left;
+    margin-left     : 10px;
+}
+
+.itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
+
+.itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
+
+.itemsDataContainer::after,
+.itemsDataContainer::before {
+    width             : 100px;
+    content           : "";
+    height            : 130px;
+    position          : absolute;
+    bottom            : 10px;
+    right             : 10px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 0.1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+}
+
+.itemsDataContainer::after,
+.itemsDataContainer::before {
+    opacity: 1;
+}
+
+.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .name {
+    width: 58%;
+}
+
+.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
+    display: none;
+}
+
+
+
+// remove float menu on front page
+div#PH_Float_Menu {
+    display: none;
+}
+
+.scroll-down {
+    position         : absolute;
+    animation        : in 1s ease-out forwards;
+    opacity          : 0;
+    animation-delay  : 1s;
+    bottom           : 40px;
+    left             : 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform   : translateX(-50%);
+    -ms-transform    : translateX(-50%);
+    -o-transform     : translateX(-50%);
+    transform        : translateX(-50%);
+    z-index          : 20;
+}
+
+.scroll-down a {
+    padding-top: 70px;
+}
+
+.scroll-down a span {
+    position         : absolute;
+    top              : 0;
+    left             : 50%;
+    width            : 24px;
+    height           : 24px;
+    margin-left      : -12px;
+    border-left      : 1px solid #fff;
+    border-bottom    : 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform        : rotate(-45deg);
+    -webkit-animation: sdb05 1.5s ease-out forwards;
+    animation        : sdb05 1.5s ease-out forwards;
+    box-sizing       : border-box;
+    animation-delay  : 1.5s;
+    opacity          : 0;
+}
+
+.scroll-down p {
+    margin-top   : 20px;
+    color        : #ffffff;
+    margin-bottom: 40px;
+    font-size    : 80%;
+}
+
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents,
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+    background-color: #fff;
+    width           : 100%;
+    color           : #26b5bb;
+    font-weight     : 700;
+    font-size       : 29px;
+    box-shadow      : none;
+}
+
+.currentTimeRangeEventsCtrl {
+    background-color: #fff;
+}
+
+div#PH_Search {
+    display: block;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    background: @button-color;
+}
+
+
+.screen-content {
+    @media @desktop {
+        max-width: 100%;
+    }
+}
+
+.recommendedShows.showslist {
+    @media @desktop {
+        width : 100%;
+        margin: 0 auto;
+    }
+}
+
+.itemsList {
+    width     : 100%;
+    text-align: center;
+}
+
+.itemsList .dataItem {
+    width: 379px;
+}
+
+.itemsList .dataItem div.item_image {
+    height: 470px;
+}
+
+div#PH_breadcrumbs {
+    display: none;
+}
