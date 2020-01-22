@@ -183,6 +183,9 @@ div#PH_breadcrumbs {
 
 .addCouponCtl {
     width: 45%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .roundUpDonationSection,
@@ -201,8 +204,7 @@ div#PH_breadcrumbs {
     background   : none;
     padding-left : 0;
     width        : 100%;
-    margin-top   : 0;
-    margin-bottom: 5px;
+    margin: 0 auto;
 
     .font-h2();
 
@@ -213,9 +215,11 @@ div#PH_breadcrumbs {
 
 .basket-section.roundUpDonationSection {
     @media @desktop {
-        display     : inline-block;
+        display     : inline-flex;
         width       : 50%;
         margin-right: 2%;
+        justify-content: center;
+        align-content: center;
     }
 }
 
