@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+      with:
+        fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      uses: SamKirkland/FTP-Deploy-Action-Typescript@master
       env:
         FTP_SERVER: ftp4a.seatgeekenterprise.co.uk
         PORT: 42121
         FTP_USERNAME: QuayTickets~test
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        ARGS: --delete --exclude-glob=.git*/** --exclude-glob=.git**
         REMOTE_DIR: UserContent
-        # --delete arg will delete files on the server if you've deleted them in git
