@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action-Typescript@master
       env:
-        FTP_SERVER: ftp4a.seatgeekenterprise.co.uk:42121/UserContent
+        FTP_SERVER: ftp://ftp4a.seatgeekenterprise.co.uk:42121/UserContent
         FTP_USERNAME: QuayTickets~test
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
