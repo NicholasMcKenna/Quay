@@ -1,0 +1,149 @@
+@import 'settings';
+
+.screen-content {
+    margin-top: 0;
+
+    @media @desktop {
+        margin: 0 auto;
+    }
+}
+
+div#PH_breadcrumbs {
+    margin    : 0 auto;
+    margin-top: 125px;
+    max-width : 1400px;
+}
+
+#offersContainer .promptsContainer h3 {
+    background: none;
+    color     : @font-dark-color;
+    padding   : 0;
+}
+
+#offersContainer .promptsContainer .elementMessage {
+    @media @mobile {
+        position: static;
+        float   : initial;
+        height  : initial;
+    }
+
+    border          : none;
+    background-color: transparent;
+    padding         : 0;
+}
+
+#offersContainer .promptsContainer .element {
+    border          : none;
+    background-color: @box-bgcolor;
+    padding         : 20px;
+    min-height      : 120px;
+
+    @media @mobile {
+        padding: 5%;
+    }
+}
+
+#offersContainer .promptsContainer h3 {
+    margin: 0;
+    .font-h1();
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer {
+    display: none;
+}
+
+#offersContainer .promptsContainer .elementItems {
+    margin-top: 0;
+    height    : auto;
+    padding   : 0;
+
+    @media @desktop {
+        float  : initial;
+        display: inline-block;
+        width  : 100%;
+    }
+}
+
+#offersContainer .promptsContainer .elementItem {
+    padding-left    : 0;
+    padding-right   : 0;
+    background-color: #fff;
+    margin-bottom   : 12px;
+    padding         : 5%;
+    width           : 100%;
+    height          : auto;
+
+    @media @desktop {
+        padding     : 3%;
+        margin-right: 2%;
+        width       : 31%;
+    }
+}
+
+#offersContainer div.eventInfo>div.date>div {
+    display: inline-block;
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name,
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name+.date {
+    text-align: left;
+}
+
+#offersContainer .promptsContainer .elementItem .name {
+    .font-h2();
+    font-weight: bold;
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name+.date {
+    .font-h2();
+    color      : @button-color;
+    font-weight: bold;
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .date span {
+    .font-h2();
+    background-color: transparent;
+    text-align      : left;
+    margin-top      : 0;
+    padding         : 0;
+    display         : inline-block;
+    width           : auto;
+    color           : @button-color;
+    margin-left     : 6px;
+    font-weight     : bold;
+}
+
+#offersContainer .promptsContainer .elementItem .pricing {
+    text-align: left;
+    max-width : 80%;
+
+    @media @desktop {
+        max-width: 100%;
+    }
+}
+
+#offersContainer .promptsContainer .elementItem .chooseQty select,
+#offersContainer .promptsContainer .elementItem .productAttribute select {
+    position: static;
+}
+
+#offersContainer .promptsContainer .elementItem .pricing select {
+    font-size: 14px;
+}
+
+.button.disabled.small_button_a A,
+.button.disabled.small_button_a A:hover,
+button.disabled.small_button_a,
+button.disabled.small_button_a:hover,
+#offersContainer #waiveOffersBtn {
+    .cancel-button();
+}
+
+button.small_button_a {
+    .action-button();
+}
+
+.button.small_button_a A::after,
+button.small_button_a::after {
+    content: none;
+}

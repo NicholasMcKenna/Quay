@@ -1,0 +1,195 @@
+@import 'custom';
+@import 'custom';
+
+.carousel.recommendedShows .itemsList .dataItem, .carousel .itemsList .dataItem .button.small_button_a A, .carousel .itemsList .dataItem .button.small_button_a A:hover {
+    background-image: none;
+}
+
+.showName {
+    display: none;
+}
+
+@media @desktop {
+
+    .largeImageContainer {
+        max-height: 456px;
+        padding-top: 30px;
+    }
+
+
+    .ShowEventsitemsList .itemsButtonsContainer {
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel .dataItem > .item_image_container:first-child {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel .itemsList .dataItem {
+        height: 250px;
+        width: 250px;
+    }
+
+    .ShowEventsitemsList .itemsDateRange {
+        width: 14em;
+      }
+
+    .carousel .item_image {
+        max-width: 250px;
+        max-height: 210px;
+    }
+
+    span.small_text_d.name:after {
+        content: ' ';
+        white-space: pre;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer .name, .carousel .itemsList .dataItem .itemsDataContainer .description {
+        background: #232927;
+        color: white;
+        text-align: right;
+        max-width:252px;
+    }
+
+    .carousel .itemsList .dataItem .name {
+        min-height: 48px;
+    }
+
+    .carousel .listContainer {
+        width: calc(100% - 42px);
+    }
+
+    #eventslist {
+        background-color: #f2f2f2;
+        border: 1px solid;
+
+        > h2 {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    .ShowEventsitemsList .dataItem {
+        border: none;
+        border-top: 1px dashed grey;
+        min-height: 96px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .genresContainer {
+        display: none;
+    }
+    .ShowEventsitemsList .dataItem .helpDeskRequestPanel {
+        right: 10.5em;
+        bottom: -0.42em;
+    }
+
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled A,
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled:hover,
+    .ShowEventsitemsList .itemsButtonsContainer .button.disabled A:hover {
+        color: #232323;
+        line-height: 24px;
+        background: #e6e4e4;
+        box-shadow:none;
+        text-transform: uppercase;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer {
+        background-color: transparent;
+    }
+
+    .carousel .itemsList .dataItem.simulateHover .itemsDataContainer .description {
+        display: none;
+    }
+
+    .carousel .itemsList .dataItem:hover .itemsButtonsContainer,
+    .carousel .itemsList .dataItem.simulateHover .itemsButtonsContainer,
+    .carousel .itemsList .dataItem:hover .itemsDateRange,
+    .carousel .itemsList .dataItem.simulateHover .itemsDateRange {
+      display: none;
+    }
+
+    .carousel .itemsList .dataItem .itemsDataContainer .description {
+        display: none;
+    }
+
+    .ui-tooltip .ui-corner-all .ui-widget-shadow .ui-widget .ui-widget-content {
+        display: none;
+    }
+
+    .ShowEventsitemsList .dataItem {
+        min-height: 96px;
+    }
+
+    div#paymentMethodForms {
+        display: none!important;
+    }
+
+    .ui-datepicker {
+        width: 50em;
+    }
+    
+    .ShowEventsitemsList .dataItem {
+        padding-left: 17em;
+    }
+}
+
+@media @mobile {
+    .carousel {
+        padding-top: 9px;
+    }
+}
+
+
+
+#media .video h3 {
+    display: none;
+}
+
+.innerdescription {
+    display: block !important;
+}
+
+.previewFull {
+    display: none !important;
+}
+
+.ShowEventsitemsList .button.small_button_a A, .ShowEventsitemsList .button.small_button_a A:hover, .ShowEventsitemsList .button.small_button_a A:active, .ShowEventsitemsList .button.small_button_a A:focus {
+    .button();
+    .button-hover();
+}
+
+.promoBox input+button {
+    .button();
+    .button-hover();
+}
+
+#eventslist {
+    background-color: #fff;
+    border: 1px solid;
+    margin: 10px;
+    padding: 12px;
+}
+
+.showName {
+    width:100%;
+    h1 {
+        text-align: center;
+    }
+}
+
+.promoBox {
+    border: 1px solid;
+}
+
+.promoBox:before {
+    content: none;
+}

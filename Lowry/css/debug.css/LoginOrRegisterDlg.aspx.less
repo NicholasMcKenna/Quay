@@ -1,0 +1,506 @@
+@import 'custom';
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+    font-family: @font;
+}
+
+.loginOrRegisterWizard .contactMe {
+    font-size: 1.5rem;
+}
+
+.label {
+    @media @desktop {
+        font-size: 17px;
+    }
+}
+
+label.caption {
+    font-size: 14px;
+}
+
+#btnForgot {
+    color: @font-color;
+}
+
+#frmCreateAccount .row:not(.hidden)~.row {
+    padding-top: 0;
+}
+
+.loginOrRegisterWizard #frmCreateAccount .fieldHint {
+    font-size: 14px;
+}
+
+.ui-widget button {
+    .button();
+    .button-hover();
+}
+
+button.back,
+button#reg_skip {
+    color         : @font-color;
+    border-color  : @font-color;
+    text-transform: uppercase;
+}
+
+button#reg_ok {
+    color           : white;
+    background-color: @button-color;
+    border          : 1px solid @button-color;
+    border-radius   : 0;
+    text-transform  : uppercase;
+}
+
+button.ok {
+    color: @button-color;
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.wizardNav button {
+    .button();
+    .button-hover();
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.linkToAlternative button:before,
+.linkToAlternative button::after {
+    content: none;
+}
+
+.loginOrRegisterWizard .contactMe {
+    font-size: 18px;
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.breadcrumbs>button {
+    font-size  : 14px;
+    font-weight: normal;
+    font-family: @font;
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.breadcrumbs {
+    position: absolute;
+    right   : initial;
+    top     : -2em;
+    left    : 4px;
+
+    @media @mobile {
+        top : -115px;
+        left: -3px;
+    }
+}
+
+.item_data_background.frmContainer.reg_wizard.reg_preferences {
+    font-size: 14px;
+}
+
+@media @mobile {
+    .loginControl FORM #btnForgot {
+        bottom: 16px;
+    }
+
+    .loginControl .rememberMe {
+        padding-top: 0.8em;
+    }
+
+    .loginOrRegisterWizard.su_personal .createAccountFormContainer {
+        margin-top : 0;
+        padding-top: 0;
+    }
+
+    .loginOrRegisterWizard .wizardStepDescription {
+        margin : 0;
+        padding: 0;
+    }
+
+    .loginOrRegisterWizard #frmCreateAccount>DIV.wizardNav button.ok {
+        margin-top: 58px;
+    }
+
+    .ui-widget button {
+        .button();
+        .button-hover();
+    }
+
+    .loginOrRegisterWizard.su_personal .createAccountFormContainer {
+        padding-right: 3px;
+        padding-left : 3px;
+    }
+}
+
+.loginControl .row .field input[type=text],
+.loginControl .row .field input[type=email],
+.loginControl .row .field input[type=password],
+.loginControl .loginButtons,
+.loginControl .rememberMe {
+    font-size    : 18px;
+    border-radius: 4px;
+}
+
+#btnForgot {
+    font-size: 14px;
+}
+
+.loginControl #btnLogin,
+.linkToAlternative button {
+    border-bottom : @button-color;
+    box-shadow    : none;
+    text-transform: uppercase;
+    .button();
+    .button-hover();
+    border-radius: 0;
+}
+
+
+.loginOrRegisterWizard .linkToAlternative>button {
+    display   : block;
+    margin    : 0 auto;
+    margin-top: 10px;
+}
+
+
+
+.loginControl #btnLogin:hover,
+.linkToAlternative button:hover {
+    box-shadow: none;
+}
+
+.loginControl #btnLogin[disabled] {
+    border-bottom: 2px solid @light-blue;
+}
+
+.loginControl #btnLogin[disabled]:hover {
+    border-bottom: 2px solid @light-blue;
+}
+
+.wizardStepDescription {
+    font-size     : 17px !important;
+    padding-top   : 1px;
+    padding-bottom: 0;
+    color         : @font-color;
+    margin      : 0 !important;
+    padding-left: 2px;
+}
+
+#frmCreateAccount input[type=text],
+#frmCreateAccount input[type=email],
+#frmCreateAccount input[type=tel],
+#frmCreateAccount input[type=password],
+#frmCreateAccount SELECT {
+    font-size    : 18px;
+    color        : @font-color;
+    border-radius: 0;
+    padding      : 18px !important;
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        padding: 2px !important;
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.wizardNav button {
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        font-size: 14px;
+    }
+}
+
+#frmCreateAccount .frmFields {
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        margin-top: 50px;
+    }
+}
+
+@media @desktop {
+
+    .loginControl .row .field input[type=text],
+    .loginControl .row .field input[type=email],
+    .loginControl .row .field input[type=password],
+    .loginControl .rememberMe {
+        padding  : 17px !important;
+        width    : 388px;
+        max-width: 100%;
+    }
+
+    #btnForgot {
+        font-size   : 14px;
+        text-align  : left;
+        padding-left: 3px;
+    }
+}
+
+.loginControl input:focus {
+    border-color      : @font-color;
+    -webkit-box-shadow: inset 0 1px 1px @font-color, 0 0 8px @font-color;
+    box-shadow        : inset 0 1px 1px @font-color, 0 0 8px @font-color;
+}
+
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected,
+textarea:-internal-autofill-previewed,
+textarea:-internal-autofill-selected,
+select:-internal-autofill-previewed,
+select:-internal-autofill-selected {
+    color: @font-color  !important;
+}
+
+.loginOrRegisterWizard input.mandatory {
+    border-color: @font-color;
+}
+
+#frmCreateAccount .field.FirstName INPUT,
+#frmCreateAccount .field.LastName INPUT {
+    width  : 143px;
+    padding: 8px;
+}
+
+FORM input.mandatory:focus,
+FORM select.mandatory:focus {
+    border-color      : @font-color;
+    -webkit-box-shadow: none;
+    box-shadow        : none;
+    border-width      : 2px !important;
+}
+
+FORM input[type=text],
+FORM input[type=password],
+FORM input[type=email],
+FORM input[type=tel],
+FORM input[type=number],
+.spForm input[type=text],
+.spForm input[type=password],
+.spForm input[type=email],
+.spForm input[type=tel],
+.spForm input[type=number],
+FORM SELECT,
+FORM .ui-spinner {
+    border-color: @font-color;
+}
+
+button[disabled] {
+    display: none;
+}
+
+.loginOrRegisterWizard #qasContainer button {
+    border          : 1px solid;
+    padding         : 9px;
+    color           : @button-color;
+    background-color: white;
+
+    @media @desktop {
+        padding: 5px;
+        
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount div.label {
+    height: 5px;
+}
+
+input#fldZipCode {
+    margin-bottom: 6px;
+}
+
+@media @mobile {
+    .loginControl FORM #btnForgot {
+        bottom: 9px;
+    }
+
+    .loginControl .loginButtons {
+        margin-top    : 6px;
+        padding-bottom: 48px;
+    }
+}
+
+#frmCreateAccount FIELDSET .row.LastName,
+#frmCreateAccount FIELDSET .row.FirstName {
+    width: initial;
+}
+
+#frmCreateAccount .field.FirstName INPUT,
+#frmCreateAccount .field.LastName INPUT {
+    width  : calc(100% - 1.2em);
+    padding: 8px;
+}
+
+#frmCreateAccount .row:not(.hidden)~.row.FirstName,
+#frmCreateAccount .row:not(.hidden)~.row.LastName {
+    display: block;
+}
+
+.loginOrRegisterWizard .linkToAlternative {
+    color: @font-color;
+
+    @media @desktop {
+        padding-top: 39%;
+    }
+
+    @media @mobile {
+        padding-top: 19px;
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount div.label {
+    display   : initial;
+    margin-top: 5px;
+}
+
+.su_personal {
+
+    #frmCreateAccount input[type=text],
+    #frmCreateAccount input[type=email],
+    #frmCreateAccount input[type=tel],
+    #frmCreateAccount input[type=password],
+    #frmCreateAccount SELECT {
+        width : calc(100% - 1.2em);
+        border: 1px solid @button-color;
+    }
+}
+
+form#frmCreateAccount {
+    margin-top: 20px;
+}
+
+.item_background {
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+.su_address,
+.su_contactMe,
+.su_preferences {
+    .linkToAlternative {
+        @media @mobile {
+            display: none !important;
+        }
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.wizardNav button.ok {
+    @media @mobile {
+        margin-top: 2px;
+        padding   : 11px;
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.wizardNav button.skip {
+    @media @mobile {
+        right           : 2px;
+        bottom          : 69px;
+        border-radius: 0;
+    }
+}
+
+.su_contactMe #frmCreateAccount>DIV.wizardNav {
+    margin-top: 4em;
+}
+
+.su_preferences .wizardStepDescription {
+    font-size : 18px !important;
+    margin-top: 31px;
+}
+
+.su_preferences span.dpTitle {
+    visibility: hidden;
+}
+
+.loginOrRegisterWizard .DpQuestionsContainer {
+    font-size: 18px;
+}
+
+#frmCreateAccount input#fldZipCode {
+    @media @mobile {
+        width: 60%;
+    }
+}
+
+.loginOrRegisterWizard #qasContainer {
+    @media @mobile {
+        display       : inline-block;
+        vertical-align: middle;
+        padding-top   : 0;
+    }
+}
+
+.loginOrRegisterWizard #qasContainer button {
+    @media @mobile {
+        padding: 5px;
+        border-radius: 0;
+    }
+}
+
+span#qasMsgContainer {
+    @media @mobile {
+        display : block;
+        position: absolute;
+        left    : 8px;
+        top     : -30px;
+    }
+}
+
+.loginOrRegisterWizard #frmCreateAccount>DIV.breadcrumbs>button.selected {
+    font-size  : 14px;
+    font-family: @font;
+    font-weight: 300;
+    color      : @font-color;
+}
+
+.loginOrRegisterWizard.su_contactMe #frmCreateAccount>DIV.wizardNav button.back,
+.loginOrRegisterWizard.su_preferences #frmCreateAccount>DIV.wizardNav button.back {
+    @media @mobile {
+        display : block;
+        position: static;
+        margin  : 0 auto;
+    }
+}
+
+.loginOrRegisterWizard.su_contactMe #frmCreateAccount>DIV.wizardNav button.skip,
+.loginOrRegisterWizard.su_preferences #frmCreateAccount>DIV.wizardNav button.skip {
+    @media @mobile {
+        position: static;
+        margin  : 12px auto;
+        display : block;
+        border-radius: 0;
+    }
+}
+
+.loginOrRegisterWizard.su_contactMe #frmCreateAccount>DIV.wizardNav button.ok,
+.loginOrRegisterWizard.su_preferences #frmCreateAccount>DIV.wizardNav button.ok {
+    @media @mobile {
+        position: static;
+        margin  : 0 auto;
+        display : block;
+    }
+}
+
+
+.loginOrRegisterWizard #qasContainer {
+    @media @desktop {
+        vertical-align: top;
+    }
+}
+
+.ui-widget-header .ui-icon,
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon {
+    z-index: 100;
+}
+
+
+.loginControl #btnLogin[disabled],
+.loginControl #btnLogin[disabled]:hover {
+    color           : @light-blue;
+    background-color: #fff;
+    border          : 2px solid @light-blue;
+}
+
+.inputimage:before {
+    content: none!important;
+}
