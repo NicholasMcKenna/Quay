@@ -14,5 +14,5 @@ jobs:
         FTP_USERNAME: QuayTickets~test
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         ARGS: --delete
-        LOCAL_DIR: UserContent
+        REMOTE_DIR: UserContent
         # --delete arg will delete files on the server if you've deleted them in git
