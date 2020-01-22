@@ -114,39 +114,12 @@ video#bgvid {
         -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
         -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
         box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-
-        .itemsDataContainer::before {
-            -webkit-transform: translateX(5px);
-            -moz-transform   : translateX(5px);
-            -ms-transform    : translateX(5px);
-            -o-transform     : translateX(5px);
-            transform        : translateX(5px);
-        }
-
-        .itemsDataContainer::after {
-            -webkit-transform: translateX(-10px);
-            -moz-transform   : translateX(-10px);
-            -ms-transform    : translateX(-10px);
-            -o-transform     : translateX(-10px);
-            transform        : translateX(-10px);
-        }
-
     }
 }
 
 .itemsList .dataItem div.item_image {
-    height          : 500px;
     background-image: none;
 }
-
-.itemsList .dataItem:nth-child(4n+2) {
-    margin-left: 2.2%;
-}
-
-.itemsList .dataItem:nth-child(4n+5) {
-    margin-right: 2.2%;
-}
-
 
 .dataItem .itemsDataContainer,
 .dataItem:hover .itemsDataContainer,
@@ -177,59 +150,6 @@ video#bgvid {
 .innerdescription {
     display: block;
 }
-
-.dataItem .name {
-    color           : #fff;
-    font-weight     : bold;
-    position        : static;
-    background-color: transparent;
-    font-size       : 28px;
-    margin-top      : 15px;
-    text-align      : left;
-    margin-left     : 10px;
-}
-
-.itemsDataContainer::before {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
-}
-
-.itemsDataContainer::after {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
-}
-
-.itemsDataContainer::after,
-.itemsDataContainer::before {
-    width             : 100px;
-    content           : "";
-    height            : 130px;
-    position          : absolute;
-    bottom            : 10px;
-    right             : 10px;
-    background-size   : contain;
-    background-repeat : no-repeat;
-    opacity           : 0.1;
-    z-index           : 1;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition   : all 250ms ease-in-out;
-    -ms-transition    : all 250ms ease-in-out;
-    -o-transition     : all 250ms ease-in-out;
-    transition        : all 250ms ease-in-out;
-}
-
-.itemsDataContainer::after,
-.itemsDataContainer::before {
-    opacity: 1;
-}
-
-.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .name {
-    width: 58%;
-}
-
-.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
-    display: none;
-}
-
-
 
 // remove float menu on front page
 div#PH_Float_Menu {
@@ -319,16 +239,4 @@ div#PH_Search {
 .itemsList {
     width     : 100%;
     text-align: center;
-}
-
-.itemsList .dataItem {
-    width: 379px;
-}
-
-.itemsList .dataItem div.item_image {
-    height: 470px;
-}
-
-div#PH_breadcrumbs {
-    display: none;
 }

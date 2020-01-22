@@ -1,0 +1,649 @@
+@import 'settings';
+
+body {
+    margin-top: 0;
+}
+
+body.template-templatefull {
+    margin-top: 0;
+}
+
+h1,
+h2,
+.block-title,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-weight: 500;
+}
+
+#group_QTHeader ul,
+#group_QTHeader li {
+    display: inline-block;
+}
+
+
+.btn {
+    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-weight: 700;
+    font-size  : 18px;
+
+    line-height   : 1.42857143;
+    border        : none;
+    border-radius : 0px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color           : #fff;
+    background      : none;
+    background-color: @button-color;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: @button-hover-color;
+}
+
+.btn.btn-inverted {
+    background-color: rgba(255, 255, 255, 1);
+    color           : #000;
+}
+
+.btn.btn-inverted:hover {
+
+    background-color: rgba(255, 255, 255, .75);
+
+}
+
+#group_QTHeader {
+    padding         : 0;
+    background-color: #FFF;
+    border-bottom   : solid 1px #cccccc;
+    border-top      : 2px solid @button-color;
+    box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    width           : 100%;
+
+    position: fixed;
+    z-index : 51;
+}
+
+#PH_QTHeader {
+
+    padding: 0 15px;
+}
+
+#PH_QTHeader,
+.footer-content {
+    width     : 100%;
+    min-height: 1px;
+}
+
+#content .articles .article-container {
+
+    margin: 0;
+}
+
+.quaytickets-logo,
+.site-menu,
+.social-search {
+
+    display : block;
+    position: relative;
+}
+
+.quaytickets-logo {
+
+    width: 250px;
+    float: left;
+}
+
+.site-menu {
+
+    float: left;
+}
+
+.social-search {
+
+
+    float     : right;
+    text-align: right;
+}
+
+.quaytickets-logo img,
+.quaytickets-logo a {
+
+    display: block;
+    width  : 100%;
+    height : auto;
+}
+
+.quaytickets-logo a {
+
+    padding: 15px;
+}
+
+.site-menu li a {
+
+    font-family    : "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-weight    : 700;
+    text-transform : uppercase;
+    font-size      : 16px;
+    line-height    : 16px;
+    padding        : 34px 0px 10px 0px;
+    margin         : 0px 8px;
+    display        : block;
+    color          : #231F20;
+    text-decoration: none;
+    position       : relative;
+}
+
+.site-menu li a:before {
+    content           : "";
+    position          : absolute;
+    width             : 100%;
+    height            : 2px;
+    bottom            : 0;
+    left              : 0;
+    background-color  : @button-color;
+    visibility        : hidden;
+    -webkit-transform : scaleX(0);
+    transform         : scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition        : all 0.3s ease-in-out 0s;
+}
+
+.site-menu li a:hover:before {
+    visibility       : visible;
+    -webkit-transform: scaleX(1);
+    transform        : scaleX(1);
+}
+
+.social-search ul {
+    margin-top  : 20px;
+    margin-right: 15px;
+}
+
+.social-search li {
+    margin-right: 2px;
+}
+
+.social-search li a {
+    padding: 10px;
+    display: block;
+    width  : 100%;
+    height : auto;
+
+    color        : #FFF;
+    font-size    : 20px;
+    line-height  : 20px;
+    border-radius: 2px;
+}
+
+.social-search li a:hover,
+.social-search li a:visited,
+.social-search li a:active,
+.social-search li a:focus {
+    text-decoration: none;
+    opacity        : 0.8;
+}
+
+.social-search li.facebook a {
+
+    background-color: #3B5998;
+}
+
+.social-search li.twitter a {
+
+    background-color: #55ACEE;
+}
+
+.social-search li.blog a {
+
+    background-color: #FF9800;
+}
+
+.social-search li.subscribe a {
+
+    background-color: #DB4437;
+}
+
+.social-search li.account a {
+
+    background-color: #666666;
+}
+
+.social-search li.search-button a {
+
+    background-color: #6EB64B;
+
+}
+
+.social-search li.basket a {
+
+    background-color: @button-color;
+
+}
+
+.social-search li.logout a {
+
+    background-color: #666666;
+
+}
+
+.social-search .account,
+.social-search .search-button {
+
+    margin-left: 10px;
+}
+
+.social-search .contact {
+
+    font-family : "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-weight : 400;
+    font-size   : 22px;
+    line-height : 22px;
+    display     : inline-block;
+    margin-right: 15px;
+}
+
+.search-box {
+    background   : @button-color;
+    border-radius: 0px;
+    padding      : 15px 0 8px 0;
+    margin       : 0;
+    color        : #FFF;
+}
+
+.feature-banner {
+    position: relative;
+    width   : 100%;
+    display : block;
+
+    background-color: #FFF;
+    height          : 500px;
+
+    /* background-image:url('https://www.quaytickets.com/ArticleMedia/Images/qt/2018/site/qt-home-banner-10.jpg'); */
+    background-size    : cover;
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.feature-banner .container {
+    position  : relative;
+    min-height: 100%;
+}
+
+.feature-item {
+    position : absolute;
+    top      : 50%;
+    left     : 25%;
+    transform: translate(-12%, -50%);
+    color    : #FFF;
+}
+
+.feature-item h1,
+.feature-item h2 {
+
+    padding    : 7px 14px 7px 14px;
+    font-size  : 34px;
+    line-height: 34px;
+    float      : left;
+    margin     : 0;
+    line-height: 1.3em;
+}
+
+.feature-item h1 {
+
+    background-color: rgba(0, 157, 220, 0.85);
+    color           : #FFFFFF;
+}
+
+.feature-item h2 {
+
+    background-color: rgba(35, 31, 32, 0.65);
+    color           : #FFFFFF;
+
+}
+
+.feature-search {
+
+    width     : 100%;
+    float     : left;
+    margin-top: 25px;
+    position  : relative;
+}
+
+.feature-search .search-input,
+.feature-search .search-button {
+
+    font-size  : 24px;
+    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    line-height: 24px;
+}
+
+.feature-search .search-input {
+
+    height : 50px;
+    width  : 75%;
+    border : none;
+    color  : #3f3f3f;
+    padding: 0px 15px 0px 50px;
+}
+
+.feature-search i {
+
+    position         : absolute;
+    top              : 50%;
+    left             : 14px;
+    -webkit-transform: translateY(-50%);
+    transform        : translateY(-50%);
+
+    color    : #3f3f3f;
+    font-size: 24px;
+}
+
+
+.feature-search .search-button {
+
+    background-color: rgba(0, 157, 220, 1);
+    color           : #FFF;
+    padding         : 11px 15px 10px 15px;
+    text-decoration : none;
+    line-height     : 24px;
+}
+
+.feature-search .search-button:focus {
+
+    outline       : 0px;
+    outline-offset: 0px;
+}
+
+.feature-search .search-button:hover {
+
+    background-color: rgba(0, 157, 220, 0.90);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.section>div {
+    text-align: center;
+}
+
+.section .heading {
+
+    display: inline-block;
+    width  : 500px;
+
+    margin: 50px 0 50px 0;
+}
+
+.section .heading h2 {
+
+    text-transform: uppercase;
+    font-weight   : 400;
+    font-size     : 26px;
+    overflow      : hidden;
+    text-align    : center;
+    padding       : 0;
+    margin        : 0;
+}
+
+.section .heading h2:before,
+.section .heading h2:after {
+    background-color: @button-color;
+    content         : "";
+    display         : inline-block;
+    height          : 2px;
+    position        : relative;
+    vertical-align  : middle;
+    width           : 50%;
+}
+
+.section .heading h2:before {
+    right      : 0.5em;
+    margin-left: -50%;
+}
+
+.section .heading h2:after {
+    left        : 0.5em;
+    margin-right: -50%;
+}
+
+
+.section .heading.first {
+    margin-top   : 50px;
+    margin-bottom: 50px;
+}
+
+.section.subscribe {
+
+    background-color: @button-color;
+    padding         : 0 0 60px 0;
+
+}
+
+.section.subscribe h2,
+.section.subscribe h3 {
+    color     : #FFF;
+    margin-top: 0;
+}
+
+.section.subscribe #mc_embed_signup_scroll {
+
+    font-size: 18px;
+    color    : #FFF;
+    margin   : 0;
+}
+
+.section.subscribe .heading h2:before,
+.section.subscribe .heading h2:after {
+    background-color: #FFF;
+}
+
+.section.subscribe input.email {
+    border       : none;
+    border       : 2px solid #FFF;
+    border-radius: 12px;
+    padding      : 6px 12px;
+
+    background-color: @button-color;
+    color           : #FFF;
+    width           : 100%;
+    max-width       : 500px;
+
+    display: block;
+    margin : 0 auto;
+}
+
+.section.subscribe input.email::placeholder {
+    color      : #FFF;
+    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+}
+
+.section.subscribe .subscribe-terms {
+
+    font-size: 14px;
+    max-width: 600px;
+    display  : inline-block;
+    margin   : 10px 15px 0 15px;
+}
+
+.section.subscribe .btn {
+
+    margin-top: 25px;
+
+    display: block;
+    margin : 25px auto 10px auto;
+}
+
+
+.section.subscribe .field-label.email {
+    display: none;
+}
+
+.section.subscribe #message {
+    margin          : 15px 0 0 0;
+    padding         : 4px 6px;
+    font-size       : 14px;
+    font-weight     : bold;
+    color           : #3f3f3f;
+    background-color: #FFF;
+    max-width       : 600px;
+    display         : inline-block;
+}
+
+.section.subscribe #message.mc-success {
+    color: limegreen;
+}
+
+.section.subscribe #message.mc-error {
+    color: #DB4437;
+}
+
+.section.featured-events .row {
+
+    margin-right: 0px;
+    margin-left : 0px;
+}
+
+.section.featured-events {
+
+    background-color: #FFF;
+    padding         : 0;
+
+}
+
+.section.featured-events .container {
+
+    width  : 100%;
+    padding: 0px;
+}
+
+.section.featured-events .list {
+
+    display       : flex;
+    flex-wrap     : wrap;
+    flex-direction: row;
+    align-items   : center;
+    overflow      : hidden;
+    padding       : 0 15px 15px 15px;
+    margin-top    : -15px;
+    margin-bottom : 30px;
+}
+
+.section.featured-events .list li {
+
+    display: block;
+    float  : left;
+
+    padding: 15px;
+    width  : 20%;
+}
+
+.section.featured-events .list li img {
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.section.blog {
+    background-color: #F3F3F3;
+    padding-bottom  : 75px;
+}
+
+.section.blog .intro {
+
+    text-align: left;
+}
+
+.section.blog .intro h2 {
+
+    text-align   : left;
+    margin-top   : 4px;
+    margin-bottom: 15px;
+    color        : @button-color;
+}
+
+.section.blog .intro p {
+
+    font-size    : 18px;
+    line-height  : 1.5;
+    margin-bottom: 15px;
+}
+
+.section.blog .pic img {
+
+    width     : 100%;
+    height    : auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.section.event-highlight {
+
+    background-size    : cover;
+    background-position: center;
+    padding            : 60px 0 90px 0;
+    color              : #231F20;
+    min-height         : 500px;
+    position           : relative;
+}
+
+
+.section.event-highlight .container {
+
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section.event-highlight h2 {
+
+    font-size  : 38px;
+    font-weight: 700;
+    color      : @button-color;
+    margin-top : 0px;
+}
+
+.section.event-highlight h3 {
+
+    font-weight: 700;
+}
+
+.section.event-highlight .copy .box {
+
+    padding         : 30px;
+    border-radius   : 6px;
+    background-color: rgba(35, 31, 32, .55);
+    background-color: rgba(255, 255, 266, .80);
+}
+
+#searchBox label img {
+
+    float          : right;
+    margin-right   : 4px;
+    margin-top     : 6px;
+    display        : block;
+    -moz-box-sizing: border-box;
+    box-sizing     : border-box;
+    /* background  : url('/ArticleMedia/Images/qt/2018/site/cal-white-trans.png') no-repeat; */
+    width          : 28px;
+    /* Width of new image */
+    height: 24px !important;
+    /* Height of new image */
+    padding-left: 28px;
+    /* Equal to width of new image */
+}
+
+.search-box form ul li .field-label {
+    font-weight: 400;
+    font-size  : 16px;
+}
