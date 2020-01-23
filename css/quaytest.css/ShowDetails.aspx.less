@@ -1,5 +1,4 @@
 @import 'settings';
-@import 'custom';
 
 body {
     margin-top: 0;
@@ -9,11 +8,23 @@ body {
     margin-top: 128px;
 }
 
-
 .genresContainer {
     display: none !important;
 }
 
 .carousel .itemsList .dataItem .itemsDateRange {
     color      : @button-color;
+}
+
+.ShowEventsitemsList .button.small_button_a A {
+    .action-button();
+    padding       : 5px 15px;
+    letter-spacing: 0.15px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        padding       : 5px 15px;
+        letter-spacing: 0.15px;
+    }
 }
