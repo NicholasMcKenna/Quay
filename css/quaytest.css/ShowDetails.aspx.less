@@ -1,4 +1,3 @@
-
 @import (reference) 'settings';
 
 body {
@@ -14,22 +13,15 @@ body {
 }
 
 .carousel .itemsList .dataItem .itemsDateRange {
-    color      : @button-color;
+    color: @button-color;
 }
 
 .ShowEventsitemsList .button.small_button_a A {
-    .action-button();
-    padding       : 5px 15px;
-    letter-spacing: 0.15px;
-
-    &:hover,
-    &:active,
-    &:focus {
-        padding       : 5px 15px;
-        letter-spacing: 0.15px;
-    }
+    background-color: @button-color;
 }
 
-.ShowEventsitemsList .itemsDateRange {
+.ShowEventsitemsList .itemsDateRange,
+.button.small_button_a a,
+#selectedAreaInfo .button-moreAreas {
     color: @button-color;
 }
