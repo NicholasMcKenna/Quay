@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'variables';
 
 #group_main,
 #group_Header #PH_Menu>* {
@@ -8,64 +8,6 @@
 
 video#bgvid {
     width: 100%;
-}
-
-.c-site-welcome-text {
-    position         : absolute;
-    top              : 50%;
-    left             : 50%;
-    width            : 90%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform   : translate(-50%, -50%);
-    -ms-transform    : translate(-50%, -50%);
-    -o-transform     : translate(-50%, -50%);
-    transform        : translate(-50%, -50%);
-    color            : #ffffff;
-    text-shadow      : rgba(0, 0, 0, 0.4) 4px 4px 5px;
-    text-align       : center;
-}
-
-.c-site-welcome-text__surtitle {
-    @media @desktop {
-        margin-bottom: 20px;
-        font-size    : 45px;
-        line-height  : 100%;
-        font-weight  : 700;
-    }
-}
-
-.c-site-welcome-text__title {
-    @media @desktop {
-        font-size  : 120px;
-        line-height: 100%;
-        margin     : 0;
-        font-weight: 800;
-    }
-}
-
-.c-site-welcome-text__title::after {
-    background-color : #26B5BB;
-    width            : 100%;
-    -webkit-transform: scaleX(100%);
-    -moz-transform   : scaleX(100%);
-    -ms-transform    : scaleX(100%);
-    -o-transform     : scaleX(100%);
-    transform        : scaleX(100%);
-    max-width        : 400px;
-    height           : 3px;
-    content          : "";
-    display          : block;
-    margin           : 30px auto;
-    animation        : animateBorder 1.5s ease-out 4s backwards;
-}
-
-.c-site-welcome-text__subtitle {
-    @media @desktop {
-        margin-top : 20px;
-        font-size  : 45px;
-        line-height: 100%;
-        font-weight: 700;
-    }
 }
 
 .recommendedShows.showslist {
@@ -81,40 +23,11 @@ video#bgvid {
     height           : auto;
     width            : 100%;
     max-height       : 328px;
-    -webkit-transform: scale(1.05);
-    -moz-transform   : scale(1.05);
-    -ms-transform    : scale(1.05);
-    -o-transform     : scale(1.05);
-    transform        : scale(1.05);
 }
 
 .itemsList .dataItem {
     width             : 436px;
     height            : auto;
-    background-color  : #2A2D34;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition   : all 250ms ease-in-out;
-    -ms-transition    : all 250ms ease-in-out;
-    -o-transition     : all 250ms ease-in-out;
-    transition        : all 250ms ease-in-out;
-
-    &:hover {
-        -webkit-transform : translateY(-10px);
-        -moz-transform    : translateY(-10px);
-        -ms-transform     : translateY(-10px);
-        -o-transform      : translateY(-10px);
-        transform         : translateY(-10px);
-        -webkit-transform : scale(1.03);
-        -moz-transform    : scale(1.03);
-        -ms-transform     : scale(1.03);
-        -o-transform      : scale(1.03);
-        transform         : scale(1.03);
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    }
 }
 
 .itemsList .dataItem div.item_image {
@@ -131,7 +44,6 @@ video#bgvid {
 .dataItem .itemsDateRange {
     position   : static;
     width      : 100%;
-    color      : #26b5bb;
     font-size  : 16px;
     margin-left: 12px;
     text-align : left;
@@ -204,7 +116,6 @@ div#PH_Float_Menu {
 .currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
     background-color: #fff;
     width           : 100%;
-    color           : #26b5bb;
     font-weight     : 700;
     font-size       : 29px;
     box-shadow      : none;
@@ -217,11 +128,6 @@ div#PH_Float_Menu {
 div#PH_Search {
     display: block;
 }
-
-#bottomButtonsBar .button.small_button_a {
-    background: @button-color;
-}
-
 
 .screen-content {
     @media @desktop {

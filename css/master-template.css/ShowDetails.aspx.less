@@ -46,7 +46,6 @@
 }
 
 .ShowEventsitemsList .button.small_button_a A {
-    .action-button();
     padding       : 5px 15px;
     letter-spacing: 0.15px;
 
@@ -111,61 +110,33 @@ span.previewFull {
 }
 
 .carousel .itemsList .dataItem .item_image IMG {
-    width            : auto;
-    height           : 274px;
-    max-height       : 271px;
-    -webkit-transform: scale(1.05);
-    -moz-transform   : scale(1.05);
-    -ms-transform    : scale(1.05);
-    -o-transform     : scale(1.05);
-    transform        : scale(1.05);
+    width     : auto;
+    height    : 274px;
+    max-height: 271px;
 }
 
 .carousel .itemsList .dataItem {
-    width             : 378px;
-    height            : 440px;
-    background-color  : #2A2D34;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition   : all 250ms ease-in-out;
-    -ms-transition    : all 250ms ease-in-out;
-    -o-transition     : all 250ms ease-in-out;
-    transition        : all 250ms ease-in-out;
+    width           : 378px;
+    height          : 440px;
+    background-color: #2A2D34;
 
+    .itemsDataContainer::before {
+        -webkit-transform: translateX(5px);
+        -moz-transform   : translateX(5px);
+        -ms-transform    : translateX(5px);
+        -o-transform     : translateX(5px);
+        transform        : translateX(5px);
+    }
 
-    &:hover {
-        -webkit-transform : translateY(-10px);
-        -moz-transform    : translateY(-10px);
-        -ms-transform     : translateY(-10px);
-        -o-transform      : translateY(-10px);
-        transform         : translateY(-10px);
-        -webkit-transform : scale(1.03);
-        -moz-transform    : scale(1.03);
-        -ms-transform     : scale(1.03);
-        -o-transform      : scale(1.03);
-        transform         : scale(1.03);
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-
-        .itemsDataContainer::before {
-            -webkit-transform: translateX(5px);
-            -moz-transform   : translateX(5px);
-            -ms-transform    : translateX(5px);
-            -o-transform     : translateX(5px);
-            transform        : translateX(5px);
-        }
-
-        .itemsDataContainer::after {
-            -webkit-transform: translateX(-10px);
-            -moz-transform   : translateX(-10px);
-            -ms-transform    : translateX(-10px);
-            -o-transform     : translateX(-10px);
-            transform        : translateX(-10px);
-        }
+    .itemsDataContainer::after {
+        -webkit-transform: translateX(-10px);
+        -moz-transform   : translateX(-10px);
+        -ms-transform    : translateX(-10px);
+        -o-transform     : translateX(-10px);
+        transform        : translateX(-10px);
     }
 }
+
 
 .carousel .item_image {
     max-width  : 100%;
@@ -186,7 +157,6 @@ span.previewFull {
 .carousel .itemsList .dataItem .itemsDateRange {
     position   : static;
     width      : 100%;
-    color      : @button-color;
     font-size  : 18px;
     margin-left: 12px;
 }
@@ -217,37 +187,6 @@ span.previewFull {
     margin-left     : 10px;
 }
 
-.carousel .itemsDataContainer::before {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
-}
-
-.carousel .itemsDataContainer::after {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
-}
-
-.carousel .itemsDataContainer::after,
-.carousel .itemsDataContainer::before {
-    width             : 100px;
-    content           : "";
-    height            : 130px;
-    position          : absolute;
-    bottom            : 10px;
-    right             : 10px;
-    background-size   : contain;
-    background-repeat : no-repeat;
-    opacity           : 0.1;
-    z-index           : 1;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition   : all 250ms ease-in-out;
-    -ms-transition    : all 250ms ease-in-out;
-    -o-transition     : all 250ms ease-in-out;
-    transition        : all 250ms ease-in-out;
-}
-
-.carousel .itemsDataContainer::after,
-.carousel .itemsDataContainer::before {
-    opacity: 1;
-}
 
 .carousel .itemsList .dataItem .name {
     width: 58%;
@@ -283,11 +222,10 @@ div#pickadate {
 }
 
 .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
-    border          : none;
-    width           : 100%;
-    height          : 350px;
-    font-size       : 16px;
-    background-color: @box-bgcolor;
+    border   : none;
+    width    : 100%;
+    height   : 350px;
+    font-size: 16px;
 }
 
 .ui-state-default,
@@ -307,7 +245,6 @@ select#dateSelect {
     display: none;
 }
 
-/* TODO: TEMP - for demo */
 .promoBox {
     display: none;
 }
@@ -328,7 +265,6 @@ select#dateSelect {
 }
 
 .ShowEventsitemsList .itemsDateRange {
-    color      : @button-color;
     font-weight: bold;
 }
 

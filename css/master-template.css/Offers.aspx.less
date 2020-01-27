@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'variables';
 
 .screen-content {
     margin-top: 0;
@@ -16,7 +16,6 @@ div#PH_breadcrumbs {
 
 #offersContainer .promptsContainer h3 {
     background: none;
-    color     : @font-dark-color;
     padding   : 0;
 }
 
@@ -34,7 +33,6 @@ div#PH_breadcrumbs {
 
 #offersContainer .promptsContainer .element {
     border          : none;
-    background-color: @box-bgcolor;
     padding         : 20px;
     min-height      : 120px;
 
@@ -45,8 +43,6 @@ div#PH_breadcrumbs {
 
 #offersContainer .promptsContainer h3 {
     margin: 0;
-    .font-h1();
-
 }
 
 #offersContainer .promptsContainer .elementItem .eventInfo .imgContainer {
@@ -91,25 +87,20 @@ div#PH_breadcrumbs {
 }
 
 #offersContainer .promptsContainer .elementItem .name {
-    .font-h2();
     font-weight: bold;
 }
 
 #offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name+.date {
-    .font-h2();
-    color      : @button-color;
     font-weight: bold;
 }
 
 #offersContainer .promptsContainer .elementItem .eventInfo .date span {
-    .font-h2();
     background-color: transparent;
     text-align      : left;
     margin-top      : 0;
     padding         : 0;
     display         : inline-block;
     width           : auto;
-    color           : @button-color;
     margin-left     : 6px;
     font-weight     : bold;
 }
@@ -132,17 +123,6 @@ div#PH_breadcrumbs {
     font-size: 14px;
 }
 
-.button.disabled.small_button_a A,
-.button.disabled.small_button_a A:hover,
-button.disabled.small_button_a,
-button.disabled.small_button_a:hover,
-#offersContainer #waiveOffersBtn {
-    .cancel-button();
-}
-
-button.small_button_a {
-    .action-button();
-}
 
 .button.small_button_a A::after,
 button.small_button_a::after {

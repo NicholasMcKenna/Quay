@@ -1,0 +1,347 @@
+body {
+    background-color      : @background-color;
+    font-family           : @main-font;
+    -webkit-font-smoothing: antialiased;
+    font-size             : @fontsize-main;
+
+    @media @mobile {
+        font-size: @fontsize-mobile;
+    }
+}
+
+.screen-content,
+button {
+    font-family: @main-font;
+}
+
+.screen-content {
+    background-color: @background-color;
+}
+
+body #group_Header-fixed {
+    background-color: @header-bg-color;
+    height       : @header-height;
+    border-bottom: 0.5px solid @button-color;
+
+    @media @mobile {
+        height: @header-height-mobile;
+    }
+}
+
+.main-logo {
+    max-width: @logo-maxwidth-desktop;
+    padding  : 0 5%;
+
+    @media @mobile {
+        max-width: @logo-maxwidth-mobile;
+        padding  : 0;
+    }
+}
+
+.account button {
+    color           : @button-font-color;
+}
+
+img.logo-image {
+    max-width : @logo-maxwidth-desktop;
+    height    : @logo-height;
+    margin-top: @logo-margin-top;
+
+    @media @mobile {
+        max-width : @logo-maxwidth-mobile;
+        margin-top: @logo-margin-top-mobile;
+    }
+}
+
+#PH_BasketWidget .button.small_button_a a {
+    background   : @button-color;
+}
+
+#group_Footer {
+    background-color: @footer-bg-color;
+}
+
+.promoBox input+button {
+    .sub-button();
+}
+
+.itemsList .dataItem {
+    background-color  : @showcard-bgcolor;
+}
+
+.itemsList .dataItem {
+    .showcard-hover-transform();
+}
+
+.dataItem .itemsDateRange {
+    color      : @button-color;
+}
+
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents,
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+    color           : @button-color;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    background: @button-color;
+}
+
+.button.small_button_a a,
+#selectedAreaInfo .button-moreAreas {
+    .action-button();
+}
+
+#eventPage .seatingPlanContainer {
+    @media @desktop {
+        width: @seating-plan-width;
+    }
+}
+
+#eventPage .tabsWrapper>div.center {
+    background-color: @background-color;
+}
+
+#eventPage #selectSeatsTab.selected {
+    color           : @font-dark-color;
+}
+
+#eventPage .tabsWrapper #baTab.selected {
+    font-size       : @fontsize-main;
+    color           : @font-dark-color;
+}
+
+#eventPage .infoSection .name {
+    font-size  : @fontsize-main;
+    font-weight: @fontweight-main;
+}
+
+#eventPage .infoSection .date div {
+    font-size  : @fontsize-main;
+    font-weight: @fontweight-main;
+}
+
+.eventDetails .date span {
+    font-size: @fontsize-main;
+}
+
+.eventDetails .location {
+    font-size: @fontsize-main;
+}
+
+#eventPage #selectSeatsTab.selected {
+    font-size    : @fontsize-main;
+}
+
+#eventPage .tabsWrapper #baTab {
+    font-size   : @fontsize-main;
+}
+
+.promoBox input+button {
+    .sub-button();
+}
+
+#eventPage.hallMap #selectedAreaInfo .area-info-container>.name {
+    .font-h2();
+}
+
+.tab.selected {
+    border-bottom: 1px solid @button-color  !important;
+}
+
+#eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero {
+    .sub-button();
+}
+
+.button.disabled.small_button_a A,
+.button.disabled.small_button_a A:hover,
+button.disabled.small_button_a,
+button.disabled.small_button_a:hover {
+    .cancel-button();
+}
+
+.ShowEventsitemsList .button.small_button_a A {
+    .action-button();
+}
+
+.carousel .itemsList .dataItem .item_image IMG {
+    .showcard-transform();
+}
+
+.carousel .itemsList .dataItem {
+    .showcard-hover-transform();
+}
+
+.carousel .itemsList .dataItem .itemsDateRange {
+    color      : @button-color;
+}
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    background-color: @box-bgcolor;
+}
+
+.ShowEventsitemsList .itemsDateRange {
+    color      : @button-color;
+}
+
+.pageSectionTitle {
+    .font-h1();
+}
+
+.containerTitle {
+    .font-h2();
+}
+
+.roundUpDonationSection,
+.addCouponCtl {
+    background-color: @box-bgcolor;
+}
+
+.roundUpDonationSection h2,
+.addCouponCtl h2 {
+    .font-h2();
+}
+
+.bottomButtonsBar {
+    @media @mobile {
+        background-color: @footer-color;
+        border-top      : 0.5px solid @button-color;
+    }
+}
+
+.orderHint {
+    .sub-button();
+}
+
+.small_button_a.proceed {
+    .action-button();
+}
+
+.home {
+    .cancel-button();
+}
+
+#btnContinue {
+    color  : @font-dark-color;
+}
+
+.button.disabled.small_button_a A,
+.button.disabled.small_button_a A:hover,
+button.disabled.small_button_a,
+button.disabled.small_button_a:hover {
+    .cancel-button()
+}
+
+
+#offersContainer .promptsContainer h3 {
+    color     : @font-dark-color;
+}
+
+#offersContainer .promptsContainer .element {
+    background-color: @box-bgcolor;
+}
+
+#offersContainer .promptsContainer h3 {
+    .font-h1();
+}
+
+#offersContainer .promptsContainer .elementItem .name {
+    .font-h2();
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name+.date {
+    .font-h2();
+    color      : @button-color;
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .date span {
+    .font-h2();
+    color           : @button-color;
+}
+
+.button.disabled.small_button_a A,
+.button.disabled.small_button_a A:hover,
+button.disabled.small_button_a,
+button.disabled.small_button_a:hover,
+#offersContainer #waiveOffersBtn {
+    .cancel-button();
+}
+
+button.small_button_a {
+    .action-button();
+}
+
+.suppTitle,
+#termsAndConditions .containerTitle,
+#lblChoosePayment,
+.dataProtectionContainer h2 {
+    .font-h2();
+}
+
+.roundUpDonationSection h2 {
+    .font-h2();
+}
+
+.paymentPanelSection  {
+    background-color: @box-bgcolor;
+}
+
+#insurance h2 {
+    .font-h2();
+}
+
+.paymentMethod {
+    color        : @font-dark-color;
+    background   : @box-bgcolor;
+    border-radius: 0;
+}
+
+.paymentHint {
+    @media @mobile {
+        .cancel-button();
+    }
+}
+
+.paymentMethod.selected {
+    background: @box-bgcolor;
+    color     : @font-dark-color;
+}
+
+.paymentMethod.selected>LABEL {
+    color: @font-dark-color;
+}
+
+button.small_button_a {
+    .action-button();
+}
+
+.bottomButtonsBar {
+    @media @desktop {
+        background-color: @box-bgcolor;
+    }
+}
+
+.loginControl #btnLogin {
+    .action-button();
+}
+
+.loginOrRegisterWizard .linkToAlternative>button {
+    .sub-button();
+}
+
+.loginControl #btnLogin[disabled] {
+    .cancel-button();
+    background-color: @cancel-button-color;
+}
+
+.bottom-menu {
+    height      : @header-bottom-height;
+
+    @media @mobile {
+        height      : @header-bottom-height-mobile;
+    }
+}
+
+
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer {
+    border-top      : 0.5px solid @button-color;
+}

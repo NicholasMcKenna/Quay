@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'variables';
 
 #PH_Order_page {
     display: block;
@@ -48,7 +48,6 @@ div#PH_breadcrumbs {
     background-color: transparent;
     padding-left    : 0;
     padding-top     : 0;
-    .font-h1();
 
     @media @desktop-large {
         padding-left: 0;
@@ -77,7 +76,6 @@ div#PH_breadcrumbs {
 .containerTitle {
     background  : none;
     padding-left: 0;
-    .font-h2();
 
     @media @desktop-large {
         padding-left: 0%;
@@ -191,7 +189,6 @@ div#PH_breadcrumbs {
 .addCouponCtl {
     border          : none;
     padding         : 3%;
-    background-color: @box-bgcolor;
 
     @media @mobile {
         width: 100%;
@@ -204,8 +201,6 @@ div#PH_breadcrumbs {
     padding-left : 0;
     width        : 100%;
     margin: 0 auto;
-
-    .font-h2();
 
     &:before {
         content: none;
@@ -232,16 +227,13 @@ div#PH_breadcrumbs {
     padding-top  : 5px;
 
     @media @mobile {
-        background-color: @footer-color;
         box-shadow      : none;
-        border-top      : 0.5px solid @button-color;
         height          : 71px;
         padding-right   : 3%;
     }
 }
 
 .orderHint {
-    .sub-button();
     height       : 59px;
     margin-bottom: 4px;
 }
@@ -265,7 +257,6 @@ div#PH_breadcrumbs {
 }
 
 .small_button_a.proceed {
-    .action-button();
     letter-spacing: 0.25px !important;
     width         : 250px !important;
 
@@ -319,21 +310,9 @@ div#PH_breadcrumbs {
     right   : 0;
 }
 
-.home {
-    .cancel-button();
-}
-
 #btnContinue {
-    color  : @font-dark-color;
     padding: 15px;
     background-image: none;
-}
-
-.button.disabled.small_button_a A,
-.button.disabled.small_button_a A:hover,
-button.disabled.small_button_a,
-button.disabled.small_button_a:hover {
-    .cancel-button()
 }
 
 .buttonExplain {

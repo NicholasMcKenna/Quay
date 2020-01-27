@@ -1,20 +1,7 @@
-@import 'settings';
-
-.loginControl #btnLogin {
-    .action-button();
-}
-
-.loginOrRegisterWizard .linkToAlternative>button {
-    .sub-button();
-}
+@import 'variables';
 
 .loginOrRegisterWizard .loginControl>DIV.external {
     display: none;
-}
-
-.loginControl #btnLogin[disabled] {
-    .cancel-button();
-    background-color: @cancel-button-color;
 }
 
 .linkToAlternative button:before, .linkToAlternative button::after {

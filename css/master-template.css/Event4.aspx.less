@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'variables';
 
 @left-pane-width   : 23%;
 @seating-plan-width: 75%;
@@ -30,11 +30,6 @@ div#PH_breadcrumbs {
     &:after {
         font-weight: 400;
     }
-}
-
-.button.small_button_a a,
-#selectedAreaInfo .button-moreAreas {
-    .action-button();
 }
 
 .hallMap #selectedAreaInfo .button-moreAreas {
@@ -69,12 +64,6 @@ div#PH_breadcrumbs {
         background    : none;
         padding-top   : 0;
         padding-bottom: 0;
-    }
-}
-
-#eventPage .seatingPlanContainer {
-    @media @desktop {
-        width: @seating-plan-width;
     }
 }
 
@@ -118,7 +107,6 @@ div#PH_breadcrumbs {
 
 #eventPage .tabsWrapper>div.center {
     background-image: none;
-    background-color: @background-color;
     height          : 36px;
     padding-top     : 0;
     padding-left    : 0;
@@ -153,23 +141,12 @@ span.price-range {
 }
 
 #eventPage #selectSeatsTab.selected {
-    color           : @font-dark-color;
     background-image: none;
     background-color: transparent;
 }
 
 #eventPage .tabsWrapper #baTab {
     background-image: none;
-}
-
-#eventPage .tabsWrapper #baTab.selected {
-    background-image: none;
-    background-color: transparent;
-    background-image: none;
-    font-size       : @fontsize-main;
-    color           : @font-dark-color;
-    padding-left    : 0;
-    padding-right   : 0;
 }
 
 .ui-menu .ui-menu-item {
@@ -253,25 +230,6 @@ a.ui-button:active,
     margin-bottom: 0;
 }
 
-#eventPage .infoSection .name {
-    padding-top: 0;
-    font-size  : @fontsize-main;
-    font-weight: @fontweight-main;
-}
-
-#eventPage .infoSection .date div {
-    font-size  : @fontsize-main;
-    font-weight: @fontweight-main;
-}
-
-.eventDetails .date span {
-    font-size: @fontsize-main;
-}
-
-.eventDetails .location {
-    font-size: @fontsize-main;
-}
-
 #eventPage .tabsWrapper {
     margin-top : 0;
     border-left: 0;
@@ -287,7 +245,6 @@ a.ui-button:active,
 }
 
 #eventPage #selectSeatsTab.selected {
-    font-size    : @fontsize-main;
     padding-left : 0;
     padding-right: 0;
     margin-right : 4%;
@@ -298,7 +255,6 @@ a.ui-button:active,
 }
 
 #eventPage .tabsWrapper #baTab {
-    font-size   : @fontsize-main;
     padding-left: 0;
 
     @media @mobile {
@@ -323,7 +279,6 @@ a.ui-button:active,
 }
 
 .promoBox input+button {
-    .sub-button();
     border       : none;
     border-radius: 0;
 }
@@ -336,7 +291,6 @@ a.ui-button:active,
 }
 
 #eventPage.hallMap #selectedAreaInfo .area-info-container>.name {
-    .font-h2();
     padding-left: 0;
 }
 
@@ -360,7 +314,6 @@ a.ui-button:active,
 }
 
 .tab.selected {
-    border-bottom: 1px solid @button-color  !important;
     border-radius: 0 !important;
 }
 
@@ -424,8 +377,6 @@ h1#selectedAreaTitle {
 }
 
 #eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero {
-    .sub-button();
-
     @media @mobile {
         height: 36px;
         bottom: 14px;
@@ -540,7 +491,6 @@ div#leftPane {
 
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
-
     @media @mobile {
         max-width: calc(100% - 112px);
     }
@@ -569,13 +519,6 @@ div#leftPane {
 #eventPage.non-seated #leftPane {
     padding-left : 0;
     padding-right: 0;
-}
-
-.button.disabled.small_button_a A,
-.button.disabled.small_button_a A:hover,
-button.disabled.small_button_a,
-button.disabled.small_button_a:hover {
-    .cancel-button();
 }
 
 #eventPage .priceTypes {
@@ -608,10 +551,8 @@ button.disabled.small_button_a:hover {
     }
 }
 
-
 .hallMap {
     @media @desktop {
-        //max-width: 1400px !important;
         margin     : 0 auto;
     }
 }

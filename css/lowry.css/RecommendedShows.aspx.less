@@ -1,3 +1,65 @@
+
+@import (reference) 'variables';
+@import (reference) '../master-template.css/styles/mixins.less';
+
+.c-site-welcome-text {
+    position         : absolute;
+    top              : 50%;
+    left             : 50%;
+    width            : 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform   : translate(-50%, -50%);
+    -ms-transform    : translate(-50%, -50%);
+    -o-transform     : translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    color            : #ffffff;
+    text-shadow      : rgba(0, 0, 0, 0.4) 4px 4px 5px;
+    text-align       : center;
+}
+
+.c-site-welcome-text__surtitle {
+    @media @desktop {
+        margin-bottom: 20px;
+        font-size    : 45px;
+        line-height  : 100%;
+        font-weight  : 700;
+    }
+}
+
+.c-site-welcome-text__title {
+    @media @desktop {
+        font-size  : 120px;
+        line-height: 100%;
+        margin     : 0;
+        font-weight: 800;
+    }
+}
+
+.c-site-welcome-text__title::after {
+    background-color : #26B5BB;
+    width            : 100%;
+    -webkit-transform: scaleX(100%);
+    -moz-transform   : scaleX(100%);
+    -ms-transform    : scaleX(100%);
+    -o-transform     : scaleX(100%);
+    transform        : scaleX(100%);
+    max-width        : 400px;
+    height           : 3px;
+    content          : "";
+    display          : block;
+    margin           : 30px auto;
+    animation        : animateBorder 1.5s ease-out 4s backwards;
+}
+
+.c-site-welcome-text__subtitle {
+    @media @desktop {
+        margin-top : 20px;
+        font-size  : 45px;
+        line-height: 100%;
+        font-weight: 700;
+    }
+}
+
 .itemsList .dataItem {
     width: 379px;
     &:hover {
@@ -86,3 +148,4 @@ div#PH_breadcrumbs {
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
     display: none;
 }
+
