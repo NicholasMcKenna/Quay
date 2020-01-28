@@ -114,6 +114,10 @@ div#PH_breadcrumbs {
     color           : #2a2d34;
     padding-left    : 0;
     margin-right    : 4%;
+
+    @media @mobile {
+        display: block;
+    }
 }
 
 #eventPage .tabsWrapper>div.center {
@@ -160,6 +164,7 @@ span.price-range {
 
 #eventPage .tabsWrapper #baTab {
     background-image: none;
+
 }
 
 #eventPage .tabsWrapper #baTab.selected {
@@ -170,7 +175,27 @@ span.price-range {
     color           : @font-dark-color;
     padding-left    : 0;
     padding-right   : 0;
+
+    @media @mobile {
+        display: block;
+    }
 }
+
+#eventPage .tabsWrapper .tab::before {
+    @media @mobile {
+        content      : '';
+        display      : block;
+        margin-right : 2rem;
+        width        : 2rem;
+        height       : 2rem;
+        border       : 2px solid #bbb;
+        border-radius: 100%;
+        cursor       : pointer;
+        min-width    : 2rem;
+        min-height   : 2rem;
+    }
+}
+
 
 .ui-menu .ui-menu-item {
     padding  : 0.5em;
@@ -229,8 +254,8 @@ a.ui-button:active,
 
     @media @mobile {
         position: absolute;
-        right: 0;
-        top: 121px !important;
+        right   : 0;
+        top     : 121px !important;
     }
 }
 
@@ -422,9 +447,11 @@ h1#selectedAreaTitle {
 }
 
 #eventPage.non-seated #selectedAreaInfo .menu {
-    width: 200%;
-    top  : 0;
-    left : 106%;
+    @media @desktop {
+        width: 200%;
+        top  : 0;
+        left : 106%;
+    }
 }
 
 #eventPage #content #instructions>* {
