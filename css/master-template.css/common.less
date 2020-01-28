@@ -121,7 +121,7 @@ body #group_Header-fixed {
         align-items: center;
         font-size  : 16px;
         font-weight: 600;
-        cursor: pointer;
+        cursor     : pointer;
     }
 
     @media @mobile {
@@ -230,7 +230,7 @@ body #group_Header-fixed {
 
 #siteMenuBar #CountDown.active {
     @media @mobile {
-        right: -15%;
+        display: none;
     }
 }
 
@@ -680,13 +680,21 @@ div#PH_Footer-main {
     left      : -118px;
     color     : white;
     position  : relative;
+
+    @media @mobile {
+        margin-top: -3px;
+        left      : -4.5em !important;
+        width     : 18px !important;
+    }
 }
 
-#siteMenuBar.hasclient #my_basket .basketQtyHolder, #siteMenuBar[id='my basket'] .basketQtyHolder {
+#siteMenuBar.hasclient #my_basket .basketQtyHolder,
+#siteMenuBar[id='my basket'] .basketQtyHolder {
     left: 0;
 }
 
-#siteMenuBar.hasclient #my_basket>span, #siteMenuBar [id='my basket']>span {
+#siteMenuBar.hasclient #my_basket>span,
+#siteMenuBar [id='my basket']>span {
     left: -14px;
 }
 
@@ -712,14 +720,14 @@ div#PH_Video {
 }
 
 .qtip-content {
-    overflow: visible!important;
+    overflow: visible !important;
 }
 
 .qtip.venueImageHint:before {
-    content: none;
+    content   : none;
     background: transparent;
-    color: transparent;
-    display: none;
+    color     : transparent;
+    display   : none;
 }
 
 .qtip.venueImageHint {

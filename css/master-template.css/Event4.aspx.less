@@ -223,7 +223,15 @@ a.ui-button:active,
 }
 
 #eventPage .timer {
-    display: none;
+    @media @desktop {
+        display: none;
+    }
+
+    @media @mobile {
+        position: absolute;
+        right: 0;
+        top: 121px !important;
+    }
 }
 
 .expandable#selectedAreaInfo .selected {
