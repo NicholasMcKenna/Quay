@@ -290,35 +290,6 @@ div#PH_breadcrumbs {
     }
 }
 
-.deliveryMethod {
-    border-bottom: none;
-
-    @media @desktop {
-        width: 50%;
-    }
-}
-
-.deliveryMethod>LABEL {
-    table-layout: fixed;
-}
-
-.deliveryMethod.selected {
-    @media @desktop {
-        width: 50%;
-    }
-}
-
-.deliveryMethod.selected>LABEL {
-    @media @desktop {
-        width: calc(100% - 30px);
-    }
-}
-
-.deliveryMethod.selected::after {
-    position: absolute;
-    right   : 0;
-}
-
 .home {
     .cancel-button();
 }
@@ -340,4 +311,105 @@ button.disabled.small_button_a:hover {
     padding  : 10px 0;
     width    : auto !important;
     font-size: 16px;
+}
+
+.deliveryContainer fieldset {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #bbb;
+    width: auto;
+}
+
+.deliveryContainer .deliveryMethod {
+    float: none;
+    margin: 0;
+    width: auto;
+    min-height: 0;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.deliveryContainer .deliveryMethod>input[type='radio'] {
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none;
+}
+
+.deliveryContainer fieldset label {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+.deliveryContainer .deliveryMethod>label {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.deliveryContainer .deliveryMethod>label:before {
+    content: '';
+    display: block;
+    margin-right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #bbb;
+    border-radius: 100%;
+    cursor: pointer;
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+.deliveryContainer fieldset label span {
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+.deliveryContainer .deliveryMethod>label>span {
+    display: block;
+}
+
+.deliveryContainer .deliveryMethod>label .description {
+    flex: 1 1 auto;
+    padding: 0 1rem;
+}
+
+.deliveryContainer .deliveryMethod>label>span {
+    display: block;
+}
+
+.deliveryContainer .deliveryMethod.selected {
+    width: auto;
+}
+
+.deliveryContainer .deliveryMethod>label:hover {
+    background: #f6f6f6;
+    background: #f5edf8;
+    cursor: pointer;
+}
+
+.deliveryContainer .deliveryMethod.selected>label {
+    color: @button-color;
+    background: none;
+}
+
+.deliveryContainer .deliveryMethod.selected>label:before {
+    background: @button-color;
+    border-color: @button-color;
+}
+
+.deliveryContainer .deliveryMethod:last-child {
+    border-bottom: none;
 }
