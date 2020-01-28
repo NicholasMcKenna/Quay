@@ -115,6 +115,11 @@ video#bgvid {
         -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
         box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
     }
+
+    @media @mobile {
+        width: 100% !important;
+        margin: 0 0 40px 0 !important
+    }
 }
 
 .itemsList .dataItem div.item_image {
@@ -124,7 +129,7 @@ video#bgvid {
 .dataItem .itemsDataContainer,
 .dataItem:hover .itemsDataContainer,
 .dataItem.simulateHover .itemsDataContainer {
-    height          : 33%;
+    height          : 33% !important;
     background-color: transparent;
 }
 
@@ -239,4 +244,8 @@ div#PH_Search {
 .itemsList {
     width     : 100%;
     text-align: center;
+}
+
+#itemsListLabel {
+    display: none;
 }
