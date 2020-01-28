@@ -21,7 +21,7 @@ $(document).ready(function () {
             var ID = returnID(dateText);
             $("#dateSelect").val(ID.toString()).change();
             $("#eventslist").show();
-            $("html, body").animate({ scrollTop: $('.itemsList').offset().top }, 1000);
+            $("html, body").animate({ scrollTop: $('#pickadate').offset().top }, 1000);
         },
         defaultDate: get_default_date(),
     });
