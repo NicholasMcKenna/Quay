@@ -181,8 +181,10 @@ div#PH_breadcrumbs {
 }
 
 .addCouponCtl {
+    @media @desktop {
+        display: inline-flex;
+    }
     width: 45%;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -395,8 +397,7 @@ button.disabled.small_button_a:hover {
 }
 
 .deliveryContainer .deliveryMethod>label:hover {
-    background: #f6f6f6;
-    background: #f5edf8;
+    background: #ecf0f1;
     cursor: pointer;
 }
 
@@ -412,4 +413,9 @@ button.disabled.small_button_a:hover {
 
 .deliveryContainer .deliveryMethod:last-child {
     border-bottom: none;
+}
+
+.deliveryMethod.selected::after {
+    content: none;
+    display: none;
 }
