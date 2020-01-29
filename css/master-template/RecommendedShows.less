@@ -1,0 +1,156 @@
+@import 'variables';
+@import '../master-template/RecommendedShows';
+
+#group_main,
+#group_Header #PH_Menu>* {
+    width: 100%;
+    float: left;
+}
+
+
+.recommendedShows.showslist {
+    width : 85%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1660px) {
+        width: 100%;
+    }
+}
+
+.ph_recommended_shows {
+    margin-top: 45px;
+}
+
+
+.itemsList .dataItem div.item_image {
+    background-image: none;
+}
+
+.dataItem .itemsDataContainer,
+.dataItem:hover .itemsDataContainer,
+.dataItem.simulateHover .itemsDataContainer {
+    height          : 33% !important;
+    background-color: transparent;
+
+    @media @mobile {
+        top: initial;
+    }
+}
+
+.dataItem .itemsDateRange {
+    position   : static;
+    width      : 100%;
+    color      : @button-color;
+    font-size  : 16px;
+    margin-left: 12px;
+    text-align : left;
+}
+
+.dataItem .itemsDataContainer .description {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.dataItem .previewFull,
+.dataItem .itemsDataContainer .description {
+    display: none;
+}
+
+.innerdescription {
+    display: block;
+}
+
+// remove float menu on front page
+div#PH_Float_Menu {
+    display: none;
+}
+
+.scroll-down {
+    position         : absolute;
+    animation        : in 1s ease-out forwards;
+    opacity          : 0;
+    animation-delay  : 1s;
+    bottom           : 40px;
+    left             : 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform   : translateX(-50%);
+    -ms-transform    : translateX(-50%);
+    -o-transform     : translateX(-50%);
+    transform        : translateX(-50%);
+    z-index          : 20;
+}
+
+.scroll-down a {
+    padding-top: 70px;
+}
+
+.scroll-down a span {
+    position         : absolute;
+    top              : 0;
+    left             : 50%;
+    width            : 24px;
+    height           : 24px;
+    margin-left      : -12px;
+    border-left      : 1px solid #fff;
+    border-bottom    : 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform        : rotate(-45deg);
+    -webkit-animation: sdb05 1.5s ease-out forwards;
+    animation        : sdb05 1.5s ease-out forwards;
+    box-sizing       : border-box;
+    animation-delay  : 1.5s;
+    opacity          : 0;
+}
+
+.scroll-down p {
+    margin-top   : 20px;
+    color        : #ffffff;
+    margin-bottom: 40px;
+    font-size    : 80%;
+}
+
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents,
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+    background-color: #fff;
+    width           : 100%;
+    color           : @button-color;
+    font-weight     : 700;
+    font-size       : 29px;
+    box-shadow      : none;
+}
+
+.currentTimeRangeEventsCtrl {
+    background-color: #fff;
+}
+
+div#PH_Search {
+    display: block;
+}
+
+#bottomButtonsBar .button.small_button_a {
+    background: @button-color;
+}
+
+
+.screen-content {
+    @media @desktop {
+        max-width: 100%;
+    }
+}
+
+.recommendedShows.showslist {
+    @media @desktop {
+        width : 100%;
+        margin: 0 auto;
+    }
+}
+
+.itemsList {
+    width     : 100%;
+    text-align: center;
+}
+
+#itemsListLabel {
+    display: none;
+}
+
