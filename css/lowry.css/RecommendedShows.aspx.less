@@ -62,6 +62,8 @@
 
 .itemsList .dataItem {
     width: 379px;
+    background-color: @footer-bg-color;
+
     &:hover {
         .itemsDataContainer::before {
             -webkit-transform: translateX(5px);
@@ -80,6 +82,10 @@
         }
 
     }
+}
+
+.dataItem .itemsDateRange {
+    color: @button-color; 
 }
 
 .itemsList .dataItem div.item_image {
