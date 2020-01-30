@@ -1,3 +1,6 @@
+@import 'variables';
+@import '../master-template/RecommendedShows';
+
 .itemsList .dataItem {
     width: 379px;
     &:hover {
@@ -16,7 +19,6 @@
             -o-transform     : translateX(-10px);
             transform        : translateX(-10px);
         }
-
     }
 }
 
@@ -41,6 +43,11 @@
     margin-top      : 15px;
     text-align      : left;
     margin-left     : 10px;
+
+    @media @mobile {
+        margin-top :0;
+        padding-top: 8px;
+    }
 }
 
 div#PH_breadcrumbs {
@@ -72,6 +79,10 @@ div#PH_breadcrumbs {
     -ms-transition    : all 250ms ease-in-out;
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
+
+    @media @mobile {
+        bottom: 18px;
+    }
 }
 
 .itemsDataContainer::after,
@@ -94,4 +105,121 @@ div#PH_breadcrumbs {
     width     : 100%;
     max-height: 328px;
     max-width : 100%;
+}
+
+video#bgvid {
+    width: 100%;
+}
+
+.c-site-welcome-text {
+    position         : absolute;
+    top              : 50%;
+    left             : 50%;
+    width            : 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform   : translate(-50%, -50%);
+    -ms-transform    : translate(-50%, -50%);
+    -o-transform     : translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    color            : #ffffff;
+    text-shadow      : rgba(0, 0, 0, 0.4) 4px 4px 5px;
+    text-align       : center;
+}
+
+.c-site-welcome-text__surtitle { // AP
+    @media @desktop {
+        margin-bottom: 20px;
+        font-size    : 45px;
+        line-height  : 100%;
+        font-weight  : 700;
+    }
+}
+
+.c-site-welcome-text__title {
+    @media @desktop {
+        font-size  : 120px;
+        line-height: 100%;
+        margin     : 0;
+        font-weight: 800;
+    }
+}
+
+.c-site-welcome-text__title::after {
+    background-color : #26B5BB;
+    width            : 100%;
+    -webkit-transform: scaleX(100%);
+    -moz-transform   : scaleX(100%);
+    -ms-transform    : scaleX(100%);
+    -o-transform     : scaleX(100%);
+    transform        : scaleX(100%);
+    max-width        : 400px;
+    height           : 3px;
+    content          : "";
+    display          : block;
+    margin           : 30px auto;
+    animation        : animateBorder 1.5s ease-out 4s backwards;
+}
+
+.c-site-welcome-text__subtitle {
+    @media @desktop {
+        margin-top : 20px;
+        font-size  : 45px;
+        line-height: 100%;
+        font-weight: 700;
+    }
+}
+
+.dataItem .item_image IMG {
+    height           : auto;
+    width            : 100%;
+    max-height       : 328px;
+    -webkit-transform: scale(1.05);
+    -moz-transform   : scale(1.05);
+    -ms-transform    : scale(1.05);
+    -o-transform     : scale(1.05);
+    transform        : scale(1.05);
+}
+
+.itemsList .dataItem {
+    width             : 436px;
+    height            : auto;
+    background-color  : #2A2D34;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+    &:hover {
+        -webkit-transform : translateY(-10px);
+        -moz-transform    : translateY(-10px);
+        -ms-transform     : translateY(-10px);
+        -o-transform      : translateY(-10px);
+        transform         : translateY(-10px);
+        -webkit-transform : scale(1.03);
+        -moz-transform    : scale(1.03);
+        -ms-transform     : scale(1.03);
+        -o-transform      : scale(1.03);
+        transform         : scale(1.03);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @media @mobile {
+        width : 100% !important;
+        margin: 0 0 40px 0 !important
+    }
+}
+
+#group_main .searchManager {
+    @media @mobile {
+        display: none;
+    }
+}
+
+.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsDateRange:before {
+    content: none;
 }
