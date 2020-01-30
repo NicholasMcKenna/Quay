@@ -1,1 +1,0 @@
-$('.VoucherNumber input').attr('placeholder', "");
