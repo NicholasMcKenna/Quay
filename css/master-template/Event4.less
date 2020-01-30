@@ -86,6 +86,13 @@ div#PH_breadcrumbs {
     display: none;
 }
 
+#eventPage.seated #leftPane,
+#eventPage.non-seated #leftPane,
+#eventPage.non-seated #ticketsPane,
+#eventPage .seatingPlanContainer {
+    border-style: none;
+}
+
 #leftPane>*:not(#hallMap) {
     max-width: none;
 }
@@ -180,39 +187,33 @@ span.price-range {
 }
 
 #eventPage .tabsWrapper .tab {
-    @media @mobile {
-        display    : flex;
-        align-items: center;
-        width      : 100%;
-        max-width  : 100%;
-        font-size  : 16px !important;
+    display    : flex;
+    align-items: center;
+    width      : 100%;
+    max-width  : 100%;
+    font-size  : 16px !important;
 
-        &:hover {
-            background-color: @box-bgcolor;
-        }
+    &:hover {
+        background-color: @box-bgcolor;
     }
 }
 
 #eventPage .tabsWrapper .tab::before {
-    @media @mobile {
-        content      : '';
-        display      : block;
-        margin-right : 2rem;
-        width        : 2rem;
-        height       : 2rem;
-        border       : 2px solid #bbb;
-        border-radius: 100%;
-        cursor       : pointer;
-        min-width    : 2rem;
-        min-height   : 2rem;
-    }
+    content      : '';
+    display      : block;
+    margin-right : 2rem;
+    width        : 2rem;
+    height       : 2rem;
+    border       : 2px solid #bbb;
+    border-radius: 100%;
+    cursor       : pointer;
+    min-width    : 2rem;
+    min-height   : 2rem;
 }
 
 #eventPage .tabsWrapper .tab.selected::before {
-    @media @mobile {
-        background  : @button-color;
-        border-color: @button-color;
-    }
+    background  : @button-color;
+    border-color: @button-color;
 }
 
 
@@ -514,12 +515,20 @@ h1#selectedAreaTitle {
 
 }
 
-#selPriceLevel-menu .ui-menu-item.ui-state-active, #selPriceLevel-menu .ui-menu-item.ui-state-focus, #selPriceLevel-menu .ui-menu-item.selectedPriceLevel {
+#selPriceLevel-menu .ui-menu-item.ui-state-active,
+#selPriceLevel-menu .ui-menu-item.ui-state-focus,
+#selPriceLevel-menu .ui-menu-item.selectedPriceLevel {
     border-top: none;
 }
 
-#selPriceLevel-menu .ui-menu-item.ui-state-active>.ui-menu-item-wrapper, #selPriceLevel-menu .ui-menu-item.ui-state-focus>.ui-menu-item-wrapper, #selPriceLevel-menu .ui-menu-item.selectedPriceLevel>.ui-menu-item-wrapper {
+#selPriceLevel-menu .ui-menu-item.ui-state-active>.ui-menu-item-wrapper,
+#selPriceLevel-menu .ui-menu-item.ui-state-focus>.ui-menu-item-wrapper,
+#selPriceLevel-menu .ui-menu-item.selectedPriceLevel>.ui-menu-item-wrapper {
     border-top: none;
+}
+
+#selPriceLevel-menu .ui-menu-item {
+    width: 100%;
 }
 
 /* Testing page layout changes */
