@@ -43,6 +43,11 @@
     margin-top      : 15px;
     text-align      : left;
     margin-left     : 10px;
+
+    @media @mobile {
+        margin-top :0;
+        padding-top: 8px;
+    }
 }
 
 div#PH_breadcrumbs {
@@ -74,6 +79,10 @@ div#PH_breadcrumbs {
     -ms-transition    : all 250ms ease-in-out;
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
+
+    @media @mobile {
+        bottom: 18px;
+    }
 }
 
 .itemsDataContainer::after,
@@ -209,4 +218,8 @@ video#bgvid {
     @media @mobile {
         display: none;
     }
+}
+
+.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsDateRange:before {
+    content: none;
 }
