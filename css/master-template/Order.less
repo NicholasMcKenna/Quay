@@ -384,6 +384,13 @@ button.disabled.small_button_a:hover {
 .deliveryContainer .deliveryMethod>label .description {
     flex: 1 1 auto;
     padding: 0 1rem;
+    @media @desktop {
+        margin-left: 9.3rem;
+    }
+}
+
+.deliveryMethod LABEL .image-container {
+    margin-right: 29px;
 }
 
 .deliveryContainer .deliveryMethod>label>span {
@@ -425,5 +432,5 @@ button.disabled.small_button_a:hover {
 .deliveryMethod .name, .deliveryMethod .deliveryPricing {
     padding-top :0;
     margin-right: 0;
-
+    flex: auto;
 }
