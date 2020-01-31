@@ -33,6 +33,16 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
     .action-button();
+
+    &:hover,
+    &:focus,
+    &:active {
+        @media @mobile{
+            letter-spacing: .1px;
+            padding: 0;
+            width: 112px;
+        }
+    }
 }
 
 .hallMap #selectedAreaInfo .button-moreAreas {
@@ -389,6 +399,7 @@ a.ui-button:active,
 #eventPage.hallMap #selectedAreaInfo .selected .area-info-container {
     @media @mobile {
         width: 100%;
+        padding-right: 0;
     }
 }
 

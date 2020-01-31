@@ -35,7 +35,7 @@ div#PH_breadcrumbs {
     margin-bottom   : 0;
 
     @media @desktop {
-        padding-top   : 0;
+        padding-top: 0;
     }
 }
 
@@ -182,9 +182,10 @@ div#PH_breadcrumbs {
     @media @desktop {
         display: inline-flex;
     }
-    width: 45%;
+
+    width          : 45%;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
 .roundUpDonationSection,
@@ -200,10 +201,10 @@ div#PH_breadcrumbs {
 
 .roundUpDonationSection h2,
 .addCouponCtl h2 {
-    background   : none;
-    padding-left : 0;
-    width        : 100%;
-    margin: 0 auto;
+    background  : none;
+    padding-left: 0;
+    width       : 100%;
+    margin      : 0 auto;
 
     .font-h2();
 
@@ -214,11 +215,11 @@ div#PH_breadcrumbs {
 
 .basket-section.roundUpDonationSection {
     @media @desktop {
-        display     : inline-flex;
-        width       : 50%;
-        margin-right: 2%;
+        display        : inline-flex;
+        width          : 50%;
+        margin-right   : 2%;
         justify-content: center;
-        align-content: center;
+        align-content  : center;
     }
 }
 
@@ -295,8 +296,8 @@ div#PH_breadcrumbs {
 }
 
 #btnContinue {
-    color  : @font-dark-color;
-    padding: 15px;
+    color           : @font-dark-color;
+    padding         : 15px;
     background-image: none;
 }
 
@@ -315,66 +316,66 @@ button.disabled.small_button_a:hover {
 
 .deliveryContainer fieldset {
     display: block;
-    margin: 0;
+    margin : 0;
     padding: 0;
-    border: 1px solid #bbb;
-    width: auto;
+    border : 1px solid #bbb;
+    width  : auto;
 }
 
 .deliveryContainer .deliveryMethod {
-    float: none;
-    margin: 0;
-    width: auto;
-    min-height: 0;
-    font-size: 1.6rem;
-    border: none;
-    border-bottom: 1px solid #bbb;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    display: flex;
+    float         : none;
+    margin        : 0;
+    width         : auto;
+    min-height    : 0;
+    font-size     : 1.6rem;
+    border        : none;
+    border-bottom : 1px solid #bbb;
+    background    : none;
+    cursor        : pointer;
+    padding       : 0;
+    display       : flex;
     flex-direction: column;
 }
 
 .deliveryContainer .deliveryMethod>input[type='radio'] {
-    width: 0;
-    height: 0;
-    margin: 0;
+    width  : 0;
+    height : 0;
+    margin : 0;
     display: none;
 }
 
 .deliveryContainer fieldset label {
-    float: none;
-    margin: 0;
+    float  : none;
+    margin : 0;
     padding: 0;
 }
 
 .deliveryContainer .deliveryMethod>label {
-    padding: 2rem;
-    display: flex;
+    padding        : 2rem;
+    display        : flex;
     justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+    align-items    : center;
+    width          : 100%;
 }
 
 .deliveryContainer .deliveryMethod>label:before {
-    content: '';
-    display: block;
-    margin-right: 2rem;
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid #bbb;
+    content      : '';
+    display      : block;
+    margin-right : 2rem;
+    width        : 2rem;
+    height       : 2rem;
+    border       : 2px solid #bbb;
     border-radius: 100%;
-    cursor: pointer;
-    min-width: 2rem;
-    min-height: 2rem;
+    cursor       : pointer;
+    min-width    : 2rem;
+    min-height   : 2rem;
 }
 
 .deliveryContainer fieldset label span {
     position: static;
-    float: none;
-    margin: 0;
-    padding: 0;
+    float   : none;
+    margin  : 0;
+    padding : 0;
 }
 
 .deliveryContainer .deliveryMethod>label>span {
@@ -382,8 +383,9 @@ button.disabled.small_button_a:hover {
 }
 
 .deliveryContainer .deliveryMethod>label .description {
-    flex: 1 1 auto;
+    flex   : 1 1 auto;
     padding: 0 1rem;
+
     @media @desktop {
         margin-left: 9.3rem;
     }
@@ -403,16 +405,16 @@ button.disabled.small_button_a:hover {
 
 .deliveryContainer .deliveryMethod>label:hover {
     background: #ecf0f1;
-    cursor: pointer;
+    cursor    : pointer;
 }
 
 .deliveryContainer .deliveryMethod.selected>label {
-    color: @button-color;
+    color     : @button-color;
     background: none;
 }
 
 .deliveryContainer .deliveryMethod.selected>label:before {
-    background: @button-color;
+    background  : @button-color;
     border-color: @button-color;
 }
 
@@ -425,21 +427,43 @@ button.disabled.small_button_a:hover {
     display: none;
 }
 
-.deliveryMethod.selected::after, .deliveryMethod::after {
+.deliveryMethod.selected::after,
+.deliveryMethod::after {
     content: none;
 }
 
-.deliveryMethod .name, .deliveryMethod .deliveryPricing {
-    padding-top :0;
+.deliveryMethod .name,
+.deliveryMethod .deliveryPricing {
+    padding-top : 0;
     margin-right: 0;
-    flex: auto;
+    flex        : auto;
 }
 
 .addCouponCtl input {
     margin-right: 10px;
 }
 
-.addCouponCtl .button, .addCouponCtl .button:hover, .addCouponCtl .button:focus {
+.addCouponCtl .button,
+.addCouponCtl .button:hover,
+.addCouponCtl .button:focus {
     width: 150px;
+
+    @media @mobile {
+        width : 128px;
+        height: 38px;
+    }
 }
 
+.loginSuggestMessage {
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    color: black;
+}
+
+#deliveryAddressForm input#fldDeliveryZipCode {
+    width: 60%;
+}
+
+div#qasContainer {
+    .action-button();
+}
