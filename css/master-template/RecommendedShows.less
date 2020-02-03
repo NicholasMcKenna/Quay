@@ -18,29 +18,29 @@
 }
 
 .itemsList {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    position       : relative;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
     justify-content: left;
 }
 
 .itemsList .dataItem {
-    width: 300px;
-    margin: 0px 40px 40px 0px;
-    display: flex;
+    width         : 300px;
+    margin        : 0px 40px 40px 0px;
+    display       : flex;
     flex-direction: column;
-    height: unset;
+    height        : unset;
 }
 
 .itemsList .dataItem div.item_image {
     background-image: none;
-    height: unset;
-    min-height: unset; 
+    height          : unset;
+    min-height      : unset;
 }
 
-.itemsList .dataItem div.item_image IMG, 
-.itemsList .dataItem:hover .item_image IMG, 
+.itemsList .dataItem div.item_image IMG,
+.itemsList .dataItem:hover .item_image IMG,
 .itemsList .dataItem.simulateHover .item_image IMG {
 
     max-height: unset;
@@ -49,46 +49,40 @@
 .dataItem .itemsDataContainer,
 .dataItem:hover .itemsDataContainer,
 .dataItem.simulateHover .itemsDataContainer {
-    height: unset !important;
+    height          : unset !important;
     background-color: transparent;
-    position: relative;
-    bottom: unset;
-    margin-top: 10px;
+    position        : relative;
+    bottom          : unset;
+    margin-top      : 10px;
 
     @media @mobile {
         top: initial;
     }
 }
 
-.dataItem .itemsDataContainer::after, .dataItem .itemsDataContainer::before {
- 
-    bottom: unset;
-    top: 5px;
-    right: 15px;
-    width: 65px;
-    height: 80px;
+.dataItem .name {
+    position   : relative;
+    bottom     : unset;
+    left       : unset;
+    height     : unset;
+    margin-top : 0px;
+    padding-top: 0px;
+    margin-left: 10px;
+    width      : 58%;
 }
 
-.dataItem .name {
-    position: relative;
-    bottom: unset;
-    left: unset;
-    height: unset;
-    margin-top: 0px;
-    padding-top: 0px;
-    font-size: 22px;
-    margin-left: 10px;
-}
-.dataItem .itemsDateRange, .dataItem .extras {
-    width: 58%;
+.dataItem .itemsDateRange,
+.dataItem .extras {
+    width  : 58%;
     display: block;
 }
+
 .dataItem .itemsDateRange {
-    position   : static;
-    color      : @button-color;
-    font-size  : 16px;
-    margin-left: 12px;
-    text-align : left;
+    position      : static;
+    color         : @button-color;
+    font-size     : 16px;
+    margin-left   : 12px;
+    text-align    : left;
     padding-bottom: 15px;
 }
 
@@ -181,8 +175,8 @@ div#PH_Search {
 .screen-content {
     @media @desktop {
         max-width: 100%;
-        width: 1400px;
-        margin: 100px auto;
+        width    : 1400px;
+        margin   : 100px auto;
     }
 }
 
@@ -201,4 +195,3 @@ div#PH_Search {
 #itemsListLabel {
     display: none;
 }
-

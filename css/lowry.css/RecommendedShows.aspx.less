@@ -1,6 +1,6 @@
 @import 'variables';
 @import '../master-template/RecommendedShows';
-
+/*
 .itemsList .dataItem {
     width: 379px;
     &:hover {
@@ -33,16 +33,18 @@
 .itemsList .dataItem:nth-child(4n+5) {
     margin-right: 2.2%;
 }
-
+*/
 .dataItem .name {
-    color           : #fff;
+    color           : #fff; 
     font-weight     : bold;
-    position        : static;
     background-color: transparent;
-    font-size       : 28px;
-    margin-top      : 15px;
+    font-size       : 22px;
     text-align      : left;
+/*
+    position        : static;
+    margin-top      : 15px;
     margin-left     : 10px;
+*/
 
     @media @mobile {
         margin-top :0;
@@ -64,12 +66,12 @@ div#PH_breadcrumbs {
 
 .itemsDataContainer::after,
 .itemsDataContainer::before {
-    width             : 100px;
+    width             : 65px;
     content           : "";
-    height            : 130px;
+    height            : 80px;
     position          : absolute;
-    bottom            : 10px;
-    right             : 10px;
+    top                 : 5px;
+    right             : 15px;
     background-size   : contain;
     background-repeat : no-repeat;
     opacity           : 0.1;
@@ -81,23 +83,24 @@ div#PH_breadcrumbs {
     transition        : all 250ms ease-in-out;
 
     @media @mobile {
-        bottom: 18px;
+        top : 10px;
     }
 }
+
 
 .itemsDataContainer::after,
 .itemsDataContainer::before {
     opacity: 1;
 }
-
+/*
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .name {
     width: 58%;
 }
-
+*/
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
     display: none;
 }
-
+/*
 .dataItem .item_image IMG,
 .dataItem:hover .item_image IMG,
 .dataItem.simulateHover .item_image IMG {
@@ -106,7 +109,7 @@ div#PH_breadcrumbs {
     max-height: 328px;
     max-width : 100%;
 }
-
+*/
 video#bgvid {
     width: 100%;
 }
@@ -172,7 +175,7 @@ video#bgvid {
 .dataItem .item_image IMG {
     height           : auto;
     width            : 100%;
-    max-height       : 328px;
+
     -webkit-transform: scale(1.05);
     -moz-transform   : scale(1.05);
     -ms-transform    : scale(1.05);
@@ -181,8 +184,7 @@ video#bgvid {
 }
 
 .itemsList .dataItem {
-    width             : 436px;
-    height            : auto;
+
     background-color  : #2A2D34;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition   : all 250ms ease-in-out;
