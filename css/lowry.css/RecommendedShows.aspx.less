@@ -22,17 +22,6 @@
     }
 }
 
-.itemsList .dataItem div.item_image {
-    height          : 470px;
-}
-
-.itemsList .dataItem:nth-child(4n+2) {
-    margin-left: 2.2%;
-}
-
-.itemsList .dataItem:nth-child(4n+5) {
-    margin-right: 2.2%;
-}
 */
 .dataItem .name {
     color           : #fff; 
@@ -40,17 +29,7 @@
     background-color: transparent;
     font-size       : 22px;
     text-align      : left;
-/*
-    position        : static;
-    margin-top      : 15px;
-    margin-left     : 10px;
-*/
-/*
-    @media @mobile {
-        margin-top :10px;
-        padding-top: 8px;
-    }
-    */
+
 }
 
 div#PH_breadcrumbs {
@@ -75,40 +54,22 @@ div#PH_breadcrumbs {
     right             : 15px;
     background-size   : contain;
     background-repeat : no-repeat;
-    opacity           : 0.1;
+    opacity           : 1;
     z-index           : 1;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition   : all 250ms ease-in-out;
     -ms-transition    : all 250ms ease-in-out;
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
-/*
-    @media @mobile {
-        top : 10px;
-    }
-    */
+
 }
 
-
-.itemsDataContainer::after,
-.itemsDataContainer::before {
-    opacity: 1;
-}
 
 
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
     display: none;
 }
-/*
-.dataItem .item_image IMG,
-.dataItem:hover .item_image IMG,
-.dataItem.simulateHover .item_image IMG {
-    height    : auto;
-    width     : 100%;
-    max-height: 328px;
-    max-width : 100%;
-}
-*/
+
 video#bgvid {
     width: 100%;
 }

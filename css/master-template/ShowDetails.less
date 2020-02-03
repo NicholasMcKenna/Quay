@@ -43,19 +43,6 @@
     }
 }
 
-.ShowEventsitemsList .button.small_button_a A {
-    .action-button();
-    padding       : 5px 15px;
-    letter-spacing: 0.15px;
-
-    &:hover,
-    &:active,
-    &:focus {
-        padding       : 5px 15px;
-        letter-spacing: 0.15px;
-    }
-}
-
 div#PH_breadcrumbs {
     display: none;
 }
@@ -234,6 +221,7 @@ span.previewFull {
     max-height: 400px;
 }
 
+
 div#pickadate {
     @media @mobile {
         padding: 0 5%;
@@ -251,9 +239,9 @@ div#pickadate {
 .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
     border          : none;
     width           : 100%;
-    height          : 350px;
+    height          : unset;
     font-size       : 16px;
-    background-color: @box-bgcolor;
+    background-color: @background-color;
 }
 
 .ui-state-default,
@@ -269,6 +257,18 @@ html .ui-button.ui-state-disabled:active {
     color      : #555;
 }
 
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    background-color: #fff;
+}
+
+.ui-state-disabled .ui-state-default {
+    background: #ecf0f1;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: 10px;
+}
+
 select#dateSelect {
     display: none;
 }
@@ -278,10 +278,33 @@ select#dateSelect {
     display: none;
 }
 
+
+
+
+
+
+
+
 .ShowEventsitemsList .dataItem {
     background-color: #2A2D34;
     border          : none;
-    padding         : 3%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ShowEventsitemsList .itemsDataContainer {
+    position: relative;
+    color: #FFFFFF;
+    display: block;
+    width: 68%;
+    float:left;
+    order: 2;
+}
+
+.ShowEventsitemsList .itemsDataContainer .name {
+    font-weight: 400;
 }
 
 .ShowEventsitemsList .itemsDateRange SPAN {
@@ -296,31 +319,54 @@ select#dateSelect {
 .ShowEventsitemsList .itemsDateRange {
     color      : @button-color;
     font-weight: bold;
+
+    position: relative;
+    top: unset;
+    left: unset;
+    display: block;
+    width: 68%;
+    float:left;
+    order: 1;
 }
 
 .ShowEventsitemsList .dataItem .extras {
     display: none;
 }
 
-.ShowEventsitemsList .itemsDataContainer {
+.ShowEventsitemsList .button.small_button_a A {
+    .action-button();
+    padding       : 5px 15px;
+    letter-spacing: 0.15px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        padding       : 5px 15px;
+        letter-spacing: 0.15px;
+    }
+}
+
+.ShowEventsitemsList .item_image_container {
     display: none;
+    
+}
+
+
+#eventslist {
+    margin-top: unset;
 }
 
 #eventslist .itemsButtonsContainer {
-    margin-right: 0;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default {
-    background-color: #fff;
+    max-height: unset;
+    width: 28%;
+    min-width: 110px;
+    right: 15px;
+    top: 15px;
+    position: absolute;
 }
 
 #media>DIV {
     padding-left: 0;
-}
-
-.ui-state-disabled .ui-state-default {
-    background: #ecf0f1;
 }
 
 .extras {
