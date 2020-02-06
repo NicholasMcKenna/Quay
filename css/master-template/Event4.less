@@ -252,6 +252,12 @@ a.ui-button:active,
     background-color: #fff;
 }
 
+.seat_plan_body_css #stage, .seat_plan_body_css #stage.custom-image {
+
+    height: unset;
+    max-height: unset;
+}
+
 .seat_plan_body_css {
     background-color: #fff;
 }
@@ -274,7 +280,7 @@ a.ui-button:active,
 .seat.o,
 .seat.c {
     background-image: none;
-    border-radius   : 50%;
+    border-radius   : 0;
 }
 
 .seat.o {
@@ -425,6 +431,8 @@ a.ui-button:active,
 
 #selectedAreaInfo {
     border: none;
+    height: unset;
+    margin-bottom: 0;
 }
 
 #eventPage.hallMap .venuMapLegend {
@@ -445,7 +453,7 @@ h1#selectedAreaTitle {
 #selectedAreaInfo .priceLevelImages .seat {
     background-image: none;
     border          : none;
-    border-radius   : 50%;
+    border-radius   : 0;
     margin-top      : 0;
     margin-bottom   : 0;
 }
@@ -572,6 +580,8 @@ div#leftPane {
     }
 }
 
+
+
 #eventPage.seated .selectTickets.empty .emptyMessage,
 #eventPage.seated #ticketsPane .selectTickets .buttonsContainer {
     background-image: none;
@@ -634,10 +644,19 @@ div#leftPane {
 
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
-
+    position: relative;
+    max-height: unset;
+/*
     @media @mobile {
         max-width: calc(100% - 112px);
     }
+*/
+}
+
+#eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages .pricelevel-image-container {
+
+    width: 100%;
+    float: left;
 }
 
 #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
