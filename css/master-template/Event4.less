@@ -33,20 +33,35 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
     .action-button();
-
-    padding       : 10px;
-    
     &:hover,
     &:focus,
     &:active {
         @media @mobile {
 
             width         : 112px;
-            padding       : 10px;
         }
     }
 }
 
+.button.small_button_a a,
+#selectedAreaInfo .button-moreAreas {
+
+    letter-spacing:0;
+    text-shadow:none;
+    padding:10px;
+    transform: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+    
+        letter-spacing:0;
+        text-shadow:none;
+        padding:10px;
+        transform: none;
+    }
+
+}
 
 
 .small_button_a.proceed:focus {
