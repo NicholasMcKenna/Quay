@@ -38,12 +38,14 @@ div#PH_breadcrumbs {
     &:focus,
     &:active {
         @media @mobile {
-            letter-spacing: .1px;
+
             padding       : 0;
             width         : 112px;
         }
     }
 }
+
+
 
 .hallMap #selectedAreaInfo .button-moreAreas {
     letter-spacing: .1px;
@@ -427,6 +429,7 @@ a.ui-button:active,
     @media @mobile {
         margin-left : 0;
         padding-left: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -647,6 +650,7 @@ div#leftPane {
     margin-top: 2px;
     max-height: unset;
     position: relative;
+    overflow: visible;
 /*
     @media @mobile {
         max-width: calc(100% - 112px);

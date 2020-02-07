@@ -32,7 +32,7 @@ sans-serif;
 @button-font-color      : #fff;
 @button-font-hover-color: #fff;
 @button-desktop-width   : 110px;
-@button-desktop-padding : 15px;
+@button-desktop-padding : 12px;
 @button-desktop-fontsize: 15px;
 
 @box-bgcolor: #ecf0f1;
@@ -80,7 +80,7 @@ sans-serif;
 .font-dark() {
     font-family   : @header-font;
     color         : @font-dark-color;
-    letter-spacing: 0.8px;
+    letter-spacing: unset;
 }
 
 .font-light-title() {
@@ -91,7 +91,7 @@ sans-serif;
     margin-bottom : 50px;
     white-space   : pre;
     text-shadow   : 0 0 300px #000;
-    letter-spacing: .2em;
+    letter-spacing: unset;
     text-transform: uppercase;
     text-align    : center;
     font-weight   : 800;
@@ -108,13 +108,13 @@ sans-serif;
     text-shadow   : 0 0 300px @font-dark-color;
     text-transform: uppercase;
     font-weight   : 200;
-    letter-spacing: .15em;
+    letter-spacing: unset;
 }
 
 .font-button() {
     font-family   : @main-font;
     font-size     : @button-desktop-fontsize;
-    letter-spacing: .15em;
+    letter-spacing: unset;
     text-shadow   : 0 0 300px @font-dark-color;
     color         : @button-font-color;
 }
@@ -150,6 +150,7 @@ sans-serif;
     border          : 1px solid @button-color;
     background-color: @button-color;
     cursor          : pointer;
+    letter-spacing  : unset;
 
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition   : all 0.5s ease-in-out;
@@ -165,14 +166,13 @@ sans-serif;
         text-decoration   : none;
         padding           : @button-desktop-padding;
         background-color  : @button-hover-color;
-        color             : @button-font-hover-color;
-        border-color      : @button-font-hover-color;
-        border-bottom     : 1px solid;
+        border            : 1px solid @button-color;
+
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition   : all 0.5s ease-in-out;
         -o-transition     : all 0.5s ease-in-out;
         transition        : all 0.5s ease-in-out;
-        transform         : scale(1.05);
+        transform         : none;
         outline-width     : 0;
     }
 }
