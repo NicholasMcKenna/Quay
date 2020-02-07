@@ -222,12 +222,18 @@ div#PH_breadcrumbs {
     }
 }
 
-.crumb.step-one:after,
-.crumb.step-two:after,
+.crumb.step-one:after, 
+.crumb.step-two:after, 
 .crumb.step-three:after {
+
     content: '/';
     margin : 0 10px;
+
+    @media @mobile {
+        margin: 0 2px 0 7px;
+    }
 }
+
 
 /* Promo Box */
 .promoBox:before {
