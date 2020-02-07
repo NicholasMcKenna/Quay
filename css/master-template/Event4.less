@@ -37,10 +37,10 @@ div#PH_breadcrumbs {
     &:hover,
     &:focus,
     &:active {
-        @media @mobile{
+        @media @mobile {
             letter-spacing: .1px;
-            padding: 0;
-            width: 112px;
+            padding       : 0;
+            width         : 112px;
         }
     }
 }
@@ -198,13 +198,13 @@ span.price-range {
 
 #eventPage .tabsWrapper .tab {
     font-size  : 16px !important;
-    display: inline-flex;
+    display    : inline-flex;
     align-items: center;
-    
+
     @media @mobile {
-        width      : 100%;
-        max-width  : 100%;
-        display    : flex;
+        width    : 100%;
+        max-width: 100%;
+        display  : flex;
     }
 
     &:hover {
@@ -252,9 +252,10 @@ a.ui-button:active,
     background-color: #fff;
 }
 
-.seat_plan_body_css #stage, .seat_plan_body_css #stage.custom-image {
+.seat_plan_body_css #stage,
+.seat_plan_body_css #stage.custom-image {
 
-    height: unset;
+    height    : unset;
     max-height: unset;
 }
 
@@ -404,7 +405,7 @@ a.ui-button:active,
 
 #eventPage.hallMap #selectedAreaInfo .selected .area-info-container {
     @media @mobile {
-        width: 100%;
+        width        : 100%;
         padding-right: 0;
     }
 }
@@ -430,8 +431,8 @@ a.ui-button:active,
 }
 
 #selectedAreaInfo {
-    border: none;
-    height: unset;
+    border       : none;
+    height       : unset;
     margin-bottom: 0;
 }
 
@@ -645,7 +646,7 @@ div#leftPane {
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
     max-height: unset;
-/*
+    /*
     @media @mobile {
         max-width: calc(100% - 112px);
     }
