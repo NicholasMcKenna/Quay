@@ -7,9 +7,9 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 70px auto 30px;
+    margin      : 140px 0 10px 0;
     max-width   : 1400px;
-    padding-left: 5%;
+    padding-left: 0;
 
     @media @desktop-large {
         padding-left: 0;
@@ -138,6 +138,10 @@ div#PH_breadcrumbs {
     padding: 0;
 }
 
+#basketCtrlContainer .basketItem {
+    flex-flow: inherit;
+}
+
 .basketTickets .basketItem {
     padding-bottom: 5px;
     border-top    : none;
@@ -167,7 +171,7 @@ div#PH_breadcrumbs {
 
 .basketItem .remove,
 .bundleItem .remove {
-    top: 50%;
+    top: 0;
 
     @media @desktop {
         top: 28%;
@@ -225,9 +229,11 @@ div#PH_breadcrumbs {
 
 .basketArea,
 .group.hasInfoSection .items {
-    padding-left: 3%;
+    padding-left: 0;
 }
-
+.basketArea {
+    margin-bottom: 10px;
+}
 .bottomButtonsBar {
     padding-right: 0;
     padding-top  : 5px;
@@ -327,7 +333,7 @@ button.disabled.small_button_a:hover {
     margin        : 0;
     width         : auto;
     min-height    : 0;
-    font-size     : 1.6rem;
+    font-size     : 16px;
     border        : none;
     border-bottom : 1px solid #bbb;
     background    : none;
@@ -335,6 +341,10 @@ button.disabled.small_button_a:hover {
     padding       : 0;
     display       : flex;
     flex-direction: column;
+    @media @mobile {
+        font-size     : 14px;
+    }
+
 }
 
 .deliveryContainer .deliveryMethod>input[type='radio'] {
@@ -351,11 +361,13 @@ button.disabled.small_button_a:hover {
 }
 
 .deliveryContainer .deliveryMethod>label {
-    padding        : 2rem;
+    padding        : 10px;
     display        : flex;
     justify-content: flex-start;
     align-items    : center;
     width          : 100%;
+
+    
 }
 
 .deliveryContainer .deliveryMethod>label:before {
