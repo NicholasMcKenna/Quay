@@ -82,6 +82,10 @@ div#PH_breadcrumbs {
     }
 }
 
+
+
+
+
 #basketContainer {
     padding-left: 0;
 }
@@ -96,9 +100,8 @@ div#PH_breadcrumbs {
 }
 
 .basket-section>DIV {
-    padding-top : 0;
-    margin-top  : 0;
-    padding-left: 0;
+    padding: 0 0 0 0;
+    width: 100%;
 }
 
 .basket-section .basketEvent>DIV,
@@ -139,11 +142,13 @@ div#PH_breadcrumbs {
 }
 
 #basketCtrlContainer .basketItem {
-    flex-flow: inherit;
+    flex-flow: unset;
+    display: block;
+    width: 100%;
 }
 
 .basketTickets .basketItem {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-top    : none;
 }
 
@@ -158,10 +163,17 @@ div#PH_breadcrumbs {
     padding-left: 10px;
 }
 
+.basketProperty.PriceTypeName {
+
+    margin-left: 5px;
+    display: inline-block;
+}
+
 .basketItem,
 .basket-section .buttonsContainer {
     border-top  : none;
     padding-left: 0;
+    padding-right: 25px;
 }
 
 .basket-section .buttonsContainer {
@@ -171,7 +183,7 @@ div#PH_breadcrumbs {
 
 .basketItem .remove,
 .bundleItem .remove {
-    top: 0;
+    top: 4px;
 
     @media @desktop {
         top: 28%;
@@ -181,6 +193,26 @@ div#PH_breadcrumbs {
 .basket-section:not(.ticketsBasketSection) .basketItem {
     width: 100%;
 }
+
+.basketItem > SPAN {
+
+    display: inline-block;
+}
+
+.basketProperty.GetSeatNoteColumn:not(:empty) {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: none;
+    margin-top: 5px;
+}
+.basketProperty.GetStatusColumn {
+
+    display: none;
+}
+
+
+
 
 .addCouponCtl {
     @media @desktop {
