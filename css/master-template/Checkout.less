@@ -103,6 +103,37 @@ div#PH_breadcrumbs {
     background-image: none;
 }
 
+.summaryBasketContainer .basket-section { 
+    width: 100%; 
+}
+
+.summaryBasketContainer .basketEvent {
+
+    float:left;
+}
+
+.summaryBasketContainer #basketCtrlContainer {
+
+    padding-top: 0px;
+}
+
+.summaryBasketContainer.expanded #basketCtrlContainer {
+
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.summaryBasketContainer.expanded .editBasket {
+
+    top: unset;
+}
+
+.basket-section > DIV {
+
+    padding: 15px 0;
+    margin: 15px 0 0 0;
+}
+
 .summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
     padding-top: 0;
     height     : 100px;
@@ -308,6 +339,11 @@ button.small_button_a {
     display: none;
 }
 
+.infoSection {
+
+    margin-bottom: 0;
+}
+
 .infoSection .name {
     padding-top: 0;
 }
@@ -342,10 +378,12 @@ button.small_button_a {
 
 .summaryBasketContainer .editBasket,
 .summaryBasketContainer .editBasket:hover {
-    @media @desktop {
-        top  : 12px;
-        right: 0px;
-    }
+
+    display: inline-block;
+    margin: 0;
+
+    position: relative;
+    top: unset;
 }
 
 
@@ -357,6 +395,11 @@ button.small_button_a {
         font-size   : 20px;
         padding-left: 0;
     }
+}
+
+.summaryBasketContainer .basketItemSummary .details, .summaryBasketContainer .hasInfoSection .basketProperty.Details {
+    max-width: 100%;
+    padding: 0px;
 }
 
 .summaryBasketContainer .timerMessage {
