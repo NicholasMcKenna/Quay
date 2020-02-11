@@ -105,11 +105,19 @@ div#PH_breadcrumbs {
 
 .summaryBasketContainer .basket-section { 
     width: 100%; 
+    margin: 10px 0;
 }
 
 .summaryBasketContainer .basketEvent {
 
     float:left;
+}
+
+.summaryBasketContainer #basketCtrlContainer .basketItemSummary {
+
+    margin-top: 10px;
+    flex-flow: unset;
+    flex-direction: column;
 }
 
 .summaryBasketContainer #basketCtrlContainer {
@@ -123,6 +131,11 @@ div#PH_breadcrumbs {
     padding: 10px 0px;
 }
 
+.summaryBasketContainer > DIV {
+    display: block;
+    width: 100%;
+}
+
 .summaryBasketContainer.expanded .editBasket {
 
     top: unset;
@@ -132,19 +145,27 @@ div#PH_breadcrumbs {
 
     padding: 15px 0;
     margin: 15px 0 0 0;
+    border: none;
 }
 
 .summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
     padding-top: 0;
-    height     : 100px;
-    width      : auto;
+    height     : unset;
+    width      : 100%;
+    margin: 0 10px 0 0;
 }
 
 .summaryBasketContainer .infoSection IMG {
-    max-width : 150px;
-    max-height: 75px;
+    max-width : unset;
+    max-height: unset;
     margin-top: 0;
     //Apace
+}
+
+
+.basket-section:not(.ticketsBasketSection) .basketItem {
+
+    width: 100% !important;
 }
 
 #termsAndConditions {
