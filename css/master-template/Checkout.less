@@ -32,7 +32,7 @@ div#PH_breadcrumbs {
     border          : none;
     border-top      : 0;
     background-image: none;
-    padding         : 10px 0;
+    padding         : 10px 0 140px 0;
 
     @media @desktop {
         padding-top: 0;
@@ -114,6 +114,7 @@ div#PH_breadcrumbs {
 .summaryBasketContainer .basketEvent {
 
     float:left;
+    margin-top: 10px;
 }
 
 .summaryBasketContainer #basketCtrlContainer .basketItemSummary {
@@ -132,6 +133,11 @@ div#PH_breadcrumbs {
 
     width: 100%;
     padding: 10px 0px;
+}
+
+.summaryBasketContainer .basket-section > DIV {
+
+    padding-bottom: 0;
 }
 
 .summaryBasketContainer > DIV {
@@ -154,11 +160,13 @@ div#PH_breadcrumbs {
 .summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
     padding-top: 0;
     height     : unset;
-    width      : 100%;
+    width      : 50px;
     margin: 0 10px 0 0;
+    line-height: 40px;
 }
 
 .summaryBasketContainer .infoSection IMG {
+    width: 100%;
     max-width : unset;
     max-height: unset;
     margin-top: 0;
@@ -173,7 +181,7 @@ div#PH_breadcrumbs {
 
 #termsAndConditions {
     margin: 17px 0;
-    bottom: 88px;
+    bottom: 72px;
 
     @media @mobile {
         margin-left: -5%;
@@ -273,7 +281,7 @@ div#PH_breadcrumbs {
 .screen-Checkout_aspx.virtualKeyboardOpen .bottomButtonsBar {
     @media @mobile {
         position  : fixed;
-        height    : 106px;
+        height    : 90px;
         margin-top: initial;
     }
 }
@@ -281,7 +289,7 @@ div#PH_breadcrumbs {
 .screen-Checkout_aspx.virtualKeyboardOpen #termsAndConditions {
     @media @mobile {
         position: fixed;
-        bottom  : 34px;
+        bottom  : 72px;
         z-index : 13;
     }
 }
