@@ -89,52 +89,66 @@ body #group_Header-fixed {
 
 #siteMenuBar {
     display: block;
-    margin: 0;
+    margin : 0;
     padding: 0;
-    width: 100%;
+    width  : 100%;
+    height : 100%;
 }
 
 .siteMenuContainer {
-    display: flex;
+    display        : flex;
     justify-content: flex-end;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1000px;
-    float: none;
-    overflow: hidden;
+    align-items    : center;
+    margin         : 0 auto;
+    max-width      : 1000px;
+    float          : none;
+    overflow       : hidden;
+    height         : 100%;
 }
 
 .siteMenuContainer button#navMenu_Float_login_item {
-    width: auto;
+    width : auto;
     height: auto;
-    order: 1;
+    order : 1;
 }
 
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    position: static;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: 100%;
-    order: 4;
-    background: none;
-    color: black;
+    align-items    : center;
+    position       : static;
+    margin         : 0;
+    padding        : 0;
+    width          : auto;
+    height         : 100%;
+    order          : 4;
+    background     : none;
+    color          : black;
 }
 
 
 #siteMenuBar #CountDown.active .timer-tooltip {
     @media @mobile {
-        top  : 1.05rem !important;
-        right: 34% !important;
+        //top  : 1.05rem !important;
+        //right: 34% !important;
     }
 }
 
+a#navMenu_Float_TimeRemaining_item {
+    order: 5;
+}
+
 #siteMenuBar #CountDown.active {
+    display   : block !important;
+    position  : relative !important;
+    width     : 60px;
+    height    : 33%;
+    order     : 6;
+    margin    : 0;
+    background: transparent;
+
     @media @mobile {
-        display: none;
+        //display: none;
     }
 }
 
@@ -175,14 +189,26 @@ div#PH_Float_Menu {
     }
 }
 
+#siteMenuBar #customerBox .loyaltyPoints, #siteMenuBar #customerBox .qualityPoints {
+    display: none;
+}
+
 #siteMenuBar #my_basket>span:before,
 #siteMenuBar [id='my basket']>span:before {
-    color: transparent;
+    //color: transparent;
 }
 
 #siteMenuBar #my_basket>span,
 #siteMenuBar [id='my basket']>span {
-    left: 58px;
+    //left: 58px;
+}
+
+
+#siteMenuBar #my_basket>span {
+    position   : static;
+    width      : auto;
+    height     : auto;
+    line-height: normal;
 }
 
 #group_Header-fixed #PH_Search_Box {
@@ -250,8 +276,8 @@ div#PH_breadcrumbs {
     }
 }
 
-.crumb.step-one:after, 
-.crumb.step-two:after, 
+.crumb.step-one:after,
+.crumb.step-two:after,
 .crumb.step-three:after {
 
     content: '/';
@@ -285,9 +311,9 @@ div#PH_breadcrumbs {
 
 .promoBox {
 
-    padding: 10px !important;
-    border: none;
-    border-radius: 0;
+    padding         : 10px !important;
+    border          : none;
+    border-radius   : 0;
     background-color: @box-bgcolor;
 
 }
@@ -299,36 +325,47 @@ div#promo-descr {
 }
 
 .qtip.timer-tooltip {
+    /*
     padding         : 0 20px;
     display         : inline-flex;
     height          : 50px;
+    */
     align-items     : center;
     font-size       : 16px;
     font-weight     : 600;
     background-color: #fff !important;
     border          : none !important;
+    position: static;
 }
 
 #siteMenuBar #CountDown .CountDownRemainingTimeTitle {
-    display    : inline-block;
-    font-size  : 16px;
-    font-weight: 600;
+    //display    : inline-block;
+    font-size    : 16px;
+    font-weight  : 600;
 }
 
 #siteMenuBar.hasclient #CountDown .CountDownRemainingTimeTitle {
-    padding-left: 124px;
+    //padding-left: 124px;
 }
 
 #siteMenuBar #CountDown {
-    text-align: left;
-    right     : -13% !important;
-    top       : 31px !important;
-    width     : 250px;
-    background: #fff;
+    //text-align: left;
+    //right     : -13% !important;
+    //top       : 31px !important;
+    //width     : 250px;
+    background  : #fff;
 }
 
 #siteMenuBar.hasclient #CountDown {
-    right: -20% !important;
+    //right: -20% !important;
+}
+
+#siteMenuBar .flm_login {
+
+}
+
+body>.timer-tooltip {
+    display: none !important;
 }
 
 button.CancelTransFromTimer.btnCancel.btnLink {
@@ -342,7 +379,7 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 }
 
 #siteMenuBar #CountDown.active .timer-tooltip {
-    visibility: hidden !important;
+    // visibility: hidden !important;
 }
 
 .timerMessage {
@@ -371,12 +408,12 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 }
 
 #PH_BasketWidget>div {
-    border: 1px solid;
-    background: none;
+    border          : 1px solid;
+    background      : none;
     background-color: @box-bgcolor;
 }
 
-#PH_BasketWidget > div > * {
+#PH_BasketWidget>div>* {
     padding: 0 20px 0 15px;
 }
 
@@ -390,40 +427,40 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 
 
-#miniBasketWrapper .imageContainer, 
-#miniBasketWrapper .basket-Memberships .infoSection .imageContainer, 
-#miniBasketWrapper .basket-Donations .infoSection .imageContainer, 
-#miniBasketWrapper .basket-Subscriptions .subsInfoSection .imageContainer, 
-#miniBasketWrapper .basket-MerchandiseItems .infoSection .imageContainer, 
-#miniBasketWrapper .basket-GiftVouchers .infoSection .imageContainer, 
+#miniBasketWrapper .imageContainer,
+#miniBasketWrapper .basket-Memberships .infoSection .imageContainer,
+#miniBasketWrapper .basket-Donations .infoSection .imageContainer,
+#miniBasketWrapper .basket-Subscriptions .subsInfoSection .imageContainer,
+#miniBasketWrapper .basket-MerchandiseItems .infoSection .imageContainer,
+#miniBasketWrapper .basket-GiftVouchers .infoSection .imageContainer,
 #miniBasketWrapper .basketEvent .eventInfoSection .imageContainer {
-    height: unset;
-    overflow: unset;
-    padding-left: 0;
-    padding-top: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height             : unset;
+    overflow           : unset;
+    padding-left       : 0;
+    padding-top        : 0;
+    background-size    : 100%;
+    background-repeat  : no-repeat;
     background-position: unset;
-    display: block;
+    display            : block;
 }
 
 #miniBasketWrapper .basketEvent .eventInfoSection .imageContainer {
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat    : no-repeat;
+    background-size      : 100%;
     background-position-x: unset;
 }
 
 #miniBasketWrapper .basket-container .imageContainer {
     margin-left: 0;
-    margin-top: 0;
-    width: 50px;
-    text-align: left;
+    margin-top : 0;
+    width      : 50px;
+    text-align : left;
     line-height: unset;
 }
 
 #miniBasketWrapper .basket-section:not(.basket-Subscriptions) .items {
     margin-top: 15px;
-    width: 100% !important;
+    width     : 100% !important;
 }
 
 #miniBasketWrapper .basket-section.basket-Commissions .items .TotalAmount {
@@ -431,11 +468,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
     font-size: small;
 }
 
-#PH_BasketWidget .basketProperty.Details, 
+#PH_BasketWidget .basketProperty.Details,
 #PH_BasketWidget .basketProperty.TotalAmount {
 
     padding-right: 0;
-    padding-left: 0;
+    padding-left : 0;
 }
 
 #miniBasketWrapper .infoSection {
@@ -446,34 +483,28 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 #miniBasketWrapper .infoSection IMG {
 
 
-    margin-top: 0px;
+    margin-top : 0px;
     margin-left: 0px;
-    width: 100%;
-    max-width: unset;
-    max-height: unset;
+    width      : 100%;
+    max-width  : unset;
+    max-height : unset;
 
 }
 
 
 
 #PH_BasketWidget .basketItemSummary {
-
-    width: 100%;
+    width        : 100%;
     margin-bottom: 0px;
 }
 
-#PH_BasketWidget .basketItemSummary > .PriceToPay {
-    margin-top: 0px;
+#PH_BasketWidget .basketItemSummary>.PriceToPay {
+    margin-top : 0px;
     margin-left: auto;
 }
 
-
-
-
 #PH_BasketWidget div.footer .button.proceed {
-
     margin-left: unset;
-
 }
 
 #PH_BasketWidget div.footer .proceed A {
@@ -484,11 +515,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 
 
-
+/*
 .qtip.timer-tooltip {
     display: none;
 }
-
+*/
 .timer-tooltip.qtip {
     max-width: 290px;
 }
@@ -497,11 +528,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 button#scrollTopControl {
 
-    border:none;
-    border-radius: 0px;
-    -moz-border-radius: 0px;
+    border               : none;
+    border-radius        : 0px;
+    -moz-border-radius   : 0px;
     -webkit-border-radius: 0px;
-    padding-bottom: 20px;
+    padding-bottom       : 20px;
 }
 
 div#PH_Footer-main {
@@ -531,35 +562,35 @@ div#PH_Footer-main {
 }
 
 #siteMenuBar.hasclient #customerBox {
-    visibility: hidden;
+    //visibility: hidden;
 }
 
 #siteMenuBar #my_basket .basketQtyHolder,
 #siteMenuBar[id='my basket'] .basketQtyHolder {
-    background: #000;
-    left      : -118px;
-    color     : white;
-    position  : relative;
+    background  : #000;
+    //left      : -118px;
+    color       : white;
+    //position  : relative;
 
     @media @mobile {
-        margin-top: -3px;
-        left      : -4.5em !important;
-        width     : 18px !important;
+        margin-top  : -3px;
+        //left      : -4.5em !important;
+        width       : 18px !important;
     }
 }
 
 #siteMenuBar.hasclient #my_basket .basketQtyHolder,
 #siteMenuBar[id='my basket'] .basketQtyHolder {
-    left: 0;
+    //left: 0;
 }
 
 #siteMenuBar.hasclient #my_basket>span,
 #siteMenuBar [id='my basket']>span {
-    left: -14px;
+    //left: -14px;
 }
 
 #siteMenuBar #CountDown .timerText {
-    visibility: hidden !important;
+    //visibility: hidden !important;
 }
 
 
@@ -596,6 +627,8 @@ div#PH_Footer-main {
     color: @button-color;
 }
 
-#media .video::after, #media .video::before, #media::after {
+#media .video::after,
+#media .video::before,
+#media::after {
     content: none;
 }
