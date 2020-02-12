@@ -295,8 +295,25 @@ a.ui-button:active,
     background: none;
 }
 
+#eventPage.non-seated #ticketsPane > :not(.ui-selectmenu-menu) {
+
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+}
+
 #eventPage.seated .selectTickets {
     border: none;
+}
+
+#eventPage .selectTickets .tickets .row .pricing {
+
+    margin-top: -10px;
+
+}
+#eventPage .priceLevelInfo {
+
+    margin-bottom: 0;
 }
 
 #positionButtonDiv {
@@ -495,6 +512,10 @@ h1#selectedAreaTitle {
 }
 
 #eventPage.non-seated #ticketsPane {
+
+    width: 100%;
+    margin-left: 0;
+
     @media @desktop {
         width      : 60%;
         border     : 0;
@@ -553,6 +574,7 @@ h1#selectedAreaTitle {
     @media @mobile {
         background-color: @box-bgcolor;
         margin-top      : 161px;
+        width: 100% !important;
 
     }
 
@@ -593,6 +615,8 @@ div#leftPane {
 }
 
 .promoBox {
+
+
     @media @desktop {
         width     : 456px;
         float     : right;
