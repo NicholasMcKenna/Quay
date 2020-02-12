@@ -8,14 +8,8 @@
 
 div#PH_breadcrumbs {
     margin    : 0 auto;
-    margin-top: 85px;
+    margin-top: 135px;
     max-width : 1400px;
-}
-
-#offersContainer .promptsContainer h3 {
-    background: none;
-    color     : @font-dark-color;
-    padding   : 0;
 }
 
 #offersContainer .promptsContainer .elementMessage {
@@ -28,6 +22,11 @@ div#PH_breadcrumbs {
     border          : none;
     background-color: transparent;
     padding         : 0;
+}
+
+#offersContainer .promptsContainer .elementMessage:before {
+
+    display: inline-block;
 }
 
 #offersContainer .promptsContainer .element {
@@ -43,7 +42,11 @@ div#PH_breadcrumbs {
 
 #offersContainer .promptsContainer h3 {
     margin: 0;
-    .font-h1();
+    .font-h1();    
+    background: none;
+    color     : @font-dark-color;
+    padding   : 0;
+    margin-bottom: 15px;
 
 }
 
@@ -91,6 +94,7 @@ div#PH_breadcrumbs {
 #offersContainer .promptsContainer .elementItem .name {
     .font-h2();
     font-weight: bold;
+    margin-bottom: 2px;
 }
 
 #offersContainer .promptsContainer .elementItem .eventInfo .imgContainer+.name+.date {

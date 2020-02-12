@@ -33,20 +33,46 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
     .action-button();
-
     &:hover,
     &:focus,
     &:active {
-        @media @mobile{
-            letter-spacing: .1px;
-            padding: 0;
-            width: 112px;
+        @media @mobile {
+
+            width         : 112px;
         }
     }
 }
 
+.button.small_button_a a,
+#selectedAreaInfo .button-moreAreas {
+
+    letter-spacing:0;
+    text-shadow:none;
+    padding:10px;
+    transform: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+    
+        letter-spacing:0;
+        text-shadow:none;
+        padding:10px;
+        transform: none;
+    }
+
+}
+
+
+.small_button_a.proceed:focus {
+    border: 0px solid transparent;
+    box-shadow: unset;
+}
+
+
+
 .hallMap #selectedAreaInfo .button-moreAreas {
-    letter-spacing: .1px;
+    letter-spacing: unset;
     padding       : 0;
     margin-top    : -65px;
 }
@@ -198,13 +224,13 @@ span.price-range {
 
 #eventPage .tabsWrapper .tab {
     font-size  : 16px !important;
-    display: inline-flex;
+    display    : inline-flex;
     align-items: center;
-    
+
     @media @mobile {
-        width      : 100%;
-        max-width  : 100%;
-        display    : flex;
+        width    : 100%;
+        max-width: 100%;
+        display  : flex;
     }
 
     &:hover {
@@ -252,9 +278,10 @@ a.ui-button:active,
     background-color: #fff;
 }
 
-.seat_plan_body_css #stage, .seat_plan_body_css #stage.custom-image {
+.seat_plan_body_css #stage,
+.seat_plan_body_css #stage.custom-image {
 
-    height: unset;
+    height    : unset;
     max-height: unset;
 }
 
@@ -404,7 +431,7 @@ a.ui-button:active,
 
 #eventPage.hallMap #selectedAreaInfo .selected .area-info-container {
     @media @mobile {
-        width: 100%;
+        width        : 100%;
         padding-right: 0;
     }
 }
@@ -426,12 +453,13 @@ a.ui-button:active,
     @media @mobile {
         margin-left : 0;
         padding-left: 0;
+        padding-bottom: 0;
     }
 }
 
 #selectedAreaInfo {
-    border: none;
-    height: unset;
+    border       : none;
+    height       : unset;
     margin-bottom: 0;
 }
 
@@ -645,6 +673,8 @@ div#leftPane {
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
     max-height: unset;
+    position: relative;
+    overflow: visible;
 /*
     @media @mobile {
         max-width: calc(100% - 112px);
@@ -655,6 +685,7 @@ div#leftPane {
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages .pricelevel-image-container {
 
     float: none;
+    width: 100%;
 }
 
 #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
@@ -662,6 +693,19 @@ div#leftPane {
         display: inline-block;
     }
 }
+
+
+#eventPage .selectTickets .buttonsContainer #btnProceed:focus {
+
+    box-shadow: unset;
+    width           : @button-desktop-width;
+    background-image: none;
+    text-decoration : none;
+    padding         : @button-desktop-padding;
+    border          : 1px solid @button-color;
+    background-color: @button-color;
+}
+
 
 #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed>a {
     @media @desktop {

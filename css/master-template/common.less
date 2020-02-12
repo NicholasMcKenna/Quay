@@ -218,16 +218,22 @@ div#PH_breadcrumbs {
     display   : block;
 
     @media @mobile {
-        margin-top: 85px;
+        margin-top: 140px;
     }
 }
 
-.crumb.step-one:after,
-.crumb.step-two:after,
+.crumb.step-one:after, 
+.crumb.step-two:after, 
 .crumb.step-three:after {
+
     content: '/';
     margin : 0 10px;
+
+    @media @mobile {
+        margin: 0 2px 0 7px;
+    }
 }
+
 
 /* Promo Box */
 .promoBox:before {
@@ -311,6 +317,10 @@ button.CancelTransFromTimer.btnCancel.btnLink {
     color           : #404041 !important;
 }
 
+#PH_BasketWidget .button.proceed {
+    margin: 10px 0 15px 0;
+}
+
 #PH_BasketWidget .button.small_button_a a {
     background   : @button-color;
     border-bottom: none;
@@ -329,7 +339,109 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 #PH_BasketWidget>div {
     border: 1px solid;
+    background: none;
+    background-color: @box-bgcolor;
 }
+
+#PH_BasketWidget > div > * {
+    padding: 0 20px 0 15px;
+}
+
+#PH_BasketWidget .accordionContent {
+
+    padding: 7px 0;
+}
+
+
+
+
+
+
+#miniBasketWrapper .imageContainer, 
+#miniBasketWrapper .basket-Memberships .infoSection .imageContainer, 
+#miniBasketWrapper .basket-Donations .infoSection .imageContainer, 
+#miniBasketWrapper .basket-Subscriptions .subsInfoSection .imageContainer, 
+#miniBasketWrapper .basket-MerchandiseItems .infoSection .imageContainer, 
+#miniBasketWrapper .basket-GiftVouchers .infoSection .imageContainer, 
+#miniBasketWrapper .basketEvent .eventInfoSection .imageContainer {
+    height: unset;
+    overflow: unset;
+    padding-left: 0;
+    padding-top: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+
+#miniBasketWrapper .basketEvent .eventInfoSection .imageContainer {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: unset;
+}
+
+#miniBasketWrapper .basket-container .imageContainer {
+    margin-left: 0;
+    margin-top: 0;
+    width: 50px;
+    text-align: left;
+    line-height: unset;
+}
+
+#miniBasketWrapper .basket-section:not(.basket-Subscriptions) .items {
+    margin-top: 15px;
+}
+
+#PH_BasketWidget .basketProperty.Details, 
+#PH_BasketWidget .basketProperty.TotalAmount {
+
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+#miniBasketWrapper .infoSection {
+
+    margin-bottom: 10px;
+}
+
+#miniBasketWrapper .infoSection IMG {
+
+
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    max-width: unset;
+    max-height: unset;
+
+}
+
+
+
+#PH_BasketWidget .basketItemSummary {
+
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#PH_BasketWidget .basketItemSummary > .PriceToPay {
+    margin-top: 0px;
+}
+
+
+
+
+#PH_BasketWidget div.footer .button.proceed {
+
+    margin-left: unset;
+
+}
+
+
+
+
+
+
+
 
 .qtip.timer-tooltip {
     display: none;
@@ -341,12 +453,21 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 /* Footer */
 
+button#scrollTopControl {
 
+    border:none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    padding-bottom: 20px;
+}
 
 div#PH_Footer-main {
+
     padding : 5%;
     width   : 100%;
     position: relative;
+    float   : left;
 
     a,
     button.btnLink {

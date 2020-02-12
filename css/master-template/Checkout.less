@@ -7,9 +7,9 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 70px auto 0;
+    margin      : 140px auto 0;
     max-width   : 1400px;
-    padding-left: 5%;
+    padding-left: 0;
 
     @media @desktop-large {
         padding-left: 0;
@@ -64,12 +64,20 @@ div#PH_breadcrumbs {
 .dataProtectionContainer h2 {
     background  : none;
     padding-left: 0;
+
+    padding: unset;
+    position: relative;
+    left: unset;
+    right: unset;
+    margin-top: -1.5em;
+
     .font-h2();
 
     @media @mobile {
         width: 100%;
     }
 }
+
 
 .dataProtectionContainer form .dynamicQuestionsContainer>div>div.showDetails>div.imageContainer {
     background-image: none;
@@ -79,26 +87,85 @@ div#PH_breadcrumbs {
     padding-left: 0;
 }
 
+
+
 .summaryBasketContainer {
     background-image: none;
     border          : none;
+}
+
+.summaryBasketContainer .expand {
+    width: 37px;
+    padding-top: 1px;
 }
 
 .screen-Checkout_aspx .basket-container .basketEvent .eventInfoSection .imageContainer {
     background-image: none;
 }
 
+.summaryBasketContainer .basket-section { 
+    width: 100%; 
+    margin: 10px 0;
+}
+
+.summaryBasketContainer .basketEvent {
+
+    float:left;
+}
+
+.summaryBasketContainer #basketCtrlContainer .basketItemSummary {
+
+    margin-top: 10px;
+    flex-flow: unset;
+    flex-direction: column;
+}
+
+.summaryBasketContainer #basketCtrlContainer {
+
+    padding-top: 0px;
+}
+
+.summaryBasketContainer.expanded #basketCtrlContainer {
+
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.summaryBasketContainer > DIV {
+    display: block;
+    width: 100%;
+}
+
+.summaryBasketContainer.expanded .editBasket {
+
+    top: unset;
+}
+
+.basket-section > DIV {
+
+    padding: 15px 0;
+    margin: 15px 0 0 0;
+    border: none;
+}
+
 .summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
     padding-top: 0;
-    height     : 100px;
-    width      : auto;
+    height     : unset;
+    width      : 100%;
+    margin: 0 10px 0 0;
 }
 
 .summaryBasketContainer .infoSection IMG {
-    max-width : 150px;
-    max-height: 75px;
+    max-width : unset;
+    max-height: unset;
     margin-top: 0;
     //Apace
+}
+
+
+.basket-section:not(.ticketsBasketSection) .basketItem {
+
+    width: 100% !important;
 }
 
 #termsAndConditions {
@@ -112,6 +179,7 @@ div#PH_breadcrumbs {
 
 .roundUpDonationSection {
     padding-left: 0;
+    display: none;
 }
 
 .roundUpDonationSection h2 {
@@ -127,7 +195,7 @@ div#PH_breadcrumbs {
 .paymentPanelSection {
     margin-top      : 15px;
     background-color: @box-bgcolor;
-    padding         : 1% 3%;
+    padding         : 10px;
 
     @media @mobile {
         margin-bottom: 15px;
@@ -141,6 +209,7 @@ div#PH_breadcrumbs {
 .suppPmContainer .suppLabel,
 .reimbursementPaymentContainer .reimLabel {
     background: none;
+    border: none;
 }
 
 #instructionsPanel {
@@ -291,6 +360,11 @@ button.small_button_a {
     display: none;
 }
 
+.infoSection {
+
+    margin-bottom: 0;
+}
+
 .infoSection .name {
     padding-top: 0;
 }
@@ -325,17 +399,28 @@ button.small_button_a {
 
 .summaryBasketContainer .editBasket,
 .summaryBasketContainer .editBasket:hover {
-    @media @desktop {
-        top  : 12px;
-        right: 0px;
-    }
+
+    display: inline-block;
+    margin: 0;
+
+    position: relative;
+    top: unset;
 }
 
+
 .summaryBasketContainer .containerTitle {
+    
+    padding: 0;
+
     @media @desktop {
         font-size   : 20px;
         padding-left: 0;
     }
+}
+
+.summaryBasketContainer .basketItemSummary .details, .summaryBasketContainer .hasInfoSection .basketProperty.Details {
+    max-width: 100%;
+    padding: 0px;
 }
 
 .summaryBasketContainer .timerMessage {

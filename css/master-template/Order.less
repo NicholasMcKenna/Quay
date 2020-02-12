@@ -7,9 +7,9 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 70px auto 30px;
+    margin      : 140px 0 10px 0;
     max-width   : 1400px;
-    padding-left: 5%;
+    padding-left: 0;
 
     @media @desktop-large {
         padding-left: 0;
@@ -82,6 +82,10 @@ div#PH_breadcrumbs {
     }
 }
 
+
+
+
+
 #basketContainer {
     padding-left: 0;
 }
@@ -96,9 +100,8 @@ div#PH_breadcrumbs {
 }
 
 .basket-section>DIV {
-    padding-top : 0;
-    margin-top  : 0;
-    padding-left: 0;
+    padding: 0 0 0 0;
+    width: 100%;
 }
 
 .basket-section .basketEvent>DIV,
@@ -138,8 +141,14 @@ div#PH_breadcrumbs {
     padding: 0;
 }
 
+#basketCtrlContainer .basketItem {
+    flex-flow: unset;
+    display: block;
+    width: 100%;
+}
+
 .basketTickets .basketItem {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-top    : none;
 }
 
@@ -152,12 +161,23 @@ div#PH_breadcrumbs {
 
 .basketProperty.Details {
     padding-left: 10px;
+    width: unset !important;
+    max-width: unset;
 }
+
+.basketProperty.PriceTypeName {
+
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
 
 .basketItem,
 .basket-section .buttonsContainer {
     border-top  : none;
     padding-left: 0;
+    padding-right: 25px;
 }
 
 .basket-section .buttonsContainer {
@@ -165,9 +185,15 @@ div#PH_breadcrumbs {
     margin-right: 0;
 }
 
+.basket-section .buttonsContainer button.linkHref, 
+.basket-section .buttonsContainer button.linkHref:hover {
+
+    margin: 0 0 .5em 10px;
+}
+
 .basketItem .remove,
 .bundleItem .remove {
-    top: 50%;
+    top: 4px;
 
     @media @desktop {
         top: 28%;
@@ -177,6 +203,26 @@ div#PH_breadcrumbs {
 .basket-section:not(.ticketsBasketSection) .basketItem {
     width: 100%;
 }
+
+.basketItem > SPAN {
+
+    display: inline-block;
+}
+
+.basketProperty.GetSeatNoteColumn:not(:empty) {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: none;
+    margin-top: 5px;
+}
+.basketProperty.GetStatusColumn {
+
+    display: none;
+}
+
+
+
 
 .addCouponCtl {
     @media @desktop {
@@ -225,9 +271,11 @@ div#PH_breadcrumbs {
 
 .basketArea,
 .group.hasInfoSection .items {
-    padding-left: 3%;
+    padding-left: 0;
 }
-
+.basketArea {
+    margin-bottom: 10px;
+}
 .bottomButtonsBar {
     padding-right: 0;
     padding-top  : 5px;
@@ -327,7 +375,7 @@ button.disabled.small_button_a:hover {
     margin        : 0;
     width         : auto;
     min-height    : 0;
-    font-size     : 1.6rem;
+    font-size     : 16px;
     border        : none;
     border-bottom : 1px solid #bbb;
     background    : none;
@@ -335,6 +383,10 @@ button.disabled.small_button_a:hover {
     padding       : 0;
     display       : flex;
     flex-direction: column;
+    @media @mobile {
+        font-size     : 14px;
+    }
+
 }
 
 .deliveryContainer .deliveryMethod>input[type='radio'] {
@@ -351,11 +403,13 @@ button.disabled.small_button_a:hover {
 }
 
 .deliveryContainer .deliveryMethod>label {
-    padding        : 2rem;
+    padding        : 10px;
     display        : flex;
     justify-content: flex-start;
     align-items    : center;
     width          : 100%;
+
+    
 }
 
 .deliveryContainer .deliveryMethod>label:before {
