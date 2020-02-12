@@ -92,6 +92,7 @@ body #group_Header-fixed {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
 }
 
 .siteMenuContainer {
@@ -102,6 +103,7 @@ body #group_Header-fixed {
     max-width: 1000px;
     float: none;
     overflow: hidden;
+    height: 100%;
 }
 
 .siteMenuContainer button#navMenu_Float_login_item {
@@ -127,14 +129,14 @@ body #group_Header-fixed {
 
 #siteMenuBar #CountDown.active .timer-tooltip {
     @media @mobile {
-        top  : 1.05rem !important;
-        right: 34% !important;
+        //top  : 1.05rem !important;
+        //right: 34% !important;
     }
 }
 
 #siteMenuBar #CountDown.active {
     @media @mobile {
-        display: none;
+        //display: none;
     }
 }
 
@@ -183,6 +185,14 @@ div#PH_Float_Menu {
 #siteMenuBar #my_basket>span,
 #siteMenuBar [id='my basket']>span {
     //left: 58px;
+}
+
+
+#siteMenuBar #my_basket>span {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: normal;
 }
 
 #group_Header-fixed #PH_Search_Box {
@@ -328,7 +338,7 @@ div#promo-descr {
 }
 
 #siteMenuBar.hasclient #CountDown {
-    right: -20% !important;
+    //right: -20% !important;
 }
 
 button.CancelTransFromTimer.btnCancel.btnLink {
@@ -338,11 +348,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 .siteMenuContainer>*:last-child:after,
 .siteMenuContainer>*:after,
 #siteMenuBar.hasclient #customerBox:after {
-    content: none;
+    //content: none;
 }
 
 #siteMenuBar #CountDown.active .timer-tooltip {
-    visibility: hidden !important;
+   // visibility: hidden !important;
 }
 
 .timerMessage {
@@ -531,7 +541,7 @@ div#PH_Footer-main {
 }
 
 #siteMenuBar.hasclient #customerBox {
-    visibility: hidden;
+    //visibility: hidden;
 }
 
 #siteMenuBar #my_basket .basketQtyHolder,
