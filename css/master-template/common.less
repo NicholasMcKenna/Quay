@@ -82,6 +82,49 @@ body #group_Header-fixed {
     }
 }
 
+.ph_float_menu {
+    width: auto;
+
+}
+
+#siteMenuBar {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.siteMenuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    float: none;
+    overflow: hidden;
+}
+
+.siteMenuContainer button#navMenu_Float_login_item {
+    width: auto;
+    height: auto;
+    order: 1;
+}
+
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    order: 4;
+    background: none;
+    color: black;
+}
+
+
 #siteMenuBar #CountDown.active .timer-tooltip {
     @media @mobile {
         top  : 1.05rem !important;
@@ -93,10 +136,6 @@ body #group_Header-fixed {
     @media @mobile {
         display: none;
     }
-}
-
-.siteMenuContainer button#navMenu_Float_login_item {
-    display: none;
 }
 
 .account button {
@@ -133,17 +172,6 @@ img.logo-image {
 div#PH_Float_Menu {
     @media @mobile {
         position: absolute;
-    }
-}
-
-#siteMenuBar #my_basket.active {
-    right      : 33%;
-    width      : 33%;
-    height     : 35px;
-    padding-top: 0;
-
-    @media @desktop {
-        right: 157%;
     }
 }
 
@@ -268,10 +296,6 @@ div#promo-descr {
     @media @mobile {
         text-align: left;
     }
-}
-
-#navMenu_Float_Join_item {
-    visibility: hidden;
 }
 
 .qtip.timer-tooltip {
