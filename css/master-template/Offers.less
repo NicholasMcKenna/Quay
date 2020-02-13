@@ -7,21 +7,28 @@
 }
 
 div#PH_breadcrumbs {
-    margin    : 0 auto;
+
     margin-top: 135px;
     max-width : 1400px;
+
+    @media @desktop {
+        margin: 75px auto 35px auto;
+    }
+    
 }
 
-#offersContainer .promptsContainer .elementMessage {
+#offersContainer .promptsContainer .elementMessage {    
+    border          : none;
+    background-color: transparent;
+    padding         : 0;
+    height: unset;
+    
     @media @mobile {
         position: static;
         float   : initial;
         height  : initial;
     }
 
-    border          : none;
-    background-color: transparent;
-    padding         : 0;
 }
 
 #offersContainer .promptsContainer .elementMessage:before {
@@ -34,6 +41,8 @@ div#PH_breadcrumbs {
     background-color: @box-bgcolor;
     padding         : 20px;
     min-height      : 120px;
+    margin-top: 25px;
+    clear: unset;
 
     @media @mobile {
         padding: 5%;
@@ -70,14 +79,14 @@ div#PH_breadcrumbs {
     padding-left    : 0;
     padding-right   : 0;
     background-color: #fff;
-    margin-bottom   : 12px;
-    padding         : 5%;
+    margin-bottom   : 15px;
+    padding         : 25px;
     width           : 100%;
     height          : auto;
 
     @media @desktop {
-        padding     : 3%;
-        margin-right: 2%;
+        padding     : 15px;
+        margin-right: 15px;
         width       : 31%;
     }
 }
