@@ -358,6 +358,23 @@ a#navMenu_Float_Search_item {
     color: @font-dark-color;
 }
 
+a#navMenu_Float_Search_item,
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login,
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
+    @media @mobile {
+        width: 33%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span {
+    @media @mobile {
+        position: static;
+    }
+}
 
 
 #group_Header-fixed {
@@ -379,6 +396,10 @@ a#navMenu_Float_Home_item {
     order: 0;
     font-size: 16px;
     font-weight: 600;
+
+    @media @mobile {
+        display: none;
+    }
 }
 
 .timer-tooltip .qtip-content {
