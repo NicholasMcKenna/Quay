@@ -188,6 +188,9 @@ div#PH_Float_Menu {
         position: absolute;
     }
 }
+.float_menu_item {
+    margin-right: 10px;
+}
 
 #siteMenuBar #customerBox .loyaltyPoints,
 #siteMenuBar #customerBox .qualityPoints {
@@ -217,14 +220,27 @@ span.mnuBtnCaption::before {
 
 #navMenu_Float_Search_item > span::before {
         font-family : 'FontAwesome';
-        color       : #fff;
+        color       : @button-color;
         margin-right: 10px;
         content     : '\f002';
+}
+
+#siteMenuBar.hasclient #customerBox a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2d34;
 }
 
 #siteMenuBar #my_basket>span,
 #siteMenuBar [id='my basket']>span {
     //left: 58px;
+}
+
+#siteMenuBar.hasclient #customerBox::before {
+    font-family: 'FontAwesome';
+    color: @button-color;
+    margin-right: 10px;
+    content: '\f007';
 }
 
 
@@ -657,4 +673,14 @@ div#PH_Footer-main {
 #media .video::before,
 #media::after {
     content: none;
+}
+
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket::after {
+    content: 'Basket';
+    width: 60px;
+    position: static;
+    line-height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
