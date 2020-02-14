@@ -139,10 +139,7 @@ a#navMenu_Float_TimeRemaining_item {
 }
 
 #siteMenuBar #CountDown.active {
-    display   : block !important;
-    position  : relative !important;
-    width     : 60px;
-    height    : 33%;
+    display   : block;
     order     : 6;
     margin    : 0;
     background: transparent;
@@ -150,6 +147,14 @@ a#navMenu_Float_TimeRemaining_item {
     @media @mobile {
         //display: none;
     }
+}
+
+span.timerText::before {
+    content    : 'Time Remaining';
+    color      : black;
+    width      : 100px;
+    font-size  : 16px;
+    font-weight: 600;
 }
 
 .account button {
@@ -188,6 +193,7 @@ div#PH_Float_Menu {
         position: absolute;
     }
 }
+
 .float_menu_item {
     margin-right: 10px;
 }
@@ -203,8 +209,8 @@ div#PH_Float_Menu {
     color       : #fff;
     margin-right: 0;
     content     : '\f291';
-    font-size: 16px;
-    font-weight: bold;
+    font-size   : 16px;
+    font-weight : bold;
 
     @media @desktop {
         color: @button-color;
@@ -212,23 +218,23 @@ div#PH_Float_Menu {
 }
 
 span.mnuBtnCaption::before {
-    font-family: 'FontAwesome';
-    color: @button-color;
+    font-family : 'FontAwesome';
+    color       : @button-color;
     margin-right: 10px;
-    content: '\f007';
+    content     : '\f007';
 }
 
-#navMenu_Float_Search_item > span::before {
-        font-family : 'FontAwesome';
-        color       : @button-color;
-        margin-right: 10px;
-        content     : '\f002';
+#navMenu_Float_Search_item>span::before {
+    font-family : 'FontAwesome';
+    color       : @button-color;
+    margin-right: 10px;
+    content     : '\f002';
 }
 
 #siteMenuBar.hasclient #customerBox a {
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: 600;
-    color: #2a2d34;
+    color      : #2a2d34;
 }
 
 #siteMenuBar #my_basket>span,
@@ -237,10 +243,10 @@ span.mnuBtnCaption::before {
 }
 
 #siteMenuBar.hasclient #customerBox::before {
-    font-family: 'FontAwesome';
-    color: @button-color;
+    font-family : 'FontAwesome';
+    color       : @button-color;
     margin-right: 10px;
-    content: '\f007';
+    content     : '\f007';
 }
 
 
@@ -676,11 +682,11 @@ div#PH_Footer-main {
 }
 
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket::after {
-    content: 'Basket';
-    width: 60px;
-    position: static;
-    line-height: 38px;
+    content     : 'Basket';
+    width       : 60px;
+    position    : static;
+    line-height : 38px;
     padding-left: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size   : 16px;
+    font-weight : 600;
 }
