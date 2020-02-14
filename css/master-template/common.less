@@ -194,7 +194,9 @@ img.logo-image {
 }
 
 div#PH_Float_Menu {
+    width: 100%;
     @media @mobile {
+        height: 35px;
         position: absolute;
     }
 }
@@ -219,6 +221,10 @@ div#PH_Float_Menu {
 
     @media @desktop {
         color: @button-color;
+    }
+
+    @media @mobile {
+        position: static !important;
     }
 }
 
@@ -690,12 +696,26 @@ div#PH_Footer-main {
     content: none;
 }
 
-#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket::after {
-    content     : 'Basket';
+.flm_my_basket::after {
+    content     : 'Basket' !important;
     width       : 60px;
     position    : static;
     line-height : 38px;
     padding-left: 10px;
     font-size   : 16px;
     font-weight : 600;
+}
+
+.template-TemplateFull #group_left, .template-TemplateWithRight #group_left {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+div#PH_Search_results {
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-top: 33px;
 }
