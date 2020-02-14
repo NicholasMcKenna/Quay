@@ -15,10 +15,8 @@ div#PH_breadcrumbs {
         width      : 75%;
         display    : block;
         max-width  : 1400px;
-        margin     : 0 auto;
-        margin-top : 65px;
+        margin     : 75px auto 0 5%;
         padding    : 0;
-        margin-left: 5%;
     }
 }
 
@@ -75,6 +73,15 @@ div#PH_breadcrumbs {
     letter-spacing: unset;
     padding       : 0;
     margin-top    : -65px;
+    max-height: 100px;
+}
+
+#selectedAreaInfo .button-moreAreas {
+
+    max-height: 100px;
+    min-height: unset;
+    top: 20px;
+    bottom: unset;
 }
 
 //TODO: Assign correct margin once top portion is sorted out.
@@ -481,6 +488,13 @@ a.ui-button:active,
     margin-bottom: 0;
 }
 
+#selectedAreaInfo.moreInfo .priceLevelImages span.additionalPrices {
+
+    display: block;
+    clear: left;
+    padding: 7px 0;
+}
+
 #eventPage.hallMap .venuMapLegend {
     visibility: hidden;
     height    : 0;
@@ -510,6 +524,10 @@ h1#selectedAreaTitle {
     background-color: #fff;
     box-shadow      : none !important;
     border-top      : .5px solid @button-color;
+
+    @media @desktop {
+        border-top      : none;
+    }
 }
 
 #eventPage.non-seated #ticketsPane {
