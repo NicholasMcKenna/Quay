@@ -82,6 +82,10 @@ div#PH_breadcrumbs {
     min-height: unset;
     top: 20px;
     bottom: unset;
+    
+    @media @desktop {
+        margin-top: 0;
+    }    
 }
 
 //TODO: Assign correct margin once top portion is sorted out.
@@ -464,6 +468,11 @@ a.ui-button:active,
 #eventPage.hallMap #selectedAreaInfo .area-info-container>.name {
     .font-h2();
     padding-left: 0;
+
+    @media @desktop {
+
+        margin-top: 0px;
+    }
 }
 
 .expandable#selectedAreaInfo .selected {
