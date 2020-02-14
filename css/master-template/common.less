@@ -188,6 +188,9 @@ div#PH_Float_Menu {
         position: absolute;
     }
 }
+.float_menu_item {
+    margin-right: 10px;
+}
 
 #siteMenuBar #customerBox .loyaltyPoints,
 #siteMenuBar #customerBox .qualityPoints {
@@ -225,6 +228,13 @@ span.mnuBtnCaption::before {
 #siteMenuBar #my_basket>span,
 #siteMenuBar [id='my basket']>span {
     //left: 58px;
+}
+
+#siteMenuBar.hasclient #customerBox::before {
+    font-family: 'FontAwesome';
+    color: @button-color;
+    margin-right: 10px;
+    content: '\f007';
 }
 
 
