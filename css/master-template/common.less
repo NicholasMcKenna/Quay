@@ -189,13 +189,37 @@ div#PH_Float_Menu {
     }
 }
 
-#siteMenuBar #customerBox .loyaltyPoints, #siteMenuBar #customerBox .qualityPoints {
+#siteMenuBar #customerBox .loyaltyPoints,
+#siteMenuBar #customerBox .qualityPoints {
     display: none;
 }
 
 #siteMenuBar #my_basket>span:before,
 #siteMenuBar [id='my basket']>span:before {
-    //color: transparent;
+    font-family : 'FontAwesome';
+    color       : #fff;
+    margin-right: 0;
+    content     : '\f291';
+    font-size: 16px;
+    font-weight: bold;
+
+    @media @desktop {
+        color: @button-color;
+    }
+}
+
+span.mnuBtnCaption::before {
+    font-family: 'FontAwesome';
+    color: @button-color;
+    margin-right: 10px;
+    content: '\f007';
+}
+
+#navMenu_Float_Search_item > span::before {
+        font-family : 'FontAwesome';
+        color       : #fff;
+        margin-right: 10px;
+        content     : '\f002';
 }
 
 #siteMenuBar #my_basket>span,
@@ -311,8 +335,8 @@ div#PH_breadcrumbs {
 
     padding         : 10px !important;
     background-color: @box-bgcolor;
-    border: none !important;
-    border-radius: 0 !important;
+    border          : none !important;
+    border-radius   : 0 !important;
 
 
 }
@@ -334,7 +358,7 @@ div#promo-descr {
     font-weight     : 600;
     background-color: #fff !important;
     border          : none !important;
-    position: static;
+    position        : static;
 }
 
 #siteMenuBar #CountDown .CountDownRemainingTimeTitle {
@@ -359,9 +383,7 @@ div#promo-descr {
     //right: -20% !important;
 }
 
-#siteMenuBar .flm_login {
-
-}
+#siteMenuBar .flm_login {}
 
 body>.timer-tooltip {
     display: none !important;
@@ -514,7 +536,7 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 #PH_BasketWidget .basketEvent .infoSection .promoBox {
 
-    display:none !important;
+    display: none !important;
 }
 
 
