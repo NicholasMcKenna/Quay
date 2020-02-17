@@ -281,16 +281,24 @@ a#navMenu_Float_Search_item span {
 }
 
 #group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span {
-    color: #fff;
+    color           : #fff;
     background-color: transparent;
-    font-size: 16px;
-    line-height: 1;
+    font-size       : 16px;
+    line-height     : 1;
+
+    @media @desktop {
+        color: @font-dark-color;
+    }
 }
 
 #siteMenuBar.hasclient #customerBox a {
     font-size  : 16px;
     font-weight: 600;
     color      : #2a2d34;
+
+    @media @mobile {
+        color: #fff;
+    }
 }
 
 #siteMenuBar #my_basket>span,
@@ -311,6 +319,10 @@ a#navMenu_Float_Search_item span {
     width      : auto;
     height     : auto;
     line-height: normal;
+
+    @media @mobile {
+        margin-top: 9px;
+    }
 }
 
 
@@ -764,6 +776,7 @@ div#PH_Footer-main {
         margin-top  : -3px;
         //left      : -4.5em !important;
         width       : 18px !important;
+        left        : 59%;
     }
 }
 
@@ -843,5 +856,20 @@ div#PH_Search_results {
     display    : flex;
     margin-left: auto;
     margin-top : 0;
-    margin-top : 33px;
+}
+
+.template-TemplateFull #group_left,
+.template-TemplateWithRight #group_left {
+    @media @desktop {
+        margin-top: 30px;
+    }
+}
+
+#group_Header {
+    @media @desktop {
+        margin    : 0 auto;
+        width     : 100%;
+        margin-top: 70px;
+        text-align: center;
+    }
 }
