@@ -775,5 +775,16 @@ div#PH_Search_results {
 }
 
 .template-TemplateFull #group_left, .template-TemplateWithRight #group_left {
-    margin-top: 65px;
+    @media @desktop {
+        margin-top: 30px;
+    }
+}
+
+#group_Header {
+    @media @desktop {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 70px;
+        text-align: center;
+    }
 }
