@@ -415,7 +415,9 @@ a#navMenu_Float_Home_item {
 }
 
 div#PH_Float_Menu {
-    padding-right: 55px;
+    @media @desktop {
+        padding-right: 55px;
+    }
 }
 
 #siteMenuBar #CountDown.active {
@@ -424,9 +426,13 @@ div#PH_Float_Menu {
 }
 
 #siteMenuBar .flm_my_basket.active {
-    margin-right: 52px !important;
+    @media @desktop {
+        margin-right: 52px !important;
+    }
 }
 
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
-    margin-left:14px;
+    @media @desktop {
+        margin-left:14px;
+    }
 }
