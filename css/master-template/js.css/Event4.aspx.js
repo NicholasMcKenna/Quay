@@ -10,4 +10,14 @@ $(document).ready(function() {
             $('.eventDetails').after($('.promoBox'));
         }
     }
+
+
+
+
+
+    $.getScript("js/pagination-js/paginator.js", function() {
+        console.log("Pagination Script loaded.");
+     });
+
+     
 });
