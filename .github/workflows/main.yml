@@ -1,16 +1,15 @@
+
 on: push
-name: Publish Website
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v1
       with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action-Typescript@master
-      with:
-        ftp-server: ftp://ftp4a.seatgeekenterprise.co.uk:42121/UserContent
-        ftp-username: QuayTickets~test
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        host: ftp4a.seatgeekenterprise.co.uk:42121/
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        remoteDir: "UserContent"
