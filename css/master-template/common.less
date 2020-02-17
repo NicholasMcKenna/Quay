@@ -313,6 +313,24 @@ a#navMenu_Float_Search_item span {
     line-height: normal;
 }
 
+
+
+
+
+.ph_search_box .searchManager {
+
+    margin-top: 41px;
+    width: 100%;
+}
+
+.searchManager.expanded .findByOptions button.expanded,
+.searchManager.expanded .findByOptions button:not(.expanded) {
+
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+}
+
 #group_Header-fixed #PH_Search_Box {
     width : 33%;
     height: 35px;
@@ -328,6 +346,68 @@ a#navMenu_Float_Search_item span {
     width       : 100%;
     left        : 0px;
 }
+
+#group_Header-fixed.searchPageOpen FORM.frmSearch .SearchTextBox {
+
+    top: 3px;
+}
+
+
+#group_Header-fixed.searchPageOpen #PH_Search_Box {
+
+    right: 0;
+}
+#group_Header-fixed.searchPageOpen #closeSearchPage {
+
+    top: 0px;
+
+}
+
+.searchManager .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+
+    height: unset;
+}
+
+#group_Header-fixed.searchPageOpen .ph_search_box .findByValues .currentTimeRangeEventsCtrl {
+    margin-top: 46px;
+    padding-right: 0;
+}
+
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents, .currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+    padding-right: 0;
+    width: 100%;
+    background-color: #bfbfbf;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.findByTitle {
+
+    line-height: 60px;
+}
+
+.findByOptions button {
+
+    font-size: 16px;    
+    line-height: 16px;
+    height: unset;
+    margin: 0;
+    padding: 10px;
+}
+
+.findByOptions button::before {
+
+    margin-right: 6px;
+}
+
+.findByOptions button::after {
+    line-height: 12px;
+}
+
+
+
+
 
 /* Footer */
 #group_Footer {
