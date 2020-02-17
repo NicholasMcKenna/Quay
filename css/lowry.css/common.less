@@ -429,10 +429,32 @@ div#PH_Float_Menu {
     @media @desktop {
         margin-right: 52px !important;
     }
+
+    @media @mobile {
+        position: static;
+    }
 }
 
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
     @media @desktop {
         margin-left:14px;
+    }
+
+    @media @mobile {
+        order: 2;
+        position: static;
+    }
+}
+
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login {
+    @media @mobile {
+        position: static;
+        order: 1;
+    }
+}
+
+a#navMenu_Float_Search_item {
+    @media @mobile {
+        order: 3;
     }
 }
