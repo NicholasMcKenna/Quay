@@ -58,6 +58,7 @@
 
 .menu-item a {
     color: @font-dark-color;
+
     @media @mobile {
         color: #fff;
     }
@@ -337,16 +338,16 @@ div#PH_Video {
     font-size    : 15px;
 }
 
-.screen-clientrequiredfallback_aspx  .ph_breadcrumbs {
+.screen-clientrequiredfallback_aspx .ph_breadcrumbs {
     display: none;
 }
 
 #tabsWrapper input {
-    height: 33px !important;
-    padding-left: 5px;
-    -moz-border-radius: 2px;
+    height               : 33px !important;
+    padding-left         : 5px;
+    -moz-border-radius   : 2px;
     -webkit-border-radius: 2px;
-    border-radius: 4px !important;
+    border-radius        : 4px !important;
 }
 
 #siteMenuBar .flm_login,
@@ -355,22 +356,22 @@ a#navMenu_Float_TimeRemaining_item,
 a#navMenu_Float_Search_item {
     font-size  : 16px;
     font-weight: 600;
-    color: @font-dark-color;
+    color      : @font-dark-color;
 }
 
 a#navMenu_Float_Search_item,
 #group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login,
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
     @media @mobile {
-        width: 33%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
+        width           : 33%;
+        height          : 100%;
+        margin          : 0;
+        padding         : 0;
+        border-radius   : 0;
         background-color: @button-color;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
+        color           : #fff;
+        font-size       : 16px;
+        font-weight     : 600;
     }
 }
 
@@ -391,18 +392,18 @@ a#navMenu_Float_Search_item,
 
 #siteMenuBar #CountDown .timerText {
     font-weight: 600;
-    color: @button-color;
+    color      : @button-color;
 }
 
 a#navMenu_Float_Basket_item {
-    order: 5;
-    font-size: 16px;
+    order      : 5;
+    font-size  : 16px;
     font-weight: 600;
 }
 
 a#navMenu_Float_Home_item {
-    order: 0;
-    font-size: 16px;
+    order      : 0;
+    font-size  : 16px;
     font-weight: 600;
 
     @media @mobile {
@@ -422,7 +423,7 @@ div#PH_Float_Menu {
 
 #siteMenuBar #CountDown.active {
     position: absolute;
-    top: 27px;
+    top     : 27px;
 }
 
 #siteMenuBar .flm_my_basket.active {
@@ -437,11 +438,11 @@ div#PH_Float_Menu {
 
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
     @media @desktop {
-        margin-left:14px;
+        margin-left: 14px;
     }
 
     @media @mobile {
-        order: 2;
+        order   : 2;
         position: static;
     }
 }
@@ -449,7 +450,7 @@ div#PH_Float_Menu {
 #group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login {
     @media @mobile {
         position: static;
-        order: 1;
+        order   : 1;
     }
 }
 
@@ -462,5 +463,17 @@ a#navMenu_Float_Search_item {
 .flm_my_basket:not(.active) {
     @media @mobile {
         display: inline-block;
+    }
+
+    &:after {
+
+        content     : 'Basket' !important;
+        width       : 60px;
+        position    : static;
+        line-height : 38px;
+        padding-left: 10px;
+        font-size   : 16px;
+        font-weight : 600;
+
     }
 }
