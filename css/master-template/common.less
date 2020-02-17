@@ -229,6 +229,10 @@ span.mnuBtnCaption::before {
     color       : @button-color;
     margin-right: 10px;
     content     : '\f007';
+
+    @media @mobile {
+        color: #fff;
+    }
 }
 
 #navMenu_Float_Search_item>span::before {
@@ -236,6 +240,20 @@ span.mnuBtnCaption::before {
     color       : @button-color;
     margin-right: 10px;
     content     : '\f002';
+
+    @media @mobile {
+        color: #fff;
+    }
+}
+a#navMenu_Float_Search_item span {
+    bottom: 11px;
+}
+
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span {
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1;
 }
 
 #siteMenuBar.hasclient #customerBox a {
