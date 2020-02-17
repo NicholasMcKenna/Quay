@@ -123,6 +123,10 @@ body #group_Header-fixed {
     float          : none;
     overflow       : hidden;
     height         : 100%;
+
+    @media @mobile {
+        justify-content: space-evenly;
+    }
 }
 
 .siteMenuContainer button#navMenu_Float_login_item {
@@ -139,6 +143,10 @@ body #group_Header-fixed {
     order     : 4;
     background: none;
     color     : #000;
+
+    @media @mobile {
+        border-left: 1px solid;
+    }
 }
 
 
@@ -261,6 +269,13 @@ span.mnuBtnCaption::before {
         color: #fff;
     }
 }
+
+a#navMenu_Float_Search_item {
+    @media @mobile {
+        border-left: 1px solid;
+    }
+}
+
 a#navMenu_Float_Search_item span {
     bottom: 11px;
 }
