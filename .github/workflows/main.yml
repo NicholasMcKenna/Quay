@@ -9,7 +9,7 @@ jobs:
     - name: Upload ftp
       uses: sebastianpopp/ftp-action@releases/v1
       with:
-        host: ftp://ftp4a.seatgeekenterprise.co.uk:42121/UserContent
+        host: ftp4a.seatgeekenterprise.co.uk:42121/
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         remoteDir: "UserContent"
