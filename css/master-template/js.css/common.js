@@ -287,3 +287,9 @@ function paginator(config) {
 
     return box;
 }
+
+
+if (typeof paginator == 'function') { 
+    // paginator(); 
+    console.log("paginator script exists!");
+}
