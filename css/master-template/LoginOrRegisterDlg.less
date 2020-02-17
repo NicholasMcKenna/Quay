@@ -1,9 +1,45 @@
+.ui-dialog .ui-dialog-titlebar {
+
+    padding: .4em 2em;
+}
+
+.loginOrRegisterWizard DIV.breadcrumbs {
+    display: none;
+}
+
 .loginControl #btnLogin {
     .action-button();
 }
 
+.loginOrRegisterWizard .createAccountContainer .errorMessage {
+
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.loginOrRegisterWizard .createAccountFormContainer {
+    margin-top: 0;
+}
+
+.loginOrRegisterWizard .wizardStepDescription {
+
+    margin: 10px 0 0 0;
+}
+
+.loginOrRegisterWizard #frmCreateAccount .fieldHint {
+    
+    bottom: -1.6em;
+    left: 0.4em;
+}
+
 .loginOrRegisterWizard .linkToAlternative>button {
     .sub-button();
+    border-radius: 0;
+    margin-top: 6px;
+}
+
+.loginOrRegisterWizard .loginControl {
+    margin-top: 5em;
 }
 
 .loginOrRegisterWizard .loginControl>DIV.external {
@@ -19,12 +55,21 @@
     box-shadow: none;
 }
 
-.loginOrRegisterWizard .linkToAlternative>button {
-    border-radius: 0;
-}
 
 .loginControl .loginButtons {
     @media @mobile {
         padding-bottom: 50px;
     }
+}
+
+.loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button.ok {
+    
+    .action-button();
+}
+
+.loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button {
+
+    border-radius: 0;
+    letter-spacing: 0px;
+    width: unset;;
 }
