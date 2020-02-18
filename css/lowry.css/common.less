@@ -426,7 +426,7 @@ div#PH_Float_Menu {
     top     : 27px;
 
     @media @mobile {
-        top: 62px;
+        top  : 62px;
         right: 46px;
     }
 }
@@ -484,15 +484,26 @@ a#navMenu_Float_Search_item {
 #siteMenuBar.hasclient #customerBox {
     @media @mobile {
         background-color: @button-color;
-        position: static;
-        order: 1;
-        width: 33%;
+        position        : static;
+        order           : 1;
+        width           : 33%;
     }
 }
 
 body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     @media @mobile {
         margin-top: 7px;
-        font-size: 20px;
+        font-size : 20px;
+    }
+}
+
+#customerBox .greeting {
+    @media @mobile {
+        visibility    : visible;
+        display       : block;
+        border        : none;
+        max-width     : 106px;
+        line-height   : 27px;
+        font-size     : 13px;
     }
 }

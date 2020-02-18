@@ -24,7 +24,7 @@ iframe {
 
 * {
     box-sizing: border-box;
-} 
+}
 
 FORM input[type="text"],
 FORM input[type="password"],
@@ -245,6 +245,7 @@ div#PH_Float_Menu {
 
     @media @mobile {
         position: static !important;
+
     }
 }
 
@@ -303,7 +304,10 @@ a#navMenu_Float_Search_item span {
 
 #siteMenuBar #my_basket>span,
 #siteMenuBar [id='my basket']>span {
-    //left: 58px;
+    @media @mobile {
+        color    : white;
+        font-size: 16px;
+    }
 }
 
 #siteMenuBar.hasclient #customerBox::before {
@@ -332,15 +336,15 @@ a#navMenu_Float_Search_item span {
 .ph_search_box .searchManager {
 
     margin-top: 41px;
-    width: 100%;
+    width     : 100%;
 }
 
 .searchManager.expanded .findByOptions button.expanded,
 .searchManager.expanded .findByOptions button:not(.expanded) {
 
     -webkit-box-shadow: unset;
-    -moz-box-shadow: unset;
-    box-shadow: unset;
+    -moz-box-shadow   : unset;
+    box-shadow        : unset;
 }
 
 #group_Header-fixed #PH_Search_Box {
@@ -369,6 +373,7 @@ a#navMenu_Float_Search_item span {
 
     right: 0;
 }
+
 #group_Header-fixed.searchPageOpen #closeSearchPage {
 
     top: 0px;
@@ -381,16 +386,17 @@ a#navMenu_Float_Search_item span {
 }
 
 #group_Header-fixed.searchPageOpen .ph_search_box .findByValues .currentTimeRangeEventsCtrl {
-    margin-top: 46px;
+    margin-top   : 46px;
     padding-right: 0;
 }
 
-.currentTimeRangeEventsCtrl .currentTimeRangeEvents, .currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
-    padding-right: 0;
-    width: 100%;
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents,
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents:active {
+    padding-right   : 0;
+    width           : 100%;
     background-color: #bfbfbf;
-    text-align: center;
-    font-size: 1.2em;
+    text-align      : center;
+    font-size       : 1.2em;
 }
 
 
@@ -401,11 +407,11 @@ a#navMenu_Float_Search_item span {
 
 .findByOptions button {
 
-    font-size: 16px;    
+    font-size  : 16px;
     line-height: 16px;
-    height: unset;
-    margin: 0;
-    padding: 10px;
+    height     : unset;
+    margin     : 0;
+    padding    : 10px;
 }
 
 .findByOptions button::before {
