@@ -864,3 +864,87 @@ button.disabled.small_button_a:hover {
     display: none !important;
     color  : transparent !important;
 }
+
+#eventPage.seated #content>div#ticketsPane {
+    @media @mobile {
+        visibility: visible;
+    }
+}
+
+#eventPage.seated #content>div {
+    @media @mobile {
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+}
+
+#eventPage.seated .selectTickets {
+    @media @mobile {
+        border: none;
+        padding: 0;
+    }
+}
+
+.screen-Event4_aspx .ph_event_page #eventPage #content #ticketsPane .selectTickets::before {
+    @media @mobile {
+        content: none;
+    }
+}
+
+#eventPage.seated .selectTickets.empty .emptyMessage {
+    @media @mobile {
+        display: none;
+    }
+}
+
+#eventPage #content>div#ticketsPane .selectTickets h3+.numOfTickets.zero {
+    @media @mobile {
+        display: none;
+    }
+}
+
+#eventPage.seated #content>div#ticketsPane .selectTickets .tickets {
+    @media @mobile {
+        display: block;
+    }
+}
+
+#PH_Donation_purchase .buttonsContainer, #PH_Gift_Voucher_purchase .buttonsContainer, #PH_Membership_purchase .buttonsContainer, .bottomButtonsBar, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer, #eventPage #ticketsPane .selectTickets .buttonsContainer {
+    @media @mobile {
+        margin-bottom: 74px !important;
+        border-bottom: 1px solid #dedede;
+        position: static;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        color: inherit;
+        background: none;
+        padding-top: 30px !important;
+        z-index: 49;
+    }
+}
+
+#PH_Payment_details .bottomButtonsBar, #PH_Gift_Voucher_purchase .buttonsContainer, #PH_Membership_purchase .buttonsContainer, .bottomButtonsBar, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer, #eventPage #ticketsPane .selectTickets .buttonsContainer {
+    @media @mobile {
+        position: static;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        color: inherit;
+        background: none;
+        margin: 0 !important;
+        padding: 20px 0 0 !important;
+        overflow: hidden;
+        clear: both;
+        display: block;
+        min-height: 0;
+    }
+}
+
+#eventPage #ticketsPane .selectTickets .buttonsContainer .button.proceed, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
+    @media @mobile {
+        float: none;
+    }
+}
