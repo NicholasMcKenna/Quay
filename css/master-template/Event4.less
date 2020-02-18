@@ -689,24 +689,26 @@ div#leftPane {
 }
 
 .screen-Event4_aspx .ph_event_page #eventPage #content #ticketsPane .selectTickets .summary {
-    position       : fixed;
-    bottom         : 0;
-    width          : 100%;
-    left           : 50%;
-    transform      : translate3d(-50%, 0, 0);
-    max-width      : 1178px;
-    padding        : 0 2rem;
-    box-sizing     : border-box;
-    border         : 0;
-    height         : 70px;
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: center;
-    flex-direction : column;
-    margin         : 0;
-    font-weight    : 400;
-    z-index        : 1;
-    background     : none;
+    @media @desktop {
+        position       : fixed;
+        bottom         : 0;
+        width          : 100%;
+        left           : 50%;
+        transform      : translate3d(-50%, 0, 0);
+        max-width      : 1178px;
+        padding        : 0 2rem;
+        box-sizing     : border-box;
+        border         : 0;
+        height         : 70px;
+        display        : flex;
+        align-items    : flex-start;
+        justify-content: center;
+        flex-direction : column;
+        margin         : 0;
+        font-weight    : 400;
+        z-index        : 1;
+        background     : none;
+    }
 }
 
 .screen-Event4_aspx .ph_event_page #eventPage #content #ticketsPane .selectTickets .buttonsContainer {
@@ -946,5 +948,44 @@ button.disabled.small_button_a:hover {
 #eventPage #ticketsPane .selectTickets .buttonsContainer .button.proceed, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
     @media @mobile {
         float: none;
+    }
+}
+
+#eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        display: block;
+        border-top: none;
+        padding-left: 50%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+#eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        display: block;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+}
+
+#eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        padding-left: 20px;
+    }
+}
+
+#eventPage.seated .selectTickets .tickets, #eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        padding: 20px;
+        width: calc(100% - 42px);
+        border: 1px solid #e9e9e9;
+        border-top: none;
+        background: #f9f9f9;
+        margin: 0 auto;
+        display: block;
+        box-sizing: content-box;
+        overflow: hidden;
     }
 }
