@@ -12,11 +12,11 @@
 
 div#PH_breadcrumbs {
     @media @desktop {
-        width      : 75%;
-        display    : block;
-        max-width  : 1400px;
-        margin     : 75px auto 0 5%;
-        padding    : 0;
+        width    : 75%;
+        display  : block;
+        max-width: 1400px;
+        margin   : 75px auto 0 5%;
+        padding  : 0;
     }
 }
 
@@ -31,12 +31,13 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
     .action-button();
+
     &:hover,
     &:focus,
     &:active {
         @media @mobile {
 
-            width         : 112px;
+            width: 112px;
         }
     }
 }
@@ -44,26 +45,26 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
 
-    letter-spacing:0;
-    text-shadow:none;
-    padding:10px;
-    transform: none;
+    letter-spacing: 0;
+    text-shadow   : none;
+    padding       : 10px;
+    transform     : none;
 
     &:hover,
     &:active,
     &:focus {
-    
-        letter-spacing:0;
-        text-shadow:none;
-        padding:10px;
-        transform: none;
+
+        letter-spacing: 0;
+        text-shadow   : none;
+        padding       : 10px;
+        transform     : none;
     }
 
 }
 
 
 .small_button_a.proceed:focus {
-    border: 0px solid transparent;
+    border    : 0px solid transparent;
     box-shadow: unset;
 }
 
@@ -73,19 +74,19 @@ div#PH_breadcrumbs {
     letter-spacing: unset;
     padding       : 0;
     margin-top    : -65px;
-    max-height: 100px;
+    max-height    : 100px;
 }
 
 #selectedAreaInfo .button-moreAreas {
 
     max-height: 100px;
     min-height: unset;
-    top: 20px;
-    bottom: unset;
+    top       : 20px;
+    bottom    : unset;
 
     @media @desktop {
         margin-top: 0;
-    }    
+    }
 }
 
 //TODO: Assign correct margin once top portion is sorted out.
@@ -182,8 +183,8 @@ div#PH_breadcrumbs {
     background      : transparent;
 
     @media @desktop {
-        width: 100%;
-        height      : unset;
+        width : 100%;
+        height: unset;
     }
 }
 
@@ -308,10 +309,10 @@ a.ui-button:active,
     background: none;
 }
 
-#eventPage.non-seated #ticketsPane > :not(.ui-selectmenu-menu) {
+#eventPage.non-seated #ticketsPane> :not(.ui-selectmenu-menu) {
 
-    width: 100%;
-    max-width: 100%;
+    width       : 100%;
+    max-width   : 100%;
     padding-left: 0;
 }
 
@@ -324,9 +325,10 @@ a.ui-button:active,
     margin-top: -10px;
 
 }
+
 #eventPage .priceLevelInfo {
 
-    margin-top: 10px;
+    margin-top   : 10px;
     margin-bottom: 0;
 }
 
@@ -487,8 +489,8 @@ a.ui-button:active,
     border: none;
 
     @media @mobile {
-        margin-left : 0;
-        padding-left: 0;
+        margin-left   : 0;
+        padding-left  : 0;
         padding-bottom: 0;
     }
 }
@@ -502,7 +504,7 @@ a.ui-button:active,
 #selectedAreaInfo.moreInfo .priceLevelImages span.additionalPrices {
 
     display: block;
-    clear: left;
+    clear  : left;
     padding: 7px 0;
 }
 
@@ -537,13 +539,13 @@ h1#selectedAreaTitle {
     border-top      : .5px solid @button-color;
 
     @media @desktop {
-        border-top      : none;
+        border-top: none;
     }
 }
 
 #eventPage.non-seated #ticketsPane {
 
-    width: 100%;
+    width      : 100%;
     margin-left: 0;
 
     @media @desktop {
@@ -609,7 +611,7 @@ h1#selectedAreaTitle {
     @media @mobile {
         background-color: @box-bgcolor;
         margin-top      : 161px;
-        width: 100% !important;
+        width           : 100% !important;
 
     }
 
@@ -735,9 +737,9 @@ div#leftPane {
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
     max-height: unset;
-    position: relative;
-    overflow: visible;
-/*
+    position  : relative;
+    overflow  : visible;
+    /*
     @media @mobile {
         max-width: calc(100% - 112px);
     }
@@ -759,7 +761,7 @@ div#leftPane {
 
 #eventPage .selectTickets .buttonsContainer #btnProceed:focus {
 
-    box-shadow: unset;
+    box-shadow      : unset;
     width           : @button-desktop-width;
     background-image: none;
     text-decoration : none;
@@ -782,9 +784,9 @@ div#leftPane {
     }
 }
 
-#eventPage .selectTickets .tickets > .row {
+#eventPage .selectTickets .tickets>.row {
 
-    height: unset;
+    height : unset;
     padding: 20px 0 0 0;
 
     @media @desktop {
@@ -876,14 +878,14 @@ button.disabled.small_button_a:hover {
 #eventPage.seated #content>div {
     @media @mobile {
         display: block;
-        clear: both;
-        width: 100%;
+        clear  : both;
+        width  : 100%;
     }
 }
 
 #eventPage.seated .selectTickets {
     @media @mobile {
-        border: none;
+        border : none;
         padding: 0;
     }
 }
@@ -908,65 +910,156 @@ button.disabled.small_button_a:hover {
 
 #eventPage.seated #content>div#ticketsPane .selectTickets .tickets {
     @media @mobile {
-        display: block;
+        display       : block;
+        border-bottom : none;
+        width         : 100%;
+        padding       : 20px;
+        padding-right : 0;
+        padding-left  : 0;
+        padding-bottom: 0;
+        border-right  : none;
     }
 }
 
-#PH_Donation_purchase .buttonsContainer, #PH_Gift_Voucher_purchase .buttonsContainer, #PH_Membership_purchase .buttonsContainer, .bottomButtonsBar, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer, #eventPage #ticketsPane .selectTickets .buttonsContainer {
+#eventPage.seated .selectTickets .row {
+    @media @mobile {
+        min-height    : 100px;
+        border-bottom : 1px solid #dedede !important;
+        padding-left  : 0;
+        padding-right : 0;
+        padding-bottom: 50px;
+        padding-top   : 10px;
+        height        : auto;
+    }
+}
+
+#eventPage.seated #content>div#ticketsPane .selectTickets .tickets .row .priceTypes {
+    @media @mobile {
+        max-width   : none;
+        position    : relative;
+        margin-top  : 0;
+        margin-left : 0;
+        left        : auto;
+        float       : right;
+        margin-right: 0;
+        width       : 50%;
+    }
+}
+
+#eventPage.seated .selectTickets .row .seat {
+    @media @mobile {
+        float    : none;
+        max-width: 50%;
+    }
+}
+
+#eventPage.seated .selectTickets.mode-SelectedSeats .row .ops {
+    @media @mobile {
+        position   : relative;
+        left       : auto;
+        top        : auto;
+        right      : auto;
+        width      : auto;
+        line-height: inherit;
+        clear      : left;
+        margin-top : 5px;
+        display    : block;
+        float      : none;
+    }
+}
+
+#eventPage.seated #content>div#ticketsPane .selectTickets .tickets .row .ui-icon.op-remove {
+    @media @mobile {
+        float      : none;
+        line-height: 25px;
+    }
+}
+
+#eventPage.seated #content>div#ticketsPane .selectTickets .tickets .row .pricing {
+    @media @mobile {
+        right     : 0;
+        position  : relative;
+        width     : auto;
+        float     : none;
+        clear     : both;
+        display   : block;
+        text-align: right;
+    }
+}
+
+#PH_Donation_purchase .buttonsContainer,
+#PH_Gift_Voucher_purchase .buttonsContainer,
+#PH_Membership_purchase .buttonsContainer,
+.bottomButtonsBar,
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer,
+#eventPage #ticketsPane .selectTickets .buttonsContainer {
     @media @mobile {
         margin-bottom: 74px !important;
         border-bottom: 1px solid #dedede;
-        position: static;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        color: inherit;
-        background: none;
-        padding-top: 30px !important;
-        z-index: 49;
+        position     : static;
+        bottom       : auto;
+        left         : auto;
+        right        : auto;
+        color        : inherit;
+        background   : none;
+        padding-top  : 30px !important;
+        z-index      : 49;
     }
 }
 
-#PH_Payment_details .bottomButtonsBar, #PH_Gift_Voucher_purchase .buttonsContainer, #PH_Membership_purchase .buttonsContainer, .bottomButtonsBar, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer, #eventPage #ticketsPane .selectTickets .buttonsContainer {
+#PH_Payment_details .bottomButtonsBar,
+#PH_Gift_Voucher_purchase .buttonsContainer,
+#PH_Membership_purchase .buttonsContainer,
+.bottomButtonsBar,
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer,
+#eventPage #ticketsPane .selectTickets .buttonsContainer {
     @media @mobile {
-        position: static;
-        position: relative;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        color: inherit;
+        position  : static;
+        position  : relative;
+        bottom    : auto;
+        left      : auto;
+        right     : auto;
+        color     : inherit;
         background: none;
-        margin: 0 !important;
-        padding: 20px 0 0 !important;
-        overflow: hidden;
-        clear: both;
-        display: block;
+        margin    : 0 !important;
+        padding   : 20px 0 0 !important;
+        overflow  : hidden;
+        clear     : both;
+        display   : block;
         min-height: 0;
     }
 }
 
-#eventPage #ticketsPane .selectTickets .buttonsContainer .button.proceed, #eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
+#eventPage #ticketsPane .selectTickets .buttonsContainer .button.proceed,
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed {
     @media @mobile {
         float: none;
-    }
-}
-
-#eventPage.seated .selectTickets .summary {
-    @media @mobile {
-        display: block;
-        border-top: none;
-        padding-left: 50%;
         width: 100%;
-        box-sizing: border-box;
+    }
+}
+
+#eventPage.seated #content>div#ticketsPane .selectTickets h3+.numOfTickets.non-zero {
+    @media @mobile {
+        display: none;
     }
 }
 
 #eventPage.seated .selectTickets .summary {
     @media @mobile {
-        display: block;
-        border-left: none;
+        display     : block;
+        border-top  : none;
+        padding-left: 50%;
+        width       : 100%;
+        box-sizing  : border-box;
+    }
+}
+
+#eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        display     : block;
+        border-left : none;
         border-right: none;
-        border-top: none;
+        border-top  : none;
     }
 }
 
@@ -976,16 +1069,17 @@ button.disabled.small_button_a:hover {
     }
 }
 
-#eventPage.seated .selectTickets .tickets, #eventPage.seated .selectTickets .summary {
+#eventPage.seated .selectTickets .tickets,
+#eventPage.seated .selectTickets .summary {
     @media @mobile {
-        padding: 20px;
-        width: calc(100% - 42px);
-        border: 1px solid #e9e9e9;
+        padding   : 20px;
+        width     : calc(100% - 42px);
+        border    : 1px solid #e9e9e9;
         border-top: none;
         background: #f9f9f9;
-        margin: 0 auto;
-        display: block;
+        margin    : 0 auto;
+        display   : block;
         box-sizing: content-box;
-        overflow: hidden;
+        overflow  : hidden;
     }
 }
