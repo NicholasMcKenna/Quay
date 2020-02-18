@@ -8,4 +8,8 @@ $(document).ready(function() {
         }
         
     }
+
+    $('#zoomContainer').on( "mousewheel DOMMouseScroll", function(e) {
+        e.stopPropagation()
+    });
 });
