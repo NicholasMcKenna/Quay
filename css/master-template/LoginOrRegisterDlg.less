@@ -11,7 +11,7 @@
     .action-button();
 }
 
-.loginOrRegisterWizard .createAccountContainer .errorMessage {
+.createAccountContainer .errorMessage {
 
     margin-top: 15px;
     padding-left: 10px;
@@ -30,6 +30,11 @@
     
     bottom: -1.6em;
     left: 0.4em;
+}
+
+.loginOrRegisterWizard .linkToAlternative {
+
+    padding-top: 10%;
 }
 
 .loginOrRegisterWizard .linkToAlternative>button {
@@ -94,5 +99,14 @@
     &:focus {
         width: unset;
         letter-spacing: 0px;
+    }
+}
+
+
+.loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button.back {
+
+    @media @desktop {
+
+        bottom: 14px;
     }
 }
