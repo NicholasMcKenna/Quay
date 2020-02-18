@@ -40,6 +40,10 @@
 
 .loginOrRegisterWizard .loginControl {
     margin-top: 5em;
+
+    @media @desktop {
+        margin-top: 0;
+    }
 }
 
 .loginOrRegisterWizard .loginControl>DIV.external {
@@ -57,6 +61,7 @@
 
 
 .loginControl .loginButtons {
+
     @media @mobile {
         padding-bottom: 50px;
     }
@@ -65,11 +70,29 @@
 .loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button.ok {
     
     .action-button();
+
+    width: unset;
+    margin-left: 15px;
+    letter-spacing: 0px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        width: unset;
+        letter-spacing: 0px;
+    }
 }
 
 .loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button {
 
     border-radius: 0;
     letter-spacing: 0px;
-    width: unset;;
+    width: unset;
+
+    &:hover,
+    &:active,
+    &:focus {
+        width: unset;
+        letter-spacing: 0px;
+    }
 }
