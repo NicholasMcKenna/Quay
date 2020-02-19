@@ -60,7 +60,30 @@ div#PH_breadcrumbs {
 }
 
 #offersContainer .promptsContainer .elementItem .eventInfo .imgContainer {
-    display: none;
+
+    background: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#offersContainer .promptsContainer .elementItem .imgContainer {
+    width: unset;
+    height: unset;
+    background: none;
+}
+
+#offersContainer .promptsContainer .elementItem .eventInfo .imgContainer > img {
+    margin-top: unset;
+    margin-left: unset;
+}
+
+#offersContainer .promptsContainer .elementItem .imgContainer > img {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    max-height: unset;
+    margin-left: unset;
+    margin-top: unset;
 }
 
 #offersContainer .promptsContainer .elementItems {
@@ -76,11 +99,11 @@ div#PH_breadcrumbs {
 }
 
 #offersContainer .promptsContainer .elementItem {
-    padding-left    : 0;
-    padding-right   : 0;
+    padding-left    : unset;
+    padding-right   : unset;
     background-color: #fff;
     margin-bottom   : 15px;
-    padding         : 25px;
+    padding         : 15px;
     width           : 100%;
     height          : auto;
 
@@ -163,3 +186,10 @@ button.small_button_a::after {
 #offersContainer>.buttons-container {
     margin: 30px 0;
 }
+
+
+#offersContainer .elementItem {
+
+
+}
+
