@@ -929,23 +929,21 @@ button.disabled.small_button_a:hover {
     @media @mobile {
         display       : block;
         border-bottom : none;
-        width         : 100%;
-        padding       : 20px;
-        padding-right : 0;
-        padding-left  : 0;
-        padding-bottom: 0;
+        width         : auto;
+        padding       : 15px;
         border-right  : none;
     }
 }
 
 #eventPage.seated .selectTickets .row {
     @media @mobile {
-        min-height    : 100px;
+        min-height    : unset;
         border-bottom : 1px solid #dedede !important;
+        border-top    : none;
         padding-left  : 0;
         padding-right : 0;
-        padding-bottom: 50px;
-        padding-top   : 10px;
+        padding-bottom: 15px;
+        padding-top   : 15px;
         height        : auto;
     }
 }
@@ -1072,30 +1070,6 @@ button.disabled.small_button_a:hover {
     }
 }
 
-#eventPage.seated .selectTickets .summary {
-    @media @mobile {
-        display     : block;
-        border-top  : none;
-        padding-left: 50%;
-        width       : 100%;
-        box-sizing  : border-box;
-    }
-}
-
-#eventPage.seated .selectTickets .summary {
-    @media @mobile {
-        display     : block;
-        border-left : none;
-        border-right: none;
-        border-top  : none;
-    }
-}
-
-#eventPage.seated .selectTickets .summary {
-    @media @mobile {
-        padding-left: 20px;
-    }
-}
 
 #eventPage.seated .selectTickets .tickets,
 #eventPage.seated .selectTickets .summary {
@@ -1103,12 +1077,22 @@ button.disabled.small_button_a:hover {
         padding   : 20px;
         width     : calc(100% - 42px);
         border    : 1px solid #e9e9e9;
-        border-top: none;
         background: #f9f9f9;
         margin    : 0 auto;
         display   : block;
         box-sizing: content-box;
         overflow  : hidden;
+    }
+}
+
+#eventPage.seated .selectTickets .summary {
+    @media @mobile {
+        display     : block;
+        border      : none;
+        padding-left: 20px;
+        box-sizing  : border-box;
+        background-color: #FFFFFF;
+        border    : none;
     }
 }
 
