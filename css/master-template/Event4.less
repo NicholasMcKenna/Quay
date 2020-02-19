@@ -466,6 +466,7 @@ a.ui-button:active,
         width     : 456px;
         float     : right;
         margin-top: 0px;
+        top       : -155px;
     }
 }
 
@@ -474,7 +475,7 @@ a.ui-button:active,
     @media @desktop {
         position: absolute;
         right   : 0;
-        top     : 110px;
+        top     : -155px;
         
     }
 }
@@ -483,7 +484,7 @@ a.ui-button:active,
     @media @desktop {
         position: absolute;
         right   : 0;
-        top     : 110px;
+        top     : -155px;
     }
 }
 
@@ -818,6 +819,12 @@ div#leftPane {
     }
 }
 
+#eventPage .selectTickets .tickets>.row:last-of-type {
+
+    border-bottom: none !important;
+    padding-bottom: 0px;
+}
+
 #eventPage.seated #leftPane,
 #eventPage.non-seated #leftPane {
 
@@ -928,10 +935,8 @@ button.disabled.small_button_a:hover {
 #eventPage.seated #content>div#ticketsPane .selectTickets .tickets {
     @media @mobile {
         display       : block;
-        border-bottom : none;
         width         : auto;
         padding       : 15px;
-        border-right  : none;
     }
 }
 
@@ -962,10 +967,19 @@ button.disabled.small_button_a:hover {
     }
 }
 
+#eventPage.seated .selectTickets .row .priceLevels {
+
+    @media @mobile {
+        top: 14px;
+    }
+}
+
+
 #eventPage.seated .selectTickets .row .seat {
     @media @mobile {
         float    : none;
         max-width: 50%;
+        top: 12px;
     }
 }
 
@@ -1077,7 +1091,7 @@ button.disabled.small_button_a:hover {
         padding   : 20px;
         width     : calc(100% - 42px);
         border    : 1px solid #e9e9e9;
-        background: #f9f9f9;
+        background: #FFFFFF;
         margin    : 0 auto;
         display   : block;
         box-sizing: content-box;
@@ -1091,7 +1105,6 @@ button.disabled.small_button_a:hover {
         border      : none;
         padding-left: 20px;
         box-sizing  : border-box;
-        background-color: #FFFFFF;
         border    : none;
     }
 }
