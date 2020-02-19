@@ -887,3 +887,84 @@ div#PH_Search_results {
         display: none;
     }
 }
+
+
+
+
+
+
+.pagingContainer {
+    display: flex;
+    float:left;
+    margin: 8px 0 0 0;
+    width: 100%;
+}
+
+.pagingContainer a.paging {
+
+    flex-grow: 1;
+    padding: 10px 10px 9px 10px;
+    font-size: 16px;
+    background-color: @button-color; 
+    color: #FFF;
+    opacity: .35;
+    margin: 0 5px 0 0;
+    line-height: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+.pagingContainer a.paging.first, .pagingContainer a.paging.last,
+.pagingContainer a.paging.next, .pagingContainer a.paging.prev {
+    
+   position: relative;
+}
+
+
+.pagingContainer a.paging.next {
+
+    margin-left: 13px;
+}
+
+.pagingContainer a.paging.prev {
+
+    margin-right: 18px;
+}
+
+.pagingContainer a.paging.next:before, .pagingContainer a.paging.prev:after {
+    
+    content: "";
+    display: block;
+    width: 1px;
+    height: 29px;
+    position: absolute;
+    top: 0;
+}
+
+.pagingContainer a.paging.next:before {
+    
+    border-left: 1px solid @box-bgcolor;
+    left: -9px;
+}
+
+.pagingContainer a.paging.prev:after {
+    
+    border-right: 1px solid @box-bgcolor;
+    right: -10px;
+}
+
+.pagingContainer a.paging.current {
+    
+    background-color:@font-dark-color;
+}
+
+.pagingContainer a.paging:hover {
+    
+    background-color:@button-color; 
+    opacity: 1;
+}
+
+
