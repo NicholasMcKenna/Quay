@@ -73,7 +73,7 @@ div#PH_breadcrumbs {
 .hallMap #selectedAreaInfo .button-moreAreas {
     letter-spacing: unset;
     padding       : 0;
-    margin-top    : -65px;
+    margin-top    : -85px;
     max-height    : 100px;
 }
 
@@ -455,6 +455,41 @@ a.ui-button:active,
     }
 }
 
+
+
+.promoBox {
+
+    padding: 10px;
+    left: unset;
+
+    @media @desktop {
+        width     : 456px;
+        float     : right;
+        margin-top: 0px;
+    }
+}
+
+
+.hallMap form.promoBox {
+    @media @desktop {
+        position: absolute;
+        right   : 0;
+        top     : 110px;
+        
+    }
+}
+
+.seated form.promoBox {
+    @media @desktop {
+        position: absolute;
+        right   : 0;
+        top     : 110px;
+    }
+}
+
+
+
+
 .promoBox input+button {
     .sub-button();
     border       : none;
@@ -651,17 +686,6 @@ div#leftPane {
     }
 }
 
-.promoBox {
-
-    padding: 10px;
-
-    @media @desktop {
-        width     : 456px;
-        float     : right;
-        margin-top: -110px;
-    }
-}
-
 #eventPage .infoSection {
     width: 100%;
 
@@ -796,6 +820,8 @@ div#leftPane {
 
 #eventPage.seated #leftPane,
 #eventPage.non-seated #leftPane {
+
+    position: unset;
     padding-left : 0;
     padding-right: 0;
 }
@@ -826,22 +852,6 @@ button.disabled.small_button_a:hover {
 .seatingPlanContainer {
     @media @desktop {
         border-right: 1px solid #888 !important;
-    }
-}
-
-.hallMap form.promoBox {
-    @media @desktop {
-        position: absolute;
-        right   : 0;
-        top     : 250px;
-        
-    }
-}
-
-.seated form.promoBox {
-    @media @desktop {
-        left: 100vh;
-        top: -57px;
     }
 }
 
