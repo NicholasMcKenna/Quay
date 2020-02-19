@@ -10,12 +10,11 @@
 .screen-content .ui-widget {
 
     .font-dark();
+
+    font-size: @fontsize-main;
+    font-weight: @fontweight-main;
 }
 
-.screen-content h2 {
-
-    .font-h2();
-}
 
 div#PH_breadcrumbs {
     display: none;
@@ -29,6 +28,11 @@ div#PH_breadcrumbs {
 
 .crmWelcomeColumnContainer > DIV {
     padding: 0;
+}
+
+.crmWelcomeColumnContainer > DIV > H2 {
+
+    .font-h2();
 }
 
 .welcomeContent, #crmFriendsAndRelativesContent {
