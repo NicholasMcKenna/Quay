@@ -6,7 +6,6 @@ $(document).ready(function() {
         if ($(window).width() <= 780) {
             $('#ticketsPane').prepend($('.promoBox'));
         }
-        
     }
 
     $('#zoomContainer').on( "mousewheel DOMMouseScroll", function(e) {
