@@ -70,6 +70,13 @@ button {
     }
 }
 
+body.screen-CrmDetails_aspx div.ui-dialog.ui-widget.ui-widget-content {
+
+    @media @mobile {
+        width: 98% !important;
+    }
+}
+
 /* Header */
 body,
 #group_Header-fixed {
@@ -898,6 +905,10 @@ div#PH_Search_results {
     float:left;
     margin: 8px 0 0 0;
     width: 100%;
+
+    @media @desktop {
+        width: unset;
+    }
 }
 
 .pagingContainer a.paging {
@@ -906,12 +917,16 @@ div#PH_Search_results {
     padding: 10px 10px 9px 10px;
     font-size: 16px;
     background-color: @button-color; 
-    color: #FFF;
-    opacity: .35;
+    color: @font-light-color;
+    opacity: 1;
     margin: 0 5px 0 0;
     line-height: 1em;
     text-decoration: none;
     text-align: center; 
+
+    @media @desktop {
+        padding: 10px 12px 9px 12px;
+    }
 }
 
 
