@@ -1,14 +1,17 @@
-$(document).ready(function() {
+$(document).ready(function () {
     if ($('.hallMap').length > 0) {
         $('#hallMap').after($('.promoBox'));
     } else if ($('.selected').length > 0) {
-        
         if ($(window).width() <= 780) {
-            $('#ticketsPane').prepend($('.promoBox'));
+            $('.seatingPlanContainer').after('<div class="promo-container"></div>');
+            $('.promo-container').after($('.promoBox'));
+        } else {
+            //$('#ticketsPane').prepend($('.promoBox'));
+            $('.eventDetails').after($('.promoBox'));
         }
     }
 
-    $('#zoomContainer').on( "mousewheel DOMMouseScroll", function(e) {
+    $('#zoomContainer').on("mousewheel DOMMouseScroll", function (e) {
         e.stopPropagation()
     });
 });
