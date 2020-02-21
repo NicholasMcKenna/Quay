@@ -70,6 +70,13 @@ button {
     }
 }
 
+body.screen-CrmDetails_aspx div.ui-dialog.ui-widget.ui-widget-content {
+
+    @media @mobile {
+        width: 98% !important;
+    }
+}
+
 /* Header */
 body,
 #group_Header-fixed {
@@ -192,6 +199,7 @@ div#PH_header-container {
 }
 
 .main-logo {
+
     max-width: @logo-maxwidth-desktop;
     padding  : 0 5%;
 
@@ -893,11 +901,25 @@ div#PH_Search_results {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .pagingContainer {
     display: flex;
     float:left;
     margin: 8px 0 0 0;
     width: 100%;
+
+    @media @desktop {
+        width: unset;
+    }
 }
 
 .pagingContainer a.paging {
@@ -906,16 +928,17 @@ div#PH_Search_results {
     padding: 10px 10px 9px 10px;
     font-size: 16px;
     background-color: @button-color; 
-    color: #FFF;
-    opacity: .35;
+    color: @font-light-color;
+    opacity: .75;
     margin: 0 5px 0 0;
     line-height: 1em;
     text-decoration: none;
-    text-align: center;
+    text-align: center; 
+
+    @media @desktop {
+        padding: 8px 12px 7px 12px;
+    }
 }
-
-
-
 
 .pagingContainer a.paging.first, .pagingContainer a.paging.last,
 .pagingContainer a.paging.next, .pagingContainer a.paging.prev {
@@ -926,12 +949,12 @@ div#PH_Search_results {
 
 .pagingContainer a.paging.next {
 
-    margin-left: 13px;
+    margin-left: 6px;
 }
 
 .pagingContainer a.paging.prev {
 
-    margin-right: 18px;
+    margin-right: 12px;
 }
 
 .pagingContainer a.paging.next:before, .pagingContainer a.paging.prev:after {
@@ -941,24 +964,31 @@ div#PH_Search_results {
     width: 1px;
     height: 29px;
     position: absolute;
-    top: 0;
+    top: 3px;
+    pointer-events: none;
+
+    @media @desktop {
+
+        height: 25px;
+    }
 }
 
 .pagingContainer a.paging.next:before {
     
-    border-left: 1px solid @box-bgcolor;
-    left: -9px;
+    border-left: 1px solid #a8a8a8;
+    left: -6px;
 }
 
 .pagingContainer a.paging.prev:after {
     
-    border-right: 1px solid @box-bgcolor;
-    right: -10px;
+    border-right: 1px solid #a8a8a8;
+    right: -6px;
 }
 
 .pagingContainer a.paging.current {
     
     background-color:@font-dark-color;
+    opacity: 1;
 }
 
 .pagingContainer a.paging:hover {
