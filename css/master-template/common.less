@@ -1017,9 +1017,32 @@ div#PH_Search_results {
 }
 
 .pagingContainer a.paging:hover {
-    
     background-color:@button-color; 
     opacity: 1;
 }
 
+#customerBox.crmMenuIsShow .float_menu_item .greeting {
+    @media @mobile {
+        left: 6px;
+    }
+}
 
+#siteMenuBar.hasclient #customerBox.crmMenuIsShow .float_menu_item+button.logout {
+    @media @mobile {
+        left: 192px;
+        width: 192px;
+    }
+}
+
+#siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.loyaltyPoints, #siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.qualityPoints {
+    @media @mobile {
+        display: none;
+    }
+}
+
+#customerBox.crmMenuIsShow .float_menu_item .greeting {
+    @media @mobile {
+        color: @font-dark-color;
+        font-size: 16px;
+    }
+}
