@@ -311,6 +311,7 @@ a#navMenu_Float_Search_item span {
 
     @media @mobile {
         color: #fff;
+        position: static;
     }
 }
 
@@ -557,24 +558,10 @@ div#promo-descr {
     font-weight  : 600;
 }
 
-#siteMenuBar.hasclient #CountDown .CountDownRemainingTimeTitle {
-    //padding-left: 124px;
-}
-
 #siteMenuBar #CountDown {
-    //text-align: left;
-    //right     : -13% !important;
-    //top       : 31px !important;
-    //width     : 250px;
     background  : #fff;
     position    : static;
 }
-
-#siteMenuBar.hasclient #CountDown {
-    //right: -20% !important;
-}
-
-#siteMenuBar .flm_login {}
 
 body>.timer-tooltip {
     display: none !important;
@@ -588,10 +575,6 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 .siteMenuContainer>*:after,
 #siteMenuBar.hasclient #customerBox:after {
     content: none;
-}
-
-#siteMenuBar #CountDown.active .timer-tooltip {
-    // visibility: hidden !important;
 }
 
 .timerMessage {
@@ -779,10 +762,6 @@ div#PH_Footer-main {
     padding : 8px 0 0 4px !important;
 }
 
-#siteMenuBar.hasclient #customerBox {
-    //visibility: hidden;
-}
-
 #siteMenuBar #my_basket .basketQtyHolder,
 #siteMenuBar[id='my basket'] .basketQtyHolder {
     background  : #000;
@@ -804,16 +783,6 @@ div#PH_Footer-main {
         left: 59% !important;
     }
 }
-
-#siteMenuBar.hasclient #my_basket>span,
-#siteMenuBar [id='my basket']>span {
-    //left: -14px;
-}
-
-#siteMenuBar #CountDown .timerText {
-    //visibility: hidden !important;
-}
-
 
 .qtip-content {
     overflow: visible !important;
@@ -1141,9 +1110,32 @@ div#PH_Search_results {
 }
 
 .pagingContainer a.paging:hover {
-    
     background-color:@button-color; 
     opacity: 1;
 }
 
+#customerBox.crmMenuIsShow .float_menu_item .greeting {
+    @media @mobile {
+        left: 6px;
+    }
+}
 
+#siteMenuBar.hasclient #customerBox.crmMenuIsShow .float_menu_item+button.logout {
+    @media @mobile {
+        left: 6px;
+        width: 192px;
+    }
+}
+
+#siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.loyaltyPoints, #siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.qualityPoints {
+    @media @mobile {
+        display: none;
+    }
+}
+
+#customerBox.crmMenuIsShow .float_menu_item .greeting {
+    @media @mobile {
+        color: @font-dark-color;
+        font-size: 16px;
+    }
+}
