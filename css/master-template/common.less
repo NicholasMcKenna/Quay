@@ -902,16 +902,43 @@ div#PH_Search_results {
 
 
 
-.PH_Gift_Vouchers_list.screen-content {
+
+
+
+
+#PH_Gift_Vouchers_list.screen-content {
 
     margin: 0 auto;
 }
 
+#PH_Gift_Vouchers_list .itemsList {
 
+    display: flex;
+    flex-direction: row;
+}
 
+#PH_Gift_Vouchers_list .itemsList .dataItem {
 
+    width: 23%;
 
+    @media @mobile { 
+        width: 100%; 
+    }
+}
 
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
+    
+    .action-button();
+
+}
+
+#PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
+    background-image: none;
+}
+
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo a {
+    display: none;
+}
 
 
 
