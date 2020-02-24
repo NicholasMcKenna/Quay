@@ -1,0 +1,1 @@
+$('.suppPaymentsSection').before($('#leftToPayContainer, #paymentSection'));
