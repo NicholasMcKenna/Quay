@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('.suppPaymentsSection').before($('#leftToPayContainer, #paymentSection'));
+    //$('.suppPaymentsSection').before($('#leftToPayContainer, #paymentSection'));
 });
