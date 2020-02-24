@@ -905,6 +905,61 @@ div#PH_Search_results {
 
 
 
+#PH_Memberships_list.screen-content,
+#PH_Gift_Vouchers_list.screen-content {
+
+    margin: 0 auto;
+}
+
+#PH_Memberships_list .itemsList,
+#PH_Gift_Vouchers_list .itemsList {
+
+    display: flex;
+    flex-direction: row;
+}
+
+#PH_Memberships_list .itemsList .dataItem,
+#PH_Gift_Vouchers_list .itemsList .dataItem {
+
+    width: 23%;
+
+    @media @mobile { 
+        width: 100%; 
+    }
+}
+
+#PH_Memberships_list .itemsList .itemsButtonsContainer, 
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
+    
+    .button.small_button_a a, button.small_button_a, .button.small_button_a a:hover, button.small_button_a:hover, .button.small_button_a a:focus, button.small_button_a:focus, .button.small_button_a a:active, button.small_button_a:active {
+    
+        .action-button();
+    }
+}
+
+#PH_Memberships_list .itemsList .dataItem .item_image_container div.item_image,
+#PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
+    background-image: none;
+}
+
+#PH_Memberships_list .itemsList .itemsButtonsContainer .button.moreInfo a,
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo a {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -915,6 +970,7 @@ div#PH_Search_results {
     display: flex;
     float:left;
     margin: 8px 0 25px 0;
+    max-width: 100%;
     width: 100%;
 
     @media @desktop {
@@ -925,7 +981,7 @@ div#PH_Search_results {
 .pagingContainer a.paging {
 
     flex-grow: 1;
-    padding: 10px 10px 9px 10px;
+    padding: 10px 4px 9px 4px;
     font-size: 16px;
     background-color: @button-color; 
     color: @font-light-color;
