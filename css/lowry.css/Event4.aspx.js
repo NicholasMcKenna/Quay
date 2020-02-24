@@ -3,11 +3,11 @@ $(document).ready(function () {
         $('#hallMap').after($('.promoBox'));
     } else if ($('.selected').length > 0) {
         if ($(window).width() <= 780) {
-            $('.seatingPlanContainer').after('<div class="promo-container"></div>');
+            $('.seatingPlanContainer::first').after('<div class="promo-container"></div>');
             $('.promo-container').after($('.promoBox'));
         } else {
             //$('#ticketsPane').prepend($('.promoBox'));
-            $('.eventDetails').after($('.promoBox'));
+            $('.eventDetails::first').after($('.promoBox'));
         }
     }
 
