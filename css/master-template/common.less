@@ -40,6 +40,10 @@ FORM SELECT {
     padding-left: 4px !important;
 }
 
+.button.small_button_a A::after, button.small_button_a::after {
+    display: none;
+}
+
 .error .ui-icon {
 
     float: unset;
@@ -922,10 +926,22 @@ div#PH_Search_results {
 #PH_Gift_Vouchers_list .itemsList .dataItem {
 
     width: 23%;
+    margin: 0 25px 25px 0 !important;
+    padding: 0 0 80px 0;
+    border: unset;
+    background-color: @font-dark-color;
+    height: unset;
+    position: relative;
 
     @media @mobile { 
         width: 100%; 
     }
+}
+
+#PH_Memberships_list .itemsList .dataItem > *,
+#PH_Gift_Vouchers_list .itemsList .dataItem > * {
+    width: 100%;
+    padding: 6px 15px;
 }
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer, 
@@ -934,17 +950,94 @@ div#PH_Search_results {
     .button.small_button_a a, button.small_button_a, .button.small_button_a a:hover, button.small_button_a:hover, .button.small_button_a a:focus, button.small_button_a:focus, .button.small_button_a a:active, button.small_button_a:active {
     
         .action-button();
-    }
-}
 
-#PH_Memberships_list .itemsList .dataItem .item_image_container div.item_image,
-#PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
-    background-image: none;
+        font-size: @button-desktop-fontsize;
+        border   : 1px solid @button-color;
+    }
+
 }
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer .button.moreInfo a,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo a {
+
     display: none;
+}
+
+
+#PH_Memberships_list .itemsList .dataItem .item_image_container,
+#PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container {
+
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    min-height: 181px;
+}
+
+#PH_Memberships_list .itemsList .dataItem .item_image_container div.item_image,
+#PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
+
+    background: none;
+    padding-top: unset;
+    height: unset;
+}
+
+
+.ph_gift_vouchers_list .itemsList .dataItem div.item_image img {
+    margin-bottom: unset;
+    margin-top: unset;
+    width: 100%;
+    height: auto;
+    border-radius: unset;
+    max-width: 100%;
+    max-height: unset;
+}
+
+#PH_Memberships_list .itemsList .dataItem .name,
+#PH_Gift_Vouchers_list .itemsList .dataItem .name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#PH_Memberships_list .itemsList .dataItem .description,
+#PH_Gift_Vouchers_list .itemsList .dataItem .description {
+    margin: 1em 0;
+    max-height: unset;
+    overflow: visible;
+    min-height: unset;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#PH_Memberships_list .itemsList .dataItem .description::after,
+#PH_Gift_Vouchers_list .itemsList .dataItem .description::after {
+    
+    display: none;
+}
+
+
+#PH_Memberships_list .itemsList .itemsButtonsContainer .button.moreInfo,
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo {
+    display: none;
+}
+
+#PH_Memberships_list .itemsList .itemsButtonsContainer,
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
+    
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+#PH_Memberships_list .itemsList .itemsButtonsContainer .button,
+#PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button {
+    float: none;
 }
 
 
