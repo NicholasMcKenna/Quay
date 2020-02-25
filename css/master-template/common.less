@@ -913,6 +913,7 @@ div#PH_Search_results {
     padding: 6px 15px;
 }
 
+#PH_Membership_purchase .buttonsContainer,
 #PH_Gift_Voucher_purchase .buttonsContainer,
 #PH_Memberships_list .itemsList .itemsButtonsContainer, 
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
@@ -945,6 +946,15 @@ div#PH_Search_results {
     /* min-height: 181px; */
 }
 
+#PH_Memberships_list .productData .item_image {
+    height: auto;
+    width: 100%;
+    margin-right: unset;
+    max-height: unset;
+    max-width: unset;
+}
+
+#PH_Membership_purchase .productData div.item_image,
 #PH_Memberships_list .itemsList .dataItem .item_image_container div.item_image,
 #PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
 
@@ -1047,28 +1057,28 @@ div#PH_Search_results {
 .screen-Membership_aspx .general_caption::after, 
 .screen-GiftVoucher_aspx .general_caption::after {
 
-    display: none;
+    display: none !important;
 }
 
 .screen-Membership_aspx .productInfo,
 .screen-GiftVoucher_aspx .productInfo {
-    border: none;
+    border: none !important;
 }
 .screen-Membership_aspx .productData,
 .screen-GiftVoucher_aspx .productData {
-    padding: 40px 0;
+    padding: 40px 0 !important;
 }
 .screen-Membership_aspx .productDescription,
 .screen-GiftVoucher_aspx .productDescription {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    word-break: unset;
+    font-size: 1.2em !important;
+    margin-bottom: 15px !important;
+    word-break: unset !important;
 }
 .screen-Membership_aspx .productInfo .small_text_a.property,
 .screen-GiftVoucher_aspx .productInfo .small_text_a.property {
     
-    margin-bottom: 15px;;
-    margin-top: 15px;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
 }
 
 
