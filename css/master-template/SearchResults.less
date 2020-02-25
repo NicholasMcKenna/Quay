@@ -171,7 +171,7 @@ div#PH_Search_results {
 
 
 .template-TemplateFull .screen-content {
-    max-width: 66%;
+    max-width: 50%;
     display: inline-block;
     float: none;
 }
@@ -188,9 +188,7 @@ div#PH_Search_results {
 
 div#PH_Search_results {
 
-    display: inline-block;
-    float:none;
-    margin: unset;
+    margin: 0 15px 0 0;
     clear: unset;
     
 }
@@ -200,11 +198,21 @@ div#PH_Search_results {
 
 
 
+html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCalendar .ui-datepicker-month {
+    background: none;
+    background-color: @button-color;
+    color: @background-color;
+    padding: 4px;
+}
 
+.eventsCalendar .ui-datepicker .ui-datepicker-header a {
+
+    color: @font-dark-color;
+}
 
 .eventsCalendar .ui-datepicker, .eventsCalendar .ui-datepicker-calendar {
 
-    background: @box-bgcolor;
+    background: @background-color;
     padding: 0;
 }
 
