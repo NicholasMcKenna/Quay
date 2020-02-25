@@ -197,11 +197,18 @@ div#PH_Search_results {
 
 
 
-html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCalendar .ui-datepicker-month {
+html.appearance .eventsCalendar .ui-datepicker-year, 
+html.appearance .eventsCalendar .ui-datepicker-month {
     background: none;
     background-color: @button-color;
     color: @background-color;
     padding: 4px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
 }
 
 .eventsCalendar .ui-datepicker .ui-datepicker-header a {
@@ -230,7 +237,8 @@ html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCale
     color: @font-dark-color;
 }
 
-.eventsCalendar .ui-datepicker td span, .eventsCalendar .ui-datepicker td a {
+.eventsCalendar .ui-datepicker td span, 
+.eventsCalendar .ui-datepicker td a {
 
     background-color: @button-color;
     color: @background-color;
@@ -251,19 +259,44 @@ html .ui-button.ui-state-disabled:active {
 }
 
 
-.eventsCalendar A.ui-state-default, 
-.eventsCalendar .ui-widget-content A.ui-state-default {
+.eventsCalendar a.ui-state-default, 
+.eventsCalendar .ui-widget-content a.ui-state-default {
     background: none;
 
     background-color: @button-color;
     color: @background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
+}
+
+.eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
+.eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
+
+    background: none;
+    background-color: @button-color;
+    color: @background-color;
+    opacity: .75;
+}
+
+.eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
+
+    opacity: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
 }
 
 
-
-
-
-
+.qtip.eventsCalendar-tooltip {
+    border-bottom: 2px @font-dark-color solid;
+}
 
 
 
