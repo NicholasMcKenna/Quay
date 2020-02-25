@@ -1,15 +1,12 @@
 
-@left-pane-width   : 75%;
-@right-pane-width  : 23%;
+@left-pane-width   : 55%;
+@right-pane-width  : 10%;
+
+body { text-align: center; }
 
 div#PH_breadcrumbs {
-    @media @desktop {
-        width    : @left-pane-width;
-        display  : block;
-        max-width: 1400px;
-        margin   : 75px auto 0 5%;
-        padding  : 0;
-    }
+
+   display: none;
 }
 
 .ph_tunnellocation {
@@ -19,9 +16,62 @@ div#PH_breadcrumbs {
 
 .screen-content {
 
+    margin: 0 auto; 
     background: none;
     float: none;
     width: @left-pane-width;
     display: inline-block;
     border: none;
+    text-align: left;
 }
+
+.screen-GiftVoucher_aspx #group_0 { 
+    display: inline-block; 
+    width: @left-pane-width; 
+    text-align: left; 
+    vertical-align: top;
+}
+
+.screen-GiftVoucher_aspx .general_caption {
+
+    top: unset;
+    display: inline-block;
+    line-height: 1em;
+    height: unset;
+    padding: unset;
+    left: unset;
+    font-size: 23px;
+    background: none;
+    border: none;
+    width: 100% !important;
+}
+
+
+.screen-GiftVoucher_aspx .general_caption::after {
+
+    display: none;
+}
+
+
+.productInfo {
+    border: none;
+}
+
+.productData {
+    padding: 40px 0;
+}
+
+.productDescription {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    word-break: unset;
+}
+
+.screen-GiftVoucher_aspx .productInfo .small_text_a.property {
+    
+    margin-bottom: 15px;;
+    margin-top: 15px;
+}
+
+
+
