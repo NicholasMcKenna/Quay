@@ -40,7 +40,8 @@ FORM SELECT {
     padding-left: 4px !important;
 }
 
-.button.small_button_a A::after, button.small_button_a::after {
+.button.small_button_a A::after,
+button.small_button_a::after {
     display: none;
 }
 
@@ -256,7 +257,7 @@ div#PH_Float_Menu {
     }
 
     @media @mobile {
-        position: static !important;
+        position    : static !important;
         margin-right: 8px;
     }
 }
@@ -310,7 +311,7 @@ a#navMenu_Float_Search_item span {
     color      : #2a2d34;
 
     @media @mobile {
-        color: #fff;
+        color   : #fff;
         position: static;
     }
 }
@@ -559,8 +560,8 @@ div#promo-descr {
 }
 
 #siteMenuBar #CountDown {
-    background  : #fff;
-    position    : static;
+    background: #fff;
+    position  : static;
 }
 
 body>.timer-tooltip {
@@ -887,39 +888,46 @@ div#PH_Search_results {
 #PH_Memberships_list .itemsList,
 #PH_Gift_Vouchers_list .itemsList {
 
-    display: flex;
+    display       : flex;
     flex-direction: row;
 }
 
 #PH_Memberships_list .itemsList .dataItem,
 #PH_Gift_Vouchers_list .itemsList .dataItem {
 
-    width: 23%;
-    margin: 0 25px 25px 0 !important;
-    padding: 0 0 80px 0;
-    border: unset;
+    width           : 23%;
+    margin          : 0 25px 25px 0 !important;
+    padding         : 0 0 80px 0;
+    border          : unset;
     background-color: @font-dark-color;
-    height: unset;
-    position: relative;
+    height          : unset;
+    position        : relative;
 
-    @media @mobile { 
-        width: 100%; 
+    @media @mobile {
+        width: 100%;
     }
 }
 
-#PH_Memberships_list .itemsList .dataItem > *,
-#PH_Gift_Vouchers_list .itemsList .dataItem > * {
-    width: 100%;
+#PH_Memberships_list .itemsList .dataItem>*,
+#PH_Gift_Vouchers_list .itemsList .dataItem>* {
+    width  : 100%;
     padding: 6px 15px;
 }
 
 #PH_Membership_purchase .buttonsContainer,
 #PH_Gift_Voucher_purchase .buttonsContainer,
-#PH_Memberships_list .itemsList .itemsButtonsContainer, 
+#PH_Memberships_list .itemsList .itemsButtonsContainer,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
-    
-    .button.small_button_a a, button.small_button_a, .button.small_button_a a:hover, button.small_button_a:hover, .button.small_button_a a:focus, button.small_button_a:focus, .button.small_button_a a:active, button.small_button_a:active {
-    
+
+    .button.small_button_a a,
+    button.small_button_a,
+    .button.small_button_a a:hover,
+    button.small_button_a:hover,
+    .button.small_button_a a:focus,
+    button.small_button_a:focus,
+    .button.small_button_a a:active,
+    button.small_button_a:active {
+
         .action-button();
 
         font-size: @button-desktop-fontsize;
@@ -938,63 +946,63 @@ div#PH_Search_results {
 #PH_Memberships_list .itemsList .dataItem .item_image_container,
 #PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container {
 
-    float: left !important;
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    padding: 0 !important;
+    float        : left !important;
+    width        : 100% !important;
+    height       : auto !important;
+    display      : block !important;
+    padding      : 0 !important;
     /* min-height: 181px; */
 }
 
 #PH_Memberships_list .productData div.item_image {
 
-    width: 100% !important;
+    width       : 100% !important;
     margin-right: 20px !important;
-    max-height: unset !important;
-    max-width: unset !important;
+    max-height  : unset !important;
+    max-width   : unset !important;
 }
 
 #PH_Membership_purchase .productData div.item_image,
 #PH_Memberships_list .itemsList .dataItem .item_image_container div.item_image,
 #PH_Gift_Vouchers_list .itemsList .dataItem .item_image_container div.item_image {
 
-    background: none !important;
+    background : none !important;
     padding-top: unset !important;
-    height: unset !important;
+    height     : unset !important;
 
 }
 
 #PH_Membership_purchase .productData div.item_image img,
 .ph_gift_vouchers_list .itemsList .dataItem div.item_image img {
-    margin: unset;
-    width: 100%;
-    height: auto;
+    margin       : unset;
+    width        : 100%;
+    height       : auto;
     border-radius: unset;
-    max-width: 100%;
-    max-height: unset;
+    max-width    : 100%;
+    max-height   : unset;
 }
 
 #PH_Memberships_list .itemsList .dataItem .name,
 #PH_Gift_Vouchers_list .itemsList .dataItem .name {
-    color: #fff;
+    color      : #fff;
     font-weight: 700;
-    font-size: 22px;
+    font-size  : 22px;
 }
 
 #PH_Memberships_list .itemsList .dataItem .description,
 #PH_Gift_Vouchers_list .itemsList .dataItem .description {
-    margin: 1em 0 0 0;
-    max-height: unset;
-    overflow: visible;
-    min-height: unset;
-    color: #fff;
+    margin     : 1em 0 0 0;
+    max-height : unset;
+    overflow   : visible;
+    min-height : unset;
+    color      : #fff;
     font-weight: 400;
-    font-size: 16px;
+    font-size  : 16px;
 }
 
 #PH_Memberships_list .itemsList .dataItem .description::after,
 #PH_Gift_Vouchers_list .itemsList .dataItem .description::after {
-    
+
     display: none;
 }
 
@@ -1006,13 +1014,13 @@ div#PH_Search_results {
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
-    
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    padding: 0;
+
+    position  : absolute;
+    bottom    : 10px;
+    left      : 0;
+    padding   : 0;
     text-align: center;
-    
+
 }
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer .button,
@@ -1025,37 +1033,37 @@ div#PH_Search_results {
 .screen-Membership_aspx #PH_Explanation,
 .screen-GiftVoucher_aspx #group_0 {
 
-        display: inline-block; 
-        width: 11%; 
-        text-align: left; 
-        vertical-align: top;
-        margin-top: 100px;
-        float: none;
+    display       : inline-block;
+    width         : 11%;
+    text-align    : left;
+    vertical-align: top;
+    margin-top    : 100px;
+    float         : none;
 }
 
 .screen-GiftVoucher_aspx #PH_Explanation {
     margin-top: unset;
-    float: left;
-    width: 100%;
-    min-height: unset; 
+    float     : left;
+    width     : 100%;
+    min-height: unset;
 }
 
-.screen-Membership_aspx .general_caption, 
+.screen-Membership_aspx .general_caption,
 .screen-GiftVoucher_aspx .general_caption {
 
-    top: unset !important;
-    display: inline-block !important;
+    top        : unset !important;
+    display    : inline-block !important;
     line-height: 1em !important;
-    height: unset !important;
-    padding: unset !important;
-    left: unset !important;
-    font-size: 23px !important;
-    background: none !important;
-    border: none !important;
-    width: 100% !important;
+    height     : unset !important;
+    padding    : unset !important;
+    left       : unset !important;
+    font-size  : 23px !important;
+    background : none !important;
+    border     : none !important;
+    width      : 100% !important;
 }
 
-.screen-Membership_aspx .general_caption::after, 
+.screen-Membership_aspx .general_caption::after,
 .screen-GiftVoucher_aspx .general_caption::after {
 
     display: none !important;
@@ -1065,21 +1073,24 @@ div#PH_Search_results {
 .screen-GiftVoucher_aspx .productInfo {
     border: none !important;
 }
+
 .screen-Membership_aspx .productData,
 .screen-GiftVoucher_aspx .productData {
     padding: 40px 0 !important;
 }
+
 .screen-Membership_aspx .productDescription,
 .screen-GiftVoucher_aspx .productDescription {
-    font-size: 1.2em !important;
+    font-size    : 1.2em !important;
     margin-bottom: 15px !important;
-    word-break: unset !important;
+    word-break   : unset !important;
 }
+
 .screen-Membership_aspx .productInfo .small_text_a.property,
 .screen-GiftVoucher_aspx .productInfo .small_text_a.property {
-    
+
     margin-bottom: 15px !important;
-    margin-top: 15px !important;
+    margin-top   : 15px !important;
 }
 
 
@@ -1111,11 +1122,11 @@ div#PH_Search_results {
 
 
 .pagingContainer {
-    display: flex;
-    float:left;
-    margin: 8px 0 25px 0;
+    display  : flex;
+    float    : left;
+    margin   : 8px 0 25px 0;
     max-width: 100%;
-    width: 100%;
+    width    : 100%;
 
     @media @desktop {
         width: unset;
@@ -1124,26 +1135,28 @@ div#PH_Search_results {
 
 .pagingContainer a.paging {
 
-    flex-grow: 1;
-    padding: 10px 4px 9px 4px;
-    font-size: 16px;
-    background-color: @button-color; 
-    color: @font-light-color;
-    opacity: .75;
-    margin: 0 5px 0 0;
-    line-height: 1em;
-    text-decoration: none;
-    text-align: center; 
+    flex-grow       : 1;
+    padding         : 10px 4px 9px 4px;
+    font-size       : 16px;
+    background-color: @button-color;
+    color           : @font-light-color;
+    opacity         : .75;
+    margin          : 0 5px 0 0;
+    line-height     : 1em;
+    text-decoration : none;
+    text-align      : center;
 
     @media @desktop {
         padding: 8px 12px 7px 12px;
     }
 }
 
-.pagingContainer a.paging.first, .pagingContainer a.paging.last,
-.pagingContainer a.paging.next, .pagingContainer a.paging.prev {
-    
-   position: relative;
+.pagingContainer a.paging.first,
+.pagingContainer a.paging.last,
+.pagingContainer a.paging.next,
+.pagingContainer a.paging.prev {
+
+    position: relative;
 }
 
 
@@ -1157,14 +1170,15 @@ div#PH_Search_results {
     margin-right: 12px;
 }
 
-.pagingContainer a.paging.next:before, .pagingContainer a.paging.prev:after {
-    
-    content: "";
-    display: block;
-    width: 1px;
-    height: 29px;
-    position: absolute;
-    top: 3px;
+.pagingContainer a.paging.next:before,
+.pagingContainer a.paging.prev:after {
+
+    content       : "";
+    display       : block;
+    width         : 1px;
+    height        : 29px;
+    position      : absolute;
+    top           : 3px;
     pointer-events: none;
 
     @media @desktop {
@@ -1174,26 +1188,26 @@ div#PH_Search_results {
 }
 
 .pagingContainer a.paging.next:before {
-    
+
     border-left: 1px solid #a8a8a8;
-    left: -6px;
+    left       : -6px;
 }
 
 .pagingContainer a.paging.prev:after {
-    
+
     border-right: 1px solid #a8a8a8;
-    right: -6px;
+    right       : -6px;
 }
 
 .pagingContainer a.paging.current {
-    
-    background-color:@font-dark-color;
-    opacity: 1;
+
+    background-color: @font-dark-color;
+    opacity         : 1;
 }
 
 .pagingContainer a.paging:hover {
-    background-color:@button-color; 
-    opacity: 1;
+    background-color: @button-color;
+    opacity         : 1;
 }
 
 
@@ -1211,12 +1225,13 @@ div#PH_Search_results {
 
 #siteMenuBar.hasclient #customerBox.crmMenuIsShow .float_menu_item+button.logout {
     @media @mobile {
-        left: 6px;
+        left : 6px;
         width: 192px;
     }
 }
 
-#siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.loyaltyPoints, #siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.qualityPoints {
+#siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.loyaltyPoints,
+#siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.qualityPoints {
     @media @mobile {
         display: none;
     }
@@ -1224,7 +1239,11 @@ div#PH_Search_results {
 
 #customerBox.crmMenuIsShow .float_menu_item .greeting {
     @media @mobile {
-        color: @font-dark-color;
+        color    : @font-dark-color;
         font-size: 16px;
     }
+}
+
+button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    z-index: 999999;
 }
