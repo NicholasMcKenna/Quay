@@ -458,6 +458,18 @@ a.ui-button:active,
 
 
 
+
+
+
+#ticketsPane .promoBox, #ticketsPane .promo-container {
+
+    @media @mobile {
+
+        display: none;
+    }
+}
+
+
 .promoBox {
 
     padding: 10px;
@@ -470,25 +482,6 @@ a.ui-button:active,
         top       : -98px;
     }
 }
-
-/*
-.hallMap form.promoBox {
-    @media @desktop {
-        position: absolute;
-        right   : 0;
-        top     : -155px;
-        
-    }
-}
-
-.seated form.promoBox {
-    @media @desktop {
-        position: absolute;
-        right   : 0;
-        top     : -155px;
-    }
-}
-*/
 
 
 
@@ -570,10 +563,11 @@ h1#selectedAreaTitle {
 
 /* Bottom button */
 #eventPage #ticketsPane .selectTickets .buttonsContainer {
-    height          : 80px;
+    height          : unset;
     background-color: #fff;
     box-shadow      : none !important;
     border-top      : .5px solid @button-color;
+    border-bottom   : none;
 
     @media @desktop {
         border-top: none;
@@ -1036,7 +1030,7 @@ button.disabled.small_button_a:hover {
 #eventPage #ticketsPane .selectTickets .buttonsContainer {
     @media @mobile {
         margin-bottom: 74px !important;
-        border-bottom: 1px solid #dedede;
+        border-bottom: none;
         position     : static;
         bottom       : auto;
         left         : auto;
