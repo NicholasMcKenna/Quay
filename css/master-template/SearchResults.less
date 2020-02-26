@@ -170,8 +170,11 @@ div#PH_Search_results {
 
 
 
+
+
+
 .template-TemplateFull .screen-content {
-    max-width: 50%;
+    max-width: 40%;
     display: inline-block;
     float: none;
 }
@@ -183,7 +186,7 @@ div#PH_Search_results {
     float: none;
     margin: 30px 0 0 0;
     vertical-align: top;
-    width: 15%;
+    width: 20%;
 }
 
 div#PH_Search_results {
@@ -197,18 +200,35 @@ div#PH_Search_results {
 
 
 
-/*
 
-html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCalendar .ui-datepicker-month {
+
+
+
+html.appearance .eventsCalendar .ui-datepicker-year, 
+html.appearance .eventsCalendar .ui-datepicker-month {
     background: none;
     background-color: @button-color;
     color: @background-color;
     padding: 4px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
 }
 
 .eventsCalendar .ui-datepicker .ui-datepicker-header a {
 
     color: @font-dark-color;
+}
+
+.eventsCalendar .ui-datepicker th {
+
+    font-size: larger;
+    border: 1px solid @box-bgcolor;
+    border-width: 1px 0 0 0;
+
 }
 
 .eventsCalendar .ui-datepicker, .eventsCalendar .ui-datepicker-calendar {
@@ -225,6 +245,11 @@ html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCale
     color: @font-dark-color;
 }
 
+.ui-widget {
+
+    font-size: 15px;
+}
+
 .eventsCalendar .ui-widget-header {
 
     border: none;
@@ -232,10 +257,12 @@ html.appearance .eventsCalendar .ui-datepicker-year, html.appearance .eventsCale
     color: @font-dark-color;
 }
 
-.eventsCalendar .ui-datepicker td span, .eventsCalendar .ui-datepicker td a {
+.eventsCalendar .ui-datepicker td span, 
+.eventsCalendar .ui-datepicker td a {
 
     background-color: @button-color;
     color: @background-color;
+    opacity: .5;
     padding: 10px 4px;
 }
 
@@ -252,65 +279,44 @@ html .ui-button.ui-state-disabled:active {
 }
 
 
-.eventsCalendar A.ui-state-default, 
-.eventsCalendar .ui-widget-content A.ui-state-default {
+.eventsCalendar a.ui-state-default, 
+.eventsCalendar .ui-widget-content a.ui-state-default {
     background: none;
 
     background-color: @button-color;
     color: @background-color;
-}
-*/
 
-
-
-.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
-    border          : none;
-    width           : 100%;
-    height          : unset;
-    font-size       : 16px;
-    background-color: @background-color;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-    border     : none;
-    background : none;
-    font-weight: normal;
-    text-align : center;
-    color      : #555;
+.eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
+.eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
+
+    background: none;
+    background-color: @button-color;
+    color: @background-color;
+    opacity: .75;
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default {
-    background-color: #fff;
-}
+.eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
 
-.ui-state-disabled .ui-state-default {
-    background: #ecf0f1;
-}
+    opacity: 1;
 
-.ui-datepicker {
-    padding: 0;
-}
-
-.ui-datepicker td span,
-.ui-datepicker td a {
-    padding: 10px;
-}
-
-select#dateSelect {
-    display: none;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
 }
 
 
-
-
-
-
+.qtip.eventsCalendar-tooltip {
+    border-bottom: 2px @font-dark-color solid;
+}
 
 
 
