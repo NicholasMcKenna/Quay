@@ -1262,13 +1262,15 @@ div#PH_Search_results {
 
 #siteMenuBar .greeting {
 
-    overflow: visible;
+    overflow: hidden;
     text-overflow: clip;
 }
 
 #customerBox.crmMenuIsShow .float_menu_item .greeting {
     @media @mobile {
         left: 6px;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -1276,7 +1278,14 @@ div#PH_Search_results {
     @media @mobile {
         left : 6px;
         width: 192px;
+        padding: 10px;
+        line-height: unset;
     }
+}
+
+#siteMenuBar.hasclient #customerBox.crmMenuIsShow button.logout::before {
+
+    margin-right: 4px;
 }
 
 #siteMenuBar #customerBox.crmMenuIsShow .float_menu_item~.loyaltyPoints,
@@ -1301,6 +1310,16 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after {
     }
 }
 
+#customerBox.crmMenuIsShow .greeting::before {
+
+    display: none;
+}
+
+#customerBox.crmMenuIsShow .float_menu_item .crmId {
+    display: none;
+}
+
+
 #customerBox .greeting {
 
     font-size: 16px;
@@ -1323,3 +1342,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after {
 button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
     z-index: 999999;
 }
+
+
+
+
