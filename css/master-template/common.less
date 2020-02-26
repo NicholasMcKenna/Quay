@@ -158,7 +158,13 @@ body #group_Header-fixed {
 
     @media @mobile {
         border-left: 1px solid;
+        padding-left: 4px;
     }
+}
+
+#navMenu_Float_Search_item > span::before {
+
+    margin-right: 4px;
 }
 
 
@@ -313,6 +319,7 @@ a#navMenu_Float_Search_item span {
     @media @mobile {
         color   : #fff;
         position: static;
+        padding-top: 1px;
     }
 }
 
@@ -343,7 +350,16 @@ a#navMenu_Float_Search_item span {
     }
 }
 
+#siteMenuBar #my_basket::before {
+    content: 'x';
+    color: Transparent;
+    display: none;
+}
 
+#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before {
+
+
+}
 
 
 
@@ -1246,7 +1262,10 @@ div#PH_Search_results {
 
 
 
+#siteMenuBar .greeting {
 
+    overflow: visible;
+}
 
 #customerBox.crmMenuIsShow .float_menu_item .greeting {
     @media @mobile {
@@ -1273,6 +1292,17 @@ div#PH_Search_results {
         color    : @font-dark-color;
         font-size: 16px;
     }
+}
+
+#customerBox .greeting {
+
+    font-size: 16px;
+    line-height: normal;
+}
+
+#siteMenuBar .loggedinclientbox .greeting {
+
+    line-height: normal;
 }
 
 button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
