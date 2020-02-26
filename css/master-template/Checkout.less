@@ -13,7 +13,7 @@ div#PH_breadcrumbs {
 
     @media @desktop-large {
         padding-left: 0;
-        margin: 75px auto 0;
+        margin      : 75px auto 0;
     }
 }
 
@@ -36,12 +36,12 @@ div#PH_breadcrumbs {
     padding         : 10px 0 140px 0;
 
     @media @desktop {
-        padding     : 10px 0 0 0;
+        padding: 10px 0 0 0;
     }
 }
 
 .pageSectionTitle {
-    
+
     background-image: none;
     border-left     : none;
     position        : static;
@@ -67,10 +67,10 @@ div#PH_breadcrumbs {
     background  : none;
     padding-left: 0;
 
-    padding: unset;
-    position: relative;
-    left: unset;
-    right: unset;
+    padding   : unset;
+    position  : relative;
+    left      : unset;
+    right     : unset;
     margin-top: -1.5em;
 
     .font-h2();
@@ -97,32 +97,32 @@ div#PH_breadcrumbs {
 }
 
 .summaryBasketContainer .expand {
-    width: 37px;
+    width      : 37px;
     padding-top: 1px;
-    top: 0;
-    right: 0;
-    position: absolute;
+    top        : 0;
+    right      : 0;
+    position   : absolute;
 }
 
 .screen-Checkout_aspx .basket-container .basketEvent .eventInfoSection .imageContainer {
     background-image: none;
 }
 
-.summaryBasketContainer .basket-section { 
-    width: 100%; 
+.summaryBasketContainer .basket-section {
+    width : 100%;
     margin: 10px 0;
 }
 
 .summaryBasketContainer .basketEvent {
 
-    float:left;
+    float     : left;
     margin-top: 10px;
 }
 
 .summaryBasketContainer #basketCtrlContainer .basketItemSummary {
 
-    margin-top: 0px;
-    flex-flow: unset;
+    margin-top    : 0px;
+    flex-flow     : unset;
     flex-direction: column;
 }
 
@@ -133,19 +133,19 @@ div#PH_breadcrumbs {
 
 .summaryBasketContainer.expanded #basketCtrlContainer {
 
-    width: 100%;
+    width  : 100%;
     padding: 10px 0px;
 }
 
-.summaryBasketContainer .basket-section > DIV {
+.summaryBasketContainer .basket-section>DIV {
 
     padding-bottom: 0;
-    width: 100%;
+    width         : 100%;
 }
 
-.summaryBasketContainer > DIV {
+.summaryBasketContainer>DIV {
     display: block;
-    width: 100%;
+    width  : 100%;
 }
 
 .summaryBasketContainer.expanded .editBasket {
@@ -153,23 +153,23 @@ div#PH_breadcrumbs {
     top: unset;
 }
 
-.basket-section > DIV {
+.basket-section>DIV {
 
     padding: 15px 0;
-    margin: 15px 0 0 0;
-    border: none;
+    margin : 15px 0 0 0;
+    border : none;
 }
 
 .summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
     padding-top: 0;
     height     : unset;
     width      : 50px;
-    margin: 0 10px 0 0;
+    margin     : 0 10px 0 0;
     line-height: 40px;
 }
 
 .summaryBasketContainer .infoSection IMG {
-    width: 100%;
+    width     : 100%;
     max-width : unset;
     max-height: unset;
     margin-top: 0;
@@ -193,7 +193,7 @@ div#PH_breadcrumbs {
 
 .roundUpDonationSection {
     padding-left: 0;
-    display: none;
+    display     : none;
 }
 
 .roundUpDonationSection h2 {
@@ -223,8 +223,8 @@ div#PH_breadcrumbs {
 .suppPmContainer .suppLabel,
 .reimbursementPaymentContainer .reimLabel {
     background: none;
-    border: none;
-    padding: 0;
+    border    : none;
+    padding   : 0;
 }
 
 #instructionsPanel {
@@ -315,7 +315,7 @@ button.disabled.small_button_a:hover {
 
     @media @desktop {
         display: none;
-    }  
+    }
 
     @media @mobile {
         .cancel-button();
@@ -409,7 +409,7 @@ button.small_button_a {
 
 .noimage LABEL::before {
 
-    top: 12px;
+    top : 12px;
     left: 14px;
 }
 
@@ -421,8 +421,8 @@ button.small_button_a {
 #PaymentMethodFormsContainer input[type="checkbox"] {
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top     : 0;
+    left    : 0;
 }
 
 .paymentPanelSection h2 {
@@ -430,7 +430,8 @@ button.small_button_a {
     margin-top: 0;
 }
 
-#paymentMethodForms, .primaryPaymentMethods .label {
+#paymentMethodForms,
+.primaryPaymentMethods .label {
     padding-top: 0;
 }
 
@@ -444,15 +445,15 @@ button.small_button_a {
 .summaryBasketContainer .editBasket:hover {
 
     display: inline-block;
-    margin: 0;
+    margin : 0;
 
     position: relative;
-    top: unset;
+    top     : unset;
 }
 
 
 .summaryBasketContainer .containerTitle {
-    
+
     padding: 0;
 
     @media @desktop {
@@ -461,12 +462,42 @@ button.small_button_a {
     }
 }
 
-.summaryBasketContainer .basketItemSummary .details, .summaryBasketContainer .hasInfoSection .basketProperty.Details {
+.summaryBasketContainer .basketItemSummary .details,
+.summaryBasketContainer .hasInfoSection .basketProperty.Details {
     max-width: 100%;
-    padding: 0px;
+    padding  : 0px;
 }
 
 .summaryBasketContainer .timerMessage {
     display: none;
 }
 
+.partner-container {
+    display: flex;
+    margin : 21px 0;
+}
+
+.img-container {
+    display     : inline-flex;
+    width       : 30%;
+    margin-right: 23px;
+
+    @media @mobile {
+        width       : 100%;
+        margin-right: 0;
+    }
+}
+
+.partner-info {
+    display: inline-flex;
+    width  : 62%;
+
+    @media @mobile {
+        width     : 100%;
+        margin-top: 15px;
+    }
+}
+
+img.partner-image {
+    width: 100%;
+}
