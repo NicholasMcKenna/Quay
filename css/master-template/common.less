@@ -607,10 +607,16 @@ button.CancelTransFromTimer.btnCancel.btnLink {
     border          : 1px solid;
     background      : none;
     background-color: @box-bgcolor;
+    padding-top: 1em;
 }
 
 #PH_BasketWidget>div>* {
     padding: 0 20px 0 15px;
+}
+
+#PH_BasketWidget h2 {
+
+    margin-bottom: 13px;
 }
 
 #PH_BasketWidget .accordionContent {
@@ -712,6 +718,14 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 #PH_BasketWidget .basketEvent .infoSection .promoBox {
 
     display: none !important;
+}
+
+#PH_BasketWidget, #PH_BasketWidget.flipped {
+    background: none;
+}
+
+#PH_BasketWidget .basketTotals .totalCost {
+    float: right;
 }
 
 
@@ -878,13 +892,6 @@ div#PH_Search_results {
 
 
 
-
-#PH_Memberships_list.screen-content,
-#PH_Gift_Vouchers_list.screen-content {
-
-    margin: 0 auto;
-}
-
 #PH_Memberships_list .itemsList,
 #PH_Gift_Vouchers_list .itemsList {
 
@@ -897,7 +904,7 @@ div#PH_Search_results {
 
     width           : 23%;
     margin          : 0 25px 25px 0 !important;
-    padding         : 0 0 80px 0;
+    padding         : 0 0 85px 0;
     border          : unset;
     background-color: @font-dark-color;
     height          : unset;
@@ -987,6 +994,7 @@ div#PH_Search_results {
     color      : #fff;
     font-weight: 700;
     font-size  : 22px;
+    margin-top : 6px;
 }
 
 #PH_Memberships_list .itemsList .dataItem .description,
@@ -1016,7 +1024,7 @@ div#PH_Search_results {
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
 
     position  : absolute;
-    bottom    : 10px;
+    bottom    : 15px;
     left      : 0;
     padding   : 0;
     text-align: center;
