@@ -158,7 +158,13 @@ body #group_Header-fixed {
 
     @media @mobile {
         border-left: 1px solid;
+        padding-left: 4px;
     }
+}
+
+#navMenu_Float_Search_item > span::before {
+
+    margin-right: 4px;
 }
 
 
@@ -313,6 +319,7 @@ a#navMenu_Float_Search_item span {
     @media @mobile {
         color   : #fff;
         position: static;
+        padding-top: 1px;
     }
 }
 
@@ -343,7 +350,16 @@ a#navMenu_Float_Search_item span {
     }
 }
 
+#siteMenuBar #my_basket::before {
+    content: 'x';
+    color: Transparent;
+    display: none;
+}
 
+#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before {
+
+
+}
 
 
 
@@ -607,16 +623,24 @@ button.CancelTransFromTimer.btnCancel.btnLink {
     border          : 1px solid;
     background      : none;
     background-color: @box-bgcolor;
+    padding-top: 1em;
 }
 
 #PH_BasketWidget>div>* {
     padding: 0 20px 0 15px;
 }
 
+#PH_BasketWidget h2 {
+
+    margin-bottom: 13px;
+}
+
 #PH_BasketWidget .accordionContent {
 
     padding: 7px 0;
 }
+
+
 
 
 
@@ -630,6 +654,7 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 #miniBasketWrapper .basket-MerchandiseItems .infoSection .imageContainer,
 #miniBasketWrapper .basket-GiftVouchers .infoSection .imageContainer,
 #miniBasketWrapper .basketEvent .eventInfoSection .imageContainer {
+
     height             : unset;
     overflow           : unset;
     padding-left       : 0;
@@ -678,13 +703,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
 #miniBasketWrapper .infoSection IMG {
 
-
     margin-top : 0px;
     margin-left: 0px;
     width      : 100%;
     max-width  : unset;
     max-height : unset;
-
 }
 
 
@@ -698,6 +721,28 @@ button.CancelTransFromTimer.btnCancel.btnLink {
     margin-top : 0px;
     margin-left: auto;
 }
+
+#PH_BasketWidget .basketTotals .summaryLine {
+
+    float: left;
+    width: 100%;
+}
+#PH_BasketWidget .basketTotals .summaryLine span {
+
+    float:left;
+}
+
+#PH_BasketWidget .basketTotals .summaryLine span.totalCost {
+    float: right;
+}
+
+
+
+
+
+
+
+
 
 #PH_BasketWidget div.footer .button.proceed {
     margin-left: unset;
@@ -713,6 +758,11 @@ button.CancelTransFromTimer.btnCancel.btnLink {
 
     display: none !important;
 }
+
+#PH_BasketWidget, #PH_BasketWidget.flipped {
+    background: none;
+}
+
 
 
 
@@ -802,6 +852,7 @@ div#PH_Footer-main {
 
 #PH_BasketWidget .basketItem {
     padding-right: 0;
+    padding-left: 0;
 }
 
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
@@ -878,13 +929,6 @@ div#PH_Search_results {
 
 
 
-
-#PH_Memberships_list.screen-content,
-#PH_Gift_Vouchers_list.screen-content {
-
-    margin: 0 auto;
-}
-
 #PH_Memberships_list .itemsList,
 #PH_Gift_Vouchers_list .itemsList {
 
@@ -897,7 +941,7 @@ div#PH_Search_results {
 
     width           : 23%;
     margin          : 0 25px 25px 0 !important;
-    padding         : 0 0 80px 0;
+    padding         : 0 0 85px 0;
     border          : unset;
     background-color: @font-dark-color;
     height          : unset;
@@ -987,6 +1031,7 @@ div#PH_Search_results {
     color      : #fff;
     font-weight: 700;
     font-size  : 22px;
+    margin-top : 6px;
 }
 
 #PH_Memberships_list .itemsList .dataItem .description,
@@ -1016,7 +1061,7 @@ div#PH_Search_results {
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
 
     position  : absolute;
-    bottom    : 10px;
+    bottom    : 15px;
     left      : 0;
     padding   : 0;
     text-align: center;
@@ -1027,6 +1072,8 @@ div#PH_Search_results {
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button {
     float: none;
 }
+
+
 
 
 
@@ -1215,7 +1262,11 @@ div#PH_Search_results {
 
 
 
+#siteMenuBar .greeting {
 
+    overflow: visible;
+    text-overflow: clip;
+}
 
 #customerBox.crmMenuIsShow .float_menu_item .greeting {
     @media @mobile {
@@ -1242,6 +1293,19 @@ div#PH_Search_results {
         color    : @font-dark-color;
         font-size: 16px;
     }
+}
+
+#customerBox .greeting {
+
+    font-size: 16px;
+    line-height: normal;
+}
+
+#siteMenuBar .loggedinclientbox .greeting {
+
+    line-height: normal;
+    max-width: unset;
+    width: auto;
 }
 
 button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
