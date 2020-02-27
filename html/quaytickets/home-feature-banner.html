@@ -1,4 +1,5 @@
-<div class="feature-banner" style="background: rgb(255, 255, 255) url('/UserContent/images/quaytickets/home-banners/qt-home-banner-10.jpg') no-repeat scroll center center / cover;">
+<div class="feature-banner"
+    style="background: rgb(255, 255, 255) url('/UserContent/images/quaytickets/home-banners/qt-home-banner-10.jpg') no-repeat scroll center center / cover;">
     <div class="container">
         <div class="row center">
             <div class="feature-item">
@@ -7,9 +8,43 @@
                 <h2>
                     Secure tickets for theatre, music, the arts, days out and more.<br clear="none">
                     Tickets for a huge range of events throughout the UK.</h2>
-                <div class="feature-search">
-                    <input type="text" class="search-input">
-                    <i class="icofont icofont-search"></i> <a class="search-button" href="javascript:;" shape="rect">Search Keywords</a>
+                <div class="screenPartContainer ph_search feature-search" id="PH_Search">
+                    <div>
+                        <form style="PADDING:0px;" method="get" class="frmSearch" name="frmSearch"
+                            action="javascript:void(0)">
+                            <div class="SearchBoxContainer">
+                                <div class="SearchTextBox">
+                                    <label class="freeTextLabel" for="ctl00$spw3850$_23570df_free_text">Search</label>
+                                    <input class="text_area_a free_text ui-autocomplete-input search-input" type="text"
+                                        id="ctl00$spw3850$_23570df_free_text" name="free_text"
+                                        aria-label="Type the name of the Show you are looking for and press ENTER"
+                                        autocomplete="off">
+                                    <i class="icofont icofont-search"></i>
+                                    <button class="close-icon" type="reset" style="display:none"
+                                        aria-label="cancel search"></button>
+                                </div>
+                                <button type="button" class="SearchTextButton hoverable"
+                                    aria-label="Press ENTER to display the Search page" data-ol-has-click-handler="">
+                                    <img src="//quaytickets-test.seatgeekenterprise.co.uk/Weblink/12345/get.resource/images/1033/1120.png?etag=E8B2819D96E1C57D926DCA5D730CA96D"
+                                        alt="Search" class="btnSearch">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript">
+                        (function () {
+                            var container = $("script:last").prev();
+                            require(["js/SearchBox"], function (searchBox) {
+                                searchBox.init(container,
+                                    "search/{0}",
+                                    "dd/MM",
+                                    "undefined"
+                                );
+                            });
+                        })();
+                    </script>
+
+
                 </div>
             </div>
         </div>
