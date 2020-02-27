@@ -280,6 +280,29 @@ div#PH_breadcrumbs {
     }
 }
 
+INPUT.addCoupon, 
+INPUT.addCoupon:focus, 
+INPUT.addCoupon:active {
+    @media @mobile {
+        max-width: 90%;
+    }
+}
+
+button.roundUpDonationBtn, 
+button.roundUpDonationBtn:hover, 
+button.roundUpDonationBtn:focus, 
+button.roundUpDonationBtn:active,
+.addCouponCtl .button, 
+.addCouponCtl .button:hover, 
+.addCouponCtl .button:focus {
+
+    @media @mobile {
+        float:left;
+        margin: 15px 0 0 0;
+    }
+}
+
+
 .basketArea,
 .group.hasInfoSection .items {
     padding-left: 0;
@@ -429,6 +452,7 @@ button.disabled.small_button_a:hover {
     padding        : 10px;
     display        : flex;
     justify-content: flex-start;
+    flex-direction : row;
     align-items    : center;
     width          : 100%;
 
@@ -453,14 +477,16 @@ button.disabled.small_button_a:hover {
     float   : none;
     margin  : 0;
     padding : 0;
+
+
 }
 
 .deliveryContainer .deliveryMethod>label>span {
-    display: block;
+    display: inline-block;
 }
 
 .deliveryContainer .deliveryMethod>label .description {
-    flex   : 1 1 auto;
+    // flex   : 1 1 auto;
     padding: 0 1rem;
 
     @media @desktop {
@@ -468,12 +494,31 @@ button.disabled.small_button_a:hover {
     }
 }
 
+.deliveryMethod .name {
+
+    width: 25%;
+}
+
+.deliveryMethod .description {
+
+    width: 50%;
+}
+
+.deliveryMethod .deliveryPricing {
+
+    right: unset;
+    float: unset;
+    position: relative;
+    text-align: right;
+    width: 25%;
+}
+
 .deliveryMethod LABEL .image-container {
     margin-right: 29px;
 }
 
 .deliveryContainer .deliveryMethod>label>span {
-    display: block;
+    //display: block;
 }
 
 .deliveryContainer .deliveryMethod.selected {
