@@ -6,10 +6,10 @@ $(document).ready(function() {
         e.stopPropagation();
     });
 })
-
+/*
 $(window).click(function() {
     if ($('#group_Header-fixed #PH_Search_Box').is(":visible")) {
         $('#group_Header-fixed #PH_Search_Box').hide(); 
         $('#group_Header-fixed div[id^="PH_SearchPage"]').hide();
     }
-});
+});*/
