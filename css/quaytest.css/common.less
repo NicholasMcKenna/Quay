@@ -25,6 +25,12 @@ h6 {
     display: inline-block;
 }
 
+#PH_HeaderBackground-fixed, #group_Header-fixed, #siteMenuBar {
+    height: 83px;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,.25);
+    z-index: 50;
+}
+
 .btn {
     font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
     font-weight: 700;
@@ -59,9 +65,9 @@ h6 {
 #group_QTHeader {
     padding         : 0;
     background-color: #FFF;
-    border-bottom   : solid 1px #cccccc;
+    border-bottom   : none;
     border-top      : 2px solid @button-color;
-    box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
     width           : 80%;
     position        : fixed;
     z-index         : 51;
