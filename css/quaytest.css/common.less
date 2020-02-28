@@ -25,10 +25,12 @@ h6 {
     display: inline-block;
 }
 
-#PH_HeaderBackground-fixed, #group_Header-fixed, #siteMenuBar {
-    height: 83px;
-    box-shadow: 0 0 24px 0 rgba(0,0,0,.25);
-    z-index: 50;
+#PH_HeaderBackground-fixed,
+#group_Header-fixed,
+#siteMenuBar {
+    height    : 83px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .25);
+    z-index   : 50;
 }
 
 .btn {
@@ -63,14 +65,14 @@ h6 {
 }
 
 #group_QTHeader {
-    padding         : 0;
-    background-color: #FFF;
-    border-bottom   : none;
-    border-top      : 2px solid @button-color;
+    padding           : 0;
+    background-color  : #FFF;
+    border-bottom     : none;
+    border-top        : 2px solid @button-color;
     //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
-    width           : 80%;
-    position        : fixed;
-    z-index         : 51;
+    width             : 80%;
+    position          : fixed;
+    z-index           : 51;
 }
 
 #PH_QTHeader {
@@ -754,42 +756,53 @@ h6 {
 }
 
 #group_Header-fixed #PH_Search_Box {
-    width: 33%;
-    height: auto;
-    padding-top: 106px;
-    position: absolute;
+    width           : 33%;
+    height          : auto;
+    padding-top     : 106px;
+    position        : absolute;
     background-color: white;
-    right: 0;
-    display: none;
-    top: 0;
+    right           : 0;
+    display         : none;
+    top             : 0;
 }
 
 .ph_search_box .searchManager {
     display: inline;
 }
 
-div#PH_Float_Menu{
+div#PH_Float_Menu,
+#group_Header-fixed.secondary #PH_Float_Menu {
     width: 20%;
 }
 
-#siteMenuBar.hasclient #customerBox::before {
-    width: 20px;
-    height: 22px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 20px;
-    border-radius: 2px;
-    background-color: #666;
+div#PH_Float_Menu {
+    border-top: 2px solid @button-color;
 }
 
-#siteMenuBar #my_basket>span:before, #siteMenuBar [id='my basket']>span:before {
-    color: #009ddc;
-    width: 20px;
-    height: 22px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 20px;
-    border-radius: 2px;
+#siteMenuBar.hasclient #customerBox::before {
+    width           : 20px;
+    height          : 22px;
+    color           : #fff;
+    font-size       : 20px;
+    line-height     : 20px;
+    border-radius   : 2px;
+    background-color: #666;
+    padding         : 10px;
+}
+
+#siteMenuBar #my_basket>span:before,
+#siteMenuBar [id='my basket']>span:before {
+    color           : #009ddc;
+    width           : 20px;
+    height          : 22px;
+    color           : #fff;
+    font-size       : 20px;
+    line-height     : 20px;
+    border-radius   : 2px;
     background-color: #009ddc;
-    padding: 10px;
+    padding         : 10px;
+}
+
+.siteMenuContainer {
+    justify-content: flex-start;
 }
