@@ -23,6 +23,11 @@
         margin-top: -143px;
         width     : 33%;
     }
+
+    @media @tablet {
+
+        margin-top: 0;
+    }
 }
 
 #description {
@@ -62,6 +67,8 @@ div#PH_breadcrumbs {
 }
 
 .largeImageContainer {
+
+
     @media @desktop {
         width       : @left-pane-width;
         max-height  : unset;
@@ -69,6 +76,15 @@ div#PH_breadcrumbs {
         padding-left: 5%;
         height      : 400px;
         min-height  : 400px;
+    }    
+    @media @desktop-large {
+
+        height      : 400px;
+        min-height  : 400px;
+    }
+    @media @tablet {
+        height: 250px;
+        min-height: 250px;
     }
 }
 
@@ -308,6 +324,10 @@ select#dateSelect {
     width   : 68%;
     float   : left;
     order   : 2;
+
+    @media @tablet {
+        width   : 100%;
+    }
 }
 
 .ShowEventsitemsList .itemsDataContainer .name {
@@ -334,10 +354,22 @@ select#dateSelect {
     width   : 68%;
     float   : left;
     order   : 1;
+
+    @media @tablet {
+        width   : 100%;
+    }
 }
 
 .ShowEventsitemsList .dataItem .extras {
     display: none;
+}
+
+.ShowEventsitemsList .itemsButtonsContainer .button {
+
+    @media @tablet {
+
+        width: 100%;
+    }
 }
 
 .ShowEventsitemsList .button.small_button_a A {
@@ -350,6 +382,11 @@ select#dateSelect {
     &:focus {
         padding       : 5px 15px;
         letter-spacing: 0.15px;
+    }
+
+    @media @tablet {
+
+        width: 100%;
     }
 }
 
@@ -368,6 +405,15 @@ select#dateSelect {
     top         : 15px;
     position    : absolute;
     margin-right: 0;
+
+    @media @tablet {
+        width : 100%;
+        margin-top: 10px;
+        position : relative;
+        right : unset;
+        top : unset;
+        order: 4;
+    }
 }
 
 #media>DIV {
