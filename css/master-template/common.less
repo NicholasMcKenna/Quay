@@ -1366,3 +1366,26 @@ button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-
 
 
 
+#group_Footer::after {
+
+    display: block;
+    position: relative;
+    width: 100%;
+    content: " ";
+    height:20px;
+    padding: 4px;
+
+    @media @mobile {
+        content: "Mobile";
+    }
+    @media @tablet {
+        content: "Tablet";
+    }
+    @media @desktop {
+        content: "Desktop";
+    }
+    @media @desktop-large {
+        content: "Desktop Large";
+    }
+
+}
