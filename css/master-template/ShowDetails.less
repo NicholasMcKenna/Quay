@@ -14,35 +14,48 @@
     float     : inherit;
     margin-top: unset;
     width     : 100%;
-    padding   : 0 25px;
+    padding   : 0 5%;
     background-color: #fff;
-
-    @media @desktop {
-        float  : right;
-        padding: 0;
-        margin-top: -143px;
-        width     : 33%;
-    }
 
     @media @tablet {
 
         margin-top: 0;
     }
+
+    @media @desktop {
+        float  : right;
+        padding: 0;
+        margin-top: -60px;
+        width     : 33%;
+    }
+
+    @media @desktop-large {
+
+        margin-top: -143px;
+
+    }   
 }
 
 #description {
+
     float: inherit;
+
+    @media @mobile {
+        padding: 0 5%;
+    }    
+
+    @media @tablet {
+        width: 100%;
+    }    
 
     @media @desktop {
         width       : @left-pane-width;
-        padding-left: 25px;
+        padding-left: 0;
         float       : left;
         width       : 66%;
     }
 
-    @media @mobile {
-        padding: 0 5%;
-    }
+
 }
 
 #media {
@@ -50,8 +63,8 @@
         right        : initial;
         width        : @left-pane-width;
         position     : static;
-        padding-left : 25px;
-        padding-right: 4%;
+        padding-left : 0;
+        padding-right: 0;
     }
 }
 
@@ -73,7 +86,8 @@ div#PH_breadcrumbs {
         width       : @left-pane-width;
         max-height  : unset;
         padding-top : 0;
-        padding-left: 25px;
+        padding-left: 0;
+        padding-right: 15px;
         height      : 400px;
         min-height  : 400px;
     }    
@@ -95,12 +109,20 @@ div#PH_breadcrumbs {
 
 .showName {
     position    : static;
-    padding-left: 25px;
+    padding-left: 5%;
+
+    @media @tablet {
+
+        padding-left: 5%;
+    }    
 
     @media @desktop {
         width: 66%;
         float: left;
+        padding-left: 0;
     }
+
+
 }
 
 span.previewFull {
@@ -285,6 +307,11 @@ html .ui-button.ui-state-disabled:active {
 .ui-datepicker td span,
 .ui-datepicker td a {
     padding: 10px;
+
+    @media @desktop {
+
+        padding: 5px;
+    }
 }
 
 select#dateSelect {
