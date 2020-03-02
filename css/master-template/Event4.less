@@ -92,8 +92,11 @@ div#PH_breadcrumbs {
 
 //TODO: Assign correct margin once top portion is sorted out.
 #eventPage .tabsWrapper+#content {
-
     @media @desktop {
+        margin-top: 120px;
+    }
+
+    @media @desktop-large {
         margin-top: 0;
     }
 }
@@ -149,11 +152,17 @@ div#PH_breadcrumbs {
 
 /* GA / Seating plan select */
 #eventPage .tabsWrapper {
+
     @media @desktop {
         width      : 100%;
         border-left: none;
         text-align : center;
         background : transparent;
+        top        : 100px;
+    }
+    
+    @media @desktop-large {
+
         top        : -41px;
     }
 }
@@ -475,7 +484,15 @@ a.ui-button:active,
     padding: 10px;
     left: unset;
 
+
+
     @media @desktop {
+
+        float     : left;
+        top       : 15px;
+    }
+
+    @media @desktop-large {
         width     : 456px;
         float     : right;
         margin-top: 0px;

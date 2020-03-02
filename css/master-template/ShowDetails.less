@@ -39,6 +39,7 @@
 #description {
 
     float: inherit;
+    padding-right: 15px;
 
     @media @mobile {
         padding: 0 5%;
@@ -56,16 +57,21 @@
     }
 
 
+
+
 }
 
 #media {
+
+    padding-right: 15px;
+
     @media @desktop {
         right        : initial;
         width        : @left-pane-width;
         position     : static;
         padding-left : 0;
-        padding-right: 0;
     }
+
 }
 
 div#PH_breadcrumbs {
@@ -110,6 +116,7 @@ div#PH_breadcrumbs {
 .showName {
     position    : static;
     padding-left: 5%;
+    padding-right: 15px;
 
     @media @tablet {
 
@@ -312,6 +319,11 @@ html .ui-button.ui-state-disabled:active {
 
         padding: 5px;
     }
+
+    @media @desktop-large {
+
+        padding: 10px;
+    }
 }
 
 select#dateSelect {
@@ -434,12 +446,17 @@ select#dateSelect {
     margin-right: 0;
 
     @media @tablet {
-        width : 100%;
-        margin-top: 10px;
-        position : relative;
-        right : unset;
-        top : unset;
-        order: 4;
+
+        &:link,
+        &:hover,
+        &:active,
+        &:focus {
+            width : 100%;
+            margin-top: 10px;
+            position : relative;
+            right : unset;
+            top : unset;
+            order: 4;
     }
 }
 
