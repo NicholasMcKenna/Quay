@@ -31,6 +31,11 @@ h6 {
     height    : 83px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, .25);
     z-index   : 50;
+
+    @media @mobile {
+        box-shadow: none;
+        height: 61px;
+    }
 }
 
 .btn {
@@ -70,9 +75,11 @@ h6 {
     border-bottom     : none;
     border-top        : 2px solid @button-color;
     //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
-    width             : 80%;
+    width             : 100%;
     position          : fixed;
-    z-index           : 51;
+    z-index           : 61;
+    position          : absolute;
+    top               : 85px;
 }
 
 #PH_QTHeader {
@@ -99,6 +106,10 @@ h6 {
 .quaytickets-logo {
     width: 250px;
     float: left;
+
+    @media @mobile {
+        display: none;
+    }
 }
 
 .site-menu {
@@ -372,7 +383,7 @@ h6 {
 .section .heading {
 
     display: inline-block;
-    width  : 500px;
+    width  : 100%;
 
     margin: 50px 0 50px 0;
 }
@@ -772,7 +783,9 @@ h6 {
 
 div#PH_Float_Menu,
 #group_Header-fixed.secondary #PH_Float_Menu {
-    width: 20%;
+    @media @desktop {
+        width: 20%;
+    }
 }
 
 div#PH_Float_Menu {
@@ -830,4 +843,17 @@ div#PH_Float_Menu {
     font-size  : 19px;
     line-height: 34px;
     color      : white;
+}
+
+#group_Header-fixed FORM.frmSearch INPUT[type=text] {
+    color      : #3f3f3f !important;
+    width      : 100%;
+    margin-left: 0;
+    margin-top : 0;
+}
+
+body #group_Header-fixed {
+    @media @mobile {
+        height: 64px;
+    }
 }
