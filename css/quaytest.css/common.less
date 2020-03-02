@@ -806,3 +806,28 @@ div#PH_Float_Menu {
 .siteMenuContainer {
     justify-content: flex-start;
 }
+
+#group_Header-fixed .ph_search_box .frmSearch {
+    width: 100%;
+}
+
+#group_Header-fixed FORM.frmSearch .SearchBoxContainer {
+    height: 40px;
+}
+
+#group_Header-fixed:not(.searchPageOpen) .ph_search_box FORM.frmSearch .SearchBoxContainer .SearchTextButton {
+    width: 44px;
+    left : initial;
+    top  : 0;
+    right: 0;
+}
+
+#group_Header-fixed:not(.searchPageOpen) FORM.frmSearch .SearchTextButton {
+    border-radius: 0;
+}
+
+#group_Header-fixed FORM.frmSearch .SearchTextButton:before {
+    font-size  : 19px;
+    line-height: 34px;
+    color      : white;
+}
