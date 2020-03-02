@@ -148,11 +148,12 @@ div#PH_breadcrumbs {
 
 
 #eventPage.seated #leftPane,
-#eventPage.non-seated #leftPane, {
+#eventPage.non-seated #leftPane {
 
     position: unset;
     padding-left : 0;
-    padding-right: 0;    
+    padding-right: 0;
+    background:none;    
 
     @media @desktop {
         margin-top: 0 !important;
@@ -168,7 +169,6 @@ div#PH_breadcrumbs {
 
         display: table-cell;
         width         : @left-pane-width;
-        background    : none;
         padding-top   : 0;
         padding-bottom: 0;
     }
@@ -420,6 +420,7 @@ a.ui-button:active,
 
 #eventPage.seated #ticketsPane {
     width: 200px;
+    float: right;
 }
 
 .icon {
@@ -931,6 +932,11 @@ button.disabled.small_button_a:hover {
 }
 
 #eventPage.seated #content>div {
+
+    @media @desktop {
+        display: block;
+    }
+
     @media @mobile {
         display: block;
         clear  : both;
