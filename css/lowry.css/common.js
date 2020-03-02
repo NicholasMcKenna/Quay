@@ -16,7 +16,7 @@ $(document).ready(function() {
  * Date: Tue Nov 17 2013
  */
 
-(function($) {
+jQuery(function ($) {
 
 	$.fn.showmore = function(options) {
 
