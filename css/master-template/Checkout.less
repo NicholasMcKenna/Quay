@@ -7,13 +7,19 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 140px auto 0;
+    margin      : 75px auto 0 auto;
     max-width   : 1400px;
     padding-left: 0;
 
+    @media @desktop {
+        width: unset;
+        float: left;
+        margin-left: 25px;
+    }
+
     @media @desktop-large {
         padding-left: 0;
-        margin      : 75px auto 0;
+        margin: 80px auto 50px auto;
     }
 }
 
@@ -508,7 +514,8 @@ button.small_button_a {
     }
 }
 
-img.partner-image {
-    width: 100%;
-    height: auto;
+#PH_partner-text img.partner-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 150px;
 }

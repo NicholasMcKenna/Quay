@@ -683,6 +683,7 @@ h1#selectedAreaTitle {
 
 /* Testing page layout changes */
 #eventPage .infoSection {
+    
     @media @desktop {
         padding-top  : 0;
         margin-bottom: 0;
@@ -693,9 +694,21 @@ h1#selectedAreaTitle {
 }
 
 div#leftPane {
+    
     @media @desktop {
         margin-top: 0 !important;
+        //min-height: 500px;
+        display: block;
+        float: left;
+        width: 70%;
+    }
+
+    @media @desktop-large {
+        margin-top: 0 !important;
         min-height: 500px;
+
+        display: table-cell;
+        width: 75%;
     }
 }
 

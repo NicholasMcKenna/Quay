@@ -12,7 +12,14 @@ div#PH_breadcrumbs {
     max-width : 1400px;
 
     @media @desktop {
-        margin: 75px auto 35px auto;
+        width: unset;
+        float: left;
+        margin-left: 25px;
+    }
+
+    @media @desktop-large {
+        padding-left: 0;
+        margin: 80px auto 50px auto;
     }
     
 }
@@ -90,12 +97,15 @@ div#PH_breadcrumbs {
     margin-top: 0;
     height    : auto;
     padding   : 0;
+    
 
     @media @desktop {
         float  : initial;
         display: inline-block;
         width  : 100%;
+        max-width: 75%;
     }
+
 }
 
 #offersContainer .promptsContainer .elementItem {
@@ -110,8 +120,14 @@ div#PH_breadcrumbs {
     @media @desktop {
         padding     : 15px;
         margin-right: 15px;
+        width       : 40%;
+    }
+
+    @media @desktop-large {
+
         width       : 23%;
     }
+    
 }
 
 #offersContainer div.eventInfo>div.date>div {
