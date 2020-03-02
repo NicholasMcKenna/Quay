@@ -129,8 +129,8 @@ jQuery(document).ready(function(){
         visible:5,
 		childElement:".dataItem"
 
-		});
-
 	});
+
+});
 
 
