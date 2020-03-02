@@ -19,7 +19,7 @@ div#PH_breadcrumbs {
 
     @media @desktop-large {
         padding-left: 0;
-        margin: 80px auto 50px auto;
+        margin: 80px auto 0 auto;
         float:none;
     }
 }
@@ -43,8 +43,14 @@ div#PH_breadcrumbs {
     padding         : 10px 0 140px 0;
 
     @media @desktop {
-        padding: 10px 0 0 0;
+        padding: 0;
     }
+
+    @media @desktop-large {
+        margin: 0;
+    }
+
+    
 }
 
 .pageSectionTitle {
@@ -106,6 +112,16 @@ div#PH_breadcrumbs {
 .summaryBasketContainer {
     background-image: none;
     border          : none;
+
+    @media @desktop {
+
+        margin-top: 4em;
+    }
+    @media @desktop-large {
+
+        margin-top: 2em;
+    }
+    
 }
 
 .summaryBasketContainer .timerMessage {
