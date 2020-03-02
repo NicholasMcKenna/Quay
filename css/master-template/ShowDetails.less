@@ -414,13 +414,24 @@ select#dateSelect {
 .ShowEventsitemsList .button.small_button_a A {
     .action-button();
     padding       : 5px 15px;
-    letter-spacing: 0.15px;
 
     &:hover,
     &:active,
     &:focus {
         padding       : 5px 15px;
-        letter-spacing: 0.15px;
+
+    }
+
+    @media @desktop {
+
+        width: 100%;
+
+        &:hover,
+        &:active,
+        &:focus {
+            
+            width: 100%;
+        }
     }
 
     @media @tablet {

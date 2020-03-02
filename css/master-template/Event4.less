@@ -113,18 +113,18 @@ div#PH_breadcrumbs {
     float: left;
 }
 
-#eventPage.seated #leftPane,
-#eventPage.non-seated #leftPane {
-    @media @desktop {
-        width         : @left-pane-width;
-        background    : none;
-        padding-top   : 0;
-        padding-bottom: 0;
-    }
-}
-
 #eventPage .seatingPlanContainer {
+
+    background-color: #fff;
+
     @media @desktop {
+        width: 50%;
+        float:left;
+        display:block;
+        border-right: 1px solid #888 !important;
+    }
+
+    @media @desktop-large {
         width: @seating-plan-width;
     }
 }
@@ -139,16 +139,58 @@ div#PH_breadcrumbs {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+#eventPage.seated #leftPane,
+#eventPage.non-seated #leftPane, {
+
+    position: unset;
+    padding-left : 0;
+    padding-right: 0;    
+
+    @media @desktop {
+        margin-top: 0 !important;
+        //min-height: 500px;
+        display: block;
+        float: left;
+        width: 70%;
+    }
+
+    @media @desktop-large {
+        margin-top: 0 !important;
+        min-height: 500px;
+
+        display: table-cell;
+        width         : @left-pane-width;
+        background    : none;
+        padding-top   : 0;
+        padding-bottom: 0;
+    }
+}
+
+
 #eventPage.seated #leftPane,
 #eventPage.non-seated #leftPane,
 #eventPage.non-seated #ticketsPane,
 #eventPage .seatingPlanContainer {
     border-style: none;
+    padding-bottom: 0;
 }
 
 #leftPane>*:not(#hallMap) {
     max-width: none;
 }
+
+
+
+
+
 
 /* GA / Seating plan select */
 #eventPage .tabsWrapper {
@@ -298,9 +340,6 @@ a.ui-button:active,
 }
 
 /* Seating Plan */
-#eventPage .seatingPlanContainer {
-    background-color: #fff;
-}
 
 .seat_plan_body_css #stage,
 .seat_plan_body_css #stage.custom-image {
@@ -418,10 +457,6 @@ a.ui-button:active,
 #eventPage .tabsWrapper {
     margin-top : 0;
     border-left: 0;
-}
-
-#eventPage.seated #leftPane {
-    padding-bottom: 0;
 }
 
 //TODO: Check if neeeded
@@ -600,15 +635,17 @@ h1#selectedAreaTitle {
         width      : 60%;
         border     : 0;
         border-left: 0.5px solid #ccc;
+        float:right;
+        display: block;
+    }
+
+    @media @desktop-large {
+        width      : 60%;
+        border     : 0;
+        border-left: 0.5px solid #ccc;
     }
 }
 
-#eventPage.non-seated #leftPane {
-    @media @desktop {
-        width : 34%;
-        border: 0;
-    }
-}
 
 #eventPage.non-seated #content #instructions {
     @media @desktop {
@@ -683,7 +720,7 @@ h1#selectedAreaTitle {
 
 /* Testing page layout changes */
 #eventPage .infoSection {
-    
+
     @media @desktop {
         padding-top  : 0;
         margin-bottom: 0;
@@ -691,25 +728,6 @@ h1#selectedAreaTitle {
         margin-left  : 0;
     }
 
-}
-
-div#leftPane {
-    
-    @media @desktop {
-        margin-top: 0 !important;
-        //min-height: 500px;
-        display: block;
-        float: left;
-        width: 70%;
-    }
-
-    @media @desktop-large {
-        margin-top: 0 !important;
-        min-height: 500px;
-
-        display: table-cell;
-        width: 75%;
-    }
 }
 
 #eventPage .infoSection {
@@ -850,13 +868,6 @@ div#leftPane {
     padding-bottom: 0px;
 }
 
-#eventPage.seated #leftPane,
-#eventPage.non-seated #leftPane {
-
-    position: unset;
-    padding-left : 0;
-    padding-right: 0;
-}
 
 .button.disabled.small_button_a A,
 .button.disabled.small_button_a A:hover,
@@ -881,11 +892,6 @@ button.disabled.small_button_a:hover {
     height: 10px;
 }
 
-.seatingPlanContainer {
-    @media @desktop {
-        border-right: 1px solid #888 !important;
-    }
-}
 
 .hallMap {
     @media @desktop {
