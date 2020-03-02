@@ -34,7 +34,7 @@ h6 {
 
     @media @mobile {
         box-shadow: none;
-        height: 61px;
+        height    : 61px;
     }
 }
 
@@ -74,12 +74,18 @@ h6 {
     background-color  : #FFF;
     border-bottom     : none;
     border-top        : 2px solid @button-color;
-    //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
-    width             : 100%;
+    box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    width             : 80%;
     position          : fixed;
     z-index           : 61;
-    position          : absolute;
-    top               : 61px;
+
+
+    @media @mobile {
+        position: absolute;
+        top     : 61px;
+        width   : 100%;
+        box-shadow: none;
+    }
 }
 
 #PH_QTHeader {
@@ -855,5 +861,11 @@ div#PH_Float_Menu {
 body #group_Header-fixed {
     @media @mobile {
         height: 64px;
+    }
+}
+
+#PH_MenuButton {
+    @media @mobile {
+        z-index: 2;
     }
 }
