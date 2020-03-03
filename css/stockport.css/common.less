@@ -9,6 +9,18 @@ body {
 }
 
 
+body #group_Header-fixed {
+
+    border-bottom: 1px solid #dbdbdb;
+}
+
+img.logo-image {
+    max-width: 269px;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
 
 .c-footer-menu {
     display: none;
@@ -18,6 +30,11 @@ body {
     @media @desktop {
         display: flex;
     }
+}
+
+#navMenu_Float_Search_item > span::before {
+    
+    color: @highlight-color
 }
 
 .top-menu {
