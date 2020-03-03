@@ -7,11 +7,7 @@ FORM.frmSearch INPUT[type=text] {
     width: 360px;
 }
 
-div#PH_Search_results {
-    @media @mobile {
-        margin-top: 118px;
-    }
-}
+
 
 
 
@@ -205,6 +201,23 @@ div#PH_Search_results {
 }
 
 
+
+div#PH_Search_results {
+
+    display: inline-block;
+    float: none;
+    margin: 0;
+    clear: unset;
+
+    @media @mobile {
+    
+        margin-top: 475px;
+    }
+
+}
+
+
+
 .template-TemplateFull #group_left {
 
     float: none;
@@ -234,18 +247,16 @@ div#PH_Search_results {
     }
 }
 
-div#PH_Search_results {
 
-    display: inline-block;
-    float: none;
-    margin: 0;
-    clear: unset;
+
+
+#group_left > DIV {
+
+    @media @mobile {
+
+        width: 90%;
+    }
 }
-
-
-
-
-
 
 
 
