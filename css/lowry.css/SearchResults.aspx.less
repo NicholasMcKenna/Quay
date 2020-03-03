@@ -6,7 +6,7 @@ FORM.frmSearch .SearchTextButton {
 }
 
 
-.searchResult .dataItem .name {
+.searchResult .itemsList .dataItem .name {
     color           : #fff;
     font-weight     : bold;
     background-color: transparent;
@@ -16,16 +16,16 @@ FORM.frmSearch .SearchTextButton {
 }
 
 
-.searchResult .itemsDataContainer::before {
+.searchResult .itemsList .itemsDataContainer::before {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
 }
 
-.searchResult .itemsDataContainer::after {
+.searchResult .itemsList .itemsDataContainer::after {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
 }
 
-.searchResult .itemsDataContainer::after,
-.searchResult .itemsDataContainer::before {
+.searchResult .itemsList .itemsDataContainer::after,
+.searchResult .itemsList .itemsDataContainer::before {
     width             : 65px;
     content           : "";
     height            : 80px;
@@ -52,7 +52,7 @@ FORM.frmSearch .SearchTextButton {
 
 
 
-.searchResult .dataItem .item_image IMG {
+.searchResult .itemsList .dataItem .item_image IMG {
     height: auto;
     width : 100%;
 
