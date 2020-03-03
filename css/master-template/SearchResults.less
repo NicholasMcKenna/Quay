@@ -2,9 +2,6 @@ body {
     text-align: center; 
 }
 
-.itemsList .dataItem div.item_image {
-    background-image: none;
-}
 
 FORM.frmSearch INPUT[type=text] {
     width: 360px;
@@ -16,18 +13,29 @@ div#PH_Search_results {
     }
 }
 
+
+
+
+
+
 .searchResult .itemsList .dataItem {
     width          : 300px;
     margin         : 0px 40px 40px 0px;
     display        : flex;
     flex-direction : column;
     height         : unset;
+    padding: 0;
+    border: none;
+    min-height: unset;
+    background: none;
 }
 
 .searchResult .itemsList .dataItem div.item_image {
     background-image: none;
     height          : unset;
     min-height      : unset;
+    width: 100%;
+    overflow: visible;
 }
 
 .searchResult .itemsList .dataItem:hover IMG,
@@ -35,11 +43,14 @@ div#PH_Search_results {
 .searchResult .itemsList .dataItem .item_image IMG {
 
     max-height: unset;
+    max-width: unset;
+    margin: 0;
 }
 
 .searchResult .dataItem .itemsDataContainer,
 .searchResult .dataItem:hover .itemsDataContainer,
 .searchResult .dataItem.simulateHover .itemsDataContainer {
+    display: block;
     height          : unset !important;
     background-color: transparent;
     position        : relative;
@@ -53,6 +64,10 @@ div#PH_Search_results {
         top: initial;
     }
 */
+}
+
+.searchResult .itemsList .dataItem>DIV {
+    display: block;
 }
 
 .searchResult .dataItem .name {
