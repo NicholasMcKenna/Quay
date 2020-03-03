@@ -2,9 +2,6 @@ body {
     text-align: center; 
 }
 
-.itemsList .dataItem div.item_image {
-    background-image: none;
-}
 
 FORM.frmSearch INPUT[type=text] {
     width: 360px;
@@ -16,76 +13,142 @@ div#PH_Search_results {
     }
 }
 
-.searchResult .itemsList .dataItem {
-    box-sizing        : border-box;
-    padding           : 0;
-    border            : 0;
-    font-size         : 100%;
-    position          : relative;
-    overflow          : hidden;
-    min-height        : 6em;
-    width             : 300px;
-    margin            : 0 40px 40px 0;
-    display           : inline-flex;
-    flex-direction    : column;
-    height            : unset;
-    background-color  : #2a2d34;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition   : all 250ms ease-in-out;
-    -ms-transition    : all 250ms ease-in-out;
-    -o-transition     : all 250ms ease-in-out;
-    transition        : all 250ms ease-in-out;
+
+
+
+
+.searchResult .itemsList {
+    position       : relative;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: left;
 }
 
-.searchResult .itemsList .dataItem DIV.item_image {
-    overflow           : hidden;
-    text-align         : center;
-    background-repeat  : no-repeat;
-    background-size    : inherit;
-    background-position: center 13%;
-    background-image   : none;
-    height             : unset;
-    min-height         : unset;
-    width              : 100%;
+
+.searchResult .itemsList .dataItem {
+    width          : 300px;
+    margin         : 0px 40px 40px 0px;
+    display        : flex;
+    flex-direction : column;
+    height         : unset;
+    padding: 0;
+    border: none;
+    min-height: unset;
+    background: none;
+}
+
+.searchResult .itemsList .dataItem div.item_image {
+    background-image: none;
+    height          : unset;
+    min-height      : unset;
+    width: 100%;
+    overflow: visible;
 }
 
 .searchResult .itemsList .dataItem:hover IMG,
 .searchResult .itemsList .dataItem:hover .item_image IMG,
 .searchResult .itemsList .dataItem .item_image IMG {
-    margin-top         : 0;
-    margin-left        : 0;
-    max-height         : unset;
-    background-position: center center;
-    margin-right       : auto;
-    transition         : opacity .5s;
-    max-width          : 100%;
-    height             : auto;
-    width              : 100%;
-    -webkit-transform  : scale(1.05);
-    -moz-transform     : scale(1.05);
-    -ms-transform      : scale(1.05);
-    -o-transform       : scale(1.05);
-    transform          : scale(1.05);
-    margin             : 0;
+
+    max-height: unset;
+    max-width: 100%;
+    margin: 0;
 }
 
-.searchResult .dataItem .itemsDataContainer, .searchResult .dataItem .itemsButtonsContainer, .searchResult .dataItem:hover .itemsDataContainer, .searchResult .dataItem .name, .searchResult .dataItem .itemsDataContainer .description, .searchResult .dataItem .itemsDateRange {
-    position: inherit;
-    width: auto;
-    background-color: Transparent;
-    height: auto;
-    bottom: auto;
-    filter: none;
-    height: unset !important;
+.searchResult .itemsList .dataItem .itemsDataContainer,
+.searchResult .itemsList .dataItem:hover .itemsDataContainer,
+.searchResult .itemsList .dataItem.simulateHover .itemsDataContainer {
+    display: block;
+    height          : unset !important;
     background-color: transparent;
-    position: relative;
-    bottom: unset;
-    margin-top: 10px;
-    top: unset;
-    margin-left: 0;
-    padding: 0;
+    position        : relative;
+    bottom          : unset;
+    margin-top      : 10px;
+    top             : unset;
+    margin-left     : 0;
+    padding         : 0;
     width: 100%;
+    /*
+    @media @mobile {
+        top: initial;
+    }
+*/
 }
+
+.searchResult .itemsList .dataItem>DIV {
+    display: block;
+}
+
+.searchResult .itemsList .dataItem .name {
+    position   : relative;
+    top        : unset;
+    bottom     : unset;
+    left       : unset;
+    height     : unset;
+    margin-top : 0px;
+    padding-top: 5px;
+    margin-left: 10px;
+    width      : 58%;
+    /*
+    @media @mobile {
+
+        padding-top: 10px;
+    }
+*/
+}
+
+
+.searchResult .itemsList .dataItem .itemsDateRange,
+.searchResult .itemsList .dataItem .extras {
+    width  : 58%;
+    display: block;
+}
+
+.searchResult .itemsList .dataItem .itemsDateRange {
+    position      : static;
+    color         : @button-color;
+    font-size     : 16px;
+    margin-left   : 10px;
+    text-align    : left;
+    padding-bottom: 15px;
+}
+
+.searchResult .itemsList .dataItem .itemsDataContainer .description {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.searchResult .itemsList .dataItem .previewFull,
+.searchResult .itemsList .dataItem .itemsDataContainer .description {
+    display: none;
+}
+
+.searchResult .itemsList .innerdescription {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .itemsDataContainer::after, .itemsDataContainer::before {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
@@ -109,64 +172,6 @@ div#PH_Search_results {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
 }
 
-.searchResult .itemsList .dataItem .name {
-    text-align: inherit;
-    position: relative;
-    top: unset;
-    bottom: unset;
-    left: unset;
-    height: unset;
-    margin-top: 0;
-    padding-top: 5px;
-    margin-left: 10px;
-    color: #fff;
-    font-weight: bold;
-    background-color: transparent;
-    font-size: 22px;
-    text-align: left;
-    width: 58%;
-}
-
-.dataItem .previewFull {
-    display: none;
-}
-
-.dataItem .itemsDateRange, .dataItem .extras {
-    width: 58%;
-    display: block;
-}
-.searchResult .itemsList .dataItem .itemsDateRange {
-    display: table-cell;
-}
-
-.dataItem .itemsDateRange {
-    position: static;
-    color: #26b5bb;
-    font-size: 16px;
-    margin-left: 3px;
-    text-align: left;
-    padding-bottom: 15px;
-}
-
-.itemsList .dataItem:hover {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
-    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
-    -ms-box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
-    -o-box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
-}
-
-
 
 
 
@@ -174,26 +179,66 @@ div#PH_Search_results {
 
 
 .template-TemplateFull .screen-content {
-    max-width: 40%;
+
     display: inline-block;
     float: none;
+
+    @media @mobile {
+
+        margin-top: 300px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media @desktop {
+        margin-top: 0;
+        max-width: 55%;
+        display: inline-block;
+
+    }
+    @media @desktop-large {
+        max-width: 70%;
+    }
+
+
 }
 
 
 .template-TemplateFull #group_left {
 
-    display: inline-block;
     float: none;
     margin: 30px 0 0 0;
     vertical-align: top;
-    width: 20%;
+
+    @media @mobile {
+
+        position: absolute;
+        top: 100px;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media @desktop {
+        position: relative;
+        width: 35%;
+        display: inline-block;
+    }
+
+    @media @desktop-large {
+        width: 20%;
+
+    }
 }
 
 div#PH_Search_results {
 
     display: inline-block;
     float: none;
-    margin: 0 15px 0 0;
+    margin: 0;
     clear: unset;
 }
 

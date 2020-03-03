@@ -7,13 +7,20 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 140px auto 0;
+    margin      : 75px auto 0 auto;
     max-width   : 1400px;
     padding-left: 0;
 
+    @media @desktop {
+        width: unset;
+        float: left;
+        margin-left: 25px;
+    }
+
     @media @desktop-large {
         padding-left: 0;
-        margin      : 75px auto 0;
+        margin: 80px auto 45px auto;
+        float:none;
     }
 }
 
@@ -36,8 +43,14 @@ div#PH_breadcrumbs {
     padding         : 10px 0 140px 0;
 
     @media @desktop {
-        padding: 10px 0 0 0;
+        padding: 0;
     }
+
+    @media @desktop-large {
+        margin: 0;
+    }
+
+    
 }
 
 .pageSectionTitle {
@@ -99,6 +112,16 @@ div#PH_breadcrumbs {
 .summaryBasketContainer {
     background-image: none;
     border          : none;
+
+    @media @desktop {
+
+        margin-top: 132px;
+    }
+    @media @desktop-large {
+
+        margin-top: 25px;
+    }
+    
 }
 
 .summaryBasketContainer .timerMessage {
@@ -484,13 +507,12 @@ button.small_button_a {
 
 .partner-container {
     display: flex;
-    margin : 21px 0;
+    margin : 20px 0;
 }
 
 .img-container {
     display     : inline-flex;
-    width       : 30%;
-    margin-right: 23px;
+    margin-right: 15px;
 
     @media @mobile {
         width       : 100%;
@@ -498,17 +520,17 @@ button.small_button_a {
     }
 }
 
-.partner-info {
+#PH_partner-text .partner-info {
     display: inline-flex;
-    width  : 62%;
 
     @media @mobile {
         width     : 100%;
         margin-top: 15px;
     }
 }
-
-img.partner-image {
-    width: 100%;
-    height: auto;
+#PH_partner-text .img-container,
+#PH_partner-text img.partner-image {
+    width: 150px !important;
+    height: auto !important;
+    max-width: 150px !important;
 }

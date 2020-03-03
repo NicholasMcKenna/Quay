@@ -7,16 +7,21 @@
 }
 
 div#PH_breadcrumbs {
-    margin      : 140px 0 10px 0;
+    margin: 80px auto 50px auto;
     max-width   : 1400px;
     padding-left: 0;
 
     @media @desktop {
-        margin: 80px auto 50px auto;
+        width: unset;
+        float: left;
+        margin-left: 25px;
     }
 
     @media @desktop-large {
+        width: unset;
         padding-left: 0;
+        margin-left: auto;
+        float: none;
     }
 }
 
@@ -639,8 +644,11 @@ div#qasContainer {
     width: unset;
 }
 
+.addCouponCtl input,
+.roundUpDonationSection #donationAmount {
 
-
+    margin-left: 0;
+}
 
 
 
