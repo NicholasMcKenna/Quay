@@ -13,9 +13,18 @@
     }
 }
 
-.ph_recommended_shows {
-    margin-top: 75px;
+
+.screen-content {
+
+    @media @desktop {
+        max-width: 100%;
+        width    : 1400px;
+        margin   : 42px auto 0 auto;
+        padding: 25px; 
+    }
 }
+
+
 
 .itemsList {
     position       : relative;
@@ -48,6 +57,11 @@
 .itemsList .dataItem.simulateHover .item_image IMG {
 
     max-height: unset;
+}
+
+.dataItem:hover IMG, .dataItem.simulateHover IMG {
+    opacity: 1;
+    transition: opacity .5s;
 }
 
 .dataItem .itemsDataContainer,
@@ -187,14 +201,6 @@ div#PH_Search {
     background: @button-color;
 }
 
-
-.screen-content {
-    @media @desktop {
-        max-width: 100%;
-        width    : 1400px;
-        margin   : 100px auto;
-    }
-}
 
 .recommendedShows.showslist {
     @media @desktop {

@@ -12,8 +12,15 @@ body {
 body #group_Header-fixed {
 
     border-bottom: 1px solid #dbdbdb;
+    background-color: @header-bg-color;
+    height: 100px;
 }
 
+.bottom-menu {
+    padding-top: 12px;
+}
+
+.main-logo,
 img.logo-image {
     max-width: 269px;
     width: 100%;
@@ -31,10 +38,11 @@ img.logo-image {
         display: flex;
     }
 }
-
+#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before,
+#siteMenuBar.hasclient #customerBox::before,
 #navMenu_Float_Search_item > span::before {
-    
-    color: @highlight-color
+
+    color: @highlight-color;
 }
 
 .top-menu {
