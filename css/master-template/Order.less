@@ -3,13 +3,23 @@
 }
 
 .screen-content {
-    margin: 0 auto;
+
+    margin-top: 0;
+    padding: 25px;
+
+    @media @desktop {
+
+        margin: 0 auto; 
+    }
 }
 
 div#PH_breadcrumbs {
-    margin: 80px auto 50px auto;
+    
+    margin: 0 auto 0 auto;
+    padding: 85px 25px 0 25px;
+    background-color: #FFF;
+
     max-width   : 1400px;
-    padding-left: 0;
 
     @media @desktop {
         width: unset;
@@ -19,7 +29,6 @@ div#PH_breadcrumbs {
 
     @media @desktop-large {
         width: unset;
-        padding-left: 0;
         margin-left: auto;
         float: none;
     }
