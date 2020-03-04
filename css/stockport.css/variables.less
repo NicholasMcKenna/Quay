@@ -43,7 +43,7 @@
 @bottom-bar : #8F0200;
 
 @sub-button-color     : #666;
-@sub-button-border-color: #f1f1f1;
+@sub-button-border-color: #666;
 @sub-button-font-color: #fff;
 
 @cancel-button-color     : #FFFFFF;
@@ -139,14 +139,14 @@
 
 .cancel-button() {
     background-color: transparent;
-    border          : 1px solid @cancel-button-color;
+    border          : 1px solid @cancel-button-border-color;
     color           : @cancel-button-font-color;
 
     &:hover,
     &:active,
     &:focus {
         background-color: transparent;
-        border          : 1px solid @cancel-button-color;
+        border          : 1px solid @cancel-button-border-color;
         transform       : none;
     }
 }
