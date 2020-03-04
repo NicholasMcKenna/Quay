@@ -1,11 +1,19 @@
-.screen-content {
 
-    margin: 73px auto 40px auto;
+.screen-content {
+    margin: 0 auto 0 auto; 
+    padding: 73px 25px 40px 25px;
+
+    @media @desktop {
+
+        margin: 0 auto; 
+    }
 
     @media @mobile {
+        padding: 0;
         margin: 120px auto 40px auto;
     }
 }
+
 
 #leftMenu DIV.ui-tabs-panel.ui-widget-content {
     background: none;
