@@ -14,6 +14,11 @@ body #group_Header-fixed,
     border-bottom: 1px solid #dbdbdb;
     background-color: @header-bg-color !important;
     height: 100px;
+
+    @media @mobile {
+
+        height: 125px;
+    }
 }
 
 p {
@@ -28,6 +33,11 @@ img.logo-image {
     width: 100%;
     height: auto;
     margin-top: 0;
+
+    @media @mobile {
+
+        max-width: 200px;
+    }    
 }
 
 
@@ -212,12 +222,19 @@ div#PH_Video {
 
 
 
+
+
+
 #group_Footer {
     background-color: @background-color;
     color           : #fff;
     box-sizing      : content-box;
     font-size       : 16px;
-    padding-bottom  : 60px;
+
+    @media @desktop {
+
+        padding-bottom  : 100px;
+    }
 
 }
 
