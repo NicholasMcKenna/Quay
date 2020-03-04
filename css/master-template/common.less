@@ -942,6 +942,11 @@ div#PH_Search_results {
 
     display       : flex;
     flex-direction: row;
+
+    @media @mobile {
+
+        flex-direction: column;
+    }
 }
 
 #PH_Memberships_list .itemsList .dataItem,
