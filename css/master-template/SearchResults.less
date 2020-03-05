@@ -19,6 +19,7 @@ FORM.frmSearch INPUT[type=text] {
     flex-direction : row;
     flex-wrap      : wrap;
     justify-content: left;
+    margin-top: 0;
 }
 
 
@@ -209,10 +210,12 @@ div#PH_Search_results {
     float: none;
     margin: 0;
     clear: unset;
+    padding: 25px;
 
     @media @mobile {
     
         margin-top: 130px;
+        padding: 15px;
     }
 
     @media @desktop {
@@ -227,8 +230,10 @@ div#PH_Search_results {
 .template-TemplateFull #group_left {
 
     float: none;
-    margin: 30px 0 0 0;
+    margin: 0;
     vertical-align: top;
+    padding: 25px 25px 25px 0;
+    background-color:#FFFFFF;
 
     @media @mobile {
 /*
@@ -247,6 +252,7 @@ div#PH_Search_results {
         position: relative;
         width: 35%;
         display: inline-block;
+        
     }
 
     @media @desktop-large {
