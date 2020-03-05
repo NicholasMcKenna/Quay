@@ -24,6 +24,7 @@ div#PH_breadcrumbs {
     text-align      : left;
 
 }
+.searchResult .itemsList .itemsDataContainer::before { display: none; }
 
 .searchResult .itemsDataContainer::after {
 
@@ -38,7 +39,7 @@ div#PH_breadcrumbs {
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
 
-
+    height            : unset;
     background        :none;
     background-color  : @button-color;
     
@@ -98,7 +99,9 @@ div#PH_breadcrumbs {
 
 
 
-
+.searchResult .itemsList .dataItem .itemsDateRange:before {
+    content: none;
+}
 
 
 
