@@ -1,28 +1,49 @@
 @import 'variables';
 @import '../master-template/ShowDetails';
 
-body {
-    margin-top: 0;
+
+.carousel .itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
 }
 
-.screen-content {
-    margin-top: 128px;
+.carousel .itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
 }
 
-.genresContainer {
-    display: none !important;
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    width             : 100px;
+    content           : "";
+    height            : 130px;
+    position          : absolute;
+    bottom            : 10px;
+    right             : 10px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 0.1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
 }
 
-.carousel .itemsList .dataItem .itemsDateRange {
-    color: @button-color;
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    opacity: 1;
 }
 
-.ShowEventsitemsList .button.small_button_a A {
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+
     background-color: @button-color;
+    color           : #FFFFFF;
 }
 
-.ShowEventsitemsList .itemsDateRange,
-.button.small_button_a a,
-#selectedAreaInfo .button-moreAreas {
-    color: @button-color;
+.ui-widget-content .ui-datepicker-today .ui-state-default {
+
+    background-color: @button-hover-color;
+    color           : #FFFFFF;
 }

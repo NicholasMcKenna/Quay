@@ -1,33 +1,6 @@
 @import 'variables';
 @import '../master-template/Event4';
 
-.promoBox {
-    @media @desktop {
-        margin-top: -60px;
-    }
-}
-
-.hallMap form.promoBox {
-    @media @desktop {
-        top       : 159px;
-        text-align: left;
-    }
-}
-
-.button.small_button_a a,
-#selectedAreaInfo .button-moreAreas,
-.button.small_button_a a:hover,
-#selectedAreaInfo .button-moreAreas:hover,
-.button.small_button_a a:active,
-#selectedAreaInfo .button-moreAreas:active,
-.button.small_button_a a:focus,
-#selectedAreaInfo .button-moreAreas:focus {
-    background-color: @button-color;
-    .action-button();
-}
-
-.selectTickets .buttonsContainer .button>a {
-    @media @desktop {
-        min-width: 200px;
-    }
+.eventInfoSection .imageContainer {
+    display: none;
 }

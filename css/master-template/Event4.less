@@ -46,7 +46,7 @@ div#PH_breadcrumbs {
 .button.small_button_a a,
 #selectedAreaInfo .button-moreAreas {
 
-    letter-spacing: 0;
+    letter-spacing: 0px;
     text-shadow   : none;
     padding       : 10px;
     transform     : none;
@@ -55,7 +55,7 @@ div#PH_breadcrumbs {
     &:active,
     &:focus {
 
-        letter-spacing: 0;
+        letter-spacing: 0px;
         text-shadow   : none;
         padding       : 10px;
         transform     : none;
@@ -73,7 +73,7 @@ div#PH_breadcrumbs {
 
 
 .hallMap #selectedAreaInfo .button-moreAreas {
-    letter-spacing: unset;
+    letter-spacing: 0px;
     padding       : 0;
     margin-top    : -85px;
     max-height    : 100px;
@@ -490,14 +490,14 @@ a.ui-button:active,
 #selectedAreaInfo .button-moreAreas {
     @media @mobile {
         width         : 112px;
-        letter-spacing: 0.2px;
+        letter-spacing: 0px;
         padding       : 5px 15px;
 
         &:hover,
         &:focus,
         &:active {
             width         : 140px;
-            letter-spacing: 0.2px;
+            letter-spacing: 0px;
             padding       : 5px 15px;
         }
     }
@@ -621,7 +621,6 @@ h1#selectedAreaTitle {
     height          : unset;
     background-color: #fff;
     box-shadow      : none !important;
-    border-top      : .5px solid @button-color;
     border-bottom   : none;
 
     @media @desktop {
