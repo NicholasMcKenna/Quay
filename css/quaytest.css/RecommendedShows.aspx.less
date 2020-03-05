@@ -29,80 +29,125 @@ img {
     display: none !important;
 }
 
-.dataItem .item_image IMG {
-    min-height: 32px;
-    max-width : 100%;
-    max-height: 214px;
-    overflow  : hidden;
-    width     : 100% !important;
-}
 
-.itemsList .dataItem {
-    width : 22%;
-    margin: 0px 15px 30px 15px;
-    height: 350px;
-}
 
-.dataItem .itemsDateRange {
-    margin-left: 5px;
-    font-size  : 18px;
-    font-weight: 700;
-    color      : @button-color;
-}
 
-.dataItem .itemsDateRange,
-.dataItem:hover .itemsDateRange,
-.dataItem.simulateHover .itemsDateRange {
-    bottom  : 3.2em;
-    position: absolute;
-}
+
+
+
 
 .dataItem .name {
     color           : #fff;
     font-weight     : bold;
-    position        : static;
     background-color: transparent;
-    font-size       : 28px;
-    margin-top      : 0;
+    font-size       : 22px;
     text-align      : left;
-    margin-left     : 10px;
-    padding-top     : 0;
+
 }
 
-.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .name {
-    width      : 100%;
-    font-size  : 22px;
-    font-weight: 800;
-    line-height: 1.2em;
-    font-family: 'Roboto';
+div#PH_breadcrumbs {
+    display: none;
 }
+
+.itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
+
+.itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
+
+.itemsDataContainer::after,
+.itemsDataContainer::before {
+    width             : 65px;
+    content           : "";
+    height            : 80px;
+    position          : absolute;
+    top               : 5px;
+    right             : 15px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+}
+
+
 
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
-    bottom: -12px;
-    margin-right: 0;
+    display: none;
 }
 
-.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .button.small_button_a A, .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .button.small_button_a A:hover {
-    padding: 10px 8px 9px 8px;
-    text-align: center;
-    font-weight: bold;
+.dataItem .item_image IMG {
+    height: auto;
+    width : 100%;
+
+    -webkit-transform: scale(1.05);
+    -moz-transform   : scale(1.05);
+    -ms-transform    : scale(1.05);
+    -o-transform     : scale(1.05);
+    transform        : scale(1.05);
 }
 
-.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .button.small_button_a A {
-    background-image: none;
-    color: white;
-    background-color: @button-color;
+.itemsList .dataItem {
+
+    background-color  : #2A2D34;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+    &:hover {
+        -webkit-transform : translateY(-10px);
+        -moz-transform    : translateY(-10px);
+        -ms-transform     : translateY(-10px);
+        -o-transform      : translateY(-10px);
+        transform         : translateY(-10px);
+        -webkit-transform : scale(1.03);
+        -moz-transform    : scale(1.03);
+        -ms-transform     : scale(1.03);
+        -o-transform      : scale(1.03);
+        transform         : scale(1.03);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @media @mobile {
+        width : 100% !important;
+        margin: 0 0 40px 0 !important
+    }
 }
 
-.itemsList {
-    background-color: transparent;
-    position        : relative;
-    display         : flex;
-    flex-direction  : row;
-    flex-wrap       : wrap;
-    justify-content : center;
-    margin-top      : 50px;
+
+
+.recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsDateRange:before {
+    content: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 div#PH_breadcrumbs {
