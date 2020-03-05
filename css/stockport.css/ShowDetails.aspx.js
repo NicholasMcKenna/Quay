@@ -80,4 +80,6 @@ $(document).ready(function () {
     $(".extras .HighSeatsOccupancy").each(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
+
+    $('#pickadate').after($('.ph_partner-info'));
 });
