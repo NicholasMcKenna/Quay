@@ -8,9 +8,13 @@ FORM.frmSearch INPUT[type=text] {
 }
 
 
+#group_Header {
+    @media @desktop {
+        margin: 85px auto 25px auto;
+    }
+}
 
-
-.searchResult, .searchResult .itemsList {
+.searchResult {
 
     margin-top: 0;
 }
@@ -35,6 +39,7 @@ FORM.frmSearch INPUT[type=text] {
     border: none;
     min-height: unset;
     background: none;
+    text-align:left;
 }
 
 .searchResult .itemsList .dataItem div.item_image {

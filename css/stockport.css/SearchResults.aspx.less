@@ -6,13 +6,17 @@ FORM.frmSearch .SearchTextButton {
 }
 
 
+div#PH_breadcrumbs {
+    display: none;
+}
+
 
 .searchResult .itemsList .dataItem {
 
     margin: 0 25px 25px 0;
 }
 
-.dataItem .name {
+.searchResult .dataItem .name {
     color           : @font-dark-color;
     font-weight     : bold;
     background-color: transparent;
@@ -21,12 +25,7 @@ FORM.frmSearch .SearchTextButton {
 
 }
 
-div#PH_breadcrumbs {
-    display: none;
-}
-
-
-.itemsDataContainer::after {
+.searchResult .itemsDataContainer::after {
 
     position          : absolute;
     top            : 6px;
@@ -50,7 +49,7 @@ div#PH_breadcrumbs {
 }
 
 
-.dataItem .item_image IMG {
+.searchResult .dataItem .item_image IMG {
     height: auto;
     width : 100%;
 
@@ -61,7 +60,7 @@ div#PH_breadcrumbs {
     transform        : scale(1.05);
 }
 
-.itemsList .dataItem {
+.searchResult .itemsList .dataItem {
 
     background-color  : @background-color;
     -webkit-transition: all 250ms ease-in-out;
