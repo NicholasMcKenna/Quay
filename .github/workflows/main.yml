@@ -12,6 +12,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action-Typescript@master
       with:
-        ftp-server: ftp://ftp4a.seatgeekenterprise.co.uk:42121/UserContent
+        ftp-server: sftp://sftp-uk.seatgeekenterprise.com/C:/Users/quay-sg-nmckenna/quay-stag
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --insecure
