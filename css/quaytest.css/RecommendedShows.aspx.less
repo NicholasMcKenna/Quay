@@ -1,6 +1,11 @@
 @import 'variables';
 @import '../master-template/RecommendedShows';
 
+.screen-content {
+
+    min-height: unset;
+}
+
 ul,
 li {
     margin    : 0;
@@ -42,7 +47,7 @@ img {
     background-color: transparent;
     font-size       : 22px;
     text-align      : left;
-
+    padding-top     : 2px;
 }
 
 div#PH_breadcrumbs {
@@ -122,6 +127,11 @@ div#PH_breadcrumbs {
     }
 }
 
+.dataItem .itemsDateRange {
+
+    font-weight: 700;
+}
+
 
 
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsDateRange:before {
@@ -162,6 +172,47 @@ div#PH_breadcrumbs {
     text-align   : right !important;
     margin-bottom: 0px !important;
 }
+
+
+
+
+
+
+.section .heading {
+
+    @media @mobile {
+        margin: 25px 0 25px 0;
+    }
+}
+
+#PH_QTHomeContentFeatureBanner {
+
+    @media @mobile {
+
+        display: none;
+    }
+}
+
+.section.featured-events .list {
+
+    @media @mobile {
+
+        flex-direction: column;
+        padding: 0 15px 15px 15px;
+        margin-top: -15px;
+        margin-bottom: 30px;
+    }
+}
+
+.section.featured-events .list li {
+
+    @media @mobile {
+
+        width: 100%;
+    }
+}
+
+
 
 .container,
 .screen-content {
