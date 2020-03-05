@@ -17,11 +17,17 @@ div#PH_breadcrumbs {
 }
 
 .searchResult .dataItem .name {
+
+    &:link,
+    &:hover,
+    &:active,
+    &:focus {
     color           : @font-dark-color;
     font-weight     : bold;
     background-color: transparent;
     font-size       : 22px;
     text-align      : left;
+    }
 
 }
 .searchResult .itemsList .itemsDataContainer::before { display: none; }
