@@ -1384,6 +1384,44 @@ button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-
 
 
 
+.findByValues .genresContainer {
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.findByValues .genres .genre {
+    
+    width: 36%;
+    background-color: @button-color;
+    color:@button-font-color;
+    vertical-align: unset;
+    text-align: center;
+    font-size: 15px;
+    margin-left: unset;
+    margin-right: unset;
+    padding: 6px 12px;
+    line-height: 15px;
+    height: unset;
+}
+
+.genre::before, .genre::after {
+
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 html.appearance .eventsCalendar .ui-datepicker-year, 
 html.appearance .eventsCalendar .ui-datepicker-month {
     background: none;
