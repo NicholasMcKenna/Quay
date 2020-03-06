@@ -89,7 +89,7 @@ body,
     max-width       : 100%;
     width           : 100%;
     box-shadow      : none !important;
-    background-color: #FFFFFF  !important;
+    background-color: @background-color  !important;
 
     @media @mobile {
         padding-left : 0% !important;
@@ -1468,7 +1468,11 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
 
     background-color: @background-color;
     border-radius: 0px;
+    box-shadow: none;
     color: @font-dark-color;
+}
+
+#PH_SearchPage_ByCalendar .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
 
     box-shadow: none !important;
     border: none !important;
