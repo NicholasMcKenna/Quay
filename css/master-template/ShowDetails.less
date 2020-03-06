@@ -85,8 +85,10 @@ div#PH_breadcrumbs {
 
 .largeImage {
     @media @desktop {
-        width : 100%;
+
+        width : unset !important;
         height: auto;
+        max-width: 100%;
     }
 }
 
@@ -101,6 +103,10 @@ div#PH_breadcrumbs {
         padding-right: 15px;
         height      : 400px;
         min-height  : 400px;
+
+        display: flex;
+        justify-content: center;
+        background-color: @box-bgcolor;
     }    
     @media @desktop-large {
 
