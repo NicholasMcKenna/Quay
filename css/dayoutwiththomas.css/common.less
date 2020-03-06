@@ -14,6 +14,7 @@ body #group_Header-fixed,
     border-bottom: 1px solid #dbdbdb;
     background-color: @header-bg-color !important;
     height: 100px;
+    max-height: 40px;
 
     @media @mobile {
 
@@ -599,14 +600,14 @@ div#PH_Footer-main {
     -webkit-border-radius: 2px;
     border-radius        : 4px !important;
 }
-
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span,
 #siteMenuBar .flm_login,
 a#navMenu_Float_TimeRemaining_item,
 #siteMenuBar #CountDown.active,
 a#navMenu_Float_Search_item {
     font-size  : 16px;
     font-weight: 600;
-    color      : @font-dark-color;
+    color      : #FFFFFF;
 }
 
 a#navMenu_Float_Search_item,
@@ -619,7 +620,7 @@ a#navMenu_Float_Search_item,
         padding         : 0;
         border-radius   : 0;
         background-color: @button-color;
-        color           : #fff;
+        color           : #FFFFFF;
         font-size       : 16px;
         font-weight     : 600;
     }
@@ -642,7 +643,7 @@ a#navMenu_Float_Search_item,
 
 #siteMenuBar #CountDown .timerText {
     font-weight: 600;
-    color      : @button-color;
+    color      : #FFFFFF;
 }
 
 a#navMenu_Float_Basket_item {
