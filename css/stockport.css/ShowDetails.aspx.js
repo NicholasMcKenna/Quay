@@ -81,5 +81,5 @@ $(document).ready(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
 
-    $('#pickadate').after($('.ph_partner-info'));
+    //$('#pickadate').after($('.ph_partner-info'));
 });
