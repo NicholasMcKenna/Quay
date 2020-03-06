@@ -89,7 +89,7 @@ body,
     max-width       : 100%;
     width           : 100%;
     box-shadow      : none !important;
-    background-color: @background-color  !important;
+    background-color: #FFFFFF  !important;
 
     @media @mobile {
         padding-left : 0% !important;
@@ -409,6 +409,8 @@ a#navMenu_Float_Search_item span {
     top: 0px;
 
 }
+
+#group_Header-fixed.searchPageOpen .ph_search_box .searchManager.expanded { height: unset; }
 
 .screenPartContainer.ph_search_box .searchManager.expanded .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
 
@@ -1451,7 +1453,6 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
     font-size: larger;
     border: 1px solid @box-bgcolor;
     border-width: 1px 0 0 0;
-
 }
 
 #PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker, 
@@ -1467,8 +1468,10 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
 
     background-color: @background-color;
     border-radius: 0px;
-    box-shadow: none;
     color: @font-dark-color;
+
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .searchManager .ui-widget {
