@@ -107,6 +107,11 @@ body #group_Header-fixed {
     }
 }
 
+#group_Header-fixed.searchPageOpen {
+
+    background-color: #FFF;
+}
+
 #group_Header-fixed.primary #PH_logo,
 #group_Header-fixed.primary #PH_Main_Menu,
 #group_Header-fixed.primary #PH_Search_Box {
@@ -366,6 +371,7 @@ a#navMenu_Float_Search_item span {
 
     margin-top: 41px;
     width     : 100%;
+    background-color: #FFFFFF;
 }
 
 .searchManager.expanded .findByOptions button.expanded,
@@ -407,9 +413,11 @@ a#navMenu_Float_Search_item span {
 #group_Header-fixed.searchPageOpen #closeSearchPage {
 
     top: 0px;
-
 }
+#group_Header-fixed.searchPageOpen .ph_search_box .findByValues > div {
 
+    background-color: #FFFFFF;
+}
 #group_Header-fixed.searchPageOpen .ph_search_box .searchManager.expanded { height: unset; }
 
 .screenPartContainer.ph_search_box .searchManager.expanded .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
@@ -423,8 +431,14 @@ a#navMenu_Float_Search_item span {
 }
 
 #group_Header-fixed.searchPageOpen .ph_search_box .findByValues .currentTimeRangeEventsCtrl {
-    margin-top   : 100px;
-    padding-right: 0;
+    margin-top   : 0px;
+    padding: 2.5em 25px 0 25px;
+
+    .currentTimeRangeEventsCtrl .currentTimeRangeEvents {
+
+        font-size: 24px;
+        line-height: 1.2em;
+    }
 }
 
 .currentTimeRangeEventsCtrl .currentTimeRangeEvents,
