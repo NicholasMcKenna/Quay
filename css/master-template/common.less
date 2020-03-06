@@ -435,11 +435,13 @@ a#navMenu_Float_Search_item span {
 #group_Header-fixed.searchPageOpen .ph_search_box .findByValues .currentTimeRangeEventsCtrl {
     margin-top   : 0px;
     padding: 2.5em 25px 0 25px;
+    height: 100px !important;
 
-    .currentTimeRangeEventsCtrl .currentTimeRangeEvents {
+    .currentTimeRangeEvents {
 
         font-size: 24px;
         line-height: 1.2em;
+
     }
 }
 
@@ -451,6 +453,14 @@ a#navMenu_Float_Search_item span {
     text-align      : center;
     font-size       : 1.2em;
 }
+
+.currentTimeRangeEventsCtrl .currentTimeRangeEvents {
+
+    display: none !important;
+}
+
+
+
 
 
 .findByTitle {
@@ -1462,6 +1472,11 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
 .searchManager .eventsCalendar .ui-datepicker .ui-datepicker-header a {
 
     color: @font-dark-color;
+}
+
+.searchManager .eventsCalendar .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+    width: 100% !important;
+
 }
 
 .searchManager .eventsCalendar .ui-datepicker th {
