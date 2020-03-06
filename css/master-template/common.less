@@ -1379,6 +1379,135 @@ button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-
 
 
 
+
+
+
+
+
+html.appearance .eventsCalendar .ui-datepicker-year, 
+html.appearance .eventsCalendar .ui-datepicker-month {
+    background: none;
+    background-color: @button-color;
+    color: @background-color;
+    padding: 4px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
+}
+
+.eventsCalendar .ui-datepicker .ui-datepicker-header a {
+
+    color: @font-dark-color;
+}
+
+.eventsCalendar .ui-datepicker th {
+
+    font-size: larger;
+    border: 1px solid @box-bgcolor;
+    border-width: 1px 0 0 0;
+
+}
+
+.eventsCalendar .ui-datepicker, .eventsCalendar .ui-datepicker-calendar {
+
+    background: @background-color;
+    padding: 0;
+}
+
+.eventsCalendar .ui-datepicker-header {
+
+    background-color: @background-color;
+    border-radius: 0px;
+    box-shadow: none;
+    color: @font-dark-color;
+}
+
+.ui-widget {
+
+    font-size: 15px;
+}
+
+.eventsCalendar .ui-widget-header {
+
+    border: none;
+    background:none;
+    color: @font-dark-color;
+}
+
+.eventsCalendar .ui-datepicker td span, 
+.eventsCalendar .ui-datepicker td a {
+
+    background-color: @button-color;
+    color: @background-color;
+    opacity: .5;
+    padding: 10px 4px;
+}
+
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+
+    border: none;
+    background: none;
+}
+
+
+.eventsCalendar a.ui-state-default, 
+.eventsCalendar .ui-widget-content a.ui-state-default {
+    background: none;
+
+    background-color: @button-color;
+    color: @background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
+}
+
+.eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
+.eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
+
+    background: none;
+    background-color: @button-color;
+    color: @background-color;
+    opacity: .75;
+}
+
+.eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
+
+    opacity: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #group_Footer::after {
 
     display: block;
