@@ -1587,6 +1587,49 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
 
 
+#PH_partner-text, 
+#PH_Footer-partner-text {
+
+    .partner-container {
+        display: flex;
+        flex-direction: row;
+
+        margin : 20px 0;
+    }
+
+    .img-container {
+        display     : inline-flex;
+        align-self  : baseline;
+        margin-right: 15px;    
+        
+        width: 150px;
+
+        @media @mobile {
+            width       : 100%;
+            margin-right: 0;
+        }
+    }
+
+    .img-container img {
+
+        max-width: 150px !important;
+        height: auto !important;
+    }
+
+    .partner-info {
+        display: inline-flex;
+
+
+        @media @mobile {
+            width     : 100%;
+            margin-top: 15px;
+        }
+    }
+
+
+
+}
+
 
 
 
