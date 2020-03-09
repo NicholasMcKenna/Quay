@@ -520,14 +520,21 @@ button.small_button_a {
     display: none;
 }
 
-.partner-container {
+
+
+
+
+#PH_partner-text .partner-container {
     display: flex;
     margin : 20px 0;
 }
 
-.img-container {
+#PH_partner-text .img-container {
     display     : inline-flex;
-    margin-right: 15px;
+    align-self  : baseline;
+    margin-right: 15px;    
+    
+    width: 150px;
 
     @media @mobile {
         width       : 100%;
@@ -535,17 +542,18 @@ button.small_button_a {
     }
 }
 
+#PH_partner-text .img-container img {
+
+    max-width: 150px !important;
+    height: auto !important;
+}
+
 #PH_partner-text .partner-info {
     display: inline-flex;
+
 
     @media @mobile {
         width     : 100%;
         margin-top: 15px;
     }
-}
-#PH_partner-text .img-container,
-#PH_partner-text img.partner-image {
-    width: 150px !important;
-    height: auto !important;
-    max-width: 150px !important;
 }
