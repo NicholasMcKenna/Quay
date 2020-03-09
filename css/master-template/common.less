@@ -1586,15 +1586,15 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
 
 
-
-#PH_partner-text, 
+   
 #PH_Footer-partner-text {
 
-    .partner-container {
-        display: flex;
-        flex-direction: row;
+    text-align: center;
 
-        margin : 20px 0;
+    .gdpr-info,
+    .partner-container {
+       
+        margin : 20px 0 0 0;
 
         @media @desktop {
             max-width: 1400px;
@@ -1607,16 +1607,16 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
     }
 
+ 
     .img-container {
-        display     : inline-flex;
-        align-self  : baseline;
-        margin-right: 15px;    
-        
+
         width: 150px;
 
         @media @mobile {
             width       : 100%;
+            max-width   : 150px;
             margin-right: 0;
+            margin-left : 0;
         }
     }
 
@@ -1626,10 +1626,8 @@ html .searchManager .ui-button.ui-state-disabled:active {
         height: auto !important;
     }
 
+    
     .partner-info {
-        display: inline-flex;
-
-
         @media @mobile {
             width     : 100%;
             margin-top: 15px;
