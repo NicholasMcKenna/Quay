@@ -8,10 +8,10 @@ body {
     background-image: @background-image;
 }
 
-body #group_Header-fixed,
+body #group_Header-fixed, 
 #group_Header-fixed {
 
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 0px solid #dbdbdb;
     background-color: @header-bg-color !important;
     height: 100px;
     max-height: 40px;
@@ -57,7 +57,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
 #siteMenuBar.hasclient #customerBox::before,
 #navMenu_Float_Search_item > span::before {
 
-    color: @highlight-color;
+    color: #FFFFFF;
 }
 
 .top-menu {
@@ -262,14 +262,15 @@ div#PH_Footer-main {
     margin: 0px auto;
 	border-bottom: 4px solid #009FE1;
     padding: 0px 0 0 0;
+    float:none;
 
     @media @desktop {
 
-        width: 750px;
+        width: 100%;
     }
     @media @desktop-large {
 
-        width: 1170px;
+        width: 1400px;
     }
     @media @mobile {
 
