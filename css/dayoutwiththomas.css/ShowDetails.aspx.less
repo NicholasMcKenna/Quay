@@ -4,18 +4,28 @@
 
 .screen-content {
 
-    background: url('/UserContent/images/DayOutWithThomas/site/2020/hr-rail2.png') repeat-x bottom center;
-    padding-bottom: 10px;
     background-color: #FFF;
+    margin-bottom: 25px;
 }
 
+.screen-content::after,
 .screen-content::before {
+
+    background: url('/UserContent/images/DayOutWithThomas/site/2020/hr-rail2.png') repeat-x;    
     content: "";
-    background: url('/UserContent/images/DayOutWithThomas/site/2020/hr-rail2.png') repeat-x;
     display: block;
     width: 100%;
-    height: 34px;
+    height: 30px;   
 }
+
+.screen-content::after {
+
+    background-position: bottom;
+}
+
+
+
+
 
 .main-logo {
 
@@ -40,10 +50,13 @@ div#pickadate {
     right: 20px;
 }
 
+
+
+
 #PH_partner-info {
 
     float:right;
-    margin-top: -162px;
+    margin-top: -157px;
     border: 1px solid #eee;
     border-width: 1px 0px;
     padding: 10px 0;
@@ -58,12 +71,17 @@ div#pickadate {
 #PH_partner-info .img-container img {
 
     width: 150px;
+    max-width: 150px;
 }
+
+
+
+
 
 #eventslist {
 
     margin-top: -68px;
-    background-color: none;
+    background-color: unset;
 }
 
 
@@ -140,16 +158,21 @@ div#pickadate{
 .ui-state-default,
 .ui-widget-content .ui-state-default {
 
+    background      : none;
     background-color: @highlight-color;
     color           : #FFFFFF;
 }
 
 .ui-widget-content .ui-datepicker-today .ui-state-default {
-    background-color: @background-color;
-    color :   #FFFFFF;
+
+    background      : none;
+    background-color: @button-color;
+    color           : #FFFFFF;
 }
 
-.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+.ui-state-disabled, 
+.ui-widget-content .ui-state-disabled, 
+.ui-widget-header .ui-state-disabled {
     opacity: .40;
     filter: Alpha(Opacity=40);
 }
