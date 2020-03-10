@@ -26,14 +26,14 @@
 
 div#pickadate {
 
-    top: 20px;
+    top: 25px;
     right: 20px;
 }
 
 #PH_partner-info {
 
     float:right;
-    margin-top: -150px;
+    margin-top: -162px;
     border: 1px solid #eee;
     border-width: 1px 0px;
     padding: 10px 0;
@@ -44,9 +44,16 @@ div#pickadate {
     font-size: 14px;
 }
 
+#PH_partner-info .img-container,
+#PH_partner-info .img-container img {
+
+    width: 150px;
+}
+
 #eventslist {
 
-    margin-top: -63px;
+    margin-top: -68px;
+    background-color: none;
 }
 
 
@@ -128,13 +135,14 @@ div#pickadate{
 }
 
 .ui-widget-content .ui-datepicker-today .ui-state-default {
-
-    background-color: @button-hover-color;
-    color           : rgb(131, 115, 115);
+    background-color: @background-color;
+    color :   #FFFFFF;
 }
 
-
-
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .40;
+    filter: Alpha(Opacity=40);
+}
 
 
 
