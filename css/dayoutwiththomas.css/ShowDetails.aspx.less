@@ -6,6 +6,11 @@
 
     background-color: #FFF;
     margin-bottom: 25px;
+
+    @media @desktop {
+    
+        margin-top:unset;
+    }
 }
 
 .screen-content::after,
@@ -52,9 +57,10 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 	background-position: top -30px left 0px;
 	background-repeat: no-repeat;
     min-height: 100px;
-    margin: 10px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 25px;
     overflow: hidden;
+    margin-bottom: -2px;
 
     @media @desktop {
 
@@ -86,6 +92,7 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
     width: 100%;
     max-width: 400px;
     height: auto;
+    vertical-align: middle;
 }
 
 #PH_showdetails-banner .location-select {
@@ -106,7 +113,7 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 }
 
 #locationselect .main-buttons.select {
-    
+
     padding-bottom: 15px;
 }
 
