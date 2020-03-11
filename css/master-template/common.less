@@ -63,6 +63,25 @@ button {
     }
 }
 
+.screen-content {
+
+    overflow: hidden;
+    background-color: @background-color;
+
+    @media @mobile {
+
+        padding-top: 125px;
+    }
+    
+    @media @desktop {
+        max-width: 100%;
+        margin   : 42px auto 25px auto;
+        padding: 50px 25px 25px; 
+        min-height: 700px;
+    }
+}
+
+
 body.screen-CrmDetails_aspx div.ui-dialog.ui-widget.ui-widget-content {
 
     @media @mobile {
