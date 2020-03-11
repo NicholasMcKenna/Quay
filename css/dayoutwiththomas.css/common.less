@@ -2,6 +2,20 @@
 @import '../master-template/common';
 
 
+.screen-content {
+
+    @media @mobile {
+
+        padding-top: 125px;
+    }
+    
+    @media @desktop {
+
+        margin   : 115px auto 25px auto;
+    }
+}
+
+
 
 body {
 
@@ -34,24 +48,6 @@ img.logo-image {
 
         max-width: 200px;
     }    
-}
-
-.screen-content {
-
-    overflow: hidden;
-
-    @media @mobile {
-
-        padding-top: 125px;
-    }
-    
-    @media @desktop {
-        max-width: 100%;
-        width    : 1400px;
-        margin   : 42px auto 25px auto;
-        padding: 50px 25px 25px; 
-        min-height: 700px;
-    }
 }
 
 
