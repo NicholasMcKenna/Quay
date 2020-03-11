@@ -5,21 +5,28 @@
 
 }
 
+
 .screen-content {
+    margin    : 0 auto;
 
-    margin-top: 0;
-    padding: 25px;
-
-    @media @desktop {
-
-        margin: 0 auto; 
+    @media @mobile {
+        padding   : 0;
+        margin-top: 126px;
+        width: 100%;
     }
+    @media @desktop {
+        padding   : 25px;
+        margin-bottom: 25px;
+        width: 1400px;
+    }
+    
 }
+
 
 div#PH_breadcrumbs {
     
-    margin: 0 auto 0 auto;
-    padding: 85px 25px 0 25px;
+    margin: 80px auto 0 auto;
+    padding: 25px 25px 0 25px;
     background-color: #FFF;
 
     max-width   : 1400px;
@@ -36,6 +43,7 @@ div#PH_breadcrumbs {
         float: none;
     }
 }
+
 
 
 
