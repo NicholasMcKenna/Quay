@@ -219,6 +219,7 @@ div#pickadate {
 }
 
 
+
 // Left Side
 
 .carousel,
@@ -226,7 +227,14 @@ div#pickadate {
 #description,
 .showName,
 .largeImageContainer {
-    width: 55%;
+    
+    @media @mobile {
+        width : 100%;
+    } 
+    @media @desktop {
+        width: @left-pane-width;
+    }
+    
 }
 
 // Right Side
@@ -235,12 +243,23 @@ div#pickadate {
 div#pickadate,
 #eventslist {
 
-    width: 42%;
+    @media @mobile {
+        width : 100%;
+    } 
+    @media @desktop {
+        width: 33%;
+    }
 }
 
 div#pickadate{
 
-    width : calc(42% - 16px);
+    @media @mobile {
+        width : 100%;
+    }    
+
+    @media @desktop {
+        width : calc(33% - 16px);
+    }
 }
 
 //
