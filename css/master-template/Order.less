@@ -9,8 +9,8 @@
     margin    : 0 auto;
 
     @media @mobile {
-        padding   : 0;
-        margin-top: 126px;
+        padding   : 10px 20px;
+        margin-top: 0px;
         width: 100%;
     }
     @media @desktop {
@@ -29,6 +29,12 @@ div#PH_breadcrumbs {
     background-color: #FFF;
 
     max-width   : 1400px;
+
+    @media @mobile {
+
+        margin: 135px 0 0 0;
+        padding: 0;
+    }
 
     @media @desktop {
         width: unset;
@@ -128,6 +134,7 @@ div#PH_breadcrumbs {
 
 .basket-section>DIV {
     padding: 0 0 0 0;
+    margin-top: 0;
     width: 100%;
 }
 
@@ -532,12 +539,15 @@ button.disabled.small_button_a:hover {
     right: unset;
     float: unset;
     position: relative;
-    text-align: right;
+    text-align: left;
     width: 25%;
 }
 
 .deliveryMethod LABEL .image-container {
-    margin-right: 29px;
+    margin-right: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
 }
 
 .deliveryContainer .deliveryMethod>label>span {

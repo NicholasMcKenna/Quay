@@ -24,6 +24,11 @@ div#PH_breadcrumbs {
         margin   : 75px auto 0 5%;
         padding  : 0;
     }
+    @media @mobile {
+    
+        margin-bottom: 15px;
+    }
+    
 }
 
 .crumb.step-one {
@@ -90,9 +95,25 @@ div#PH_breadcrumbs {
     min-height: unset;
     top       : 20px;
     bottom    : unset;
+    z-index: 50;
 
     @media @desktop {
         margin-top: 0;
+    }
+}
+
+.expanded#selectedAreaInfo .menu {
+
+    top:57px;
+}
+
+.expanded#selectedAreaInfo .menu .area-info-container {
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        background-color: #ecf0f1;
     }
 }
 
@@ -453,9 +474,20 @@ a.ui-button:active,
 #eventPage .infoSection {
     padding-top  : 0;
     margin-bottom: 0;
+
+    @media @mobile {
+
+        margin-top: 0;
+    }
 }
 
-#eventPage .infoSection .name {
+#eventPage.non-seated .infoSection {
+    @media @mobile {
+        margin-top: 15px;
+    }
+}
+
+#eventPage .infoSection .name { 
     padding-top: 0;
     font-size  : @fontsize-main;
     font-weight: @fontweight-main;
@@ -564,9 +596,9 @@ a.ui-button:active,
 }
 
 
-#eventPage.hallMap #selectedAreaInfo .selected .area-info-container {
+#selectedAreaInfo .selected .area-info-container {
     @media @mobile {
-        width        : 100%;
+        width        : 65%;
         padding-right: 0;
     }
 }
