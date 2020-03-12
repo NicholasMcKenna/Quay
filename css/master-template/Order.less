@@ -527,11 +527,23 @@ button.disabled.small_button_a:hover {
 .deliveryMethod .name {
 
     width: 25%;
+
+    @media @mobile {
+
+        width: 47%;
+    }    
 }
 
 .deliveryMethod .description {
 
     width: 50%;
+
+    @media @mobile {
+
+        width: 100%;
+        padding: 0 0 0 33px;
+        margin-top: 5px;
+    }  
 }
 
 .deliveryMethod .deliveryPricing {
@@ -539,8 +551,14 @@ button.disabled.small_button_a:hover {
     right: unset;
     float: unset;
     position: relative;
-    text-align: left;
+    text-align: right;
     width: 25%;
+
+    @media @mobile {
+
+        width: 40%;
+    }  
+
 }
 
 .deliveryMethod LABEL .image-container {
@@ -548,6 +566,11 @@ button.disabled.small_button_a:hover {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 0;
+}
+
+.deliveryContainer .deliveryMethod > label::before {
+
+    margin-right: 15px;
 }
 
 .deliveryContainer .deliveryMethod>label>span {
