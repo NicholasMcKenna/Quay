@@ -31,6 +31,16 @@
     border: 1px solid #eee;
     border-width: 1px 0px;
     padding: 10px 0;
+
+    @media @desktop {
+
+        margin-top: -45px;
+    }
+    @media @desktop-large {
+
+        margin-top: -157px;
+    }
+    
 }
 
 
@@ -44,7 +54,15 @@
     align-self  : baseline;
     margin-right: 15px;    
     
-    width: 150px;
+    @media @desktop-large {
+        width       : 150px;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+        width       : 100px;
+        margin-right: 0;
+    }
 
     @media @mobile {
         width       : 100%;
@@ -54,7 +72,21 @@
 
 #PH_partner-info .img-container img {
 
-    max-width: 150px;
+    @media @desktop-large {
+        max-width       : 150px;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+        max-width       : 100px;
+        margin-right: 0;
+    }
+
+    @media @mobile {
+        max-width       : 100%;
+        margin-right: 0;
+    }
+
     height: auto !important;
 }
 
