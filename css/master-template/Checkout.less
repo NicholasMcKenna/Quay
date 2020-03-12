@@ -152,9 +152,12 @@ div#PH_breadcrumbs {
     
 }
 
+.ph_payment_details .timerMessage,
 .summaryBasketContainer .timerMessage {
     font-size: 14px;
+    line-height: 17px;
     padding-left: 0;
+    height: unset;
 }
 
 .summaryBasketContainer .expand {
@@ -163,6 +166,15 @@ div#PH_breadcrumbs {
     top        : 0;
     right      : 0;
     position   : absolute;
+}
+
+.summaryBasketContainer .timerMessage .CountDownRemainingTimeTitle {
+
+    @media @mobile {
+
+        margin-top: 0;
+    }
+
 }
 
 .screen-Checkout_aspx .basket-container .basketEvent .eventInfoSection .imageContainer {
@@ -552,6 +564,7 @@ button.small_button_a {
     @media @mobile {
         width       : 100%;
         margin-right: 0;
+        flex-direction: column;
     }
 }
 

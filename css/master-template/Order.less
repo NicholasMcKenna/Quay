@@ -519,14 +519,18 @@ button.disabled.small_button_a:hover {
     // flex   : 1 1 auto;
     padding: 0 1rem;
 
-    @media @desktop {
-        margin-left: 9.3rem;
+    @media @mobile {
+
+        padding: 0;
     }
 }
 
 .deliveryMethod .name {
 
-    width: 25%;
+    @media @desktop {
+
+        width: 15%;
+    }
 
     @media @mobile {
 
@@ -537,12 +541,13 @@ button.disabled.small_button_a:hover {
 .deliveryMethod .description {
 
     width: 50%;
+    order: unset;
 
     @media @mobile {
 
         width: 100%;
-        padding: 0 0 0 33px;
-        margin-top: 5px;
+        margin-top: 10px;
+        order: 100;
     }  
 }
 
