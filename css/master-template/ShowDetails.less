@@ -24,6 +24,7 @@
 
 
 
+
 #PH_partner-info {
 
     float:right;
@@ -34,19 +35,25 @@
 
     @media @desktop {
 
-        margin-top: -45px;
-    }
-    @media @desktop-large {
-
         margin-top: -157px;
     }
-    
-}
 
+}
 
 #PH_partner-info .partner-container {
     display: flex;
     margin : 0px 0;
+}
+
+#PH_partner-info .partner-info {
+    
+    display: inline-flex;
+    font-size: 14px;
+
+    @media @mobile {
+        width     : 100%;
+        margin-top: 15px;
+    }
 }
 
 #PH_partner-info .img-container {
@@ -84,19 +91,6 @@
 
     height: auto !important;
 }
-
-#PH_partner-info .partner-info {
-    
-    display: inline-flex;
-    font-size: 14px;
-
-    @media @mobile {
-        width     : 100%;
-        margin-top: 15px;
-    }
-}
-
-
 
 
 
