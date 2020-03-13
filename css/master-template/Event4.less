@@ -17,7 +17,9 @@
 }
 
 div#PH_breadcrumbs {
+
     @media @desktop {
+        
         width    : @seating-plan-width;
         display  : block;
         max-width: 1400px;
@@ -224,10 +226,23 @@ div#PH_breadcrumbs {
 }
 
 #leftPane>*:not(#hallMap) {
+
     max-width: none;
+
+    @media @mobile {
+
+        margin: 0;
+    }
 }
 
+body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralAdmission h4 {
 
+    @media @mobile {
+
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
