@@ -107,7 +107,13 @@
 #description,
 .showName,
 .largeImageContainer {
+
     width: @left-pane-width;
+
+    @media @mobile {
+
+        width: 100%;
+    }
 }
 
 // Right Side
@@ -117,11 +123,21 @@ div#pickadate,
 #eventslist {
 
     width: 33%;
+
+    @media @mobile {
+
+        width: 100%;
+    }
 }
 
 div#pickadate{
 
     width : calc(33% - 16px);
+
+    @media @mobile {
+
+        width: 100%;
+    }
 }
 
 //
