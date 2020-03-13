@@ -55,9 +55,8 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 #PH_showdetails-banner {
 
     background-image: url('/UserContent/images/DayOutWithThomas/site/2020/header-bg-2020b.jpg'); 
-	background-size: 100% auto;
-	background-position: top -30px left 0px;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    
     min-height: 100px;
     margin: 0 auto 0 auto;
     padding: 0 25px;
@@ -68,11 +67,11 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 
         max-width: 1400px;
         background-size: cover;
-        background-position: top 0px left -90px;
+
     }
 
     @media @desktop-large {
-        
+
         background-size: 100% auto;
         background-position: top -30px left 0px;
     }
@@ -124,16 +123,14 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
     display:block;
     float:right;
 
-    width: 40%;
-
     @media @desktop {
 
-        width: 40%;
+        width: 30%;
     }
 
     @media @desktop-large {
 
-        width: 25%;
+        width: 30%;
     }    
 }
    
@@ -392,8 +389,15 @@ div#pickadate{
 
     right: 8px;
     top: 8px;
-
     margin-top: 0;
+
+    @media @desktop {
+
+        width: 28%;
+        position: absolute;
+        
+    }    
+
 }
 
 .ShowEventsitemsList .button.small_button_a A {
