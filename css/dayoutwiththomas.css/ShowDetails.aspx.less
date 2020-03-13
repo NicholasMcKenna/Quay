@@ -44,6 +44,11 @@ body #group_Header-fixed, #group_Header-fixed {
 body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 
     display:none;
+
+    @media @mobile {
+
+        display: block;
+    }
 }
 
 
@@ -86,6 +91,11 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
     
     width: 33%;
     position:relative;
+
+    @media @mobile {
+
+        display: none;
+    }
 }
     
 
@@ -132,6 +142,10 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 
         width: 30%;
     }    
+
+    @media @mobile {
+        margin-top: 170px;
+    }
 }
    
 #locationselect {
@@ -152,6 +166,14 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 
         margin-top: 60px;
     }
+
+    @media @desktop {
+
+        background-color: unset;
+        box-shadow: unset;
+        margin-top: 20px;
+        padding: 0px 15px 0px 15px;
+    }  
 }
 
 #locationselect .main-buttons.select {
@@ -179,8 +201,10 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
     color: #FFFFFF;
 }
 
+#locationselect .main-buttons.select .locations:first-of-type {
 
-
+    display: none;
+}
 
 
 #PH_showdetails-banner .partner {
@@ -200,6 +224,11 @@ body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
 
         padding-top: 20px;
     }
+
+    @media @mobile {
+        padding-top: 0px;
+    }
+    
 
     
 }
