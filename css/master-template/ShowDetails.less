@@ -1,6 +1,7 @@
 @left-pane-width: 66%;
 
 .screen-content {
+
     margin    : 0 auto;
     margin-top: 59px;
 
@@ -20,7 +21,15 @@
 
 
 
+.showDetails {
 
+
+    @media @mobile {
+
+        padding: 25px 0px;
+    }
+
+}
 
 
 
@@ -43,11 +52,21 @@
         margin-top: -5px;
     }
 
+    @media @mobile {
+
+        margin-top: 0px;
+    }    
+
 }
 
 #PH_partner-info .partner-container {
     display: flex;
     margin : 0px 0;
+
+    @media @mobile {
+
+        flex-direction: column;
+    }
 }
 
 #PH_partner-info .partner-info {
