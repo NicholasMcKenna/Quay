@@ -523,12 +523,20 @@ div#pickadate{
 }
 
 #PH_partner-info {
-    margin-top: 245px;
+
+    @media @desktop {
+        margin-top: 245px;
+    }
+
+    @media @mobile {
+        margin-top: 15px;
+    }
 }
 
 #eventslist {
     margin-top: 15px;
 }
+
 hr {
     height: 0;
     border: 0;
@@ -543,7 +551,16 @@ hr {
 #description {
 
     line-height: 22px;
+    font-size: 16px;
 }
+#description .info {
+
+    p, h1, h2, h3, h4 {
+        float: left;
+        width: 100%;
+    }
+}
+
 
 #description .info p {
     font-size: 16px;
@@ -551,6 +568,7 @@ hr {
 
 #description .info h2 {
     margin-bottom: 0px;
+
 }
 
 #description .info h3 {
