@@ -1,52 +1,53 @@
 #PH_Payment_details {
-    float: initial;
-    display: block;
+    float   : initial;
+    display : block;
     overflow: hidden;
 
 }
 
 
 .screen-content {
-    margin    : 0 auto;
+    margin: 0 auto;
 
     @media @mobile {
         padding   : 10px 20px;
         margin-top: 0px;
-        width: 100%;
+        width     : 100%;
     }
+
     @media @desktop {
-        padding   : 25px;
+        padding      : 25px;
         margin-bottom: 25px;
-        width: 1400px;
+        width        : 1400px;
     }
-    
+
 }
 
 
 div#PH_breadcrumbs {
-    
-    margin: 80px auto 0 auto; 
-    padding: 25px 25px 0 25px;
+
+    margin          : 80px auto 0 auto;
+    padding         : 25px 25px 0 25px;
     background-color: #FFF;
 
-    max-width   : 1400px;
+    max-width: 1400px;
 
     @media @mobile {
 
-        margin: 135px 0 15px 0;
+        margin : 135px 0 15px 0;
         padding: 0;
     }
 
     @media @desktop {
-        width: unset;
-        float: left;
+        width : unset;
+        float : left;
         margin: 43px 25px 0 25px;
     }
 
     @media @desktop-large {
-        width: unset;
+        width : unset;
         margin: 43px auto 0 auto;
-        float: none;
+        float : none;
     }
 }
 
@@ -78,7 +79,7 @@ div#PH_breadcrumbs {
         margin: 0;
     }
 
-    
+
 }
 
 .pageSectionTitle {
@@ -140,25 +141,26 @@ div#PH_breadcrumbs {
 .summaryBasketContainer {
     background-image: none;
     border          : none;
-    margin-top: 0;
+    margin-top      : 0;
 
     @media @desktop {
 
         margin-top: 132px;
     }
+
     @media @desktop-large {
 
         margin-top: 25px;
     }
-    
+
 }
 
 .ph_payment_details .timerMessage,
 .summaryBasketContainer .timerMessage {
-    font-size: 14px;
-    line-height: 17px;
+    font-size   : 14px;
+    line-height : 17px;
     padding-left: 0;
-    height: unset;
+    height      : unset;
 }
 
 .summaryBasketContainer .expand {
@@ -288,7 +290,7 @@ div#PH_breadcrumbs {
     @media @mobile {
 
         margin: 15px 0;
-        width: 100%;
+        width : 100%;
     }
 }
 
@@ -312,7 +314,7 @@ div#PH_breadcrumbs {
 
 #insurance p {
 
-    font-size: @fontsize-main;
+    font-size  : @fontsize-main;
     font-family: @main-font;
 }
 
@@ -579,21 +581,21 @@ button.small_button_a {
 #PH_partner-text .img-container {
     display     : inline-flex;
     align-self  : baseline;
-    margin-right: 15px;    
-    
+    margin-right: 15px;
+
     width: 150px;
 
     @media @mobile {
         width       : 100%;
         margin-right: 0;
-        
+
     }
 }
 
 #PH_partner-text .img-container img {
 
     max-width: 150px !important;
-    height: auto !important;
+    height   : auto !important;
 }
 
 #PH_partner-text .partner-info {
@@ -604,4 +606,8 @@ button.small_button_a {
         width     : 100%;
         margin-top: 15px;
     }
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.prompt-dialog.ui-dialog-buttons.ui-draggable.ui-resizable {
+    display: none;
 }
