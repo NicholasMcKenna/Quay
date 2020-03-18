@@ -1,0 +1,195 @@
+@import 'fonts';
+
+@header-height              : 85px;
+@header-height-mobile       : 120px;
+@header-top-height          : 35px;
+@header-bottom-height       : 85px;
+@header-bottom-height-mobile: 83px;
+
+@background-color           : #0f214f;
+@background-image           : url('/UserContent/images/dayoutwiththomas/site/2020/site-background2020a.png');
+
+@highlight-color: #E2211C;
+@footer-color: #323133;
+
+// fonts
+@main-font : "Helvetica Neue",Helvetica,Arial,sans-serif;
+@header-font : @main-font;
+@header-bg-color : #FBFBFB;
+@background-color: #fff;
+
+@fontsize-main  : 16px;
+@fontsize-mobile: 14px;
+@fontweight-main: 400;
+
+@font-h1-size       : 20px;
+@font-h1-size-mobile: 18px;
+@font-h1-color      : #E2211C;
+
+@font-h2-size       : 18px;
+@font-h2-size-mobile: 16px;
+@font-h2-color      : #333333;
+
+@font-dark-color    : #333333;
+@font-light-color   : #fff;
+
+// Buttons
+@button-color           : #0F214F;
+@button-hover-color     : #009FE1;
+
+@button-font-color      : #fff;
+@button-font-hover-color: #fff;
+
+@button-desktop-width   : 110px;
+@button-desktop-padding : 15px;
+@button-desktop-fontsize: 15px;
+
+@box-bgcolor: #fbfbfb;
+@box-border-color: #f1f1f1;
+@bottom-bar : #009FE1;
+
+@sub-button-color     : #666;
+@sub-button-border-color: #666;
+@sub-button-font-color: #fff;
+
+@cancel-button-color     : #FFFFFF;
+@cancel-button-border-color: #666;
+@cancel-button-font-color: #666;
+
+/* Logo */
+@logo-maxwidth-mobile  : 100px;
+@logo-maxwidth-desktop : 100px;
+@logo-height           : 75px;
+@logo-margin-top       : 0;
+@logo-margin-top-mobile: 0;
+
+@desktop-large: ~"only screen and (min-width: 1500px)";
+@desktop      : ~"only screen and (min-width: 781px)";
+@mobile       : ~"only screen and (min-width: 1px) and (max-width: 780px)";
+@tablet       : ~"only screen and (min-width: 781px) and (max-width: 1151px)";
+@iPad         : ~"only screen and (max-width: 1151px)";
+@iPadLandscape: ~"only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)";
+
+.font-h1() {
+
+    font-family: @header-font;
+    font-size  : @font-h1-size;
+    font-weight: bold;
+    color      : @font-dark-color;
+
+    @media @mobile {
+        font-size: @font-h1-size-mobile;
+    }
+}
+
+.font-h2() {
+    font-family: @header-font;
+    font-size  : @font-h2-size;
+    font-weight: 500;
+    color      : @font-dark-color;
+
+    @media @mobile {
+        font-size: @font-h2-size-mobile;
+    }
+}
+
+.font-dark() {
+    font-family   : @header-font;
+    color         : @font-dark-color;
+    letter-spacing: 0px;
+}
+
+.font-light-title() {
+    font-family   : @header-font;
+    color         : @font-light-color;
+    font-size     : 120px;
+    line-height   : 96px;
+    margin-bottom : 50px;
+    white-space   : pre;
+    text-shadow   : 0 0 300px #000;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align    : center;
+    font-weight   : 800;
+
+    @media @mobile {
+        font-size    : 35px;
+        margin-bottom: 0px;
+    }
+}
+
+.font-light-subtitle() {
+    font-family   : @header-font;
+    color         : #fff;
+    text-shadow   : 0 0 300px @font-dark-color;
+    text-transform: uppercase;
+    font-weight   : 200;
+    letter-spacing: 0px;
+}
+
+.font-button() {
+    font-family   : @main-font;
+    font-size     : @button-desktop-fontsize;
+    letter-spacing: 0px;
+    text-shadow   : 0 0 300px @font-dark-color;
+    color         : @button-font-color;
+}
+
+.sub-button() {
+    padding         : 10px;
+    border          : none;
+    text-decoration : none;
+    color           : @sub-button-font-color;
+    background-color: @sub-button-color;
+}
+
+.cancel-button() {
+    background-color: transparent;
+    border          : 1px solid @cancel-button-border-color;
+    color           : @cancel-button-font-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent;
+        border          : 1px solid @cancel-button-border-color;
+        transform       : none;
+    }
+}
+
+.action-button() {
+    .font-button();
+    width           : @button-desktop-width;
+    background-image: none;
+    text-decoration : none;
+    padding         : @button-desktop-padding;
+    border          : 1px solid @button-color;
+    background-color: @button-color;
+    cursor          : pointer;
+    text-align      : center;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition   : all 0.5s ease-in-out;
+    -o-transition     : all 0.5s ease-in-out;
+    transition        : all 0.5s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        .font-button();
+        width             : @button-desktop-width;
+        background-image  : none;
+        text-decoration   : none;
+        padding           : @button-desktop-padding;
+        background-color  : @button-hover-color;
+        color             : @button-font-hover-color;
+        border-color      : @button-hover-color;
+        border-bottom     : 1px solid;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition   : all 0.5s ease-in-out;
+        -o-transition     : all 0.5s ease-in-out;
+        transition        : all 0.5s ease-in-out;
+        transform         : scale(1.05);
+        outline-width     : 0;
+    }
+}
