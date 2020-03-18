@@ -679,25 +679,37 @@ div#qasContainer {
     margin-bottom: 20px;
 }
 
+.ph_order_page .promptPH .item_background {
+
+    text-align: left;
+}
+
 .ph_order_page .promptPH .itemsDataContainer.name {
 
     display: inline-block;
     font-weight: 700;
-    width: 50%;
+    margin-right: 50px;
 }
 
 .ph_order_page .promptPH .buttonsContainer {
 
     display: inline-block;
-    width: 40%;
 }
 
 #btnAddDonation {
 
-    .action-button();
-    font-size: @button-desktop-fontsize;
-    border   : 1px solid @button-color;
-    width: unset;
+    &:link,
+    &:hover,
+    &:active,
+    &:focus {
+
+        .action-button();
+        font-size: @button-desktop-fontsize;
+        color: @button-font-color;
+        border: none;
+        width: unset;
+    }
+
 }
 
 .addCouponCtl input,
