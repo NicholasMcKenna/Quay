@@ -44,7 +44,7 @@ body #group_Header-fixed,
 
 .main-logo,
 img.logo-image {
-    max-width: 175px;
+    max-width: 135px;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -263,7 +263,7 @@ div#PH_Video {
 
 
 .bottom-menu {
-    padding-top : 12px;
+    padding-top : 6px;
     padding-left: 3%;
     height      : @header-bottom-height;
 
@@ -274,7 +274,18 @@ div#PH_Video {
 }
 
 
+.pagingContainer a.paging {
 
+    background-color: @button-color;
+    opacity: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        background-color: @button-hover-color;
+    }
+}
 
 
 
