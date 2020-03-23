@@ -2,96 +2,29 @@
 @import '../master-template/ShowDetails';
 
 
-.carousel.recommendedShows {
-
-    display: none;
-}
-
-
 
 .screen-content {
 
-    background-color: #FFF;
-    margin-bottom: 25px;
-
     @media @desktop {
-    
-        margin-top: 110px;
+
+        margin-top: 59px;
     }
 
     @media @mobile {
-    
+
         margin-top: 124px;
-        padding: 20px;
-    }
-    
-}
-
-
-
-body #group_Header-fixed, #group_Header-fixed {
-
-    @media @mobile {
-
-        height: 150px;
-        max-height: 150px;
     }
 
+
 }
-
-body #group_Header-fixed .main-logo, #group_Header-fixed .main-logo {
-
-    @media @mobile {
-
-        display: block;
-
-        max-width: 145px;
-    }
-}
-
-
-
-
-
-
-
-
-.showDetails {
-    background-color: #F5F5F5;
-    padding: 25px 20px;
-    overflow: hidden;
-}
-
-div#pickadate {
-
-    top: 25px;
-    right: 20px;
-
-    @media @mobile {
-
-        top: unset;
-        right: unset;
-        float:left;
-    }
-}
-
-
 
 #eventslist {
 
     @media @desktop {
 
-        margin-top: 17px;
-    }    
-
-    @media @desktop-large {
-
-        margin-top: -68px;
+        margin-top: -50px;
     }
-
 }
-
-
 
 
 .carousel .itemsDataContainer::before {
@@ -127,65 +60,25 @@ div#pickadate {
 }
 
 
-
-.ui-widget-header { background-color: @box-bgcolor; }
-
-.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
-
-    background-color: unset;
-}
-
-
 .ui-state-default,
 .ui-widget-content .ui-state-default {
 
-    background      : none;
-    background-color: @highlight-color;
+    background-color: @button-color;
     color           : #FFFFFF;
 }
 
 .ui-widget-content .ui-datepicker-today .ui-state-default {
 
-    background      : none;
-    background-color: @button-color;
+    background-color: @button-hover-color;
     color           : #FFFFFF;
 }
-
-.ui-state-disabled, 
-.ui-widget-content .ui-state-disabled, 
-.ui-widget-header .ui-state-disabled {
-    opacity: .40;
-    filter: Alpha(Opacity=40);
-}
-
-
-
 
 
 .ShowEventsitemsList .dataItem {
     background-color: #FFFFFF;
 
-    border: none;
-    padding-left: 20px;
-
-    border-radius: 4px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: none;
-}
-
-.ShowEventsitemsList .dataItem::before {
-
-        display: block;
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        background-color: #E2211C;
-        left: 0px;
-        top: 0;
-        content: " ";
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
 }
 
 .ShowEventsitemsList .itemsDataContainer,
@@ -195,224 +88,3 @@ div#pickadate {
 }
 
 
-.ShowEventsitemsList .itemsDateRange,
-.ShowEventsitemsList .itemsDataContainer {
-
-    width: 68%;
-}
-
-
-
-
-#eventslist .itemsButtonsContainer {
-
-    right: 8px;
-    top: 8px;
-    margin-top: 0;
-
-    @media @desktop {
-
-        width: 28%;
-        position: absolute;
-
-    }    
-
-}
-
-.ShowEventsitemsList .button.small_button_a A {
-
-    
-
-    &:link,
-    &:hover,
-    &:active,
-    &:focus { 
-
-        border-radius: 50%;
-        display: block; 
-        height: 65px;
-        width: 65px;
-        font-weight: bold;
-        padding: 13px 0 0 0;
-        transition: none;
-        float: right;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.largeImageContainer {
-    display: none;
-}
-
-.showName h1 { 
-
-    margin-top: 0;
-
-    @media @desktop {
-
-        margin-bottom: 0;
-    }
-}
-
-#PH_partner-info {
-
-    @media @desktop {
-        margin-top: 245px;
-    }
-
-    @media @mobile {
-        margin-top: 15px;
-    }
-}
-
-#eventslist {
-    margin-top: 15px;
-}
-
-hr {
-    height: 0;
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 0 0 15px 0;
-}
-
-
-
-/* DOWT */
-
-#description {
-
-    line-height: 22px;
-    font-size: 16px;
-}
-
-#description .info {
-
-    p, h1, h2, h3, h4, hr {
-        float: left;
-        width: 100%;
-    }
-}
-
-
-#description .info p {
-    font-size: 16px;
-    margin-bottom: 0;
-}
-
-#description .info h2 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    color: @font-h1-color;
-    font-size: 26px;
-
-}
-
-#description .info h3 {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    color: #009FE1;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-#description .info h4 {
-    margin: 0px;
-    color: #333;
-    font-weight: 700;
-    display: block;
-}
-
-#description .heading {
-    margin-top: 5px;
-    font-weight: 700;
-    color: #2a6496;
-}
-
-#description .row.venue .image {
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-#description img {
-
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-#description .venue > div, #description .event > div {
-    padding-top: 15px;
-    margin-bottom: 15px;
-}
-
-#description .facilities p {
-
-    margin-bottom: 15px;
-}
-
-#description .facilities-list {
-    list-style: outside none none;
-    padding-left: 0;
-    float:left;
-}
-
-#description .facilities-list.location {
-
-    margin-top: 0;
-}
-
-#description .facilities-list li {
-    
-  margin-right: 3px;
-  margin-bottom: 5px;
-  display: inline-block;
-  
-  padding: 3px 6px 3px 6px;
-  background-color: #009FE1;
-  color: #FFF;
-  border-radius:4px;
-  
-  font-size: 16px;
-  position: relative;
-}
-
-
-
-#description .facilities-list li a {
-	position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 6px 6px 6px 6px; 
-}
-
-
-
-#description .info .row.mattel, #description .info .row.additional-info {
-    margin: 10px 0;
-}
-#description .info .row.mattel p, #description .info .row.additional-info p {
-    font-size: 14px;
-    float: left;
-}
-#description .info .row.mattel .mattel-logo {
-    float: left;
-    margin: 0px 15px 25px 0px;
-    display: block;
-    width: 50px;
-    height: 50px;
-}
