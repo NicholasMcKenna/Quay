@@ -122,6 +122,15 @@
 div#qasContainer {
 
     width: unset;
+    letter-spacing: 0px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        width: unset;
+        letter-spacing: 0px;
+    }
+
 }
 
 
@@ -135,13 +144,14 @@ div#qasContainer {
 .loginOrRegisterWizard #frmCreateAccount div.label {
 
     text-align: left;
+    display: inline;
 }
 
 .loginOrRegisterWizard #frmCreateAccount .fieldLabel {
 
     display:none;
 }
-
+#frmCreateAccount .frmFields .field,
 .mandatoryFieldMarker {
 
     display:inline;
