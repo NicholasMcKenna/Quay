@@ -187,11 +187,102 @@ div#PH_Video {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Footer **/
+
 #group_Footer {
+
     background-color: @bottom-bar;
-    color           : #fff;
-    box-sizing      : content-box;
+    border-bottom: 4px solid @highlight-color;
+    
 }
+
+div#PH_Footer-main .row {
+
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop {
+        flex-direction: row;
+    }
+}
+  
+div#PH_Footer-main {
+    padding: 15px;
+    position: relative;
+    color:#FFF;
+    clear: both;
+    margin: 0px auto;
+    padding: 0px 0 0 0;
+    float:none;
+    line-height: 1.43;
+    font-size: 14px;
+
+    @media @desktop {
+
+        width: 100%;
+    }
+    @media @desktop-large {
+
+        width: 1400px;
+    }
+    @media @mobile {
+
+        width: 100%;
+    }
+}
+
+
+div#PH_Footer-main .col1 {
+
+    text-align: center;
+    
+    @media @desktop {
+
+        width: 100%;
+    }
+}
+
+
+div#PH_Footer-main ul {
+    padding-left:0px;
+    list-style:none;
+}
+div#PH_Footer-main p {
+    text-align : justify;
+    font-size : 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .o-nav li,
 .c-events-filter-sub-menu li,
