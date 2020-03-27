@@ -14,6 +14,21 @@
     }
 }
 
+
+.main-logo,
+img.logo-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+
+    @media @mobile {
+
+        max-width: 107px;
+    }    
+}
+
+
 .top-menu {
     @media @desktop {
         order       : 2;
@@ -29,6 +44,8 @@
         display: table;
     }
 }
+
+
 
 .top-menu .menu-home,
 .top-menu .menu-login {
@@ -160,7 +177,7 @@ div#PH_Video {
 
 
 .bottom-menu {
-    padding-top: 20px;
+    padding-top: 16px;
     padding-left: 3%;
     height      : @header-bottom-height;
 
@@ -171,7 +188,7 @@ div#PH_Video {
 }
 
 #group_Footer {
-    background-color: @font-dark-color;
+    background-color: @bottom-bar;
     color           : #fff;
     box-sizing      : content-box;
 }
