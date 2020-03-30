@@ -17,11 +17,14 @@ body {
 
 
 .c-footer-menu {
+
     display: none;
 }
 
 .header-menu {
+
     @media @desktop {
+
         display: flex;
     }
 }
@@ -39,11 +42,18 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
 
     background-color: @box-bgcolor;
     color: @font-dark-color;
+
+    @media @mobile {
+
+        background-color: unset;
+        color: @font-light-color;
+    }
 }
 
 
 .main-logo,
 img.logo-image {
+
     max-width: 250px;
     width: 100%;
     height: auto;
@@ -51,12 +61,13 @@ img.logo-image {
 
     @media @mobile {
 
-        max-width: 107px;
+        max-width: 170px;
     }    
 }
 
 
 .top-menu {
+    
     @media @desktop {
         order       : 2;
         margin-left : auto;
@@ -210,6 +221,7 @@ div#PH_Video {
 
     @media @mobile {
         padding-left: 5%;
+        height: 83px;
         height      : @header-bottom-height-mobile;
     }
 }
