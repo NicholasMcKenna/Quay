@@ -117,14 +117,6 @@
     width: 58%;
 }
 
-.dataItem .itemsDateRange,
-.dataItem .extras {
-    width  : 58%;
-    display: block;
-    text-align: left;
-}
-
-
 .dataItem .extras,
 .dataItem .itemsDateRange {
     position      : static;
@@ -134,7 +126,25 @@
     text-align    : left;
     padding-bottom: 15px;
     min-height: 65px;
+    width  : 58%;
+    display: block;
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        position      : static;
+        color         : @button-color;
+        font-size     : 16px;
+        margin-left   : 10px;
+        text-align    : left;
+        padding-bottom: 15px;
+        min-height: 65px;
+        width  : 58%;
+    }
 }
+
+
 .dataItem .extras {
 
     color: @font-light-color;
