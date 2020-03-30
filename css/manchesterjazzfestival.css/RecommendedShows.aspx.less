@@ -41,9 +41,8 @@
 }
 
 
-
 .dataItem .name {
-    color           : @font-dark-color;
+    color           : #fff;
     font-weight     : bold;
     background-color: transparent;
     font-size       : 22px;
@@ -55,12 +54,24 @@ div#PH_breadcrumbs {
     display: none;
 }
 
+.itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
 
 .itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
 
+.itemsDataContainer::after,
+.itemsDataContainer::before {
+    width             : 65px;
+    content           : "";
+    height            : 80px;
     position          : absolute;
-    top            : 6px;
+    top               : 5px;
     right             : 15px;
+    background-size   : contain;
+    background-repeat : no-repeat;
     opacity           : 1;
     z-index           : 1;
     -webkit-transition: all 250ms ease-in-out;
@@ -69,14 +80,6 @@ div#PH_breadcrumbs {
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
 
-
-    background        :none;
-    background-color  : @button-color;
-    
-    color: #FFFFFF;
-    content: "Buy Now"; 
-    padding: 6px 12px;
-
 }
 
 
@@ -84,81 +87,14 @@ div#PH_breadcrumbs {
     display: none;
 }
 
-video#bgvid {
-    width: 100%;
-}
-
-.c-site-welcome-text {
-    position         : absolute;
-    top              : 50%;
-    left             : 50%;
-    width            : 90%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform   : translate(-50%, -50%);
-    -ms-transform    : translate(-50%, -50%);
-    -o-transform     : translate(-50%, -50%);
-    transform        : translate(-50%, -50%);
-    color            : #ffffff;
-    text-shadow      : rgba(0, 0, 0, 0.4) 4px 4px 5px;
-    text-align       : center;
-}
-
-.c-site-welcome-text__surtitle {
-
-    // AP
-    @media @desktop {
-        margin-bottom: 20px;
-        font-size    : 45px;
-        line-height  : 100%;
-        font-weight  : 700;
-    }
-}
-
-.c-site-welcome-text__title {
-    @media @desktop {
-        font-size  : 120px;
-        line-height: 100%;
-        margin     : 0;
-        font-weight: 800;
-    }
-}
-
-.c-site-welcome-text__title::after {
-    background-color : #26B5BB;
-    width            : 100%;
-    -webkit-transform: scaleX(100%);
-    -moz-transform   : scaleX(100%);
-    -ms-transform    : scaleX(100%);
-    -o-transform     : scaleX(100%);
-    transform        : scaleX(100%);
-    max-width        : 400px;
-    height           : 3px;
-    content          : "";
-    display          : block;
-    margin           : 30px auto;
-    animation        : animateBorder 1.5s ease-out 4s backwards;
-}
-
-.c-site-welcome-text__subtitle {
-    @media @desktop {
-        margin-top : 20px;
-        font-size  : 45px;
-        line-height: 100%;
-        font-weight: 700;
-    }
-}
-
 .itemsList .dataItem {
 
-    background-color  : @box-bgcolor;
+    background-color  : #2A2D34;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition   : all 250ms ease-in-out;
     -ms-transition    : all 250ms ease-in-out;
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
-
-    border: 1px solid @box-border-color;
-    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
 
     &:hover {
         -webkit-transform : translateY(-10px);
@@ -171,11 +107,11 @@ video#bgvid {
         -ms-transform     : scale(1.03);
         -o-transform      : scale(1.03);
         transform         : scale(1.03);
-        -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow   : 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-        -ms-box-shadow    : 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-        -o-box-shadow     : 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-        box-shadow        : 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
     }
 
     @media @mobile {
@@ -183,7 +119,6 @@ video#bgvid {
         margin: 0 0 40px 0 !important
     }
 }
-
 
 
 
