@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables'; 
 @import '../master-template/RecommendedShows';
 
 /*
@@ -54,24 +54,12 @@ div#PH_breadcrumbs {
     display: none;
 }
 
-.itemsDataContainer::before {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
-}
 
 .itemsDataContainer::after {
-    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
-}
 
-.itemsDataContainer::after,
-.itemsDataContainer::before {
-    width             : 65px;
-    content           : "";
-    height            : 80px;
     position          : absolute;
-    top               : 5px;
+    top            : 6px;
     right             : 15px;
-    background-size   : contain;
-    background-repeat : no-repeat;
     opacity           : 1;
     z-index           : 1;
     -webkit-transition: all 250ms ease-in-out;
@@ -80,7 +68,16 @@ div#PH_breadcrumbs {
     -o-transition     : all 250ms ease-in-out;
     transition        : all 250ms ease-in-out;
 
+
+    background        :none;
+    background-color  : @button-color;
+    
+    color: #FFFFFF;
+    content: "Buy Now"; 
+    padding: 6px 12px;
+
 }
+
 
 
 .recommendedShows.showslist:not(.searchResult) .itemsList .dataItem .itemsButtonsContainer {
