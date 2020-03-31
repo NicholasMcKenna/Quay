@@ -84,6 +84,12 @@
     margin: 15px 0 0 0;
 }
 
+.loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav {
+
+    margin-top: 1em;
+}
+
+
 .loginOrRegisterWizard #frmCreateAccount > DIV.wizardNav button.ok {
     
     .action-button();
@@ -156,8 +162,17 @@ div#qasContainer {
 
     display:none;
 }
+
 #frmCreateAccount .frmFields .field,
 .mandatoryFieldMarker {
 
     display:inline;
+}
+
+#fldZipCode {
+
+    @media @mobile {
+
+        margin-bottom: 10px;
+    }
 }
