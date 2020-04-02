@@ -17,7 +17,7 @@
 
 .main-logo,
 img.logo-image {
-    max-width: 200px;
+    max-width: 215px;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -46,7 +46,7 @@ img.logo-image {
 
     @media @desktop {
 
-        padding-top: 4px;
+        padding-top: 12px;
     }
 }
 
@@ -55,7 +55,8 @@ img.logo-image {
     @media @desktop {
         order       : 2;
         margin-left : auto;
-        display     : flex;
+        //display     : flex;
+        display     : none;
         align-items : center;
         margin-right: 37px;
     }
@@ -202,6 +203,11 @@ div#PH_Video {
     padding-top: 13px;
     padding-left: 3%;
     height      : @header-bottom-height;
+
+    @media @desktop {
+        display: flex;
+        width: 100%;
+    }
 
     @media @mobile {
         padding-left: 5%;
