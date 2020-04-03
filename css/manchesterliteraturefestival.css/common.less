@@ -2,6 +2,101 @@
 @import '../master-template/common';
 
 
+.screen-content {
+
+    @media @mobile {
+
+        padding-top: 125px;
+    }
+    
+    @media @desktop {
+
+        margin   : 115px auto 25px auto;
+    }
+}
+
+
+body {
+
+    background-image: @background-image;
+    font-family: @main-font;
+
+    background-size: cover;
+    background-position: top center;
+}
+
+
+
+
+
+
+body #group_Header-fixed, 
+#group_Header-fixed {
+
+    border-bottom: 0px solid #dbdbdb;
+    background-color: @button-color !important;
+    height: 127px;
+    max-height: 127px; 
+
+    @media @mobile {
+
+        height: 150px;
+        max-height: 150px;
+    }
+}
+
+.main-logo,
+img.logo-image {
+    max-width: 135px;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+
+    @media @mobile {
+
+        max-width: 107px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#siteMenuBar #CountDown.active {
+    @media @desktop {
+        top: 48px !important;
+    }
+}
+
+
+.qtip.timer-tooltip {
+
+    background-color: unset !important;
+}
+
+#siteMenuBar #my_basket .basketQtyHolder, #siteMenuBar[id="my basket"] .basketQtyHolder {
+    background: @highlight-color;
+    color: #fff;
+}
+
+#siteMenuBar button.flm_login {
+
+    background-color: @button-color;
+}
+
+
+p {
+    font-family: @main-font;
+}
+
 
 
 .c-footer-menu {
@@ -13,57 +108,23 @@
         display: flex;
     }
 }
+#siteMenuBar.hasclient #customerBox a,
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket,
+.siteMenuContainer a, .siteMenuContainer a:hover,
+span.mnuBtnCaption::before,
+body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
+#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before,
+#siteMenuBar.hasclient #customerBox::before,
+#navMenu_Float_Search_item > span::before {
 
-
-.main-logo,
-img.logo-image {
-    max-width: 215px;
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-
-    @media @mobile {
-
-        max-width: 100px;
-    }    
+    color: #FFFFFF;
 }
-
-.main-logo {
-
-    @media @desktop {
-
-        padding: 0 20px 0 5%;
-    }
-}
-
-.main-logo-text {
-
-    color: #6b2c91;
-    font-family: "Open Sans",sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 22px;
-
-    @media @desktop {
-
-        padding-top: 12px;
-    }
-
-    @media @mobile {
-
-        font-size: 15px;
-        line-height: 26px;
-    }
-    
-}
-
 
 .top-menu {
     @media @desktop {
         order       : 2;
         margin-left : auto;
-        //display     : flex;
-        display     : none;
+        display     : flex;
         align-items : center;
         margin-right: 37px;
     }
@@ -74,8 +135,6 @@ img.logo-image {
         display: table;
     }
 }
-
-
 
 .top-menu .menu-home,
 .top-menu .menu-login {
@@ -133,7 +192,7 @@ img.logo-image {
         &:before {
             border-left : 1px solid gray;
             padding-left: 20px;
-            color       : @button-color;
+            color       : #26B5BB;
         }
     }
 }
@@ -156,7 +215,7 @@ img.logo-image {
         order: 4;
 
         &:before {
-            color: @button-color;
+            color: #26B5BB;
         }
     }
 }
@@ -169,7 +228,7 @@ img.logo-image {
         content     : '\f291';
 
         @media @desktop {
-            color: @button-color;
+            color: #26B5BB;
         }
     }
 
@@ -207,19 +266,27 @@ div#PH_Video {
 
 
 .bottom-menu {
-    padding-top: 13px;
+    padding-top : 6px;
     padding-left: 3%;
     height      : @header-bottom-height;
-
-    @media @desktop {
-        display: flex;
-        width: 100%;
-    }
 
     @media @mobile {
         padding-left: 5%;
         height      : @header-bottom-height-mobile;
-        padding-top: 10px;
+    }
+}
+
+
+.pagingContainer a.paging {
+
+    background-color: @button-color;
+    opacity: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        background-color: @button-hover-color;
     }
 }
 
@@ -235,13 +302,18 @@ div#PH_Video {
 
 
 
+/* LB Footer START */
 
+
+
+    
 /** Footer **/
 
 #group_Footer {
 
-    background-color: @bottom-bar;
+    background-color:#550E55;
     border-bottom: 4px solid @highlight-color;
+    
 }
 
 div#PH_Footer-main .row {
@@ -255,11 +327,12 @@ div#PH_Footer-main .row {
 }
   
 div#PH_Footer-main {
-    padding: 15px 15px 40px 15px;
+    padding: 15px;
     position: relative;
     color:#FFF;
     clear: both;
     margin: 0px auto;
+    padding: 0px 0 0 0;
     float:none;
     line-height: 1.43;
     font-size: 14px;
@@ -278,56 +351,383 @@ div#PH_Footer-main {
     }
 }
 
-div#PH_Footer-main .col-md-4, 
-div#PH_Footer-main .col-lg-4 {
 
-    float: left; 
-    overflow: hidden;
-    position: relative;
+div#PH_Footer-main .col1 {
 
-    @media @mobile {
-
-        width: 100%;
-        margin-right: 0;
-    }
-
+    text-align: center;
+    
     @media @desktop {
 
-        width: 30.8%;
-        margin-right: 3.8%;
+        width: 100%;
     }
 }
+
 
 div#PH_Footer-main ul {
     padding-left:0px;
     list-style:none;
-    text-align: left;
 }
-
-div#PH_Footer-main li {
-    display:inline-block;
-}
-
-div#PH_Footer-main a, 
-div#PH_Footer-main li a {
-
-    color: #aaa;
-}
-
-
 div#PH_Footer-main p {
     text-align : justify;
     font-size : 12px;
 }
 
-div#PH_Footer-main h2 {
-    font-weight: 300;
+
+/*
+div#PH_Footer-main .col2 {
+
+    @media @desktop {
+
+        width: 33%;
+    }
+}
+  
+div#PH_Footer-main .col3 {
+
+
+    @media @desktop {
+
+        width: 25%;
+    }
 }
 
-div#PH_Footer-main ul.footer-socialIcons li {
+div#PH_Footer-main .col1,
+div#PH_Footer-main .col2,
+div#PH_Footer-main .col3 {
 
-    margin-right: 10px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+div#PH_Footer-main .faq {
+
+    margin: 20px 0px 0px 0px; 
+    font-size: 16px; 
+    line-height: 20px;
+}
+
+
+div#PH_Footer-main h3 {
+    font-weight:lighter;
+}
+
+
+div#PH_Footer-main h4 {
+    font-weight:lighter;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+div#PH_Footer-main iframe {
+    width:100%;
+    position:relative;
+    height:170px;
+}
+
+div#PH_Footer-main hr {
+
+    border-color: rgba(255,255,255,.15);
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+div#PH_Footer-main .mattel-logo { 
+
+    float: left; 
+    margin: 0px 15px 25px 0px; 
+    display: inline; 
+    width: 50px; 
+    height: 50px;
+}
+
+
+div#PH_Footer-main .right { text-align: right; }
+
+div#PH_Footer-main p a {color: #009FE1; text-decoration: none;}
+
+div#PH_Footer-main p a:hover {color: #009FE1; text-decoration: underline;}
+
+div#PH_Footer-main img.qt {  margin-top: 10px; margin-bottom: 0; }
+
+
+div#PH_Footer-main .social { float: left; text-align: left; }
+
+div#PH_Footer-main .social li { display: inline-block; margin-right: 5px; }
+
+div#PH_Footer-main .social a { display:block; border-radius:4px; }
+
+
+div#PH_Footer-main .button {
+
+  display: inline-block;
+  height: 32px;
+  padding-right: 8px;
+  padding-left: 7px;
+  position: relative;
+  background-color:rgb(0,0,0);
+  color:rgb(255,255,255);
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  font-size: 15px; 
+  line-height: 15px;
+  text-align: center;
+}
+
+div#PH_Footer-main .button:hover{
+  text-decoration: none;
+  color: #FFF;
+}
+
+div#PH_Footer-main .button .icofont { 
+ 
+	font-size: 20px;
+	display: inline-block;
+    padding-top: 6px;
+}
+
+
+div#PH_Footer-main .button.twitter {
+  background: #009FE1;
+}
+
+div#PH_Footer-main .button.facebook {
+ background: #3b5998;
+}
+
+div#PH_Footer-main .button.youtube {
+ background: #c4302b;
+}
+
+div#PH_Footer-main .button.instagram {
+ background: #bd44ee;
+}
+div#PH_Footer-main .button.website {
+ background: #009FE1;
+}
+
+
+
+div#PH_Footer-main .websiteX, div#PH_Footer-main .contacts a {
+	 color: #009FE1;
+	 text-decoration: none;
+	 font-size: 14px;
+	 white-space: nowrap;
+}
+
+div#PH_Footer-main .websiteX:hover, div#PH_Footer-main .contacts a:hover {
+	 color: #FFFFFF;
+	 text-decoration: underline;
+}
+
+div#PH_Footer-main .icofont.web { font-size: 20px; float:left; padding-right: 8px; }
+
+*/
+
+
+
+/* DOWT Footer END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#group_Footer {
+    background-color: @background-color;
+    color           : #fff;
+    box-sizing      : content-box;
+    font-size       : 16px;
+
+    @media @desktop {
+
+        padding-bottom  : 100px;
+    }
+
+}
+
+div#PH_Footer-main {
+
+    padding: 0;
+}
+
+    
+#group_Footer .top, #group_Footer .mid, #group_Footer .bottom {
+    
+    float:left;
+    width: 100%;
+}
+    
+#group_Footer ul {
+    
+    width: 1170px;
+    margin: 0px auto;
+
+    @media @mobile {
+
+        width: 100%;
+    }
+}
+    
+#group_Footer li {
+
+    list-style: none;
+    
+    color:#9b9b9b;
+    line-height: 22px;
+}
+    
+#group_Footer li a:link, #group_Footer li a:visited  {
+    color:#9b9b9b;
+}    
+    
+#group_Footer li a:hover, #group_Footer li a:active,
+#group_Footer .ico-poi:link, #group_Footer .ico-poi:visited {
+    color:#FFFFFF;
+}      
+    
+#group_Footer .head {
+    
+    color:#FFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing:1px;
+    margin-bottom: 15px;
+
+    @media @mobile {
+
+        margin-top: 15px;
+    }
+}
+    
+#group_Footer .top ul { padding-top: 40px; border-top: 1px solid #dbdbdb; }
+    
+#group_Footer .top { padding: 20px 20px 40px 20px; }
+    
+#group_Footer .top li {
+    
+    float:left;
+    margin-right: 15px;
+}
+#group_Footer .top li:last-child {
+
+    margin-right: 0px;
+} 
+    
+    
+#group_Footer .mid { 
+    
+    background-color:#323133; 
+    padding: 20px 20px; 
+
+    @media @mobile {
+
+        padding: 20px 0;
+    }
+}
+    
+#group_Footer .mid li {
+    
+    float:left;
+    width: 25%;
+
+    @media @mobile {
+
+        width: 100%;
+    }
+}
+    
+#group_Footer .bottom { background-color:#282728; padding: 10px 20px; }   
+ 
+#group_Footer .bottom li {
+    
+    float:left;
+    width: 100%;
+    margin-right: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    font-size: 14px;
+    text-align: center;
+}
+
+    
+    
+    
+    
+
+
+#group_Footer .logo {
+    
+    text-align: center;
+    width:150px !important;
+    float:left;
+
+    @media @mobile {
+
+        text-align: left;
+    }
+}
+    
+#group_Footer .social {   
+    float:left;
+    width: 100%;
+    height: 36px;
+    margin-top: 20px;
+}
+    
+#group_Footer .social a:link {
+    margin: 0px 0px 0px 5px; 
+    padding: 0px;
+    float:left;
+} 
+    
+#group_Footer .ico-poi  {
+    
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 12px;
+    float:left;
+    padding: 0px 25px 0px 0px;
+    background: url("/UserContent/images/stockport-plaza/ico-poi.png") no-repeat scroll 100% 25% rgba(0, 0, 0, 0);
+}
+     
+    
+    
+
+
+
+
+*/
+
 
 
 
@@ -409,7 +809,7 @@ div#PH_Footer-main ul.footer-socialIcons li {
 }
 
 .c-col-title::after {
-    background-color: @button-color;
+    background-color: #26B5BB;
     content         : "";
     width           : 50px;
     height          : 3px;
@@ -514,6 +914,10 @@ div#PH_Footer-main ul.footer-socialIcons li {
     display: none;
 }
 
+
+
+
+
 #tabsWrapper input {
     height               : 33px !important;
     padding-left         : 5px;
@@ -521,14 +925,14 @@ div#PH_Footer-main ul.footer-socialIcons li {
     -webkit-border-radius: 2px;
     border-radius        : 4px !important;
 }
-
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span,
 #siteMenuBar .flm_login,
 a#navMenu_Float_TimeRemaining_item,
 #siteMenuBar #CountDown.active,
 a#navMenu_Float_Search_item {
     font-size  : 16px;
     font-weight: 600;
-    color      : @font-dark-color;
+    color      : #FFFFFF;
 }
 
 a#navMenu_Float_Search_item,
@@ -540,8 +944,8 @@ a#navMenu_Float_Search_item,
         margin          : 0;
         padding         : 0;
         border-radius   : 0;
-        background-color: @button-color;
-        color           : #fff;
+        background-color: @button-color; 
+        color           : #FFFFFF;
         font-size       : 16px;
         font-weight     : 600;
     }
@@ -564,7 +968,7 @@ a#navMenu_Float_Search_item,
 
 #siteMenuBar #CountDown .timerText {
     font-weight: 600;
-    color      : @button-color;
+    color      : #FFFFFF;
 }
 
 a#navMenu_Float_Basket_item {
@@ -595,10 +999,10 @@ div#PH_Float_Menu {
 
 #siteMenuBar #CountDown.active {
     position: absolute;
-    top     : 27px;
+    top     : 34px;
 
     @media @mobile {
-        top  : 52px;
+        top  : 62px;
         right: 46px;
     }
 }
