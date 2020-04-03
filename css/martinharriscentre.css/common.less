@@ -242,7 +242,6 @@ div#PH_Video {
 
     background-color: @bottom-bar;
     border-bottom: 4px solid @highlight-color;
-    
 }
 
 div#PH_Footer-main .row {
@@ -280,22 +279,38 @@ div#PH_Footer-main {
     }
 }
 
+div#PH_Footer-main .col-md-4, 
+div#PH_Footer-main .col-lg-4 {
 
-div#PH_Footer-main .col1 {
+    float: left; 
+    overflow: hidden;
+    position: relative;
 
-    text-align: center;
-    
-    @media @desktop {
+    @media @mobile {
 
         width: 100%;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+
+        width: 30.8%;
+        margin-right: 3.8%;
     }
 }
-
 
 div#PH_Footer-main ul {
     padding-left:0px;
     list-style:none;
+    text-align: left;
 }
+
+div#PH_Footer-main ul {
+
+    display:inline-block;
+
+}
+
 div#PH_Footer-main p {
     text-align : justify;
     font-size : 12px;
