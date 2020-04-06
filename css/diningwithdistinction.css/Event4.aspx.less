@@ -1,0 +1,36 @@
+@import 'variables';
+@import '../master-template/Event4';
+
+body {
+
+    background: none;
+    background-color: #FFF !important;
+}
+
+div#PH_breadcrumbs {
+
+    margin: 110px auto 0 5%;
+
+    @media @mobile {
+
+        margin: 175px auto 15px 5%;
+    }
+}
+
+.breadcrumbs {
+    padding-left: 0;
+}
+
+.eventInfoSection .imageContainer {
+    display: none;
+}
+
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed > a {
+
+    color: #FFFFFF;
+}
+
+#eventPage.seated #ticketsPane .selectTickets .buttonsContainer .button.proceed.disabled > a {
+
+    color: #858585;
+}
