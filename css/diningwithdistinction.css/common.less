@@ -807,6 +807,9 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
 .carousel .itemsList {
 
+    display: flex;
+    flex-direction: row;
+
     .dataItem {
 
         background-color  : @box-bgcolor;
@@ -837,10 +840,21 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
             box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
         }
 
+        @media @desktop {
+
+            width: 20%;
+            height: unset;
+        }
+
         @media @mobile {
             width : 100% !important;
             margin: 0 0 40px 0 !important
         }
+    }
+
+    .dataItem > .item_image_container:first-child {
+
+        width: 100%;
     }
 
 
@@ -850,11 +864,14 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         color           : @font-dark-color;
         font-weight     : bold;
         background-color: transparent;
-        font-size       : 22px;
+        font-size       : 18px;
         text-align      : left;
 
     }
 
+    .dataItem .itemsDataContainer::before {
+        display: none;
+    }
 
     .dataItem .itemsDataContainer::after {
 
@@ -874,7 +891,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         background-color  : @button-color;
         
         color: #FFFFFF;
-        content: "Buy Now"; 
+        content: "More Info"; 
         padding: 6px 12px;
 
     }
