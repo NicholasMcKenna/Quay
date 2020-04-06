@@ -853,23 +853,39 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         }
     }
 
+    .dataItem .item_image {
+        max-width  : 100%;
+        margin-left: 0;
+        margin-top : 0;
+        max-height : 100%;
+        width      : auto;
+        height     : 66%;
+    }
+    
+    .dataItem .item_image IMG {
+        width            : auto;
+        height           : 274px;
+        max-height       : 271px;
+        -webkit-transform: unset;
+        -moz-transform   : unset;
+        -ms-transform    : unset;
+        -o-transform     : unset;
+        transform        : unset;
+    }
+    
     .dataItem > .item_image_container:first-child {
 
         width: 100%;
     }
 
 
-
-
-    .dataItem .name {
-        color           : @font-dark-color;
-        font-weight     : bold;
+    .dataItem .itemsDataContainer,
+    .dataItem:hover .itemsDataContainer,
+    .dataItem.simulateHover .itemsDataContainer {
+        height          : 33%;
         background-color: transparent;
-        font-size       : 18px;
-        text-align      : left;
-
     }
-
+    
     .dataItem .itemsDataContainer::before {
         display: none;
     }
@@ -898,6 +914,39 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     }
 
 
+
+    .dataItem .itemsDateRange {
+        position   : static;
+        width      : 100%;
+        color      : @button-color;
+        font-size  : 18px;
+        margin-left: 12px;
+    }
+    
+    .dataItem .innerdescription {
+        display: block;
+    }
+    
+    .dataItem .previewFull,
+    .dataItem .itemsDataContainer .description {
+        display: none;
+    }
+    
+    .dataItem .itemsDataContainer .name,
+    .dataItem .itemsDataContainer .description {
+        color           : @font-dark-color;
+        font-weight     : bold;
+        position        : static;
+        background-color: transparent;
+        font-size       : 18px;
+        margin-top      : 15px;
+        text-align      : left;
+        margin-left     : 10px;
+        width: 58%;
+    }
+    
+
+
     .dataItem .itemsButtonsContainer {
         display: none;
     }
@@ -905,3 +954,9 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
 }    
 
+
+
+
+.carousel.recommendedShows .itemsList .dataItem {
+    background-image: none;
+}
