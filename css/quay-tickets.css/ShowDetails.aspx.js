@@ -81,3 +81,5 @@ $(document).ready(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
 });
+
+//require(["../UserContent/js/jquery.simplePagination.js"]);
