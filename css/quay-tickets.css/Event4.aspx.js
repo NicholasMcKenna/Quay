@@ -9,4 +9,8 @@ $(document).ready(function() {
             $('.eventDetails').after($('.promoBox'));
         }
     }
+
+    if ($('.promoBox button[aria-label="Remove coupon Affliates"]').length > 0) {
+        $('.promoBox').hide();
+    }
 });
