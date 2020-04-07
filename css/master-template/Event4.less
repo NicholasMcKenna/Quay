@@ -426,8 +426,13 @@ a.ui-button:active,
 
 #eventPage .selectTickets .tickets .row .pricing {
 
-    margin-top: -10px;
+    margin-top  : -10px;
+    clear       : both;
 
+    @media @mobile {
+
+        margin-top: 0;
+    }
 }
 
 #eventPage .priceLevelInfo {
@@ -971,6 +976,12 @@ button.disabled.small_button_a:hover {
     width: 50%;
 }
 
+
+.selectTickets .row .priceType {
+    height: unset;
+    max-height: unset;
+}
+
 .selectTickets .row .price,
 .selectTickets .row .ops,
 .selectTickets .row .extra-info {
@@ -1243,6 +1254,12 @@ button.disabled.small_button_a:hover {
 #eventPage.non-seated .selectTickets .summary {
 
     margin-left: 0px;
+}
+
+#eventPage.non-seated .selectTickets .tickets {
+
+    display: flex;
+    flex-direction: column;
 }
 
 .screen-Event4_aspx #PH_ScrollTop,
