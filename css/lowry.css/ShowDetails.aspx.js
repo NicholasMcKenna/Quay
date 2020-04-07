@@ -2,7 +2,28 @@
  * Need to define the date format defined in dateGroup, this could be different on each system
  * This needs to be checked when returning the ID as it will send a text in the onSelect
  * */
+
+
 $(document).ready(function () {
+    //TODO: Create element in eSRO admin and position with js
+    $('.ShowEventsitemsList').before($('<div class="pagingWrapper"><div class="pagingDataContainer"></div><div class="pagingControl"></div></div>'));
+
+    require(["./UserContent/js/pagination.min.js"], function () {
+        function template(data) {
+            $(data).show();
+        }
+
+        var showlist = $('.ShowEventsitemsList .dataItem').clone().toArray();
+
+        $('.pagingControl').pagination({
+            dataSource: showlist,
+            callback: function (data, pagination) {
+                template(data);
+                $('.pagingDataContainer').html(data);
+            }
+        });
+    });
+
     var availableDates = new Array();
 
     for (var property in dateGroups) {
@@ -20,11 +41,15 @@ $(document).ready(function () {
         onSelect: function (dateText, inst) {
             var ID = returnID(dateText);
             $("#dateSelect").val(ID.toString()).change();
-            $("#eventslist").show();
+            $(".pagingWrapper").hide();
+            $('.ShowEventsitemsList').show();
             $("html, body").animate({ scrollTop: $('#pickadate').offset().top }, 1000);
         },
         defaultDate: get_default_date(),
     });
+
+    $('.ShowEventsitemsList').hide();
+
 
     function available(date) {
         var found = false;
@@ -80,6 +105,8 @@ $(document).ready(function () {
     $(".extras .HighSeatsOccupancy").each(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
-});
 
-require(["./UserContent/js/pagination.min.js"]);
+
+
+
+});
