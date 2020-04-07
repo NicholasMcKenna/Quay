@@ -811,6 +811,9 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     .dataItem {
 
         //flex-shrink: 0;
+        display:flex;
+        margin: 0px;
+
         background-image  : none !important;
         background-color  : @box-bgcolor;
         -webkit-transition: all 250ms ease-in-out;
@@ -856,9 +859,9 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         max-width  : 100%;
         margin-left: 0;
         margin-top : 0;
-        max-height : 100%;
+        max-height : unset;;
         width      : auto;
-        height     : 66%;
+        height     : unset;
     }
     
     .dataItem .item_image IMG {
@@ -871,8 +874,8 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
         @media @desktop {
 
-            height           : 150px;
-            max-height       : 150px;
+            height           : unset;
+            max-height       : unset;
         }
     }
     
@@ -882,8 +885,8 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
         @media @desktop {
 
-            min-height: 150px;
-            height: 150px;
+            min-height: unset;
+            height: unset;
         }
 
 
@@ -956,10 +959,10 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         position        : static;
         background-color: transparent;
         font-size       : 18px;
-        margin-top      : 15px;
         text-align      : left;
-        margin-left     : 10px;
-        width: 100%;
+        margin          : 0px;
+        width           : 100%;
+        padding         : 5px 10px;
     }
     
 
