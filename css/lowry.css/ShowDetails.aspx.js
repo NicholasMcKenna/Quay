@@ -7,7 +7,6 @@
 $(document).ready(function () {
     //TODO: Create element in eSRO admin and position with js
     $('.ShowEventsitemsList').before($('<div class="pagingWrapper"><div class="pagingDataContainer"></div><div class="pagingControl"></div></div>'));
-    $('.ShowEventsitemsList').hide();
 
     require(["./UserContent/js/pagination.min.js"], function () {
         function template(data) {
@@ -48,6 +47,9 @@ $(document).ready(function () {
         },
         defaultDate: get_default_date(),
     });
+
+    $('.ShowEventsitemsList').hide();
+
 
     function available(date) {
         var found = false;
