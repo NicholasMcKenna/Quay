@@ -579,8 +579,14 @@ select#dateSelect {
 
 
 
+.carousel .scroller {
+    width: 1em;
+    height: 20em;
+}
+.carousel .scroller::after {
 
-
+    left: 0;
+}
 
 .carousel.recommendedShows .itemsList,
 .carousel .itemsList {
@@ -633,7 +639,7 @@ select#dateSelect {
         }
 
         @media @mobile {
-            width : 100px;
+            width : 175px;
             padding-bottom: 25px;
         }
     }
@@ -735,16 +741,17 @@ select#dateSelect {
         width    : 100%;
         color    : @button-color;
         font-size: 16px;
+        line-height: 20px;
         margin   : 0px;
         padding  : 5px 10px;
-        
+        text-align: left;
     }
     .dataItem .name,
     .dataItem .itemsDateRange .rangetitle {
 
         float       : unset;
         margin-right: 5px;
-        text-align  :left;
+        //text-align  :left;
     }
 
     .dataItem .innerdescription {
