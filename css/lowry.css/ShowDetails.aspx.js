@@ -42,13 +42,12 @@ $(document).ready(function () {
             var ID = returnID(dateText);
             $("#dateSelect").val(ID.toString()).change();
             $(".pagingWrapper").hide();
-            $('.ShowEventsitemsList').show();
+            //$('.ShowEventsitemsList').show();
             $("html, body").animate({ scrollTop: $('#pickadate').offset().top }, 1000);
         },
         defaultDate: get_default_date(),
     });
 
-    $('.ShowEventsitemsList').hide();
 
 
     function available(date) {
