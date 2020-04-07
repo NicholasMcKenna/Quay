@@ -82,4 +82,4 @@ $(document).ready(function () {
     });
 });
 
-require(["./UserContent/js/jquery.simplePagination.js"]);
+require(["./UserContent/js/pagination.min.js"]);
