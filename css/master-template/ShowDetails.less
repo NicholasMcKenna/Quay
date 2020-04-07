@@ -321,128 +321,6 @@ span.previewFull {
     display: block;
 }
 
-/*
-
-.carousel .itemsList .dataItem .item_image IMG {
-    width            : auto;
-    height           : 274px;
-    max-height       : 271px;
-    -webkit-transform: unset;
-    -moz-transform   : unset;
-    -ms-transform    : unset;
-    -o-transform     : unset;
-    transform        : unset;
-}
-
-.carousel .itemsList .dataItem {
-    width             : 378px;
-    height            : 440px;
-    background-color  : #2A2D34;
-    -webkit-transition: unset;
-    -moz-transition   : unset;
-    -ms-transition    : unset;
-    -o-transition     : unset;
-    transition        : unset;
-
-
-    &:hover {
-        -webkit-transform : translateY(-10px);
-        -moz-transform    : translateY(-10px);
-        -ms-transform     : translateY(-10px);
-        -o-transform      : translateY(-10px);
-        transform         : translateY(-10px);
-        -webkit-transform : scale(1.03);
-        -moz-transform    : scale(1.03);
-        -ms-transform     : scale(1.03);
-        -o-transform      : scale(1.03);
-        transform         : scale(1.03);
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-
-        .itemsDataContainer::before {
-            -webkit-transform: translateX(5px);
-            -moz-transform   : translateX(5px);
-            -ms-transform    : translateX(5px);
-            -o-transform     : translateX(5px);
-            transform        : translateX(5px);
-        }
-
-        .itemsDataContainer::after {
-            -webkit-transform: translateX(-10px);
-            -moz-transform   : translateX(-10px);
-            -ms-transform    : translateX(-10px);
-            -o-transform     : translateX(-10px);
-            transform        : translateX(-10px);
-        }
-    }
-}
-
-.carousel .item_image {
-    max-width  : 100%;
-    margin-left: 0;
-    margin-top : 0;
-    max-height : 100%;
-    width      : auto;
-    height     : 66%;
-}
-
-.carousel .itemsList .dataItem .itemsDataContainer,
-.carousel .itemsList .dataItem:hover .itemsDataContainer,
-.carousel .itemsList .dataItem.simulateHover .itemsDataContainer {
-    height          : 33%;
-    background-color: transparent;
-}
-
-.carousel .itemsList .dataItem .itemsDateRange {
-    position   : static;
-    width      : 100%;
-    color      : @button-color;
-    font-size  : 18px;
-    margin-left: 12px;
-}
-
-.carousel .dataItem .itemsDataContainer .description {
-    visibility: visible;
-    opacity   : 1;
-}
-
-.carousel .dataItem .previewFull,
-.carousel .dataItem .itemsDataContainer .description {
-    display: none;
-}
-
-.carousel .innerdescription {
-    display: block;
-}
-
-.carousel .itemsList .dataItem .itemsDataContainer .name,
-.carousel .itemsList .dataItem .itemsDataContainer .description {
-    color           : #fff;
-    font-weight     : bold;
-    position        : static;
-    background-color: transparent;
-    font-size       : 28px;
-    margin-top      : 15px;
-    text-align      : left;
-    margin-left     : 10px;
-}
-
-.carousel .itemsList .dataItem .name {
-    width: 58%;
-}
-
-.carousel .itemsList .dataItem .itemsButtonsContainer {
-    display: none;
-
-}
-
-.carousel.recommendedShows .itemsList .dataItem {
-    background-image: none;
-}
-*/
 
 div#pickadate {
     @media @mobile {
@@ -685,3 +563,216 @@ select#dateSelect {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel.recommendedShows .itemsList,
+.carousel .itemsList {
+
+    display: flex;
+
+    .dataItem {
+
+        flex-shrink: 0;
+        flex-grow  : 0;
+
+        margin        : 0 15px 0 0;
+        padding-bottom: 45px;
+        position      : relative;
+
+        background-image  : none !important;
+        background-color  : @box-bgcolor;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition   : all 250ms ease-in-out;
+        -ms-transition    : all 250ms ease-in-out;
+        -o-transition     : all 250ms ease-in-out;
+        transition        : all 250ms ease-in-out;
+
+        border    : 1px solid @box-border-color;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            -webkit-transform : none;
+            -moz-transform    : none;
+            -ms-transform     : none;
+            -o-transform      : none;
+            transform         : none;
+            -webkit-transform : none;
+            -moz-transform    : none;
+            -ms-transform     : none;
+            -o-transform      : none;
+            transform         : none;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+            -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+            -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        @media @desktop {
+
+            width : 200px;
+            height: unset;
+        }
+
+        @media @mobile {
+            width : 75%;
+            margin : 0 0 20px 0;
+        }
+    }
+
+    .dataItem .item_image {
+        max-width  : 100%;
+        margin-left: 0;
+        margin-top : 0;
+        max-height : unset;
+        ;
+        width : auto;
+        height: unset;
+    }
+
+    .dataItem .item_image IMG {
+        width            : auto;
+        -webkit-transform: unset;
+        -moz-transform   : unset;
+        -ms-transform    : unset;
+        -o-transform     : unset;
+        transform        : unset;
+
+        @media @desktop {
+
+            height    : unset;
+            max-height: unset;
+        }
+    }
+
+    .dataItem>.item_image_container:first-child {
+
+        width      : 100%;
+        line-height: 1px;
+
+        @media @desktop {
+
+            min-height: unset;
+            height    : unset;
+        }
+
+
+
+    }
+
+
+    .dataItem .itemsDataContainer,
+    .dataItem:hover .itemsDataContainer,
+    .dataItem.simulateHover .itemsDataContainer {
+        height          : unset;
+        width           : 100%;
+        min-width       : auto;
+        background-color: transparent;
+        position        : unset;
+        bottom          : unset;
+        padding         : 0;
+
+    }
+
+    .dataItem .itemsDataContainer::before {
+        display: none;
+    }
+
+    .dataItem .itemsDataContainer::after {
+
+        position: absolute;
+        top     : unset;
+        bottom  : 0;
+        right   : unset;
+        left    : 0;
+
+        width  : 100%;
+        display: block;
+
+        opacity           : 1;
+        z-index           : 1;
+        -webkit-transition: all 250ms ease-in-out;
+        -moz-transition   : all 250ms ease-in-out;
+        -ms-transition    : all 250ms ease-in-out;
+        -o-transition     : all 250ms ease-in-out;
+        transition        : all 250ms ease-in-out;
+
+
+        background      : none;
+        background-color: @button-color;
+
+        color  : #FFFFFF;
+        text-align: center;
+        content: "More Info";
+        padding: 6px 0px;
+
+    }
+
+
+
+    .dataItem .itemsDateRange {
+        position : static;
+        width    : 100%;
+        color    : @button-color;
+        font-size: 16px;
+        margin   : 0px;
+        padding  : 5px 10px;
+    }
+
+    .dataItem .itemsDateRange .rangetitle {
+
+        float       : unset;
+        margin-right: 5px;
+    }
+
+    .dataItem .innerdescription {
+        display: block;
+    }
+
+    .dataItem .previewFull,
+    .dataItem .itemsDataContainer .description {
+        display: none;
+    }
+
+    .dataItem .name,
+    .dataItem .itemsDataContainer .name,
+    .dataItem .itemsDataContainer .description {
+        color           : @font-dark-color;
+        font-weight     : bold;
+        position        : static;
+        background-color: transparent;
+        font-size       : 18px;
+        line-height     : 24px;
+        text-align      : left;
+        margin          : 0px;
+        width           : 100%;
+        max-width       : 100%;
+        min-height      : 10px;
+        padding         : 5px 10px;
+    }
+
+
+
+    .dataItem .itemsButtonsContainer {
+        display: none;
+    }
+
+
+}
