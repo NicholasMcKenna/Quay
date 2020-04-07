@@ -595,6 +595,7 @@ select#dateSelect {
         margin        : 0 15px 0 0;
         padding-bottom: 45px;
         position      : relative;
+        height: unset;
 
         background-image  : none !important;
         background-color  : @box-bgcolor;
@@ -628,12 +629,12 @@ select#dateSelect {
         @media @desktop {
 
             width : 200px;
-            height: unset;
+            
         }
 
         @media @mobile {
-            width : 75%;
-            margin : 0 0 20px 0;
+            width : 100px;
+            padding-bottom: 25px;
         }
     }
 
@@ -688,6 +689,7 @@ select#dateSelect {
         position        : unset;
         bottom          : unset;
         padding         : 0;
+        text-align: left;
 
     }
 
@@ -723,6 +725,8 @@ select#dateSelect {
         content: "More Info";
         padding: 6px 0px;
 
+
+
     }
 
 
@@ -734,6 +738,7 @@ select#dateSelect {
         font-size: 16px;
         margin   : 0px;
         padding  : 5px 10px;
+        
     }
 
     .dataItem .itemsDateRange .rangetitle {

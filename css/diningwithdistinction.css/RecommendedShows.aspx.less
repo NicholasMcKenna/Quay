@@ -27,12 +27,27 @@
 
 
 .ph_recommended_shows {
-    margin-top: 80px !important;
+    
+
+    @media @desktop {
+
+        margin-top: 80px !important;
+    }
+    @media @mobile {
+
+        margin-top: 120px !important;
+    }
+
 }
 
 .screen-content {
     padding: 25px 25px 0 25px;
     min-height: 500px;
+
+    @media @mobile {
+
+        padding: 0px 25px 0 25px;
+    }
 }
 
 
