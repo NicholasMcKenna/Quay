@@ -3,9 +3,9 @@
  * This needs to be checked when returning the ID as it will send a text in the onSelect
  * */
 
-require(["./UserContent/js/pagination.min.js"]);
 
 $(document).ready(function () {
+    require(["./UserContent/js/pagination.min.js"]);
     var availableDates = new Array();
 
     for (var property in dateGroups) {
