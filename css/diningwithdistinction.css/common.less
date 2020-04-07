@@ -809,6 +809,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     .dataItem {
 
         margin: 0px;
+        padding-bottom: 75px;
 
         background-image  : none !important;
         background-color  : @box-bgcolor;
@@ -909,9 +910,11 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
     .dataItem .itemsDataContainer::after {
 
-        position          : relative;
+        position          : absolute;
         top               : unset;
+        bottom              : 0;
         right             : unset;
+        left                :0;
 
         width: auto;
         display: block;
