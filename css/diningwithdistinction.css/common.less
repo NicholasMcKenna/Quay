@@ -897,8 +897,11 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     .dataItem .itemsDataContainer,
     .dataItem:hover .itemsDataContainer,
     .dataItem.simulateHover .itemsDataContainer {
-        height          : 33%;
+        height          : unset;
         background-color: transparent;
+        position: relative;
+        bottom: unset;
+        padding: 0;
     }
     
     .dataItem .itemsDataContainer::before {
@@ -940,7 +943,8 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         width      : 100%;
         color      : @button-color;
         font-size  : 18px;
-        margin-left: 12px;
+        margin     : 0px;
+        padding    : 5px 10px;
     }
     
     .dataItem .innerdescription {
