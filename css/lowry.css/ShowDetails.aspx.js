@@ -5,7 +5,7 @@
 
 
 $(document).ready(function () {
-    require(["./UserContent/js/pagination.min.js"]);
+    
     var availableDates = new Array();
 
     for (var property in dateGroups) {
@@ -84,22 +84,11 @@ $(document).ready(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
 
+    require(["./UserContent/js/pagination.min.js"], function($) {
+        require(['./UserContent/js/paging.js]']);
+    });
+
     //TODO: Create these two elements in eSRO admin and position with js
-    $('.ShowEventsitemsList').before($('<div class="pagingControl"></div>'));
-    $('.pagingControl').after($('<div class="pagingDataContainer"></div>'));
-
-    function template(data) {
-        $(data).show();
-    }
-
-    var showlist = $('.ShowEventsitemsList .dataItem').clone().toArray()
-
-    $('.pagingControl').pagination({
-        dataSource: showlist,
-        callback: function(data, pagination) {
-            template(data);
-            $('.pagingDataContainer').html(data);
-        }
-    })
+    
 
 });
