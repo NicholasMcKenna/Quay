@@ -8,10 +8,10 @@
 
         padding-top: 95px;
     }
-    
+
     @media @desktop {
 
-        margin   : 85px auto 25px auto;
+        margin: 85px auto 25px auto;
     }
 }
 
@@ -19,9 +19,9 @@
 body {
 
     background-image: none;
-    font-family: @main-font;
+    font-family     : @main-font;
 
-    background-size: cover;
+    background-size    : cover;
     background-position: top center;
 }
 
@@ -30,32 +30,32 @@ body {
 
 
 
-body #group_Header-fixed, 
+body #group_Header-fixed,
 #group_Header-fixed {
 
-    border-bottom: 2px solid @bottom-bar;
-    background-color: @header-bg-color !important;
-    height: 95px;
-    max-height: 95px; 
+    border-bottom   : 2px solid @bottom-bar;
+    background-color: @header-bg-color  !important;
+    height          : 95px;
+    max-height      : 95px;
 
     @media @mobile {
 
-        height: 120px;
+        height    : 120px;
         max-height: 120px;
     }
 }
 
 .main-logo,
 img.logo-image {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+    max-width : 200px;
+    width     : 100%;
+    height    : auto;
     margin-top: 0;
 
     @media @mobile {
 
         max-width: 70px;
-    }    
+    }
 }
 
 
@@ -70,8 +70,8 @@ img.logo-image {
 
 .main-logo-text {
 
-    color: #FFFFFF;
-    font-size: 16px;
+    color      : #FFFFFF;
+    font-size  : 16px;
     font-weight: 600;
     line-height: 22px;
 
@@ -82,23 +82,23 @@ img.logo-image {
 
     @media @mobile {
 
-        font-size: 15px;
-        line-height: 20px;
-        padding-top: 23px;
+        font-size   : 15px;
+        line-height : 20px;
+        padding-top : 23px;
         padding-left: 10px;
     }
-    
+
 }
 
 
 .top-menu {
     @media @desktop {
-        order       : 2;
-        margin-left : auto;
+        order         : 2;
+        margin-left   : auto;
         //display     : flex;
-        display     : none;
-        align-items : center;
-        margin-right: 37px;
+        display       : none;
+        align-items   : center;
+        margin-right  : 37px;
     }
 
     @media @mobile {
@@ -131,9 +131,10 @@ img.logo-image {
     background-color: unset !important;
 }
 
-#siteMenuBar #my_basket .basketQtyHolder, #siteMenuBar[id="my basket"] .basketQtyHolder {
+#siteMenuBar #my_basket .basketQtyHolder,
+#siteMenuBar[id="my basket"] .basketQtyHolder {
     background: #000000;
-    color: #fff;
+    color     : #fff;
 }
 
 #siteMenuBar button.flm_login {
@@ -157,14 +158,17 @@ p {
         display: flex;
     }
 }
+
 #siteMenuBar.hasclient #customerBox a,
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket,
-.siteMenuContainer a, .siteMenuContainer a:hover,
+.siteMenuContainer a,
+.siteMenuContainer a:hover,
 span.mnuBtnCaption::before,
-body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
-#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before,
+body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child::after,
+#siteMenuBar #my_basket>span::before,
+#siteMenuBar [id="my basket"]>span::before,
 #siteMenuBar.hasclient #customerBox::before,
-#navMenu_Float_Search_item > span::before {
+#navMenu_Float_Search_item>span::before {
 
     color: #FFFFFF;
 }
@@ -319,18 +323,18 @@ div#PH_Video {
     padding-top : 0px;
     padding-left: 3%;
     height      : @header-bottom-height;
-    display: flex;
+    display     : flex;
 
     @media @desktop {
-        
+
         width: 100%;
     }
 
     @media @mobile {
         padding-left: 5%;
         height      : @header-bottom-height-mobile;
-        padding-top: 10px;
-        width: 57%;
+        padding-top : 10px;
+        width       : 57%;
     }
 }
 
@@ -342,7 +346,7 @@ div#PH_Video {
 .pagingContainer a.paging {
 
     background-color: @button-color;
-    opacity: 1;
+    opacity         : 1;
 
     &:hover,
     &:active,
@@ -368,45 +372,47 @@ div#PH_Video {
 
 
 
-    
+
 /** Footer **/
 
 #group_Footer {
 
     background-color: @footer-color;
-    border-bottom: 4px solid @highlight-color;
-    
+    border-bottom   : 4px solid @highlight-color;
+
 }
 
 div#PH_Footer-main .row {
 
-    display: flex;
+    display       : flex;
     flex-direction: column;
 
     @media @desktop {
         flex-direction: row;
     }
 }
-  
+
 div#PH_Footer-main {
-    padding: 15px;
-    position: relative;
-    color:#FFF;
-    clear: both;
-    margin: 0px auto;
-    padding: 0px 0 0 0;
-    float:none;
+    padding    : 15px;
+    position   : relative;
+    color      : #FFF;
+    clear      : both;
+    margin     : 0px auto;
+    padding    : 0px 0 0 0;
+    float      : none;
     line-height: 1.43;
-    font-size: 14px;
+    font-size  : 14px;
 
     @media @desktop {
 
         width: 100%;
     }
+
     @media @desktop-large {
 
         width: 1400px;
     }
+
     @media @mobile {
 
         width: 100%;
@@ -417,7 +423,7 @@ div#PH_Footer-main {
 div#PH_Footer-main .col1 {
 
     text-align: center;
-    
+
     @media @desktop {
 
         width: 100%;
@@ -426,11 +432,12 @@ div#PH_Footer-main .col1 {
 
 
 div#PH_Footer-main ul {
-    padding-left:0px;
-    list-style:none;
+    padding-left: 0px;
+    list-style  : none;
 }
+
 div#PH_Footer-main p {
-    text-align : justify;
+    text-align: justify;
     font-size : 12px;
 }
 
@@ -628,6 +635,7 @@ div#PH_Footer-main p {
     -webkit-border-radius: 2px;
     border-radius        : 4px !important;
 }
+
 #group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span,
 #siteMenuBar .flm_login,
 a#navMenu_Float_TimeRemaining_item,
@@ -647,7 +655,7 @@ a#navMenu_Float_Search_item,
         margin          : 0;
         padding         : 0;
         border-radius   : 0;
-        background-color: @button-color; 
+        background-color: @button-color;
         color           : #FFFFFF;
         font-size       : 16px;
         font-weight     : 600;
@@ -778,15 +786,14 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
 #customerBox .greeting {
     @media @mobile {
-        visibility    : visible;
-        display       : block;
-        border        : none;
-        max-width     : 106px;
-        line-height   : 27px;
-        font-size     : 13px;
+        visibility : visible;
+        display    : block;
+        border     : none;
+        max-width  : 106px;
+        line-height: 27px;
+        font-size  : 13px;
     }
 }
-
 
 
 
@@ -805,14 +812,18 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 .carousel.recommendedShows .itemsList,
 .carousel .itemsList {
 
-    //display: flex;
-    //flex-direction: row;
-    //overflow: hidden;
+    display: flex;
 
     .dataItem {
 
-        //flex-shrink: 0;
-        background-image  : none;
+        flex-shrink: 0;
+        flex-grow  : 0;
+
+        margin        : 0px;
+        padding-bottom: 45px;
+        position      : relative;
+
+        background-image  : none !important;
         background-color  : @box-bgcolor;
         -webkit-transition: all 250ms ease-in-out;
         -moz-transition   : all 250ms ease-in-out;
@@ -820,20 +831,20 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         -o-transition     : all 250ms ease-in-out;
         transition        : all 250ms ease-in-out;
 
-        border: 1px solid @box-border-color;
-        box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+        border    : 1px solid @box-border-color;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 
         &:hover {
-            -webkit-transform : translateY(-10px);
-            -moz-transform    : translateY(-10px);
-            -ms-transform     : translateY(-10px);
-            -o-transform      : translateY(-10px);
-            transform         : translateY(-10px);
-            -webkit-transform : scale(1.03);
-            -moz-transform    : scale(1.03);
-            -ms-transform     : scale(1.03);
-            -o-transform      : scale(1.03);
-            transform         : scale(1.03);
+            -webkit-transform : none;
+            -moz-transform    : none;
+            -ms-transform     : none;
+            -o-transform      : none;
+            transform         : none;
+            -webkit-transform : none;
+            -moz-transform    : none;
+            -ms-transform     : none;
+            -o-transform      : none;
+            transform         : none;
             -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
             -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
             -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -843,13 +854,13 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
 
         @media @desktop {
 
-            width: 200px;
-            //height: unset;
+            width : 200px;
+            height: unset;
         }
 
         @media @mobile {
-            width : 75% !important;
-            margin: 0 0 40px 0 !important
+            width : 75%;
+            margin: 0 0 40px;
         }
     }
 
@@ -857,44 +868,71 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         max-width  : 100%;
         margin-left: 0;
         margin-top : 0;
-        max-height : 100%;
-        width      : auto;
-        height     : 66%;
+        max-height : unset;
+        ;
+        width : auto;
+        height: unset;
     }
-    
+
     .dataItem .item_image IMG {
         width            : auto;
-        height           : 274px;
-        max-height       : 271px;
         -webkit-transform: unset;
         -moz-transform   : unset;
         -ms-transform    : unset;
         -o-transform     : unset;
         transform        : unset;
-    }
-    
-    .dataItem > .item_image_container:first-child {
 
-        width: 100%;
+        @media @desktop {
+
+            height    : unset;
+            max-height: unset;
+        }
+    }
+
+    .dataItem>.item_image_container:first-child {
+
+        width      : 100%;
+        line-height: 1px;
+
+        @media @desktop {
+
+            min-height: unset;
+            height    : unset;
+        }
+
+
+
     }
 
 
     .dataItem .itemsDataContainer,
     .dataItem:hover .itemsDataContainer,
     .dataItem.simulateHover .itemsDataContainer {
-        height          : 33%;
+        height          : unset;
+        width           : 100%;
+        min-width       : auto;
         background-color: transparent;
+        position        : unset;
+        bottom          : unset;
+        padding         : 0;
+
     }
-    
+
     .dataItem .itemsDataContainer::before {
         display: none;
     }
 
     .dataItem .itemsDataContainer::after {
 
-        position          : absolute;
-        top            : 6px;
-        right             : 15px;
+        position: absolute;
+        top     : unset;
+        bottom  : 0;
+        right   : unset;
+        left    : 0;
+
+        width  : 100%;
+        display: block;
+
         opacity           : 1;
         z-index           : 1;
         -webkit-transition: all 250ms ease-in-out;
@@ -904,34 +942,42 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         transition        : all 250ms ease-in-out;
 
 
-        background        :none;
-        background-color  : @button-color;
-        
-        color: #FFFFFF;
-        content: "More Info"; 
-        padding: 6px 12px;
+        background      : none;
+        background-color: @button-color;
+
+        color  : #FFFFFF;
+        content: "More Info";
+        padding: 6px 0px;
 
     }
 
 
 
     .dataItem .itemsDateRange {
-        position   : static;
-        width      : 100%;
-        color      : @button-color;
-        font-size  : 18px;
-        margin-left: 12px;
+        position : static;
+        width    : 100%;
+        color    : @button-color;
+        font-size: 16px;
+        margin   : 0px;
+        padding  : 5px 10px;
     }
-    
+
+    .dataItem .itemsDateRange .rangetitle {
+
+        float       : unset;
+        margin-right: 5px;
+    }
+
     .dataItem .innerdescription {
         display: block;
     }
-    
+
     .dataItem .previewFull,
     .dataItem .itemsDataContainer .description {
         display: none;
     }
-    
+
+    .dataItem .name,
     .dataItem .itemsDataContainer .name,
     .dataItem .itemsDataContainer .description {
         color           : @font-dark-color;
@@ -939,12 +985,15 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         position        : static;
         background-color: transparent;
         font-size       : 18px;
-        margin-top      : 15px;
+        line-height     : 24px;
         text-align      : left;
-        margin-left     : 10px;
-        width: 58%;
+        margin          : 0px;
+        width           : 100%;
+        max-width       : 100%;
+        min-height      : 10px;
+        padding         : 5px 10px;
     }
-    
+
 
 
     .dataItem .itemsButtonsContainer {
@@ -952,7 +1001,4 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
     }
 
 
-}    
-
-
-
+}
