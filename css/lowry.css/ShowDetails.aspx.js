@@ -85,7 +85,7 @@ $(document).ready(function () {
     });
 
     require(["./UserContent/js/pagination.min.js"], function($) {
-        require(['./UserContent/js/paging.js]']);
+        require(['./UserContent/js/paging.js']);
     });
 
     //TODO: Create these two elements in eSRO admin and position with js
