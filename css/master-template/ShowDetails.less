@@ -405,7 +405,8 @@ select#dateSelect {
 }
 
 
-.ShowEventsitemsList .dataItem {
+.ShowEventsitemsList .dataItem
+.pagingDataContainer .dataItem {
     background-color: #2A2D34;
     border          : none;
     margin          : 0 0 10px 0;
@@ -415,7 +416,8 @@ select#dateSelect {
     flex-direction  : column;
 }
 
-.ShowEventsitemsList .itemsDataContainer {
+.ShowEventsitemsList .itemsDataContainer
+.pagingDataContainer .itemsDataContainer{
     position: relative;
     color   : #FFFFFF;
     display : block;
@@ -428,11 +430,14 @@ select#dateSelect {
     }
 }
 
-.ShowEventsitemsList .itemsDataContainer .name {
+.ShowEventsitemsList .itemsDataContainer .name,
+.itemsDataContainer .itemsDataContainer .name {
     font-weight: 400;
 }
 
-.ShowEventsitemsList .itemsDateRange SPAN {
+.ShowEventsitemsList .itemsDateRange SPAN, 
+.pagingDataContainer .itemsDateRange SPAN {
+
     color           : #fff;
     background-color: transparent;
     display         : block;
@@ -441,7 +446,9 @@ select#dateSelect {
     padding         : 3px 0px;
 }
 
-.ShowEventsitemsList .itemsDateRange {
+.ShowEventsitemsList .itemsDateRange,
+.pagingDataContainer .itemsDateRange {
+
     color      : @button-color;
     font-weight: bold;
 
@@ -458,11 +465,13 @@ select#dateSelect {
     }
 }
 
-.ShowEventsitemsList .dataItem .extras {
+.ShowEventsitemsList .dataItem .extras,
+.pagingDataContainer .dataItem .extras {
     display: none;
 }
 
-.ShowEventsitemsList .itemsButtonsContainer .button {
+.ShowEventsitemsList .itemsButtonsContainer .button,
+.pagingDataContainer .itemsButtonsContainer .button {
 
     @media @tablet {
 
@@ -470,7 +479,8 @@ select#dateSelect {
     }
 }
 
-.ShowEventsitemsList .button.small_button_a A {
+.ShowEventsitemsList .button.small_button_a A,
+.pagingDataContainer .button.small_button_a A {
     .action-button();
     padding       : 5px 15px;
 
@@ -502,7 +512,8 @@ select#dateSelect {
 }
 
 
-.ShowEventsitemsList .item_image_container {
+.ShowEventsitemsList .item_image_container,
+.pagingDataContainer .item_image_container {
     display: none;
 
 }
