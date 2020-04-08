@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     require(["./UserContent/js/pagination.min.js"], function () {
         function template(data) {
-            //$(data).show();
+            $(data).show();
         }
 
         var showlist = $('.ShowEventsitemsList .dataItem').clone().toArray();
@@ -110,3 +110,7 @@ $(document).ready(function () {
 
 
 });
+
+$(window).on('load', function () {
+    $('.ShowEventsitemsList').hide();
+})
