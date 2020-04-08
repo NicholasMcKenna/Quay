@@ -1238,6 +1238,7 @@ body #group_Header-fixed.searchPageOpen {
     display  : flex;
     float    : none;
     margin   : 8px auto 25px auto;
+    padding  : 0;
     max-width: 100%;
     width    : 100%;
     list-style-type: none;
@@ -1336,12 +1337,23 @@ body #group_Header-fixed.searchPageOpen {
     opacity         : 1;
 }
 
-.paginationjs-prev.disabled
+.paginationjs-prev.disabled,
+.paginationjs-next.disabled
 //,.paginationjs-pages .disabled a 
 {
-
     display: none;
 }
+.paginationjs-ellipsis {
+
+    color: #a8a8a8;
+    margin: 0 5px 0 0;
+}
+
+
+
+
+
+
 
 
 
