@@ -1235,6 +1235,7 @@ body #group_Header-fixed.searchPageOpen {
 
 .paginationjs-pages ul,
 .pagingContainer {
+
     display  : flex;
     float    : none;
     margin   : 8px auto 25px auto;
@@ -1249,8 +1250,8 @@ body #group_Header-fixed.searchPageOpen {
 }
 
 .paginationjs-page a,
-.paginationjs-prev a,
-.paginationjs-next a,
+.paginationjs-prev,
+.paginationjs-next,
 .pagingContainer a.paging {
 
     flex-grow       : 1;
@@ -1265,12 +1266,13 @@ body #group_Header-fixed.searchPageOpen {
     text-align      : center;
 
     @media @desktop {
+
         padding: 8px 12px 7px 12px;
     }
 }
 
-.paginationjs-prev a,
-.paginationjs-next a,
+.paginationjs-prev,
+.paginationjs-next,
 .pagingContainer a.paging.first,
 .pagingContainer a.paging.last,
 .pagingContainer a.paging.next,
@@ -1279,13 +1281,13 @@ body #group_Header-fixed.searchPageOpen {
     position: relative;
 }
 
-.paginationjs-next a,
+.paginationjs-next,
 .pagingContainer a.paging.next {
 
     margin-left: 6px;
 }
 
-.paginationjs-prev a,
+.paginationjs-prev,
 .pagingContainer a.paging.prev {
 
     margin-right: 12px;
@@ -1338,11 +1340,10 @@ body #group_Header-fixed.searchPageOpen {
 }
 
 .paginationjs-prev.disabled,
-.paginationjs-next.disabled
-//,.paginationjs-pages .disabled a 
-{
+.paginationjs-next.disabled {
     display: none;
 }
+
 .paginationjs-ellipsis {
 
     color: #a8a8a8;
