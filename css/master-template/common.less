@@ -1290,10 +1290,10 @@ body #group_Header-fixed.searchPageOpen {
     margin-right: 12px;
 }
 
-.paginationjs-prev a:before,
-.paginationjs-next a:after,
-.pagingContainer a.paging.next:before,
-.pagingContainer a.paging.prev:after {
+.paginationjs-prev:before,
+.paginationjs-next:after,
+.pagingContainer a.paging.prev:before,
+.pagingContainer a.paging.next:after {
 
     content       : "";
     display       : block;
@@ -1309,14 +1309,14 @@ body #group_Header-fixed.searchPageOpen {
     }
 }
 
-.paginationjs-prev a:before,
+.paginationjs-next:before,
 .pagingContainer a.paging.next:before {
 
     border-left: 1px solid #a8a8a8;
     left       : -6px;
 }
 
-.paginationjs-prev a:after,
+.paginationjs-prev:after,
 .pagingContainer a.paging.prev:after {
 
     border-right: 1px solid #a8a8a8;
@@ -1334,6 +1334,13 @@ body #group_Header-fixed.searchPageOpen {
 .pagingContainer a.paging:hover {
     background-color: @button-color;
     opacity         : 1;
+}
+
+.paginationjs-prev.disabled
+//,.paginationjs-pages .disabled a 
+{
+
+    display: none;
 }
 
 
