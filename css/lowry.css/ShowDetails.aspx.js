@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     require(["./UserContent/js/pagination.min.js"], function () {
         function template(data) {
-            $(data).show();
+            //$(data).show();
         }
 
         var showlist = $('.ShowEventsitemsList .dataItem').clone().toArray();
@@ -20,6 +20,7 @@ $(document).ready(function () {
             callback: function (data, pagination) {
                 template(data);
                 $('.pagingDataContainer').html(data);
+
             }
         });
     });
@@ -106,6 +107,6 @@ $(document).ready(function () {
     });
 
 
-    
+
 
 });
