@@ -414,6 +414,7 @@ select#dateSelect {
     width           : 100%;
     display         : flex;
     flex-direction  : column;
+    position: relative;
 }
 
 .ShowEventsitemsList .itemsDataContainer,
@@ -481,13 +482,17 @@ select#dateSelect {
 
 .ShowEventsitemsList .button.small_button_a A,
 .pagingDataContainer .button.small_button_a A {
+
     .action-button();
+
     padding       : 5px 15px;
+    min-width     : unset;
 
     &:hover,
     &:active,
     &:focus {
         padding       : 5px 15px;
+
 
     }
 
@@ -588,7 +593,7 @@ select#dateSelect {
 
 
 
-
+// Recommended Shows Carousel
 
 .carousel .scroller {
     width: 1em;

@@ -1233,7 +1233,7 @@ body #group_Header-fixed.searchPageOpen {
 
 
 
-
+.paginationjs-pages ul,
 .pagingContainer {
     display  : flex;
     float    : none;
@@ -1246,6 +1246,7 @@ body #group_Header-fixed.searchPageOpen {
     }
 }
 
+.paginationjs-page a,
 .pagingContainer a.paging {
 
     flex-grow       : 1;
@@ -1264,6 +1265,8 @@ body #group_Header-fixed.searchPageOpen {
     }
 }
 
+.paginationjs-prev a,
+.paginationjs-next a,
 .pagingContainer a.paging.first,
 .pagingContainer a.paging.last,
 .pagingContainer a.paging.next,
@@ -1272,17 +1275,20 @@ body #group_Header-fixed.searchPageOpen {
     position: relative;
 }
 
-
+.paginationjs-next a,
 .pagingContainer a.paging.next {
 
     margin-left: 6px;
 }
 
+.paginationjs-prev a,
 .pagingContainer a.paging.prev {
 
     margin-right: 12px;
 }
 
+.paginationjs-prev a:before,
+.paginationjs-next a:after,
 .pagingContainer a.paging.next:before,
 .pagingContainer a.paging.prev:after {
 
@@ -1300,24 +1306,28 @@ body #group_Header-fixed.searchPageOpen {
     }
 }
 
+.paginationjs-prev a:before,
 .pagingContainer a.paging.next:before {
 
     border-left: 1px solid #a8a8a8;
     left       : -6px;
 }
 
+.paginationjs-prev a:after,
 .pagingContainer a.paging.prev:after {
 
     border-right: 1px solid #a8a8a8;
     right       : -6px;
 }
 
+.paginationjs-page.active a,
 .pagingContainer a.paging.current {
 
     background-color: @font-dark-color;
     opacity         : 1;
 }
 
+.paginationjs-page a:hover,
 .pagingContainer a.paging:hover {
     background-color: @button-color;
     opacity         : 1;
