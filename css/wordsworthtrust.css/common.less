@@ -2,63 +2,31 @@
 @import '../master-template/common';
 
 
-.screen-content {
 
-    @media @mobile {
 
-        padding-top: 125px;
-    }
-    
+.c-footer-menu {
+    display: none;
+}
+
+.header-menu {
     @media @desktop {
-
-        margin   : 115px auto 25px auto;
+        display: flex;
     }
 }
 
-
-body {
-
-    background-image: none;
-    font-family: @main-font;
-
-    background-size: cover;
-    background-position: top center;
-}
-
-
-
-
-
-
-body #group_Header-fixed, 
-#group_Header-fixed {
-
-    border-bottom: 2px solid @bottom-bar;
-    background-color: @header-bg-color !important;
-    height: 127px;
-    max-height: 127px; 
-
-    @media @mobile {
-
-        height: 150px;
-        max-height: 150px;
-    }
-}
 
 .main-logo,
 img.logo-image {
-    max-width: 150px;
+    max-width: 215px;
     width: 100%;
     height: auto;
     margin-top: 0;
 
     @media @mobile {
 
-        max-width: 70px;
+        max-width: 100px;
     }    
 }
-
-
 
 .main-logo {
 
@@ -70,22 +38,21 @@ img.logo-image {
 
 .main-logo-text {
 
-    color: #FFFFFF;
-    font-size: 16px;
+    color: #6b2c91;
+    font-family: "Open Sans",sans-serif;
+    font-size: 22px;
     font-weight: 600;
     line-height: 22px;
 
     @media @desktop {
 
-        padding-top: 35px;
+        padding-top: 12px;
     }
 
     @media @mobile {
 
         font-size: 15px;
-        line-height: 20px;
-        padding-top: 23px;
-        padding-left: 10px;
+        line-height: 26px;
     }
     
 }
@@ -109,81 +76,6 @@ img.logo-image {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-#siteMenuBar #CountDown.active {
-    @media @desktop {
-        top: 48px !important;
-    }
-}
-
-
-.qtip.timer-tooltip {
-
-    background-color: unset !important;
-}
-
-#siteMenuBar #my_basket .basketQtyHolder, #siteMenuBar[id="my basket"] .basketQtyHolder {
-    background: #000000;
-    color: #fff;
-}
-
-#siteMenuBar button.flm_login {
-
-    background-color: @button-color;
-}
-
-
-p {
-    font-family: @main-font;
-}
-
-
-
-.c-footer-menu {
-    display: none;
-}
-
-.header-menu {
-    @media @desktop {
-        display: flex;
-    }
-}
-#siteMenuBar.hasclient #customerBox a,
-#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket,
-.siteMenuContainer a, .siteMenuContainer a:hover,
-span.mnuBtnCaption::before,
-body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
-#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before,
-#siteMenuBar.hasclient #customerBox::before,
-#navMenu_Float_Search_item > span::before {
-
-    color: #FFFFFF;
-}
-
-.top-menu {
-    @media @desktop {
-        order       : 2;
-        margin-left : auto;
-        display     : flex;
-        align-items : center;
-        margin-right: 37px;
-    }
-
-    @media @mobile {
-        width  : 100%;
-        height : 35px;
-        display: table;
-    }
-}
 
 .top-menu .menu-home,
 .top-menu .menu-login {
@@ -241,7 +133,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
         &:before {
             border-left : 1px solid gray;
             padding-left: 20px;
-            color       : #26B5BB;
+            color       : @button-color;
         }
     }
 }
@@ -264,7 +156,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
         order: 4;
 
         &:before {
-            color: #26B5BB;
+            color: @button-color;
         }
     }
 }
@@ -277,7 +169,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
         content     : '\f291';
 
         @media @desktop {
-            color: #26B5BB;
+            color: @button-color;
         }
     }
 
@@ -314,15 +206,13 @@ div#PH_Video {
 
 
 
-
 .bottom-menu {
-    padding-top : 6px;
+    padding-top: 13px;
     padding-left: 3%;
     height      : @header-bottom-height;
-    display: flex;
 
     @media @desktop {
-        
+        display: flex;
         width: 100%;
     }
 
@@ -330,25 +220,6 @@ div#PH_Video {
         padding-left: 5%;
         height      : @header-bottom-height-mobile;
         padding-top: 10px;
-        width: 57%;
-    }
-}
-
-
-
-
-
-
-.pagingContainer a.paging {
-
-    background-color: @button-color;
-    opacity: 1;
-
-    &:hover,
-    &:active,
-    &:focus {
-
-        background-color: @button-hover-color;
     }
 }
 
@@ -364,18 +235,13 @@ div#PH_Video {
 
 
 
-/* LB Footer START */
 
-
-
-    
 /** Footer **/
 
 #group_Footer {
 
-    background-color: @footer-color;
+    background-color: @bottom-bar;
     border-bottom: 4px solid @highlight-color;
-    
 }
 
 div#PH_Footer-main .row {
@@ -389,12 +255,11 @@ div#PH_Footer-main .row {
 }
   
 div#PH_Footer-main {
-    padding: 15px;
+    padding: 15px 15px 40px 15px;
     position: relative;
     color:#FFF;
     clear: both;
     margin: 0px auto;
-    padding: 0px 0 0 0;
     float:none;
     line-height: 1.43;
     font-size: 14px;
@@ -413,26 +278,58 @@ div#PH_Footer-main {
     }
 }
 
+div#PH_Footer-main .col-md-4, 
+div#PH_Footer-main .col-lg-4 {
 
-div#PH_Footer-main .col1 {
+    float: left; 
+    overflow: hidden;
+    position: relative;
 
-    text-align: center;
-    
-    @media @desktop {
+    @media @mobile {
 
         width: 100%;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+
+        width: 30.8%;
+        margin-right: 3.8%;
     }
 }
-
 
 div#PH_Footer-main ul {
     padding-left:0px;
     list-style:none;
+    text-align: left;
 }
+
+div#PH_Footer-main li {
+    display:inline-block;
+}
+
+div#PH_Footer-main a, 
+div#PH_Footer-main li a {
+
+    color: #aaa;
+}
+
+
 div#PH_Footer-main p {
     text-align : justify;
     font-size : 12px;
 }
+
+div#PH_Footer-main h2 {
+    font-weight: 300;
+}
+
+div#PH_Footer-main ul.footer-socialIcons li {
+
+    margin-right: 10px;
+}
+
+
 
 
 
@@ -512,7 +409,7 @@ div#PH_Footer-main p {
 }
 
 .c-col-title::after {
-    background-color: #26B5BB;
+    background-color: @button-color;
     content         : "";
     width           : 50px;
     height          : 3px;
@@ -617,10 +514,6 @@ div#PH_Footer-main p {
     display: none;
 }
 
-
-
-
-
 #tabsWrapper input {
     height               : 33px !important;
     padding-left         : 5px;
@@ -628,14 +521,14 @@ div#PH_Footer-main p {
     -webkit-border-radius: 2px;
     border-radius        : 4px !important;
 }
-#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span,
+
 #siteMenuBar .flm_login,
 a#navMenu_Float_TimeRemaining_item,
 #siteMenuBar #CountDown.active,
 a#navMenu_Float_Search_item {
     font-size  : 16px;
     font-weight: 600;
-    color      : #FFFFFF;
+    color      : @font-dark-color;
 }
 
 a#navMenu_Float_Search_item,
@@ -647,8 +540,8 @@ a#navMenu_Float_Search_item,
         margin          : 0;
         padding         : 0;
         border-radius   : 0;
-        background-color: @button-color; 
-        color           : #FFFFFF;
+        background-color: @button-color;
+        color           : #fff;
         font-size       : 16px;
         font-weight     : 600;
     }
@@ -671,7 +564,7 @@ a#navMenu_Float_Search_item,
 
 #siteMenuBar #CountDown .timerText {
     font-weight: 600;
-    color      : #FFFFFF;
+    color      : @button-color;
 }
 
 a#navMenu_Float_Basket_item {
@@ -702,10 +595,10 @@ div#PH_Float_Menu {
 
 #siteMenuBar #CountDown.active {
     position: absolute;
-    top     : 34px;
+    top     : 27px;
 
     @media @mobile {
-        top  : 62px;
+        top  : 52px;
         right: 46px;
     }
 }

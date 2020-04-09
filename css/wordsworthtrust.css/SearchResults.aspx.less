@@ -1,43 +1,10 @@
 @import 'variables';
 @import '../master-template/Searchresults';
 
-
-#group_Header {
-
-
-    @media @mobile {
-
-        margin: 150px auto 0 auto;
-    }
-
-
-    @media @desktop {
-
-        margin: 110px auto 25px auto;
-    }
-}
-
-
-
-
-
-
-
-
 FORM.frmSearch .SearchTextButton {
     background-color: @button-color;
 }
 
-
-div#PH_breadcrumbs {
-    display: none;
-}
-
-
-.searchResult .itemsList .dataItem {
-
-    margin: 0 25px 25px 0;
-}
 .searchResult .dataItem:hover .name,
 .searchResult .dataItem .name {
 
@@ -89,7 +56,9 @@ div#PH_breadcrumbs {
 
 .searchResult .itemsList .dataItem {
 
-    background-color  : @background-color;
+    margin: 0 25px 25px 0;
+
+    background-color  : @box-bgcolor;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition   : all 250ms ease-in-out;
     -ms-transition    : all 250ms ease-in-out;
@@ -123,33 +92,7 @@ div#PH_breadcrumbs {
     }
 }
 
-
-
 .searchResult .itemsList .dataItem .itemsDateRange:before {
     content: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
