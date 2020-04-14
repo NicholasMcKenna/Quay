@@ -16,6 +16,15 @@ FORM.frmSearch .SearchTextButton {
     text-align      : left;
 
 }
+
+.searchResult .itemsList .dataItem .itemsDataContainer, 
+.searchResult .itemsList .dataItem:hover .itemsDataContainer, 
+.searchResult .itemsList .dataItem.simulateHover .itemsDataContainer {
+
+    font-weight: bold;
+}
+
+
 .searchResult .itemsList .itemsDataContainer::before { display: none; }
 
 .searchResult .itemsDataContainer::after {
@@ -40,6 +49,11 @@ FORM.frmSearch .SearchTextButton {
     padding: 6px 12px;
     font-size: 14px;
 
+}
+
+.searchResult .itemsList .dataItem .itemsDateRange {
+
+    color: #000000;
 }
 
 
