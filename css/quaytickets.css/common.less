@@ -41,6 +41,27 @@ h6 {
     }
 }
 
+#group_Header-fixed {
+    padding           : 0;
+    background-color  : #FFF;
+    border-bottom     : none;
+    border-top        : 2px solid @button-color;
+    //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    width             : 100%;
+    position          : fixed;
+    z-index           : 61;
+
+
+    @media @mobile {
+        position  : absolute;
+        top       : 61px;
+        width     : 100%;
+        box-shadow: none;
+        z-index   : 1;
+    }
+}
+
+
 #navMenu_Float_Join_item { display: none; }
 
 .btn {
@@ -72,26 +93,6 @@ h6 {
 
 .btn.btn-inverted:hover {
     background-color: rgba(255, 255, 255, .75);
-}
-
-#group_Header-fixed {
-    padding           : 0;
-    background-color  : #FFF;
-    border-bottom     : none;
-    border-top        : 2px solid @button-color;
-    //box-shadow      : 0 0 24px 0 rgba(0, 0, 0, 0.25);
-    width             : 100%;
-    position          : fixed;
-    z-index           : 61;
-
-
-    @media @mobile {
-        position  : absolute;
-        top       : 61px;
-        width     : 100%;
-        box-shadow: none;
-        z-index   : 1;
-    }
 }
 
 #PH_header-container {
@@ -275,6 +276,15 @@ h6 {
     color        : #FFF;
 }
 
+
+
+
+
+
+
+
+
+
 .feature-banner {
     position: relative;
     width   : 100%;
@@ -283,7 +293,6 @@ h6 {
     background-color: #FFF;
     height          : 500px;
 
-    /* background-image:url('https://www.quaytickets.com/ArticleMedia/Images/qt/2018/site/qt-home-banner-10.jpg'); */
     background-size    : cover;
     background-position: center center;
     background-repeat  : no-repeat;
