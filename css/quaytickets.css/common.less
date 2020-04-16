@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family: @header-font;
     font-weight: 500;
 }
 
@@ -85,7 +85,7 @@ h6 {
 #navMenu_Float_Join_item { display: none; }
 
 .btn {
-    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family: @header-font;
     font-weight: 700;
     font-size  : 18px;
 
@@ -166,7 +166,7 @@ h6 {
 }
 
 .site-menu li a {
-    font-family    : "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family    : @header-font;
     font-weight    : 700;
     text-transform : uppercase;
     font-size      : 16px;
@@ -280,7 +280,7 @@ h6 {
 
 .social-search .contact {
 
-    font-family : "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family : @header-font;
     font-weight : 400;
     font-size   : 22px;
     line-height : 22px;
@@ -486,7 +486,7 @@ FORM.frmSearch .SearchTextButton {
 FORM.frmSearch .SearchTextButton::before {
     
     content: "Search Shows";
-    font-family: "Roboto Condensed",Helvetica,Arial,Verdana,"Bitstream Vera Sans",sans-serif;
+    font-family: @header-font;
 }
 .feature-search FORM.frmSearch .SearchTextButton::before {
 
@@ -501,7 +501,7 @@ FORM.frmSearch .SearchTextButton:focus::before {
 .search-input,
 .search-button {
 
-    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family: @header-font;
 }
 .feature-search .search-input,
 .feature-search .search-button {
@@ -665,7 +665,7 @@ FORM.frmSearch INPUT[type="text"],
 
 .section.subscribe input.email::placeholder {
     color      : #FFF;
-    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family: @header-font;
 }
 
 .section.subscribe .subscribe-terms {
@@ -1037,12 +1037,35 @@ body #group_Header-fixed {
     height: unset !important;
 }
 
+
+
+.genres {
+
+    background-color: @box-bgcolor;
+}
+
+.genresFooter {
+
+    background-color: @box-bgcolor;
+    padding: 0 15px 15px 15px;
+}
+
+
 .genres h2 {
     background-color: @background-color;
     border-radius: 0;
     color: @font-dark-color;
     box-shadow: none;
 }
+
+.genresFooter button {
+
+    font-family: @header-font;
+    font-size: 16px;
+    color: @font-dark-color;
+
+}
+
 
 .screenPartContainer.ph_search_box .searchManager.expanded .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
 
