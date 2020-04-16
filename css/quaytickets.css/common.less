@@ -20,6 +20,25 @@ h6 {
     font-weight: 500;
 }
 
+.container {
+
+    @media @desktop {
+        width: 1200px;
+    }
+
+    @media @desktop-large {
+        width: 1400px;
+    }
+    
+    @media @tablet {
+        width: 970px;
+    }
+    
+    @media @mobile {
+        width: 98%;
+    }
+}
+
 #group_Header-fixed ul,
 #group_Header-fixed li {
     display: inline-block;
@@ -28,8 +47,8 @@ h6 {
 #PH_HeaderBackground-fixed,
 #group_Header-fixed,
 #siteMenuBar {
-    height    : 83px;
 
+    height    : 83px;
     //box-shadow: 0 0 24px 0 rgba(0, 0, 0, .25);
     box-shadow: none;
 
