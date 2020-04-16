@@ -392,10 +392,12 @@ h6 {
 
 #group_Header-fixed FORM.frmSearch .SearchBoxContainer {
     height: 40px;
+    width: 100%;
+    max-width: 400px;
 }
 
 #group_Header-fixed:not(.searchPageOpen) .ph_search_box FORM.frmSearch .SearchBoxContainer .SearchTextButton {
-    width: 44px;
+    width: unset;
     left : initial;
     top  : 0;
     right: 0;
@@ -403,6 +405,11 @@ h6 {
 
 #group_Header-fixed:not(.searchPageOpen) FORM.frmSearch .SearchTextButton {
     border-radius: 0;
+}
+
+#group_Header-fixed FORM.frmSearch .SearchTextButton {
+    height: 50px;
+
 }
 
 #group_Header-fixed FORM.frmSearch .SearchTextButton:before {
@@ -443,10 +450,12 @@ h6 {
 .feature-search FORM.frmSearch .SearchTextBox,
 .feature-search FORM.frmSearch .SearchBoxContainer { 
 
-    width: 100%;
     height: 50px;
 }
+FORM.frmSearch .SearchTextBox {
 
+    width: 100%;
+}
 
 FORM.frmSearch .SearchTextButton {
 
@@ -467,9 +476,9 @@ FORM.frmSearch .SearchTextButton {
     }
 
 }
-.feature-search FORM.frmSearch .SearchTextButton {
+FORM.frmSearch .SearchTextButton {
 
-    height:50px;
+    height: 100%;
 }
 
 
@@ -507,6 +516,7 @@ FORM.frmSearch INPUT[type="text"],
     border : none;
     color  : #3f3f3f;
     margin-left: 0px;
+    height: 100%;
 }
 .feature-search FORM.frmSearch INPUT[type="text"],
 .feature-search .search-input {
@@ -1017,9 +1027,9 @@ body #group_Header-fixed {
 }
 
 
+.searchManager .findByValues { display: none; }
 
-
-
+.searchManager.expanded .findByValues { display: block; }
 
 .genres h2 {
     background-color: @background-color;
@@ -1027,3 +1037,23 @@ body #group_Header-fixed {
     color: @font-dark-color;
     box-shadow: none;
 }
+
+.screenPartContainer.ph_search_box .searchManager.expanded .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+
+    @media @desktop {
+
+        margin-top: 0px;
+    }
+}
+
+
+#PH_SearchPage_ByCalendar {
+
+    @media @desktop {
+
+        max-width: 400px;
+        margin: 15px auto;
+    }
+
+}
+
