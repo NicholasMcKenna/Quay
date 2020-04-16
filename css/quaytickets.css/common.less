@@ -408,7 +408,7 @@ h6 {
 }
 
 #group_Header-fixed FORM.frmSearch .SearchTextButton {
-    height: 50px;
+    height: 100%;
 
 }
 
@@ -451,6 +451,7 @@ h6 {
 .feature-search FORM.frmSearch .SearchBoxContainer { 
 
     height: 50px;
+    width: 100%;
 }
 FORM.frmSearch .SearchTextBox {
 
@@ -1030,6 +1031,11 @@ body #group_Header-fixed {
 .searchManager .findByValues { display: none; }
 
 .searchManager.expanded .findByValues { display: block; }
+
+.searchManager .findByValues .genresContainer {
+
+    height: unset;
+}
 
 .genres h2 {
     background-color: @background-color;
