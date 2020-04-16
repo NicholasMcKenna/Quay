@@ -343,13 +343,13 @@ h6 {
 
 .feature-item h1 {
 
-    background-color: rgba(0, 157, 220, 0.85);
+    background-color: @button-color;
     color           : #FFFFFF;
 }
 
 .feature-item h2 {
 
-    background-color: rgba(35, 31, 32, 0.65);
+    background-color: rgba(175, 175, 175, 0.65);
     color           : #FFFFFF;
 
 }
@@ -454,8 +454,16 @@ h6 {
     //border-radius: 0 4px 4px 0;
     border-radius: 0;
 
-    background-color: #009DDC;
+    background-color: @button-color;
     width: unset;
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        background-color: @button-hover-color;
+        color: @button-font-hover-color;
+    }
 
 }
 .feature-search FORM.frmSearch .SearchTextButton::before {
