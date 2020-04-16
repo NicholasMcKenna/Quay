@@ -74,7 +74,7 @@ h6 {
 
     @media @mobile {
         position  : absolute;
-        top       : 61px;
+        top       : 0;
         width     : 100%;
         box-shadow: none;
         z-index   : 1;
@@ -387,7 +387,12 @@ h6 {
 
 
 
+#group_Header-fixed:not(.searchPageOpen) .ph_search_box .searchManager {
 
+    @media @mobile {
+        display: inline;
+    }
+}
 
 #group_Header-fixed .ph_search_box .searchManager {
     display: inline;
@@ -403,6 +408,11 @@ h6 {
     right           : 0;
     display         : none;
     top             : 0;
+
+    @media @mobile {
+
+        display: block;
+    }
 }
 
 
@@ -1393,6 +1403,156 @@ a#navMenu_Float_Search_item,
 #group_Header-fixed {
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#siteMenuBar #CountDown .timerText {
+    font-weight: 600;
+    color      : @button-color;
+}
+
+a#navMenu_Float_Basket_item {
+    order      : 5;
+    font-size  : 16px;
+    font-weight: 600;
+}
+
+a#navMenu_Float_Home_item {
+    order      : 0;
+    font-size  : 16px;
+    font-weight: 600;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+
+
+
+.timer-tooltip .qtip-content {
+    padding: 7px 0;
+}
+
+div#PH_Float_Menu {
+    @media @desktop {
+        padding-right: 55px;
+    }
+}
+
+#siteMenuBar #CountDown.active {
+    position: absolute;
+    top     : 27px;
+
+    @media @mobile {
+        top  : 52px;
+        right: 46px;
+    }
+}
+
+#siteMenuBar .flm_my_basket.active {
+    @media @desktop {
+        margin-right: 52px !important;
+    }
+
+    @media @mobile {
+        position: static;
+    }
+}
+
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
+    @media @desktop {
+        margin-left: 14px;
+    }
+
+    @media @mobile {
+        order   : 2;
+        position: static;
+    }
+}
+
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login {
+    @media @mobile {
+        position: static;
+        order   : 1;
+    }
+}
+
+a#navMenu_Float_Search_item {
+    @media @mobile {
+        order: 3;
+    }
+}
+
+.flm_my_basket:not(.active) {
+    @media @mobile {
+        display: inline-block;
+    }
+
+    &:after {
+        content     : 'Basket' !important;
+        width       : 60px;
+        position    : static;
+        line-height : 38px;
+        padding-left: 10px;
+        font-size   : 16px;
+        font-weight : 600;
+    }
+}
+
+#siteMenuBar.hasclient #customerBox {
+    @media @mobile {
+        background-color: @button-color;
+        position        : static;
+        order           : 1;
+        width           : 33%;
+    }
+}
+
+body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
+    @media @mobile {
+        margin-top: 7px;
+        font-size : 20px;
+    }
+}
+
+#customerBox .greeting {
+    @media @mobile {
+        visibility    : visible;
+        display       : block;
+        border        : none;
+        max-width     : 106px;
+        line-height   : 27px;
+        font-size     : 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
