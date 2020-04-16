@@ -114,3 +114,7 @@ $(document).ready(function () {
 $(window).on('load', function () {
     $('.ShowEventsitemsList').hide();
 })
+
+window.onload = () => {
+    $('.ShowEventsitemsList').hide();
+}
