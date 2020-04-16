@@ -115,9 +115,29 @@ h6 {
     background-color: rgba(255, 255, 255, .75);
 }
 
+
+
 #PH_header-container {
     padding: 0 15px;
 }
+
+#PH_header-container .row.site-header {
+
+    @media @mobile {
+
+        display: none;
+    }
+}
+
+#PH_header-container .header-menu {
+
+    @media @desktop {
+
+        display: none;
+    }
+}
+
+
 
 #PH_header-container,
 .footer-content {
