@@ -89,6 +89,16 @@
     }
 }
 
+.font-h3() {
+    font-size  : @font-h3-size;
+    font-weight: 500;
+    color      : @font-dark-color;
+
+    @media @mobile {
+        font-size: @font-h3-size-mobile;
+    }
+}
+
 .font-dark() {
     font-family   : @header-font;
     color         : @font-dark-color;
