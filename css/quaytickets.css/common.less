@@ -42,6 +42,7 @@ h6 {
 #group_Header-fixed ul,
 #group_Header-fixed li {
     display: inline-block;
+    padding-left: 0;
 }
 
 #PH_HeaderBackground-fixed,
@@ -446,9 +447,9 @@ h6 {
     height: 50px;
 }
 
-.feature-search FORM.frmSearch .SearchTextButton {
 
-    height:50px;
+FORM.frmSearch .SearchTextButton {
+
     top: 0;
     right: 0;
     //border-radius: 0 4px 4px 0;
@@ -466,37 +467,55 @@ h6 {
     }
 
 }
+.feature-search FORM.frmSearch .SearchTextButton {
+
+    height:50px;
+}
+
+
+FORM.frmSearch .SearchTextButton::before {
+    
+    content: "Search Shows";
+    font-family: "Roboto Condensed",Helvetica,Arial,Verdana,"Bitstream Vera Sans",sans-serif;
+}
 .feature-search FORM.frmSearch .SearchTextButton::before {
 
     line-height: 50px;
-    
-    content: "Search Shows";
     font-size: 24px;
-    font-family: "Roboto Condensed",Helvetica,Arial,Verdana,"Bitstream Vera Sans",sans-serif;
 }
 
-.feature-search FORM.frmSearch .SearchTextButton:focus::before {
+FORM.frmSearch .SearchTextButton:focus::before {
     color:@button-font-hover-color;
 }
 
+.search-input,
+.search-button {
+
+    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
+}
 .feature-search .search-input,
 .feature-search .search-button {
 
     font-size  : 24px;
-    font-family: "Roboto Condensed", Helvetica, Arial, Verdana, "Bitstream Vera Sans", sans-serif;
     line-height: 24px;
 }
 
+
+FORM.frmSearch INPUT[type="text"],
+.search-input {
+
+    border : none;
+    color  : #3f3f3f;
+    margin-left: 0px;
+}
 .feature-search FORM.frmSearch INPUT[type="text"],
 .feature-search .search-input {
 
     height : 50px;
     width  : 100%;
-    border : none;
-    color  : #3f3f3f;
     padding: 0px 15px 0px 50px !important;
-    margin-left: 0px;
 }
+
 
 .feature-search i {
 
@@ -984,14 +1003,27 @@ body #group_Header-fixed {
     }
 }
 
+#group_Header-fixed #PH_logo {
+    width: auto;
+    max-width: 230px;
+    height: 100%;
+}
+
+
 #PH_MenuButton {
     @media @mobile {
         z-index: 2;
     }
 }
 
-#group_Header-fixed #PH_logo {
-    width: auto;
-    max-width: 230px;
-    height: 100%;
+
+
+
+
+
+.genres h2 {
+    background-color: @background-color;
+    border-radius: 0;
+    color: @font-dark-color;
+    box-shadow: none;
 }
