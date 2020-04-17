@@ -307,9 +307,17 @@ span.mnuBtnCaption::before {
 }
 
 a#navMenu_Float_Search_item {
+    
+    @media @desktop { 
+
+        display: none;
+    }
+    
     @media @mobile {
         border-left: 1px solid;
     }
+
+
 }
 
 a#navMenu_Float_Search_item span {
