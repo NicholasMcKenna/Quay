@@ -137,7 +137,7 @@ h6 {
 
 
 
-
+ 
 
 .main-logo,
 img.logo-image {
@@ -148,7 +148,7 @@ img.logo-image {
 
     @media @mobile {
 
-        max-width: 100px;
+        max-width: 150px;
     }    
 }
 
@@ -532,7 +532,7 @@ img.logo-image {
     @media @mobile {
         padding-left: 0;
         height      : @header-bottom-height-mobile;
-        padding-top: 45px;
+        padding-top: 47px;
     }
 }
 
@@ -1114,13 +1114,24 @@ div#PH_Float_Menu {
     border-radius   : 2px;
     background-color: #009ddc;
     padding         : 10px;
+
+    @media @mobile {
+
+        color           : #fff;
+        font-size       : 16px;
+        line-height     : 16px;
+        padding         : 10px 0;
+    }
 }
 
 .siteMenuContainer {
     justify-content: flex-start;
 }
 
+.sg-login-button .icon {
 
+    display: none;
+}
 
 
 
