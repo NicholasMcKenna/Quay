@@ -73,8 +73,7 @@ h6 {
 
 
     @media @mobile {
-        position  : absolute;
-        top       : 61px;
+        top       : 0px;
         width     : 100%;
         box-shadow: none;
         z-index   : 1;
@@ -232,7 +231,7 @@ img.logo-image {
 
 .quaytickets-logo a {
     padding: 15px;
-}
+} 
 
 .site-menu li a {
     font-family    : @header-font;
@@ -464,6 +463,7 @@ img.logo-image {
         padding-top: 0px;
         background-color: unset;
         display: block;
+        z-index: 5;
     }
 
 }
@@ -513,6 +513,28 @@ img.logo-image {
     margin-top : 0;
 }
 
+
+
+
+
+
+
+.bottom-menu {
+    padding-top: 13px;
+    padding-left: 3%;
+    height      : @header-bottom-height;
+
+    @media @desktop {
+        display: flex;
+        width: 100%;
+    }
+
+    @media @mobile {
+        padding-left: 5%;
+        height      : @header-bottom-height-mobile;
+        padding-top: 10px;
+    }
+}
 
 
 
@@ -1107,7 +1129,7 @@ body #group_Header-fixed {
 
     @media @mobile {
         height: 120px;
-        top: 0px;
+        //top: 0px;
     }
 }
 
@@ -1253,7 +1275,10 @@ a#navMenu_Float_Search_item,
 
 
 #group_Header-fixed {
-    display: flex;
+
+    @media @desktop {
+        display: flex;
+    }
 }
 
 
