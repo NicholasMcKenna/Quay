@@ -306,20 +306,6 @@ span.mnuBtnCaption::before {
     }
 }
 
-a#navMenu_Float_Search_item {
-    
-    @media @desktop { 
-
-        display: none;
-    }
-    
-    @media @mobile {
-        border-left: 1px solid;
-    }
-
-
-}
-
 a#navMenu_Float_Search_item span {
     bottom: 11px;
 }
@@ -1662,6 +1648,15 @@ html .searchManager .ui-button.ui-state-disabled:active {
     &:active,
     &:focus {
         background-color: @button-hover-color;
+    }
+}
+
+.eventsCalendar.hasDatepicker {
+
+    @media @mobile {
+        
+        width: 98%;
+        padding: 10px;
     }
 }
 

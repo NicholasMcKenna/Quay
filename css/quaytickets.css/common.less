@@ -500,7 +500,7 @@ img.logo-image {
 }
 
 #group_Header-fixed:not(.searchPageOpen) .ph_search_box FORM.frmSearch .SearchBoxContainer .SearchTextButton {
-    width: 100%;
+
     left : initial;
     top  : 0;
     right: 0;
@@ -1236,16 +1236,6 @@ body #group_Header-fixed {
 
 }
 
-.eventsCalendar.hasDatepicker {
-
-    @media @mobile {
-        
-        width: 98%;
-        padding: 10px;
-    }
-}
-
-
 
 
 
@@ -1398,10 +1388,18 @@ div#PH_Float_Menu {
 }
 
 a#navMenu_Float_Search_item {
+    
+    @media @desktop { 
+
+        display: none;
+    }
+    
     @media @mobile {
+        border-left: 1px solid;
         order: 3;
     }
 }
+
 
 .flm_my_basket:not(.active) {
     @media @mobile {
