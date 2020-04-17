@@ -413,10 +413,16 @@ a#navMenu_Float_Search_item span {
 
 
 #group_Header-fixed:not(.searchPageOpen) .ph_search_box FORM.frmSearch .SearchBoxContainer .SearchTextButton {
+
     border-style: none;
     width       : 100%;
     left        : 0px;
     top: 11px;
+
+    @media @desktop {
+
+        width   : unset;
+    }
 }
 
 #group_Header-fixed.searchPageOpen FORM.frmSearch .SearchTextBox {
