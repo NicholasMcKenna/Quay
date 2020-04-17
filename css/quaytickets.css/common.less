@@ -406,7 +406,7 @@ h6 {
     top             : 0;
 
     @media @mobile {
-        
+
         height: 35px;
         padding-top: 0px;
         background-color: unset;
@@ -427,10 +427,12 @@ h6 {
 }
 
 #group_Header-fixed:not(.searchPageOpen) .ph_search_box FORM.frmSearch .SearchBoxContainer .SearchTextButton {
-    width: unset;
+    width: 100%;
     left : initial;
     top  : 0;
     right: 0;
+
+
 }
 
 #group_Header-fixed:not(.searchPageOpen) FORM.frmSearch .SearchTextButton {
@@ -515,8 +517,15 @@ FORM.frmSearch .SearchTextButton {
 
 FORM.frmSearch .SearchTextButton::before {
     
-    content: "Search Shows";
-    font-family: @header-font;
+    @media @desktop {
+        content: "Search Shows";
+        font-family: @header-font;
+    }
+
+    @media @mobile {
+        content: "";
+    }
+
 }
 .feature-search FORM.frmSearch .SearchTextButton::before {
 
