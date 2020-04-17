@@ -135,6 +135,59 @@ h6 {
     }
 }
 
+
+
+
+
+
+.main-logo,
+img.logo-image {
+    max-width: 215px;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+
+    @media @mobile {
+
+        max-width: 100px;
+    }    
+}
+
+.main-logo {
+
+    @media @desktop {
+
+        padding: 0 20px 0 5%;
+    }
+}
+
+.main-logo-text {
+
+    color: @font-dark-color;
+    font-family: @main-font;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+
+    @media @desktop {
+
+        padding-top: 12px;
+    }
+
+    @media @mobile {
+
+        font-size: 15px;
+        line-height: 26px;
+    }
+    
+}
+
+
+
+
+
+
+
 #PH_header-container,
 .footer-content {
     width     : 100%;
@@ -431,8 +484,6 @@ h6 {
     left : initial;
     top  : 0;
     right: 0;
-
-
 }
 
 #group_Header-fixed:not(.searchPageOpen) FORM.frmSearch .SearchTextButton {
