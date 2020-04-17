@@ -110,6 +110,7 @@ body #group_Header-fixed {
 
     @media @mobile {
         height: @header-height-mobile;
+        z-index: 75;
     }
 }
 
@@ -507,6 +508,11 @@ a#navMenu_Float_Search_item span {
 
     padding: 0px;
     margin: 0px;
+
+    @media @mobile {
+
+        margin-top: 25px;
+    }
 }
 
 #eventPage.seated #ticketsPane .selectTickets .buttonsContainer {
@@ -539,7 +545,7 @@ a#navMenu_Float_Search_item span {
 
     @media @mobile {
         padding-left: 5%;
-        font-size   : 13px;
+        font-size   : 14px;
     }
 }
 
