@@ -195,7 +195,14 @@ FORM.frmSearch INPUT[type=text] {
     .searchResult .itemsList .dataItem .extras,
     .searchResult .dataItem .events {
 
-        width: 100%;
+        width: auto;
+    }
+
+    .searchResult .itemsList .dataItem .itemsDataContainer, 
+    .searchResult .itemsList .dataItem:hover .itemsDataContainer, 
+    .searchResult .itemsList .dataItem.simulateHover .itemsDataContainer {
+
+        width: auto;
     }
 
     .itemsDataContainer::after, .itemsDataContainer::before {
