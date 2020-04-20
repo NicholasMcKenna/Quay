@@ -312,6 +312,7 @@ body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralA
 }
 
 .pricelevel-image-container {
+
     @media @desktop {
         display      : block;
         width        : 100%;
@@ -727,6 +728,11 @@ h1#selectedAreaTitle {
     display: none !important;
 }
 
+#selectedAreaInfo .pricelevel-image-container .price {
+
+    margin-left: 0;
+}
+
 #selectedAreaInfo .priceLevelImages .seat {
     background-image: none;
     border          : none;
@@ -948,6 +954,11 @@ h1#selectedAreaTitle {
     }
 }
 
+#eventPage.non-seated #selectedAreaInfo .menu .priceLevelImages {
+    
+    display: flex;
+}
+
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
     margin-top: 2px;
     max-height: unset;
@@ -958,6 +969,7 @@ h1#selectedAreaTitle {
         max-width: calc(100% - 112px);
     }
 */
+
 }
 
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages .pricelevel-image-container {
@@ -1066,8 +1078,10 @@ button.disabled.small_button_a:hover {
 
 .menu .pricelevel-image-container {
     display      : inline-block;
-    width        : 23%;
+    width        : 100%;
     margin-bottom: 12px;
+
+
 }
 
 .qtip.venueImageHint:before {
