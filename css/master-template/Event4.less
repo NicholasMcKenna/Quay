@@ -363,8 +363,11 @@ span.price-range {
         display  : flex;
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         background-color: @box-bgcolor;
+        color: @button-hover-color;
     }
 }
 
