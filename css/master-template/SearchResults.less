@@ -177,7 +177,13 @@ FORM.frmSearch INPUT[type=text] {
 
 #PH_Calendar_search_results {
 
-    .searchResult .dataItem .itemsDateRange > SPAN,
+    .searchResult .itemsList .dataItem .itemsDateRange {
+
+        color: @button-color;
+        padding-bottom: 0;
+        min-height: unset;
+    }
+
     .searchResult .dataItem .itemsDateRange .date,
     .searchResult .dataItem .itemsDateRange .time {
         display: inline-block;
