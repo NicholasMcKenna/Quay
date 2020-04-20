@@ -177,6 +177,13 @@ FORM.frmSearch INPUT[type=text] {
 
 #PH_Calendar_search_results {
 
+    .searchResult .dataItem .itemsDateRange > SPAN,
+    .searchResult .dataItem .itemsDateRange .date,
+    .searchResult .dataItem .itemsDateRange .time {
+        display: inline-block;
+        text-align: left;
+    }
+
     .searchResult .itemsList .dataItem .name, 
     .searchResult .itemsList .dataItem .itemsDateRange, 
     .searchResult .itemsList .dataItem .extras,
@@ -195,6 +202,18 @@ FORM.frmSearch INPUT[type=text] {
 
         border: 1px solid @button-color;
         margin-top: 5px; 
+        padding: 0;
+    }
+
+    .searchResult .dataItem .hall {
+
+        color: @font-light-color;
+    }
+
+
+    .occupancyStatus {
+
+        display: none;
     }
 
 
