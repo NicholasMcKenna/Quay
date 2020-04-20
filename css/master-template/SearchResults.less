@@ -118,7 +118,9 @@ FORM.frmSearch INPUT[type=text] {
     position      : static;
     color         : @button-color;
     font-size     : 16px;
+    line-height   : 19px;
     margin-left   : 10px;
+    margin-top: 5px;
     text-align    : left;
     padding-bottom: 15px;
     min-height: 65px;
@@ -146,18 +148,6 @@ FORM.frmSearch INPUT[type=text] {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .itemsDataContainer::after, .itemsDataContainer::before {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
     width: 65px;
@@ -179,6 +169,38 @@ FORM.frmSearch INPUT[type=text] {
 .itemsDataContainer::after {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
 }
+
+
+
+
+
+
+#PH_Calendar_search_results {
+
+    .searchResult .itemsList .dataItem .name, 
+    .searchResult .itemsList .dataItem .itemsDateRange, 
+    .searchResult .itemsList .dataItem .extras,
+    .searchResult .dataItem .events {
+
+        width: 100%;
+    }
+
+    .itemsDataContainer::after, .itemsDataContainer::before {
+
+        display: none;
+    }
+
+    .searchResult .dataItem .event,
+    .searchResult .dataItem .event:last-child {
+
+        border: 1px solid @button-color;
+        margin-top: 5px;
+    }
+
+
+}
+
+
 
 
 
