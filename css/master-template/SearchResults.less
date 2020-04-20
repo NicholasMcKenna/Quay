@@ -207,7 +207,7 @@ FORM.frmSearch INPUT[type=text] {
     .searchResult .dataItem .event:last-child {
 
         border: 1px solid @button-color;
-        margin-top: 5px; 
+        margin: 10px; 
         padding: 0;
     }
 
@@ -215,6 +215,20 @@ FORM.frmSearch INPUT[type=text] {
 
         color: @font-light-color;
     }
+
+
+    .searchResult .dataItem .button.small_button_a A, .searchResult .dataItem .button.small_button_a A:hover {
+
+        font-size: 16px;
+        text-transform: capitalize;
+        width: unset;
+        max-width: unset;
+        background-image: none;
+        padding: 6px 12px;
+
+        background-color: @button-color;
+    }
+
 
 
     .occupancyStatus {
