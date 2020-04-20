@@ -54,12 +54,14 @@ div#PH_breadcrumbs {
 #selectedAreaInfo .button-moreAreas {
     .action-button();
 
+    width: unset;
+
     &:hover,
     &:focus,
     &:active {
         @media @mobile {
 
-            width: 112px;
+            width: unset;
         }
     }
 }
@@ -945,12 +947,22 @@ h1#selectedAreaTitle {
     }
 }
 
+#eventPage.seated #selectedAreaInfo.expanded {
+
+    @media @desktop {
+        top: 0px;
+    }
+}
+
+
 #eventPage.seated #selectedAreaInfo .menu .priceLevelImages,
 #eventPage.non-seated #selectedAreaInfo .menu .priceLevelImages {
 
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    max-width: 100% !important;
+    width: 100%;
 }
 
 #eventPage.seated #selectedAreaInfo:not(.expanded) .priceLevelImages {
