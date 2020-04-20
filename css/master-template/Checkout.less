@@ -161,7 +161,11 @@ div#PH_breadcrumbs {
     line-height : 17px;
     padding-left: 0;
     height      : unset;
+    position: absolute;
+    top: -40px;
 }
+
+
 
 .summaryBasketContainer .expand {
     width      : 37px;
@@ -307,6 +311,20 @@ div#PH_breadcrumbs {
     padding   : 0;
 }
 
+.suppPmContainer {
+
+    border: 5px solid #FFFFFF;
+    padding: 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+        background-color: #DDDDDD;
+    }
+
+}
+
 #instructionsPanel {
     display: none;
 }
@@ -321,6 +339,7 @@ div#PH_breadcrumbs {
 #insurance h2 {
     .font-h2();
 
+    font-weight: 700;
     background: none !important;
 }
 
