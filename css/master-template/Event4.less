@@ -233,6 +233,14 @@ div#PH_breadcrumbs {
     }
 }
 
+#eventPage.non-seated #leftPane {
+
+    @media @desktop-large {
+
+        width: 30%;
+    }
+}
+
 body.screen-Event4_aspx .ph_event_page #ticketsPane .selectTickets.mode-GeneralAdmission h4 {
 
     @media @mobile {
@@ -536,6 +544,13 @@ a.ui-button:active,
     padding-top: 0;
     font-size  : @fontsize-main;
     font-weight: @fontweight-main;
+
+    &:hover,
+    &:active,
+    &:focus {
+
+       color: @button-hover-color;
+    }
 }
 
 #eventPage .infoSection .date div {
@@ -745,11 +760,22 @@ h1#selectedAreaTitle {
 }
 
 #eventPage.non-seated #selectedAreaInfo .menu {
+
     @media @desktop {
-        width: 200%;
-        top  : 0;
-        left : 106%;
+        width: 100%;
+        top: 55px;
+        left: unset;
+        right: 0;
     }
+
+    @media @desktop-large {
+        
+        width: 200%;
+        top: 0;
+        left: 106%;
+        right: unset;
+    }
+
 }
 
 #eventPage #content #instructions>* {
