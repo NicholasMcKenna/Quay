@@ -56,33 +56,35 @@ div#PH_breadcrumbs {
     .action-button();
 
     width: unset !important;
-
-    &:hover,
-    &:focus,
-    &:active {
-        @media @mobile {
-
-            width: unset !important;
-        }
-    }
-}
-
-.button.small_button_a a,
-#selectedAreaInfo .button-moreAreas {
-
     letter-spacing: 0px;
     text-shadow   : none;
     padding       : 10px;
     transform     : none;
+    max-height: 100px;
+    min-height: unset;
+    top       : 20px;
+    bottom    : unset;
+    z-index: 20;
+
 
     &:hover,
-    &:active,
-    &:focus {
-
+    &:focus,
+    &:active {        
+        
         letter-spacing: 0px;
         text-shadow   : none;
         padding       : 10px;
         transform     : none;
+
+        @media @mobile {
+
+            width: unset !important;
+        }
+    }    
+    
+    @media @desktop {
+        margin-top: 0;
+        max-width: unset;
     }
 
 }
@@ -94,27 +96,10 @@ div#PH_breadcrumbs {
     
 }
 
-
-
 .hallMap #selectedAreaInfo .button-moreAreas {
     letter-spacing: 0px;
-    padding       : 0;
     margin-top    : -85px;
     max-height    : 100px;
-}
-
-#selectedAreaInfo .button-moreAreas {
-
-    max-height: 100px;
-    min-height: unset;
-    top       : 20px;
-    bottom    : unset;
-    z-index: 20;
-
-    @media @desktop {
-        margin-top: 0;
-        max-width: unset;
-    }
 }
 
 .expanded#selectedAreaInfo .menu {
@@ -844,20 +829,19 @@ h1#selectedAreaTitle {
 /* Testing page layout changes */
 #eventPage .infoSection {
 
+    width: 100%;
+    margin-left  : 0;
+
     @media @desktop {
         padding-top  : 0;
         margin-bottom: 0;
         position     : absolute;
-        margin-left  : 0;
+        
+        width: 89%;
     }
 
-}
-
-#eventPage .infoSection {
-    width: 100%;
-
-    @media @desktop {
-        width: 89%;
+    @media @mobile {
+        width: 50%;
     }
 }
 
