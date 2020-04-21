@@ -669,9 +669,9 @@ div#qasContainer {
 
 .ph_order_page .promptPH {
     border: none;
-    background: @box-bgcolor;
+    background: #FFFFFF;
     color: @font-dark-color;
-    padding: 1.2em;
+    padding: 0;
     margin-bottom: 1.5em;
     width: 70%;
 
@@ -681,6 +681,8 @@ div#qasContainer {
         width: 100%;
     }
 }
+
+
 
 .ph_order_page .promptPH #paymentPromptMessages p {
     margin: 0px 0px 15px 0;
@@ -694,8 +696,17 @@ div#qasContainer {
 }
 
 .ph_order_page .promptPH #paymentPromptMessages>p {
-    //display: none;
+    display: none;
 }
+
+.ph_order_page .promptPH #paymentPromptMessages li {
+
+    background-color: @box-bgcolor;
+    padding: 25px;
+
+}
+
+
 
 .ph_order_page .promptPH h4 {
 
