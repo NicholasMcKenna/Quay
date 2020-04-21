@@ -179,6 +179,13 @@ FORM.frmSearch INPUT[type=text] {
 
 #PH_Calendar_search_results {
 
+
+    .searchResult .itemsList {
+
+        padding: 15px;
+    }
+
+
     .searchResult .itemsList .dataItem .itemsDateRange {
 
         color: @button-color;
@@ -194,6 +201,11 @@ FORM.frmSearch INPUT[type=text] {
     .searchResult .itemsList .dataItem .name { 
 
         min-height: 60px;
+
+        @media @mobile {
+
+            min-height: unset;
+        }
     }
 
     .searchResult .itemsList .dataItem .name, 
@@ -228,6 +240,8 @@ FORM.frmSearch INPUT[type=text] {
     .searchResult .dataItem .hall {
 
         color: @font-light-color;
+        padding-left: 0;
+        margin-left: 10px;
     }
 
     .searchResult .itemsList .dataItem .itemsButtonsContainer {
@@ -235,10 +249,17 @@ FORM.frmSearch INPUT[type=text] {
         margin: 0;
     }
 
+    .searchResult .dataItem .event > DIV {
+
+        padding: unset;
+    }
+
     .searchResult .dataItem .button.small_button_a A, 
     .searchResult .dataItem .button.small_button_a A:hover {
 
         font-size: 14px;
+        line-height: 14px;
+        
         text-transform: capitalize;
         width: unset;
         max-width: unset;
