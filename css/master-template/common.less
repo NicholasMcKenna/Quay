@@ -50,6 +50,11 @@ button.small_button_a::after {
     float: unset;
 }
 
+.sg-login-button .icon {
+
+    display: none;
+}
+
 .screen-content,
 button {
     font-family: @main-font;
@@ -93,6 +98,11 @@ body.screen-CrmDetails_aspx div.ui-dialog.ui-widget.ui-widget-content {
 .loginOrRegisterWizard.su_preferences .wizardStepDescription {
 
     font-size: 16px;
+
+    @media @mobile {
+
+        font-size: 14px;
+    }
 }
 
 
@@ -389,7 +399,7 @@ a#navMenu_Float_Search_item span {
 
 }
 
-
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login span,
 #siteMenuBar .flm_login,
 a#navMenu_Float_TimeRemaining_item,
 #siteMenuBar #CountDown.active,
