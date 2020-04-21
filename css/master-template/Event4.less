@@ -75,16 +75,16 @@ div#PH_breadcrumbs {
         text-shadow   : none;
         padding       : 10px;
         transform     : none;
-
-        @media @mobile {
-
-            width: unset !important;
-        }
     }    
     
     @media @desktop {
         margin-top: 0;
         max-width: unset;
+    }
+
+    @media @desktop {
+        margin-top: 0;
+        max-width: 50%;
     }
 
 }
@@ -578,23 +578,6 @@ a.ui-button:active,
 
     @media @mobile {
         font-size: 14px;
-    }
-}
-
-#selectedAreaInfo .button-moreAreas {
-
-    @media @mobile {
-        width         : 112px;
-        letter-spacing: 0px;
-        padding       : 5px 15px;
-
-        &:hover,
-        &:focus,
-        &:active {
-            width         : 140px;
-            letter-spacing: 0px;
-            padding       : 5px 15px;
-        }
     }
 }
 
