@@ -699,16 +699,20 @@ div#qasContainer {
     display: none;
 }
 
-.ph_order_page .promptPH #paymentPromptMessages li {
+.ph_order_page .promptPH #paymentPromptMessages ul li:first-child,
+.ph_order_page .promptPH #paymentPromptMessages ul li {
 
     background-color: @box-bgcolor;
-    padding: 25px;
     margin-bottom: 15px;
+    border: none;
+    padding: 0;
 }
+
 
 .ph_order_page .promptPH #paymentPromptMessages li .family-ticket {
 
     border: solid 2px @highlight-color;
+    padding: 15px;
     font-weight: bold;
 }
 
