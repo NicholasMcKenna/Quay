@@ -89,6 +89,13 @@ body.screen-CrmDetails_aspx div.ui-dialog.ui-widget.ui-widget-content {
     }
 }
 
+
+.loginOrRegisterWizard.su_preferences .wizardStepDescription {
+
+    font-size: 16px;
+}
+
+
 /* Header */
 body,
 #group_Header-fixed {
@@ -371,10 +378,41 @@ a#navMenu_Float_Search_item span {
     display: none;
 }
 
-#siteMenuBar #my_basket > span::before, #siteMenuBar [id="my basket"] > span::before {
 
+
+#siteMenuBar #my_basket > span, #siteMenuBar [id="my basket"] > span {
+
+    @media @mobile {
+
+        font-size: 14px !important;
+    }
 
 }
+
+
+#siteMenuBar .flm_login,
+a#navMenu_Float_TimeRemaining_item,
+#siteMenuBar #CountDown.active,
+a#navMenu_Float_Search_item {
+    font-size  : 14px !important;
+}
+
+a#navMenu_Float_Search_item,
+#group_Header-fixed:not(.menudisplayed) #siteMenuBar .flm_login,
+#PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
+    @media @mobile {
+        width           : 33%;
+        height          : 100%;
+        margin          : 0;
+        padding         : 0;
+        border-radius   : 0;
+        font-size       : 14px !important;
+
+    }
+}
+
+
+
 
 
 
@@ -413,6 +451,11 @@ a#navMenu_Float_Search_item span {
     @media @desktop {
 
         width   : unset;
+    }
+
+    @media @mobile {
+
+        top: 0px;
     }
 }
 
