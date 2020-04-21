@@ -9,21 +9,16 @@ $(document).ready(function() {
     }
 
 
-});
 
-
-$(document).ready(function () {
 
 
     var suPrefsInt = window.setInterval(processSuPrefs, 1000);
-
 
     function processSuPrefs() {
             
         var suPrefTargetCopy = "offers and other relevant information";
 
         var suPrefTargetCopyDiv = $('.loginOrRegisterWizard.su_preferences .wizardStepDescription');
-
 
         if (suPrefTargetCopyDiv.length) {
 
