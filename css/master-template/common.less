@@ -1102,8 +1102,7 @@ body #group_Header-fixed.searchPageOpen {
 
         .action-button();
 
-        font-size: @button-desktop-fontsize;
-        border   : 1px solid @button-color;
+
 
         
         &:hover,
@@ -1116,9 +1115,14 @@ body #group_Header-fixed.searchPageOpen {
             font-size: @button-desktop-fontsize;
             border   : 1px solid @button-color;
 
-        }
+            margin-right: 0;
+            width: unset;
 
-        margin-right: .5em;
+        }
+        
+        font-size: @button-desktop-fontsize;
+        border   : 1px solid @button-color;
+        margin-right: 0;
         width: unset;
 
     }
