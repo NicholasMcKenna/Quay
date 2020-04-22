@@ -65,6 +65,11 @@ div#PH_breadcrumbs {
     }
 }
 
+.pmTypeCoupon {
+
+    display: block;
+}
+
 .pageSectionContainer {
     border          : none;
     border-top      : 0;
@@ -184,13 +189,30 @@ div#PH_breadcrumbs {
 
 }
 
-.screen-Checkout_aspx .basket-container .basketEvent .eventInfoSection .imageContainer {
+
+.basket-container .basket-Donations .infoSection .imageContainer,
+.basket-container .basket-MerchandiseItems .infoSection .imageContainer,
+.summaryBasketContainer .infoSection .imageContainer, 
+.summaryBasketContainer .basket-Memberships .infoSection .imageContainer, 
+.summaryBasketContainer .basket-Donations .infoSection .imageContainer, 
+.summaryBasketContainer .basket-Subscriptions .subsInfoSection .imageContainer, 
+.summaryBasketContainer .basket-MerchandiseItems .infoSection .imageContainer, 
+.summaryBasketContainer .basket-GiftVouchers .infoSection .imageContainer, 
+.summaryBasketContainer .basketEvent .eventInfoSection .imageContainer {
+
     background-image: none;
+
+    padding-top: 0;
+    height: unset;
+    width: 50px;
+    margin: 0 10px 0 0;
+    line-height: 10px;
 }
 
 .summaryBasketContainer .basket-section {
     width : 100%;
     margin: 10px 0;
+    clear:both;
 }
 
 .summaryBasketContainer .basketEvent {
@@ -221,6 +243,7 @@ div#PH_breadcrumbs {
 
     padding-bottom: 0;
     width         : 100%;
+    clear: both;
 }
 
 .summaryBasketContainer>DIV {
@@ -245,9 +268,10 @@ div#PH_breadcrumbs {
     height     : unset;
     width      : 50px;
     margin     : 0 10px 0 0;
-    line-height: 40px;
+    line-height: 30px;
 }
 
+.basket-container .basket-MerchandiseItems .infoSection IMG,
 .summaryBasketContainer .infoSection IMG {
     width     : 100%;
     max-width : unset;
@@ -303,7 +327,7 @@ div#PH_breadcrumbs {
 .roundUpDonationSection #donationAmount {
     padding-left: 0;
 }
-
+.suppPmContainer.open .suppLabel,
 .suppPmContainer .suppLabel,
 .reimbursementPaymentContainer .reimLabel {
     background: none;
@@ -323,6 +347,11 @@ div#PH_breadcrumbs {
         background-color: #DDDDDD;
     }
 
+}
+
+.suppPayMethodButtonContainer {
+
+    margin-left: 26em;
 }
 
 #instructionsPanel {

@@ -394,7 +394,16 @@ a#navMenu_Float_Search_item span {
 a#navMenu_Float_TimeRemaining_item,
 #siteMenuBar #CountDown.active,
 a#navMenu_Float_Search_item {
-    font-size  : 14px !important;
+
+    @media @desktop {
+        
+        font-size  : 16px !important;
+    }
+
+    @media @mobile {
+
+        font-size  : 14px !important;
+    }
 }
 
 a#navMenu_Float_Search_item,
@@ -1035,7 +1044,6 @@ body #group_Header-fixed.searchPageOpen {
 
 
 
-
 #PH_Memberships_list .itemsList, 
 #PH_Gift_Vouchers_list .itemsList {
 
@@ -1074,28 +1082,53 @@ body #group_Header-fixed.searchPageOpen {
     height: unset;
 }
 
-
+#PH_Basket_Confirmation .bottomButtonsBar,
 #PH_Membership_purchase .buttonsContainer,
 #PH_Gift_Voucher_purchase .buttonsContainer,
 #PH_Memberships_list .itemsList .itemsButtonsContainer,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer {
 
+    .home {
+
+        background-color: none;
+        min-width: unset;
+        border-bottom: none;
+    }
+
+
+    #btnContinue,
     .button.small_button_a a,
-    button.small_button_a,
-    .button.small_button_a a:hover,
-    button.small_button_a:hover,
-    .button.small_button_a a:focus,
-    button.small_button_a:focus,
-    .button.small_button_a a:active,
-    button.small_button_a:active {
+    button.small_button_a {
 
         .action-button();
 
+
+
+        
+        &:hover,
+        &:active,
+        &:focus {
+
+                
+            .action-button();
+
+            font-size: @button-desktop-fontsize;
+            border   : 1px solid @button-color;
+
+            margin-right: 0;
+            width: unset;
+
+        }
+        
         font-size: @button-desktop-fontsize;
         border   : 1px solid @button-color;
+        margin-right: 0;
+        width: unset;
+
     }
 
 }
+
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer .button.moreInfo a,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo a {
@@ -1194,6 +1227,7 @@ body #group_Header-fixed.searchPageOpen {
 
 
 
+#PH_Basket_Confirmation .instructionsPanel,
 .screen-Membership_aspx #PH_Explanation,
 .screen-GiftVoucher_aspx #group_0 {
 
@@ -1212,6 +1246,7 @@ body #group_Header-fixed.searchPageOpen {
     min-height: unset;
 }
 
+#PH_Basket_Confirmation .pageSectionTitle,
 #PH_Errors .pageSectionTitle,
 #PH_Ops_summary .pageSectionTitle,
 .screen-Membership_aspx .general_caption,
@@ -1230,6 +1265,7 @@ body #group_Header-fixed.searchPageOpen {
     position: relative;
 }
 
+#PH_Basket_Confirmation .pageSectionTitle::after,
 #PH_Errors .pageSectionTitle::after,
 #PH_Ops_summary .pageSectionTitle::after,
 .screen-Membership_aspx .general_caption::after,

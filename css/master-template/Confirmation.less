@@ -1,0 +1,189 @@
+
+body { text-align: center; }
+
+#group_0,
+.ph_tunnellocation {
+    display: none;
+}
+
+div#PH_breadcrumbs {
+    
+    margin: 80px auto 0 auto; 
+    padding: 25px 25px 0 25px;
+    background-color: #FFF;
+
+    max-width   : 1400px;
+    text-align: left;
+
+    @media @mobile {
+
+        margin: 25px 0 15px 0;
+        padding: 0;
+    }
+
+    @media @desktop {
+        width: unset;
+        float: left;
+        margin: 43px 25px 0 25px;
+        padding: 25px 25px 0 0;
+    }
+
+    @media @desktop-large {
+        width: unset;
+        margin: 0px auto 0 auto;
+        padding: 68px 25px 25px 50px;
+        float: none;
+    }
+}
+
+.screen-content {
+    margin    : 0 auto;
+    margin-top: 59px;
+
+    @media @mobile {
+        padding   : 0;
+        margin-top: 126px;
+        width: 100%;
+    }
+    @media @desktop {
+        padding   : 0 25px 25px 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 1400px;
+    }
+    
+}
+
+.pageSectionContainer,
+.committed.pageSectionContainer {
+
+    background: none;
+    border:none;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.summaryBasketContainer {
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+}
+
+.containerTitle {
+
+    background: ##FFFFFF;
+}
+
+
+.confirmStaticMessage {
+
+    .font-h1();
+
+}
+
+.confirmStaticMessage::after {
+
+    display: none;
+}
+
+.basketBeforePayment {
+
+    .font-h2();
+
+    margin-top: 10px;
+}
+
+.confirmationMessage,
+#confirmationMessage,
+#thankYouMessage {
+
+    margin-bottom: 10px;
+}
+
+.basketItemSummary .count {
+
+    padding-right: 8px;
+}
+
+.infoSection .socialLinks {
+
+    padding: 10px .3em;
+}
+
+.basket-section .basketEvent, .basket-section .group.hasInfoSection {
+
+    padding: 8px 10px;
+}
+
+.basket-section .basketEvent .eventInfoContainer {
+    padding-top: 0px;
+}
+
+.basket-section .basketEvent .basketItemSummary {
+
+    padding-top: 1.3em;
+}
+
+
+#PH_Basket_Confirmation .instructionsPanel {
+
+    @media @mobile {
+
+        display: none;
+    }
+}
+
+.confirmationMessage {
+
+    @media @mobile {
+
+        left:0;
+    }
+}
+
+.basket-section:not(.ticketsBasketSection) .basketItem {
+
+    @media @mobile {
+
+        width: 100% !important;
+        padding-right: 0px;
+    }
+}
+
+
+
+
+
+
+.basket-container .basket-MerchandiseItems .infoSection .imageContainer,
+.basket-container .basketEvent .eventInfoSection .imageContainer {
+
+    background:none;
+    margin-left: 0;
+    margin-top : 6px;
+    width      : 81px;
+
+}
+
+.basket-container .basket-MerchandiseItems .infoSection IMG,
+.basket-container .eventInfoSection IMG {
+    margin-left: 0;
+    margin-top : 0;
+    max-width  : 81px;
+    max-height : 81px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+.fa {
+
+    font-size: inherit;
+}
