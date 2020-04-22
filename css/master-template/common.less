@@ -1089,21 +1089,33 @@ body #group_Header-fixed.searchPageOpen {
 
     #btnContinue,
     .button.small_button_a a,
-    button.small_button_a,
-    .button.small_button_a a:hover,
-    button.small_button_a:hover,
-    .button.small_button_a a:focus,
-    button.small_button_a:focus,
-    .button.small_button_a a:active,
-    button.small_button_a:active {
+    button.small_button_a {
 
         .action-button();
 
         font-size: @button-desktop-fontsize;
         border   : 1px solid @button-color;
+
+        
+        &:hover,
+        &:active,
+        &:focus {
+
+                
+            .action-button();
+
+            font-size: @button-desktop-fontsize;
+            border   : 1px solid @button-color;
+
+        }
+
+        margin-right: .5em;
+        width: unset;
+
     }
 
 }
+
 
 #PH_Memberships_list .itemsList .itemsButtonsContainer .button.moreInfo a,
 #PH_Gift_Vouchers_list .itemsList .itemsButtonsContainer .button.moreInfo a {

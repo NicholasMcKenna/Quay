@@ -1,14 +1,39 @@
 
 body { text-align: center; }
 
+#group_0,
 .ph_tunnellocation {
     display: none;
 }
 
-
 div#PH_breadcrumbs {
+    
+    margin: 80px auto 0 auto; 
+    padding: 25px 25px 0 25px;
+    background-color: #FFF;
 
-    display: none;
+    max-width   : 1400px;
+    text-align: left;
+
+    @media @mobile {
+
+        margin: 135px 0 15px 0;
+        padding: 0;
+    }
+
+    @media @desktop {
+        width: unset;
+        float: left;
+        margin: 43px 25px 0 25px;
+        padding: 25px 25px 0 0;
+    }
+
+    @media @desktop-large {
+        width: unset;
+        margin: 0px auto 0 auto;
+        padding: 68px 25px 25px 50px;
+        float: none;
+    }
 }
 
 .screen-content {
@@ -21,33 +46,75 @@ div#PH_breadcrumbs {
         width: 100%;
     }
     @media @desktop {
-        padding   : 25px;
-        margin-top: 59px;
-        margin-bottom: 25px;
+        padding   : 0 25px 25px 25px;
+        margin-top: 0;
+        margin-bottom: 0;
         width: 1400px;
     }
     
 }
 
-#group_0 {
+.pageSectionContainer,
+.committed.pageSectionContainer {
 
-    margin: 100px auto 25px auto; 
-    float: none;
-    width: 55%;
-    display: inline-block;
+    background: none;
+    border:none;
+    text-align: left;
 }
 
-#PH_Membership_purchase {
 
-    width: 100%;
+
+.confirmStaticMessage {
+
+    .font-h1();
+
 }
 
-.ownerMenu .owner .name {
+.confirmStaticMessage::after {
 
-    max-width: unset;
+    display: none;
 }
 
-#lblTotal {
-    color: @button-color;
+.basketBeforePayment {
 
+    .font-h3();
+}
+
+
+#confirmationMessage,
+#thankYouMessage {
+
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.basket-container .basket-MerchandiseItems .infoSection .imageContainer,
+.basket-container .basketEvent .eventInfoSection .imageContainer {
+
+    background:none;
+    margin-left: 0;
+    margin-top : 6px;
+    width      : 81px;
+
+}
+
+.basket-container .basket-MerchandiseItems .infoSection IMG,
+.basket-container .eventInfoSection IMG {
+    margin-left: 0;
+    margin-top : 0;
+    max-width  : 81px;
+    max-height : 81px;
+    vertical-align: top;
+}
+
+
+.fa {
+
+    font-size: inherit;
 }
