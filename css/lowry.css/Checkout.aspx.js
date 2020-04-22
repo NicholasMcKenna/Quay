@@ -8,3 +8,10 @@ $(document).ready(function() {
         basketProp.parent().parent().hide();
     }
 });
+
+$(document).on('basketUpdated.esro', function() {
+    setTimeout(function() {
+        $('#leftToPayContainer').after($('.suppPaymentsSection'));
+        $('#lblChoosePayment').after($('.ph_partner-text'));
+    }, 300);    
+});
