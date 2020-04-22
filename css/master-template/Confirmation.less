@@ -17,7 +17,7 @@ div#PH_breadcrumbs {
 
     @media @mobile {
 
-        margin: 135px 0 15px 0;
+        margin: 25px 0 15px 0;
         padding: 0;
     }
 
@@ -64,6 +64,19 @@ div#PH_breadcrumbs {
     margin-top: 0px;
 }
 
+.summaryBasketContainer {
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+}
+
+.containerTitle {
+
+    background: ##FFFFFF;
+}
 
 
 .confirmStaticMessage {
@@ -82,7 +95,7 @@ div#PH_breadcrumbs {
     .font-h2();
 }
 
-
+.confirmationMessage,
 #confirmationMessage,
 #thankYouMessage {
 
@@ -94,10 +107,41 @@ div#PH_breadcrumbs {
     padding-right: 8px;
 }
 
+.infoSection .socialLinks {
+
+    padding: 10px .3em;
+}
+
+.basket-section .basketEvent, .basket-section .group.hasInfoSection {
+
+    padding: 8px 10px;
+}
+
+.basket-section .basketEvent .eventInfoContainer {
+    padding-top: 0px;
+}
+
+.basket-section .basketEvent .basketItemSummary {
+
+    padding-top: 1.3em;
+}
 
 
+#PH_Basket_Confirmation .instructionsPanel {
 
+    @media @mobile {
 
+        display: none;
+    }
+}
+
+.confirmationMessage {
+
+    @media @mobile {
+
+        left:0;
+    }
+}
 
 
 
@@ -119,6 +163,8 @@ div#PH_breadcrumbs {
     max-height : 81px;
     vertical-align: top;
 }
+
+
 
 
 .fa {
