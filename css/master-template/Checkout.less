@@ -290,10 +290,18 @@ div#PH_breadcrumbs {
     //Apace
 }
 
+.summaryBasketContainer .basketItem > SPAN {
+    padding: 0 0 10px 0;
+}
+
 
 .basket-section:not(.ticketsBasketSection) .basketItem {
 
     width: 100% !important;
+}
+
+.basketBeforePayment {
+    padding: 10px 0 0 0;
 }
 
 #termsAndConditions {
@@ -591,8 +599,13 @@ button.small_button_a {
     content: none;
 }
 
-.summaryBasketContainer .editBasket,
-.summaryBasketContainer .editBasket:hover {
+.summaryBasketContainer .editBasket {
+
+    display: none;
+}
+
+.summaryBasketContainer .editBasket:first-of-type,
+.summaryBasketContainer .editBasket:first-of-type:hover {
 
     display: inline-block;
     margin : 0;
@@ -600,6 +613,9 @@ button.small_button_a {
     position: relative;
     top     : unset;
 }
+
+
+
 
 
 .summaryBasketContainer .containerTitle {
