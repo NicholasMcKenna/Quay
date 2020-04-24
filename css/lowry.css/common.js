@@ -15,6 +15,3 @@ $(document).ready(function() {
         }
     }
 }); 
-
-
-

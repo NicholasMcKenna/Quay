@@ -508,6 +508,8 @@ a.ui-button:active,
 }
 
 #eventPage .infoSection {
+
+    white-space: normal;
     padding-top  : 0;
     margin-bottom: 0;
 
@@ -663,6 +665,7 @@ a.ui-button:active,
 #eventPage.hallMap #selectedAreaInfo .area-info-container>.name {
     .font-h2();
     padding-left: 0;
+    text-overflow: unset;
 
     @media @desktop {
 
@@ -674,6 +677,15 @@ a.ui-button:active,
         font-size: 16px;
     }
     
+}
+
+#selectedAreaInfo :not(.selected) .area-info-container > .name {
+
+    @media @mobile {
+
+        width: 100% !important;
+    }
+
 }
 
 .expandable#selectedAreaInfo .selected {

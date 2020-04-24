@@ -1340,6 +1340,20 @@ body #group_Header-fixed.searchPageOpen {
     @media @desktop {
         max-width: 500px;
     }
+
+    @media @mobile {
+
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.paginationjs-page {
+
+    @media @mobile {
+
+        margin-right: 5px;
+    }
 }
 
 .paginationjs-page a,
@@ -1357,10 +1371,16 @@ body #group_Header-fixed.searchPageOpen {
     line-height     : 1em;
     text-decoration : none;
     text-align      : center;
+    width: 100%;
 
     @media @desktop {
 
         padding: 8px 12px 7px 12px;
+    }
+
+    @media @mobile {
+
+        display: inline-block;
     }
 }
 
