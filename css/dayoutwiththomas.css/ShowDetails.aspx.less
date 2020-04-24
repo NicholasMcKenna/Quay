@@ -440,7 +440,7 @@ div#pickadate{
 
 
 
-
+.pagingDataContainer .dataItem,
 .ShowEventsitemsList .dataItem {
     background-color: #FFFFFF;
 
@@ -455,6 +455,7 @@ div#pickadate{
     transition: none;
 }
 
+.pagingDataContainer .dataItem::before,
 .ShowEventsitemsList .dataItem::before {
 
         display: block;
@@ -467,13 +468,16 @@ div#pickadate{
         content: " ";
 }
 
+.pagingDataContainer .itemsDataContainer,
+.pagingDataContainer .itemsDateRange SPAN,
 .ShowEventsitemsList .itemsDataContainer,
 .ShowEventsitemsList .itemsDateRange SPAN {
 
     color: @font-dark-color;
 }
 
-
+.pagingDataContainer .itemsDateRange,
+.pagingDataContainer .itemsDataContainer,
 .ShowEventsitemsList .itemsDateRange,
 .ShowEventsitemsList .itemsDataContainer {
 
@@ -497,7 +501,7 @@ div#pickadate{
     }    
 
 }
-
+.pagingDataContainer .button.small_button_a A,
 .ShowEventsitemsList .button.small_button_a A {
 
     
@@ -555,14 +559,6 @@ hr {
     border-top: 1px solid #eee;
     margin: 0 0 15px 0;
 } 
-
-
-
-
-
-
-
-
 
 
 
