@@ -168,6 +168,7 @@ FORM.frmSearch INPUT[type=text] {
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
 }
+
 .itemsDataContainer::after {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
 }
@@ -252,16 +253,17 @@ FORM.frmSearch INPUT[type=text] {
     .searchResult .dataItem .hall {
 
         color: @font-light-color;
-        padding: 4px 0px;
+        padding: 8px 0px 4px 0px;
         margin-left: 10px;
     }
+    
     .searchResult .itemsList .dataItem .itemsButtonsContainer {
 
         margin: 0;
 
         @media @desktop {
 
-            float:left;
+            text-align:left;
         }
     }
 
