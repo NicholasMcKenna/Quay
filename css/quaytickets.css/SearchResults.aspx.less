@@ -11,6 +11,13 @@
     }
 }
 
+
+
+#group_left #PH_Calendar .eventsCalendar {
+
+    display: block;
+}
+
 FORM.frmSearch .SearchTextButton {
     background-color: @button-color;
 }
@@ -23,7 +30,16 @@ FORM.frmSearch .SearchTextButton {
     text-align      : left;
 
 }
+.searchResult .itemsList .dataItem .extras {
+    color           : #fff;
+    font-size: 18px;
+}
 
+.searchResult .itemsList .dataItem .itemsDateRange {
+
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .searchResult .itemsList .itemsDataContainer::before {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
@@ -106,14 +122,10 @@ FORM.frmSearch .SearchTextButton {
 }
 
 
+
 .searchResult .itemsList .dataItem .itemsDateRange:before {
     content: none;
 }
 
 
 
-
-.group_left #PH_Calendar .eventsCalendar {
-
-    display: block;
-}
