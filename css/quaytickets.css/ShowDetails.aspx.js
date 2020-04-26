@@ -109,6 +109,30 @@ $(document).ready(function () {
 
 
 
+
+    // Slideshow
+
+    $(".slideshow img:gt(0)").hide();
+
+    setInterval(function() {
+    
+      var imgH = $(".slideshow img:first").height();
+      $(".slideshow").height(imgH);
+    
+      $('.slideshow img:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.slideshow');
+    
+    }, 4000);
+    
+    
+    
+
+
+
 });
 
 $(window).on('load', function () {
