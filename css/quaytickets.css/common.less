@@ -466,7 +466,7 @@ img.logo-image {
     height          : auto;
     padding-top     : 106px;
     position        : absolute;
-    background-color: white;
+    background-color: #FFFFFF;
     right           : 0;
     display         : none;
     top             : 0;
@@ -478,6 +478,11 @@ img.logo-image {
         background-color: unset;
         display: block;
         z-index: 5;
+    }
+
+    @media @desktop {
+
+        margin:0px;
     }
 
 }
@@ -1186,6 +1191,9 @@ body #group_Header-fixed {
 .searchManager .findByValues .genresContainer {
 
     height: unset !important;
+    max-height: 400px;
+    overflow-x: auto;
+    padding-top: 25px;
 }
 
 .eventsCalendar { display: none; }
@@ -1243,7 +1251,10 @@ body #group_Header-fixed {
 
 }
 
+.currentTimeRangeEventsCtrl {
 
+    display: none;
+}
 
 
 
