@@ -154,14 +154,12 @@ div#PH_breadcrumbs {
 
 
 
- 
 
-html.appearance .searchManager .eventsCalendar .ui-datepicker-year, 
-html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
+html.appearance .eventsCalendar .ui-datepicker-year, 
+html.appearance .eventsCalendar .ui-datepicker-month {
 
     background-color: @button-color;
     color: @font-light-color;
-
 
     &:hover,
     &:active,
@@ -171,54 +169,73 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
     }
 }
 
-.eventsCalendar .ui-datepicker, .eventsCalendar .ui-datepicker-calendar {
-    background: @font-light-color;
-}
-
-.searchManager .eventsCalendar .ui-datepicker .ui-datepicker-header a {
+.eventsCalendar .ui-datepicker .ui-datepicker-header a {
 
     color: @font-light-color;
 }
 
-#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker, 
-#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-calendar,
-.searchManager .eventsCalendar .ui-datepicker, .searchManager .eventsCalendar .ui-datepicker-calendar {
+.eventsCalendar .ui-datepicker th {
 
-    background: @font-light-color !important;
+    font-size: larger;
+    border: 1px solid @box-bgcolor;
+    border-width: 1px 0 0 0;
+
 }
 
-.searchManager .eventsCalendar .ui-datepicker-header {
+.eventsCalendar .ui-datepicker, .eventsCalendar .ui-datepicker-calendar {
+
+    background: @font-light-color;
+    padding: 0;
+}
+
+.eventsCalendar .ui-datepicker-header {
 
     background-color: @font-light-color;
+    border-radius: 0px;
+    box-shadow: none;
     color: @font-dark-color;
 }
 
-.searchManager .eventsCalendar .ui-widget-header {
+.ui-widget {
 
+    font-size: 15px;
+}
+
+.eventsCalendar .ui-widget-header {
+
+    border: none;
+    background:none;
     color: @font-dark-color;
 }
 
-.searchManager .eventsCalendar .ui-datepicker td span, 
-.searchManager .eventsCalendar .ui-datepicker td a {
+.eventsCalendar .ui-datepicker td span, 
+.eventsCalendar .ui-datepicker td a {
 
     background-color: @button-color;
-    color: @background-color;
+    color: @font-light-color;
     opacity: .5;
-    padding: 4px 4px;
-}
-#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-year, 
-#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-month {
-
-    background-color: @button-color;
-    color: @background-color;
+    padding: 10px 4px;
 }
 
-.searchManager .eventsCalendar a.ui-state-default, 
-.searchManager .eventsCalendar .ui-widget-content a.ui-state-default {
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+
+    border: none;
+    background: none;
+}
+
+
+.eventsCalendar a.ui-state-default, 
+.eventsCalendar .ui-widget-content a.ui-state-default {
     background: none;
 
     background-color: @button-color;
-    color: @background-color;
+    color: @font-light-color;
 
     &:hover,
     &:active,
@@ -227,14 +244,18 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
     }
 }
 
-.searchManager .eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
-.searchManager .eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
+.eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
+.eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
 
+    background: none;
     background-color: @button-color;
-    color: @background-color;
+    color: @font-light-color;
+    opacity: .75;
 }
 
-.searchManager .eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
+.eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
+
+    opacity: 1;
 
     &:hover,
     &:active,
@@ -242,6 +263,20 @@ html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
         background-color: @button-hover-color;
     }
 }
+
+
+.qtip.eventsCalendar-tooltip {
+    border-bottom: 2px @font-dark-color solid;
+}
+
+.searchResult .moreless {
+
+    text-align: center;
+    color: #FFF;
+    padding: 0px 6px 10px 6px;
+}
+
+
 
 
 
