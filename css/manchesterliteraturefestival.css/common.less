@@ -14,7 +14,7 @@
         margin   : 115px auto 25px auto;
     }
 }
-
+ 
 
 body {
 
@@ -47,7 +47,7 @@ body #group_Header-fixed,
 
 .main-logo,
 img.logo-image {
-    max-width: 150px;
+    max-width: 180px;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -56,6 +56,10 @@ img.logo-image {
 
         max-width: 70px;
     }    
+
+    @media @desktop {
+        max-width: 180px;
+    }
 }
 
 
@@ -784,5 +788,105 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child:after {
         max-width     : 106px;
         line-height   : 27px;
         font-size     : 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html.appearance .searchManager .eventsCalendar .ui-datepicker-year, 
+html.appearance .searchManager .eventsCalendar .ui-datepicker-month {
+
+    background-color: @button-color;
+    color: @font-light-color;
+
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-color;
+        opacity: 0.75;
+    }
+}
+
+.searchManager .eventsCalendar .ui-datepicker .ui-datepicker-header a {
+
+    color: @font-light-color;
+}
+
+#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker, 
+#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-calendar,
+.searchManager .eventsCalendar .ui-datepicker, .searchManager .eventsCalendar .ui-datepicker-calendar {
+
+    background: @font-light-color !important;
+}
+
+.searchManager .eventsCalendar .ui-datepicker-header {
+
+    background-color: @font-light-color;
+    color: @font-dark-color;
+}
+
+.searchManager .eventsCalendar .ui-widget-header {
+
+    color: @font-dark-color;
+}
+
+.searchManager .eventsCalendar .ui-datepicker td span, 
+.searchManager .eventsCalendar .ui-datepicker td a {
+
+    background-color: @button-color;
+    color: @background-color;
+    opacity: .5;
+    padding: 4px 4px;
+}
+#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-year, 
+#PH_SearchPage_ByCalendar .eventsCalendar .ui-datepicker-month {
+
+    background-color: @button-color;
+    color: @background-color;
+}
+
+.searchManager .eventsCalendar a.ui-state-default, 
+.searchManager .eventsCalendar .ui-widget-content a.ui-state-default {
+    background: none;
+
+    background-color: @button-color;
+    color: @background-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
+    }
+}
+
+.searchManager .eventsCalendar .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default, 
+.searchManager .eventsCalendar .ui-widget-content .ui-state-disabled.ui-datepicker-today SPAN.ui-state-default {
+
+    background-color: @button-color;
+    color: @background-color;
+}
+
+.searchManager .eventsCalendar .ui-datepicker td.hasEvents a.ui-state-default {
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @button-hover-color;
     }
 }
