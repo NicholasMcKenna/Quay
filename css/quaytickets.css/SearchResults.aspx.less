@@ -48,6 +48,7 @@ FORM.frmSearch .SearchTextButton {
 
 .itemsDataContainer::before {
     background-image: none;
+    display: none;
 }
 
 .itemsDataContainer::after {
@@ -74,6 +75,9 @@ FORM.frmSearch .SearchTextButton {
     color: #FFFFFF;
     content: "Buy Now"; 
     padding: 6px 12px;
+
+    height: unset;
+    width: 30%;
 
 }
 
@@ -124,7 +128,7 @@ FORM.frmSearch .SearchTextButton {
 
     @media @mobile {
         width : 100% !important;
-        margin: 0 0 40px 0 !important
+        margin: 0 0 40px 0 !important;
     }
 }
 
