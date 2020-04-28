@@ -17,19 +17,27 @@
 
 
 
-
+.pagingDataContainer .dataItem,
 .ShowEventsitemsList .dataItem {
     background-color: @box-bgcolor;
 }
 
 .ShowEventsitemsList .itemsDataContainer,
-.ShowEventsitemsList .itemsDateRange {
+.ShowEventsitemsList .itemsDateRange,
+.pagingDataContainer .itemsDataContainer,
+.ShowEventsitemsList .itemsDataContainer {
+
     color: @font-dark-color;
 }
+
+.pagingDataContainer .itemsDateRange SPAN,
 .ShowEventsitemsList .itemsDateRange SPAN {
 
     color: @button-color;
 }
+
+
+
 
 
 
@@ -79,22 +87,5 @@
 
     background-color: @button-hover-color;
     color           : #FFFFFF;
-}
-
-
-
-.pagingDataContainer .dataItem,
-.ShowEventsitemsList .dataItem {
-    background-color: #FFFFFF;
-
-    border: 1px solid #f1f1f1;
-    box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
-}
-.pagingDataContainer .itemsDataContainer,
-.ShowEventsitemsList .itemsDataContainer,
-.pagingDataContainer .itemsDateRange SPAN,
-.ShowEventsitemsList .itemsDateRange SPAN {
-
-    color: @font-dark-color;
 }
 
