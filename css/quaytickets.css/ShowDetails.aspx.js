@@ -5,6 +5,9 @@
 
 
 $(document).ready(function () {
+
+    /*
+    
     //TODO: Create element in eSRO admin and position with js
     $('.ShowEventsitemsList').before($('<div class="pagingWrapper"><div class="pagingDataContainer"></div><div class="pagingControl"></div></div>'));
 
@@ -106,7 +109,7 @@ $(document).ready(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
 
-
+*/
 
 
 
@@ -134,7 +137,8 @@ $(document).ready(function () {
 
 
 });
-
+/*
 $(window).on('load', function () {
     $('.ShowEventsitemsList').hide();
 })
+*/
