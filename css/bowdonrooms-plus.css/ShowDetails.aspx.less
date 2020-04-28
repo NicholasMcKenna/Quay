@@ -1,0 +1,249 @@
+@import 'variables';
+@import '../master-template/ShowDetails';
+
+
+.screen-content {
+
+    @media @desktop {
+
+        margin-top: 85px;
+    }
+
+    @media @mobile {
+
+        margin-top: 150px;
+    }
+
+
+}
+
+#eventslist {
+
+    @media @desktop {
+
+        margin-top: -135px;
+    }
+}
+
+
+
+/*
+.carousel .itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
+
+.carousel .itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    width             : 100px;
+    content           : "";
+    height            : 130px;
+    position          : absolute;
+    bottom            : 10px;
+    right             : 10px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 0.1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    opacity: 1;
+}
+*/
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+
+    background-color: @button-color;
+    color           : #FFFFFF;
+}
+
+.ui-widget-content .ui-datepicker-today .ui-state-default {
+
+    background-color: @button-hover-color;
+    color           : #FFFFFF;
+}
+
+#eventslist .itemsList.ShowEventsitemsList {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* DOWT */
+
+#description {
+
+    line-height: 22px;
+    font-size: 16px;
+    min-height: 500px;
+}
+
+#description .info {
+
+    p, h1, h2, h3, h4, hr {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+#description .info p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#description .info h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: @font-h1-color;
+    font-size: 26px;
+    float:none;
+}
+
+#description .info h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #009FE1;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#description .info h4 {
+    margin: 15px 0px 15px 0px;
+    color: #333;
+    font-weight: 700;
+    display: block;
+}
+
+#description .heading {
+    margin-top: 5px;
+    font-weight: 700;
+    color: #2a6496;
+}
+
+#description .row.venue .image {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#description img {
+
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#description .venue > div, #description .event > div {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+#description .facilities p {
+
+    margin-bottom: 15px;
+}
+
+#description .facilities-list {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+#description .facilities-list li {
+    
+  margin-right: 3px;
+  margin-bottom: 5px;
+  display: inline-block;
+  
+  padding: 3px 6px 3px 6px;
+  background-color: #009FE1;
+  color: #FFF;
+  border-radius:4px;
+  
+  font-size: 16px;
+  position: relative;
+}
+
+#description .facilities-list .tooltips {
+
+        margin-top: 15px;
+}
+
+#description .facilities-list li a {
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 6px 6px 6px 6px; 
+}
+
+
+
+#description .info .row.mattel, #description .info .row.additional-info {
+    margin: 10px 0;
+}
+#description .info .row.mattel p, #description .info .row.additional-info p {
+    font-size: 14px;
+    float: left;
+}
+#description .info .row.mattel .mattel-logo {
+    float: left;
+    margin: 0px 15px 25px 0px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#description hr {
+
+    margin: 10px 0px;
+}
+
+#description .row {
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+    text-align: left;
+}
+#description .section > div {
+
+    text-align:left;
+}
+
+
+
+.slideshow {
+    position: relative; 
+    width: 100%; 
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.slideshow img { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+
