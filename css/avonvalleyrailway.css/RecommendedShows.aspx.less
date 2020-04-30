@@ -25,11 +25,6 @@
 
 */
 
-.dataItem .itemsDateRange {
-
-    display: none;
-}
-
 .ph_recommended_shows {
 
     @media @desktop {
@@ -58,6 +53,20 @@
 
     color           : @font-dark-color;
 }
+
+
+.dataItem .itemsDateRange {
+
+    display: none !important;
+
+    
+    &:hover,
+    &:active,
+    &:focus {
+        display: none !important;
+    }
+}
+
 
 
 div#PH_breadcrumbs {
