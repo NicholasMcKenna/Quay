@@ -14,21 +14,27 @@ body {
     border-radius: 50%;
 }
 
-.seat-tooltip .seat.number,
-.seat-tooltip .row.number,
-.seat-tooltip .label {
+.seat-tooltip .row.label,
+.seat-tooltip .seat.label {
 
     display: none;
 } 
 
-.selectTickets .row .seat {
+.selectTickets .row .seat .rowName,
+.selectTickets .row .seat .seatName {
+
+    display:none;
+}
+
+.selectTickets .row .seat span:last-of-type {
 
     display: none;
 }
 
-#eventPage .selectTickets .tickets > .row {
-    padding: .3em .5em .5em 2em;
-}
+
+//#eventPage .selectTickets .tickets > .row {
+//    padding: .3em .5em .5em 2em;
+//}
 
 
 
