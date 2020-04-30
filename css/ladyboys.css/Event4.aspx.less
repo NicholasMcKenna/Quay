@@ -24,7 +24,7 @@ body {
 
 .selectTickets .row .seat .rowName,
 .selectTickets .row .seat .seatName,
-.selectTickets .row .seat + span::after {
+.selectTickets .row .seat > span.rowName + span::after {
 
     display:none;
 }
@@ -39,7 +39,10 @@ body {
     content: "Table ";
     display: inline-block;
 }
+.seat-tooltip .row.number::before {
 
+    margin-right: 2px;
+}
 
 
 
