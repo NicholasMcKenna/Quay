@@ -15,13 +15,16 @@ body {
 }
 
 .seat-tooltip .row.label,
-.seat-tooltip .seat.label {
+.seat-tooltip .seat.label,
+.seat-tooltip .seat.number,
+.seat-tooltip .row.number::after {
 
     display: none;
 } 
 
 .selectTickets .row .seat .rowName,
-.selectTickets .row .seat .seatName {
+.selectTickets .row .seat .seatName,
+.selectTickets .row .seat + span::after {
 
     display:none;
 }
@@ -30,6 +33,14 @@ body {
 
     display: none;
 }
+
+.seat-tooltip .row.number::before,
+.selectTickets .row .seat::before {
+    content: "Table ";
+    display: inline-block;
+}
+
+
 
 
 //#eventPage .selectTickets .tickets > .row {
