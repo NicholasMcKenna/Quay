@@ -4,13 +4,7 @@ $("#agreeToInsuranceTerms").prop('checked', true).hide();
 $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%, rgba(209, 239, 244, 0) 100%)", "background": "-webkit-gradient(linear, left top, right top, from(#d1eff4), to(rgba(209, 239, 244, 0)))",
  "background": "-o-linear-gradient(left, #d1eff4, rgba(209, 239, 244, 0))", "background": " -ms-linear-gradient(left, #d1eff4, rgba(209, 239, 244, 0))", "background": " linear-gradient(to right, #d1eff4 0%, rgba(209, 239, 244, 0) 100%)", "filter" : "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd1eff4, endColorstr=#00d1eff4, GradientType=1)", "color":"#404041" });
 
-
-
-
  $(document).ready(function() {
-    $('.flm_my_basket::after').css('content', 'Basket');
-	$('.search-button').click(function() { $('#group_Header-fixed #PH_Search_Box').toggle(); });
-	
     var basketProp = $('.ph_basketwidget .basketProperty.Details span.small_text_a:contains("Affliates")');
     if (basketProp) {
         basketProp.parent().parent().hide();
