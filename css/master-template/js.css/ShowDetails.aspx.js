@@ -3,6 +3,8 @@
  * This needs to be checked when returning the ID as it will send a text in the onSelect
  * */
 $(document).ready(function () {
+
+/*
     var availableDates = new Array();
 
     for (var property in dateGroups) {
@@ -80,4 +82,5 @@ $(document).ready(function () {
     $(".extras .HighSeatsOccupancy").each(function () {
         $(this).closest(".dataItem").addClass("high-seats");
     });
+*/
 });
