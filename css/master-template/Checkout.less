@@ -370,9 +370,35 @@ div#PH_breadcrumbs {
 
 }
 
+.suppPayMethodFormContainer .label, .suppPayMethodFormContainer fieldset .label, .reimbursementPaymentContainer .label {
+
+    @media @mobile {
+        min-width: 7em;
+    }
+}
+
+.suppPayMethodFormContainer fieldset .label, .suppPayMethodFormContainer fieldset .field {
+
+    @media @mobile {
+        min-width: 7em;
+    }
+}
+
+.suppPaySubTitle, .reimPaySubTitle {
+
+    @media @mobile {
+        padding-left: 0;
+    }
+}
+
 .suppPayMethodButtonContainer {
 
     margin-left: 26em;
+
+    @media @mobile {
+
+        margin-left: 15.1em;
+    }
 }
 
 #instructionsPanel {
