@@ -1266,7 +1266,12 @@ div#PH_Float_Menu {
     line-height     : 20px;
     border-radius   : 2px;
     background-color: #666;
-    padding         : 10px;
+    
+
+    @media @desktop {
+        font-size       : 18px;
+        padding: 11px 10px 12px 10px;
+    }
 
     @media @mobile {
 
@@ -1525,6 +1530,8 @@ div#PH_Float_Menu {
 #PH_Float_Menu #siteMenuBar .siteMenuContainer .flm_my_basket {
     @media @desktop {
         margin-left: 14px;
+        margin-top: 5px;
+        height: 40px;
     }
 
     @media @mobile {
