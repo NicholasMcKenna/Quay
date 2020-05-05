@@ -984,6 +984,120 @@ FORM.frmSearch INPUT[type="text"],
     font-size  : 16px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Footer **/
+
+#group_Footer {
+
+    background-color: @bottom-bar;
+    border-bottom: 4px solid @highlight-color;
+}
+
+div#PH_Footer-main .row {
+
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop {
+        flex-direction: row;
+    }
+}
+  
+div#PH_Footer-main {
+    padding: 15px 15px 40px 15px;
+    position: relative;
+    color:#FFF;
+    clear: both;
+    margin: 0px auto;
+    float:none;
+    line-height: 1.43;
+    font-size: 14px;
+
+    @media @desktop {
+
+        width: 100%;
+    }
+    @media @desktop-large {
+
+        width: 1400px;
+    }
+    @media @mobile {
+
+        width: 100%;
+    }
+}
+
+div#PH_Footer-main .col-md-4, 
+div#PH_Footer-main .col-lg-4 {
+
+    float: left; 
+    overflow: hidden;
+    position: relative;
+
+    @media @mobile {
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+div#PH_Footer-main ul {
+    padding-left:0px;
+    list-style:none;
+    text-align: left;
+}
+
+div#PH_Footer-main li {
+    display:block;
+    text-align: center;
+}
+
+div#PH_Footer-main a, 
+div#PH_Footer-main li a {
+
+    color: #aaa;
+}
+
+
+div#PH_Footer-main p {
+    text-align : justify;
+    font-size : 12px;
+}
+
+div#PH_Footer-main h2 {
+    font-weight: 300;
+}
+
+div#PH_Footer-main ul.footer-socialIcons li {
+
+    margin-right: 10px;
+}
+
+
+
+
+
 /*
 .menu-item {
     @media @desktop {
@@ -992,7 +1106,7 @@ FORM.frmSearch INPUT[type="text"],
 }
 */
 /* Footer */
-
+/*
 #group_Footer {
     width: 100%;
     float: left;
@@ -1106,6 +1220,16 @@ FORM.frmSearch INPUT[type="text"],
     font-size    : 18px;
     padding-right: 4px;
 }
+*/
+
+
+
+
+
+
+
+
+
 
 div#PH_Float_Menu,
 #group_Header-fixed.secondary #PH_Float_Menu {
