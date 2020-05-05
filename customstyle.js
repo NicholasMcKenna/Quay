@@ -117,15 +117,19 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
             });
 
             $('.ShowEventsitemsList').hide();
+
+            $('#pickadate').after($('.ph_partner-info'));
     }
 
     if (currentScreen === "event4.aspx") {
             if ($('.promoBox button[aria-label="Remove coupon Affliates"]').length > 0) {
                 $('.promoBox').hide();
             } else {
+
                 if ($('.hallMap').length > 0) {
                     $('#hallMap').after($('.promoBox'));
                 } else if ($('.selected').length > 0) {
+
                     if ($(window).width() <= 780 && $('#eventPage.seated').length > 0) {
                         $('.seatingPlanContainer:first').after('<div class="promo-container"></div>');
                         $('.promo-container').after($('.promoBox'));
@@ -136,6 +140,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                         $('.eventDetails:first').after($('.promoBox'));
                     }
                 }
+
             }
         
             $('#zoomContainer').on("mousewheel DOMMouseScroll", function (e) {
