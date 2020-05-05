@@ -527,6 +527,25 @@ a.ui-button:active,
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #eventPage.non-seated .infoSection .promoBox {
 
     @media @desktop {
@@ -550,6 +569,69 @@ a.ui-button:active,
     
     white-space: normal;
 }
+
+
+#ticketsPane .promoBox, #ticketsPane .promo-container {
+
+    @media @mobile {
+
+        display: none;
+    }
+
+    display: none !important;
+}
+
+
+.promoBox {
+
+    padding: 10px;
+    left: unset;
+    max-width: 500px;
+
+
+    @media @desktop {
+
+        float     : left;
+        top       : 15px;
+    }
+
+    @media @desktop-large {
+        width     : 456px;
+        float     : right;
+        margin-top: 0px;
+        top       : -98px;
+    }
+
+
+}
+
+
+
+.promoBox input+button {
+    .sub-button();
+    border       : none;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #eventPage .infoSection .name { 
     padding-top: 0;
@@ -610,49 +692,6 @@ a.ui-button:active,
 
 
 
-
-
-#ticketsPane .promoBox, #ticketsPane .promo-container {
-
-    @media @mobile {
-
-        display: none;
-    }
-
-    display: none !important;
-}
-
-
-.promoBox {
-
-    padding: 10px;
-    left: unset;
-    max-width: 500px;
-
-
-    @media @desktop {
-
-        float     : left;
-        top       : 15px;
-    }
-
-    @media @desktop-large {
-        width     : 456px;
-        float     : right;
-        margin-top: 0px;
-        top       : -98px;
-    }
-
-    display: none !important;
-}
-
-
-
-.promoBox input+button {
-    .sub-button();
-    border       : none;
-    border-radius: 0;
-}
 
 #eventDetails,
 #selectedAreaInfo .selected .area-info-container {
