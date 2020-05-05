@@ -33,11 +33,13 @@ FORM.frmSearch .SearchTextButton {
     background-color: transparent;
     font-size       : 22px;
     text-align      : left;
+    line-height: 1.3em;
 
 }
 .searchResult .itemsList .dataItem .extras {
     color           : #fff;
     font-size: 18px;
+    line-height: 1.3em;
 }
 
 .searchResult .itemsList .dataItem .itemsDateRange {
@@ -45,6 +47,7 @@ FORM.frmSearch .SearchTextButton {
     font-size: 18px;
     font-weight: bold;
     color           : #fff;
+    line-height: 1.3em;
 }
 
 .itemsDataContainer::before {
@@ -75,7 +78,8 @@ FORM.frmSearch .SearchTextButton {
     
     color: #FFFFFF;
     content: "Buy Now"; 
-    padding: 6px 12px;
+    padding: 5px 10px;
+    font-size: 16px;
 
     height: unset;
     width: 30%;
@@ -141,3 +145,20 @@ FORM.frmSearch .SearchTextButton {
 
 
 
+#PH_Calendar_search_results .searchResult .dataItem .event, 
+#PH_Calendar_search_results .searchResult .dataItem .event:last-child {
+    border: 1px solid #FFF;
+
+}
+
+#PH_Calendar_search_results .searchResult .itemsList .dataItem .itemsDateRange {
+    color: #FFF;
+}
+
+#PH_Calendar_search_results .searchResult .dataItem .button.small_button_a A, 
+#PH_Calendar_search_results .searchResult .dataItem .button.small_button_a A:hover {
+
+    background-color  : @highlight-color;
+    
+    color: @font-dark-color;
+}
