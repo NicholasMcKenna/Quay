@@ -4291,6 +4291,60 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
         }
     }
 
+
+    // Change Row / Seat for Lady Boys Events
+        
+    if ($eSRO.currentScreen === "event4.aspx") {
+    
+        var showName = $(".eventInfoSection .name").text();
+    
+        if (showName.includes("Lady Boys of Bangkok")) {
+    
+        $("#eventPage").addClass("event-ladyboys");
+        }
+    }
+    
+    
+    
+    if ($eSRO.currentScreen === "order.aspx") {
+        
+        var basketEvents = $(".basketEvent");
+                            
+        basketEvents.each(function() {
+        
+        var basketEvent = $(this);
+        
+        var eventName = basketEvent.find('.eventInfoSection .name'); 
+        var eventNameText = eventName.text();
+        
+            if (eventNameText.includes("Lady Boys of Bangkok")) {
+    
+                var eventDetails = basketEvent.find('.basketProperty.Details');
+                
+                eventDetails.each(function() {
+                
+                    var eventDetail = $(this);  
+    
+                var eventDetailText = eventDetail.text().replace(';', '');
+    
+                var eventSplit = eventDetailText.split(' ');
+                
+                var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
+    
+                console.log(newDetails);
+    
+                            eventDetail.text(newDetails);
+            });
+            
+            }
+        
+        });
+    }
+    
+    
+
+
+
     $(window).on('load', function () {
         $('.screen-showdetails_aspx .ShowEventsitemsList').hide();
     })
