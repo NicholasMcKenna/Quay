@@ -7,13 +7,14 @@ $(document).ready(function() {
         $('#group_Header-fixed div[id^="PH_SearchPage"]').toggle();
         e.stopPropagation();
     });
-
+/*
     if ($('#eventPage .infoSection .name:contains(The Lady Boys of Bangkok)')) {
 
         $(document).on('basketUpdated.esro', function() {
             $('.selectTickets .row .seat>.rowName').text('Table');
         });
     }
+    */
 });
 /*
 $(window).click(function() {
