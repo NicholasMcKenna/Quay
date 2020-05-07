@@ -1,7 +1,38 @@
+
 <div class="partner-container">
 
     <div class="img-container"><img src="/UserContent/images/partner.png" class="partner-image"></div>
 
-    <div class="partner-info">This website is powered by Quaytickets the official ticketing partner of The Lowry. Your booking, data and payment will be processed by Quaytickets. Quaytickets will appear on your bank statement.</div>
+    <div class="partner-info">This website is powered by Quaytickets the official ticketing partner of <span class="client-name"></span>. Your booking, data and payment will be processed by Quaytickets. Quaytickets will appear on your bank statement.</div>
 
 </div>
+
+<script>
+
+var interfaceNames = {
+
+    10:"The Lowry", 
+    14:"The Plaza, Stockport", 
+    15:"Day Out With Thomas",
+    16:"Lady Boys of Bangkok",
+    18:"Day Out With Thomas",
+    19:"Manchester Jazz Festival",
+    20:"Avon Valley Railway",
+    21:"Albert Halls Bolton",
+    22:"Bowdon Rooms",
+    23:"Martin Harris Centre",
+    24:"Manchester Literature Festival",
+    25:"The Edge",
+    26:"Dining With Distinction",
+    27:"Wordsworth Trust",
+    28:"Salford Graduations",
+    29:"The Old Courts",
+    30:"Quaytickets",
+    31:"The Old Courts"
+};
+
+var currentIntNum = $eSRO.currentInterface;
+
+$('.partner-info .client-name').text(interfaceNames.currentIntNum);
+
+</script>
