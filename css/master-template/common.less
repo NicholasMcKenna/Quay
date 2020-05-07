@@ -1864,37 +1864,39 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
 // Hiding Row / Seat
 
-.seat-tooltip .row.label,
-.seat-tooltip .seat.label,
-.seat-tooltip .seat.number,
-.seat-tooltip .row.number::after {
+.event-ladyboys {
 
-    display: none;
-} 
+    .seat-tooltip .row.label,
+    //.seat-tooltip .seat.label,
+    .seat-tooltip .seat.number,
+    .seat-tooltip .row.number::after {
 
-.selectTickets .row .seat .rowName,
-.selectTickets .row .seat .seatName,
-.selectTickets .row .seat > span.rowName + span::after {
+        display: none;
+    } 
 
-    display:none;
+    .selectTickets .row .seat .rowName,
+    //.selectTickets .row .seat .seatName,
+    .selectTickets .row .seat > span.rowName + span::after {
+
+        display:none;
+    }
+
+    .selectTickets .row .seat span:last-of-type {
+
+        display: none;
+    }
+
+    .seat-tooltip .row.number::before,
+    .selectTickets .row .seat::before {
+        content: "Table ";
+        display: inline-block;
+    }
+    .seat-tooltip .row.number::before {
+
+        margin-right: 2px;
+    }
+
 }
-
-.selectTickets .row .seat span:last-of-type {
-
-    display: none;
-}
-
-.seat-tooltip .row.number::before,
-.selectTickets .row .seat::before {
-    content: "Table ";
-    display: inline-block;
-}
-.seat-tooltip .row.number::before {
-
-    margin-right: 2px;
-}
-
-
 
 //#eventPage .selectTickets .tickets > .row {
 //    padding: .3em .5em .5em 2em;
