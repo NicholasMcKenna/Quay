@@ -4302,6 +4302,8 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
         if (showName.includes("Lady Boys of Bangkok")) {
     
             $("body").addClass("event-ladyboys");
+        } else {
+            $("body").removeClass("event-ladyboys");
         }
     }
     
