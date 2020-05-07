@@ -4310,7 +4310,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     
     if ($eSRO.currentScreen === "order.aspx") {
         
-        var basketEvents = $(".basketEvent");
+        var basketEvents = $("#basketContainer .basketEvent");
                             
         basketEvents.each(function() {
         
@@ -4326,18 +4326,18 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 eventDetails.each(function() {
                 
                     var eventDetail = $(this);  
-    
-                var eventDetailText = eventDetail.text().replace(';', '');
-    
-                var eventSplit = eventDetailText.split(' ');
-                
-                //var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
-                var newDetails = "Table "+eventSplit[1];
-    
-                console.log(newDetails);
-    
-                eventDetail.text(newDetails);
-            });
+        
+                    var eventDetailText = eventDetail.text().replace(';', '');
+        
+                    var eventSplit = eventDetailText.split(' ');
+                    
+                    //var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
+                    var newDetails = "Table "+eventSplit[1];
+        
+                    console.log(newDetails);
+        
+                    eventDetail.text(newDetails);
+                });
             
             }
         
@@ -4348,7 +4348,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     
     if ($eSRO.currentScreen === "checkout.aspx") {
         
-        var basketEvents = $(".basketEvent");
+        var basketEvents = $("#basketContainer .basketEvent");
                             
         basketEvents.each(function() {
         
