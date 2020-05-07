@@ -32,10 +32,8 @@ var interfaceNames = {
 };
 
 var currentIntNum = $eSRO.currentInterface;
+var newText = $('#PH_partner-text .partner-info').text().replace('#', interfaceNames[currentIntNum]);
+$('#PH_partner-text .partner-info').text(newText);
 
-var newText = $('#PH_partner-text .partner-info').text().replace('#', currentIntNum);
-$('#PH_partner-text.partner-info').text(newText);
-
-console.log('interface num: '+interfaceNames[currentIntNum]);
 
 </script>
