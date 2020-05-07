@@ -4294,10 +4294,9 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
     // Change Row / Seat for Lady Boys Events
 
-
     if ($eSRO.currentScreen === "event4.aspx") {
     
-        var showName = $(".eventInfoSection .name").text();
+        var showName = $("#eventPage .eventInfoSection .name").text();
     
         if (showName.includes("Lady Boys of Bangkok")) {
     
