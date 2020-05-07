@@ -3,7 +3,7 @@
 
     <div class="img-container"><img src="/UserContent/images/partner.png" class="partner-image"></div>
 
-    <div class="partner-info">This website is powered by Quaytickets the official ticketing partner of <span class="client-name"></span>. Your booking, data and payment will be processed by Quaytickets. Quaytickets will appear on your bank statement.</div>
+    <div class="partner-info">This website is powered by Quaytickets the official ticketing partner of #. Your booking, data and payment will be processed by Quaytickets. Quaytickets will appear on your bank statement.</div>
 
 </div>
 
@@ -33,8 +33,9 @@ var interfaceNames = {
 
 var currentIntNum = $eSRO.currentInterface;
 
-$('.partner-info .client-name').text(interfaceNames.currentIntNum);
+var newText = $('#PH_partner-text .partner-info').text().replace('#', currentIntNum);
+$('#PH_partner-text.partner-info').text(newText);
 
-console.log('interface num: '+interfaceNames.currentIntNum);
+console.log('interface num: '+interfaceNames[currentIntNum]);
 
 </script>
