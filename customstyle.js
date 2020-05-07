@@ -4330,11 +4330,12 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     
                 var eventSplit = eventDetailText.split(' ');
                 
-                var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
+                //var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
+                var newDetails = "Table "+eventSplit[1];
     
                 console.log(newDetails);
     
-                            eventDetail.text(newDetails);
+                eventDetail.text(newDetails);
             });
             
             }
