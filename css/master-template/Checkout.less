@@ -227,6 +227,11 @@ div#PH_breadcrumbs {
     width : 100%;
     margin: 10px 0;
     clear:both;
+
+    @media @desktop {
+
+        float: left;
+    }
 }
 
 .summaryBasketContainer .basketEvent {
@@ -282,6 +287,16 @@ div#PH_breadcrumbs {
     width      : 50px;
     margin     : 0 10px 0 0;
     line-height: 30px;
+}
+
+
+.summaryBasketContainer .EndOfBasketItemsPlaceHolders {
+
+    @media @desktop {
+
+        float: left;
+        width: 100%;
+    }
 }
 
 .basket-container .basket-MerchandiseItems .infoSection IMG,
@@ -449,6 +464,12 @@ div#PH_breadcrumbs {
 
 .summaryBasketContainer .basketTotals {
     border-top: .1px solid #666;
+
+    @media @desktop {
+
+        float: left;
+        width: 100%;
+    }
 }
 
 .basketItemSummary .count {
