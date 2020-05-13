@@ -1,1 +1,1 @@
-$('.DeliveryZipCode').append($('#qasContainer'));
+// $('.DeliveryZipCode').append($('#qasContainer'));
