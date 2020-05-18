@@ -541,15 +541,24 @@ select#dateSelect {
 
 
 }
-
 .ShowEventsitemsList .itemsButtonsContainer .button.disabled A, 
 .ShowEventsitemsList .itemsButtonsContainer .button.disabled A:hover, 
 .ShowEventsitemsList .itemsButtonsContainer .button.disabled A:active, 
-.ShowEventsitemsList .itemsButtonsContainer .button.disabled A:focus {
+.ShowEventsitemsList .itemsButtonsContainer .button.disabled A:focus,
+
+.pagingDataContainer .itemsButtonsContainer .button.disabled A, 
+.pagingDataContainer .itemsButtonsContainer .button.disabled A:hover, 
+.pagingDataContainer .itemsButtonsContainer .button.disabled A:active, 
+.pagingDataContainer .itemsButtonsContainer .button.disabled A:focus {
 
     //color: @font-dark-color;
     line-height: 1.2em;
-    padding: 13px 5px 0 5px;
+    padding: 0px;
+    background: none;
+    border-radius: 0;
+    font-weight: bold;
+    transition: none;
+    float: right;
 }
 
  
