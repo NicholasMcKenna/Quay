@@ -36,7 +36,7 @@ div#PH_breadcrumbs {
 .loginControl {
 
     .row {
-        margin: 0 0 10px 0;
+        margin: 15px 0 15px 0;
     }
 
     .row .label {
@@ -54,22 +54,28 @@ div#PH_breadcrumbs {
     .row .field input {
         float: right;
     }
+
+    .loginButtons {
+
+        float:left;
+        width: 100%;
+    }
+
+    > DIV.external {
+        display: none;
+    }
+    
+    #btnLogin {
+
+        .action-button();
+    }
+
+    #btnForgot {
+        color: @font-dark-color;
+        width: 100%;
+        text-align: left;
+    }
+
 }
 
 
-#btnForgot {
-    color: @font-dark-color;
-    width: 100%;
-    text-align: left;
-}
-
-.loginControl .loginButtons {
-
-    float:left;
-    width: 100%;
-}
-
-.loginControl #btnLogin {
-
-    .action-button();
-}
