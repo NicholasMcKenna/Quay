@@ -116,14 +116,10 @@
     margin: 0;
     display: table-cell;
     height: unset;
-}
-
-.SoldOut {
-
     background: none;
 }
 
-.SoldOut::before {
+.occupancy::before {
 
     content: "";
     display: inline-block;
@@ -133,9 +129,29 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    //background-color: #F7BD11;
-    background-color: #B81820;
+
     margin-right: 6px;
     margin-top: 6px;
 }
+
+.HighSeatsOccupancy::before {
+    background-color: #B81820;
+}
+
+.MediumSeatsOccupancy::before {
+
+    background-color: #F7BD11;
+}
+
+.LowSeatsOccupation::before {
+    background-color: #479233;
+}
+
+.SoldOut::before {
+
+    background-color: #DDDDDD;
+}
+
+
+
 
