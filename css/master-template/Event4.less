@@ -507,18 +507,6 @@ a.ui-button:active,
     padding-top: 0;
 }
 
-#eventPage .infoSection {
-
-    white-space: normal;
-    padding-top  : 0;
-    margin-bottom: 0;
-
-    @media @mobile {
-
-        margin-top: 0;
-    }
-}
-
 
 #eventPage.non-seated .infoSection {
 
@@ -899,11 +887,15 @@ h1#selectedAreaTitle {
     width: 100%;
 }
 
-/* Testing page layout changes */
+
+
 #eventPage .infoSection {
 
     width: 100%;
     margin-left  : 0;
+    white-space: normal;
+    padding-top  : 0;
+    margin-bottom: 0;
 
     @media @desktop {
         padding-top  : 0;
@@ -914,8 +906,10 @@ h1#selectedAreaTitle {
     }
 
     @media @mobile {
-        width: 58%;
+        width: 90%;
+        margin-top: 0;
     }
+    
 }
 
 
