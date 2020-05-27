@@ -4282,13 +4282,14 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 postcode: 'LA1 1YZ'
             }
         ];
-        
+        /*
         var currentVenue = $('div.location').first().text();
         var searchResult = venues.find(o => o.name === currentVenue);
         
         if (searchResult != null) {
             //$('.basket-Commissions').before($(`<iframe src="https://www.stay22.com/embed/gm?address=${searchResult.postcode}" id="stay22-widget" width="100%" height="460" frameborder="0"></iframe>`));
         }
+        */
     }
 
 
