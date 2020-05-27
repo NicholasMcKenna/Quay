@@ -4396,8 +4396,9 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     $(window).on('load', function () {
         $('.screen-showdetails_aspx .ShowEventsitemsList').hide();
     })
-
+/*
     window.onload = () => {
         $('.screen-showdetails_aspx .ShowEventsitemsList').hide();
     }
+*/
 });
