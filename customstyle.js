@@ -1,5 +1,6 @@
 
 /*added by TD 20200311 for package TT-UK-BookingProtect*/
+/*
 $("#agreeToInsuranceTerms").prop('checked', true).hide();
 $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%, rgba(209, 239, 244, 0) 100%)", "background": "-webkit-gradient(linear, left top, right top, from(#d1eff4), to(rgba(209, 239, 244, 0)))",
  "background": "-o-linear-gradient(left, #d1eff4, rgba(209, 239, 244, 0))", "background": " -ms-linear-gradient(left, #d1eff4, rgba(209, 239, 244, 0))", "background": " linear-gradient(to right, #d1eff4 0%, rgba(209, 239, 244, 0) 100%)", "filter" : "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd1eff4, endColorstr=#00d1eff4, GradientType=1)", "color":"#404041" });
@@ -4282,14 +4283,14 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 postcode: 'LA1 1YZ'
             }
         ];
-        /*
-        var currentVenue = $('div.location').first().text();
-        var searchResult = venues.find(o => o.name === currentVenue);
         
-        if (searchResult != null) {
+        //var currentVenue = $('div.location').first().text();
+        //var searchResult = venues.find(o => o.name === currentVenue);
+        
+        //if (searchResult != null) {
             //$('.basket-Commissions').before($(`<iframe src="https://www.stay22.com/embed/gm?address=${searchResult.postcode}" id="stay22-widget" width="100%" height="460" frameborder="0"></iframe>`));
-        }
-        */
+        //}
+        
     }
 
 
@@ -4363,23 +4364,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 var eventDetails = basketEvent.find('.details');
 
                 eventDetails.hide();
-/* 
-                eventDetails.each(function() {
-                
-                var eventDetail = $(this);  
-    
-                var eventDetailText = eventDetail.text().replace(';', '');
-    
-                var eventSplit = eventDetailText.split(' ');
-                
-                //var newDetails = "Table "+eventSplit[1]+", Seat "+eventSplit[3];
-                var newDetails = "Table "+eventSplit[1];
-    
-                console.log(newDetails);
-    
-                eventDetail.text(newDetails);
-            });
-*/
+
             }
         
         });
@@ -4402,3 +4387,5 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     }
 
 });
+
+*/
