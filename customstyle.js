@@ -4390,6 +4390,50 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
 
 
+    
+
+    // List of Partner interfaces
+
+    var interfaceNames = {
+
+        10:"The Lowry", 
+        14:"The Plaza, Stockport", 
+        15:"Day Out With Thomas",
+        16:"Lady Boys of Bangkok",
+        18:"Day Out With Thomas",
+        19:"Manchester Jazz Festival",
+        20:"Avon Valley Railway",
+        21:"Albert Halls Bolton",
+        22:"Bowdon Rooms",
+        23:"Martin Harris Centre",
+        24:"Manchester Literature Festival",
+        25:"The Edge",
+        26:"Dining With Distinction",
+        27:"Wordsworth Trust",
+        28:"Salford Graduations",
+        29:"The Old Courts",
+        30:"Quaytickets",
+        31:"The Old Courts"
+    };
+
+    var currentIntNum = $eSRO.currentInterface;
+
+    if ($eSRO.currentScreen == "checkout.aspx") {
+
+        var newText = $('#PH_partner-text .partner-info').text().replace('#', interfaceNames[currentIntNum]);
+        $('#PH_partner-text .partner-info').text(newText);    
+    }
+
+    if (currentScreen === "showdetails.aspx") {
+
+        var newText = $('#PH_partner-info .partner-info').text().replace('#', interfaceNames[currentIntNum]);
+        $('#PH_partner-info .partner-info').text(newText); 
+
+    }
+
+    //
+
+
 
 
 
