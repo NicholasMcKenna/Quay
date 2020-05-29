@@ -27,22 +27,30 @@ div#PH_breadcrumbs {
     padding: 0;
 }
 
-
-
-
-#frmCreateAccount DIV.label.FirstName, 
-#frmCreateAccount DIV.label.LastName {
-    display: block;
-}
-
 .item_background {
+
     padding: 0;
 }
 
+#frmCreateAccount DIV.label.FirstName, 
+#frmCreateAccount DIV.label.LastName {
+
+    display: block;
+    padding-top: 1em;
+}
+
+#frmCreateAccount .row:not(.hidden) ~ .row.address {
+
+    padding-top: 0;
+}
+
+#frmCreateAccount .row:not(.hidden) ~ .row.Address {
+
+    padding-top: 1em;
+}
 
 #frmCreateAccount #btnSubmitAlter {
 
     .action-button();
-
 }
 
