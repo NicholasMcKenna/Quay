@@ -56,7 +56,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     $("#dateSelect").val(ID.toString()).change();
                     $(".pagingWrapper").hide();
                     $('.ShowEventsitemsList').show();
-                    $("html, body").animate({ scrollTop: $('#pickadate').offset().top }, 1000);
+                    //$("html, body").animate({ scrollTop: $('#pickadate').offset().top }, 1000);
                 },
                 defaultDate: get_default_date(),
             });
