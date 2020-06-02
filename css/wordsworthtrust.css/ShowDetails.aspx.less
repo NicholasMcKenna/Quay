@@ -109,9 +109,30 @@
 
     float: left;
     margin: 2px;
-    padding: 2px 2px 2px 10px;
+    padding: 6px 4px 6px 10px;
     min-height: unset;
     width: unset;
+    max-width: 23%;
+    font-size: 14px;
+    line-height: 1.3em;
+
+    @media @desktop {
+
+        max-width: 23%;
+    }
+
+    @media @desktop-large {
+
+        max-width: 24%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #231f20;
+        color: #FFF !important;
+    }
+
 }
 
 .item_background {
