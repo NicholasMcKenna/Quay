@@ -101,6 +101,15 @@
 
 
 
+
+// timed events code
+
+.pagingDataContainer .dataItem, 
+.ShowEventsitemsList .dataItem {
+
+    float: left;
+}
+
 .ShowEventsitemsList .itemsDataContainer .name, 
 .pagingDataContainer .itemsDataContainer .name {
     display: none;
@@ -161,3 +170,35 @@
     margin-right: 5px;
 }
 
+#eventslist .itemsButtonsContainer {
+    max-height: unset;
+    width: 100%;
+    min-width: unset;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.button.small_button_a.addToBasket {
+    width: 100%;
+    height: 100%;
+}
+
+.ShowEventsitemsList .button.small_button_a A, 
+.pagingDataContainer .button.small_button_a A {
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+        width: 100%;
+        opacity: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+}
