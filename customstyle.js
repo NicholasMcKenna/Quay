@@ -27,7 +27,8 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 "27": {
                     interfacenum: "27",
                     showname: "Standard Entry",
-                    pagesize: "50"
+                    pagesize: "50",
+                    timed: "true"
                 }        
             }
 
@@ -36,6 +37,11 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                 if (showDetPagingObj[currentIntNum].showname == showNameText) {
 
                     pageSizeVal = showDetPagingObj[currentIntNum].pagesize;
+
+                    if (showDetPagingObj[currentIntNum].timed == "true") { 
+
+                        $('#eventslist').addClass("timed-entry");
+                    }
                 }
             }
 
