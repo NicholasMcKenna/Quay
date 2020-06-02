@@ -29,6 +29,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
                 $('.pagingControl').pagination({
                     dataSource: showlist,
+                    pageSize: 20,
                     callback: function (data, pagination) {
                         template(data);
                         $('.pagingDataContainer').html(data);
