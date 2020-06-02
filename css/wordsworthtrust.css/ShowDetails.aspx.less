@@ -108,6 +108,13 @@
 .ShowEventsitemsList .dataItem {
 
     float: left;
+    margin:0;
+    padding:0;
+    min-height: unset;
+}
+
+.item_background {
+    padding: 5px;
 }
 
 .ShowEventsitemsList .itemsDataContainer .name, 
@@ -133,7 +140,7 @@
 
     display: none;
 }
-
+/*
 .occupancy::before {
 
     content: "";
@@ -165,7 +172,7 @@
     background-color: #DDDDDD;
 }
 
-
+*/
 
 
 .pagingDataContainer .itemsDateRange > div, 
@@ -226,12 +233,14 @@
 }
 
 
-.dataItem.medium-seats {
-    border-left: 2px solid green;
+.dataItem.medium-seats::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #007bff transparent transparent transparent;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 10px 10px 0 0;
-border-color: #007bff transparent transparent transparent;
