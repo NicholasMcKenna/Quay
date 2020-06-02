@@ -19,6 +19,9 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
     if (currentScreen === "showdetails.aspx") {
 
+            var pageSizeVal = 20;
+            var showNameText = $('#PH_Show_page .showName h1').text();
+
             var showDetPagingObj = {
 
                 "27": {
@@ -26,14 +29,14 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     showname: "Standard Entry",
                     pagesize: "50"
                 }        
-                
             }
-
-            var pageSizeVal = 20;
 
             if (currentIntNum in showDetPagingObj) {
 
-                pageSizeVal = showDetPagingObj[currentIntNum].pagesize;
+                if (showDetPagingObj[currentIntNum].showname == showNameText) {
+
+                    pageSizeVal = showDetPagingObj[currentIntNum].pagesize;
+                }
             }
 
             //TODO: Create element in eSRO admin and position with js
