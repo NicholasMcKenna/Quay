@@ -100,10 +100,15 @@
 
 
 
+#eventslist {
 
+    display: none;
+}
 
 // timed events code
 #eventslist.timed-entry {
+
+    display: block;
 
     .pagingDataContainer .dataItem, 
     .ShowEventsitemsList .dataItem {
@@ -291,6 +296,12 @@
     .dataItem.low-seats::before {
 
         border-color: #479233 transparent transparent transparent;
+    }
+
+    .dataItem.sold-out {
+
+        opacity:.35;
+        cursor: default;
     }
 
     .dataItem.sold-out::before {
