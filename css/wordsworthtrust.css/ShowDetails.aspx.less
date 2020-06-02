@@ -108,15 +108,24 @@
 .ShowEventsitemsList .dataItem {
 
     float: left;
-    margin:0;
-    padding:0;
+    margin: 2px;
+    padding: 2px 2px 2px 10px;
     min-height: unset;
+    width: unset;
 }
 
 .item_background {
     padding: 5px;
 }
 
+.ShowEventsitemsList .itemsDataContainer, 
+.pagingDataContainer .itemsDataContainer {
+
+    width: 100%;
+}
+
+.ShowEventsitemsList .dataItem .extras, 
+.pagingDataContainer .dataItem .extras,
 .ShowEventsitemsList .itemsDataContainer .name, 
 .pagingDataContainer .itemsDataContainer .name {
     display: none;
@@ -126,6 +135,7 @@
 .ShowEventsitemsList .itemsDateRange {
 
     display: inline-block;
+    width: 100%;
 }
 
 
