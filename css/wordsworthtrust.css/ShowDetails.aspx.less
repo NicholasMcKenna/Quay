@@ -172,15 +172,16 @@
 
 #eventslist .itemsButtonsContainer {
 
-        max-height: unset;
-        width: 100% !important;
-        min-width: unset;
-        right: 0;
-        top: 0;
-        position: absolute;
-        margin: 0;
-        height: 100%;
-        padding: 0;
+    max-height: unset;
+    width: 100% !important;
+    min-width: unset;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    z-index: 10;
 }
 
 #eventslist .itemsButtonsContainer .button {
@@ -212,6 +213,8 @@
         opacity: 0;
         padding: 0;
         height: 100%;
+        transition: none;
+        transform: unset;
     }
 
 }
