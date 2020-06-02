@@ -12,11 +12,30 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
     
     var currentScreen = $eSRO.currentScreen;
+    var currentIntNum = $eSRO.currentInterface;
     console.log(currentScreen);
 
 
 
     if (currentScreen === "showdetails.aspx") {
+
+            var showDetPagingObj = {
+
+                "27": {
+                    interfacenum: "27",
+                    showname: "Standard Entry",
+                    pagesize: "50"
+                }        
+                
+            }
+
+            var pageSizeVal = 20;
+
+            if (currentIntNum in showDetPagingObj) {
+
+                pageSizeVal = showDetPagingObj[currentIntNum].pagesize;
+            }
+
             //TODO: Create element in eSRO admin and position with js
             $('.ShowEventsitemsList').before($('<div class="pagingWrapper"><div class="pagingDataContainer"></div><div class="pagingControl"></div></div>'));
 
@@ -29,7 +48,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
                 $('.pagingControl').pagination({
                     dataSource: showlist,
-                    pageSize: 20,
+                    pageSize: pageSizeVal,
                     callback: function (data, pagination) {
                         template(data);
                         $('.pagingDataContainer').html(data);
