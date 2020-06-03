@@ -179,7 +179,12 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
             // move extra data below price area
 
-            $('#leftPane').append($('.extra'));
+            if ( $('#eventPage.hallMap').length ) {
+
+                $('#hallMap').before($('.extra'));
+            } else {
+                $('#leftPane').append($('.extra'));
+            }
 
     }
 
