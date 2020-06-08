@@ -1,0 +1,136 @@
+@import 'variables';
+@import '../master-template/Searchresults';
+
+FORM.frmSearch .SearchTextButton {
+    background-color: @button-color;
+}
+
+
+div#PH_breadcrumbs {
+    display: none;
+}
+
+
+.searchResult .itemsList .dataItem {
+
+    margin: 0 25px 25px 0;
+}
+.searchResult .dataItem:hover .name,
+.searchResult .dataItem .name {
+
+ 
+    color           : @font-dark-color;
+    font-weight     : bold;
+    background-color: transparent;
+    font-size       : 22px;
+    text-align      : left;
+
+}
+
+.searchResult .itemsList .itemsDataContainer::before { display: none; }
+
+.searchResult .itemsDataContainer::after {
+
+    position          : absolute;
+    top            : 6px;
+    right             : 15px;
+    opacity           : 1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+    height            : unset;
+    background        :none;
+    background-color  : @button-color;
+    
+    color: #FFFFFF;
+    content: "Buy Now"; 
+    padding: 6px 12px;
+    font-size: 14px;
+
+}
+
+
+.searchResult .dataItem .item_image IMG {
+    height: auto;
+    width : 100%;
+
+    -webkit-transform: scale(1.05);
+    -moz-transform   : scale(1.05);
+    -ms-transform    : scale(1.05);
+    -o-transform     : scale(1.05);
+    transform        : scale(1.05);
+}
+
+.searchResult .itemsList .dataItem {
+
+    background-color  : @background-color;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+
+    border: 1px solid @box-border-color;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+
+    &:hover {
+        -webkit-transform : translateY(-10px);
+        -moz-transform    : translateY(-10px);
+        -ms-transform     : translateY(-10px);
+        -o-transform      : translateY(-10px);
+        transform         : translateY(-10px);
+        -webkit-transform : scale(1.03);
+        -moz-transform    : scale(1.03);
+        -ms-transform     : scale(1.03);
+        -o-transform      : scale(1.03);
+        transform         : scale(1.03);
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow   : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow    : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        -o-box-shadow     : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow        : 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @media @mobile {
+        width : 100% !important;
+        margin: 0 0 40px 0 !important
+    }
+}
+
+
+
+.searchResult .itemsList .dataItem .itemsDateRange:before {
+    content: none;
+}
+
+
+
+
+#PH_Calendar_search_results .searchResult .dataItem .hall {
+
+    color           : @font-dark-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
