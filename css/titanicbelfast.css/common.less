@@ -17,16 +17,10 @@ body #group_Header-fixed,
     background-color: @header-bg-color !important;
     height: 100px;
 
-
-    //background-image: @background-image;
-    //background-repeat: no-repeat;
-    //background-size: cover;
-
     background: 
-    @background-image cover no-repeat,
-    url('/UserContent/images/titanicbelfast/site/2020/bg-main.jpg') repeat;
-
-
+    url('../../UserContent/images/titanicbelfast/site/2020/bg-top-white.png') repeat, 
+    url('../../UserContent/images/titanicbelfast/site/2020/bg-main.jpg') top left / cover no-repeat;
+    background-color: #FFFFFF;
 
 
     @media @mobile {
@@ -40,6 +34,7 @@ p {
     font-family: @main-font;
 }
 
+button { background-color: transparent; }
 
 .main-logo,
 img.logo-image {
