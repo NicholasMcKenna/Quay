@@ -64,7 +64,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox > a:first-child::after,
 #siteMenuBar.hasclient #customerBox::before,
 #navMenu_Float_Search_item > span::before {
 
-    color: @highlight-color;
+    color: @button-color;
 }
 
 .top-menu {
@@ -231,183 +231,99 @@ div#PH_Video {
 
 
 
-/*
-
+/** Footer **/
 
 #group_Footer {
-    background-color: @background-color;
-    color           : #fff;
-    box-sizing      : content-box;
-    font-size       : 16px;
+
+    background-color: @bottom-bar;
+    border-bottom: 4px solid @highlight-color;
+}
+
+div#PH_Footer-main .row {
+
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop {
+        flex-direction: row;
+    }
+}
+  
+div#PH_Footer-main {
+    padding: 15px 15px 40px 15px;
+    position: relative;
+    color:#FFF;
+    clear: both;
+    margin: 0px auto;
+    float:none;
+    line-height: 1.43;
+    font-size: 14px;
 
     @media @desktop {
 
-        //padding-bottom  : 100px;
+        width: 100%;
     }
+    @media @desktop-large {
 
-}
-
-div#PH_Footer-main {
-
-    padding: 0;
-}
-
-    
-#group_Footer .top, #group_Footer .mid, #group_Footer .bottom {
-    
-    float:left;
-    width: 100%;
-}
-    
-#group_Footer ul {
-    
-    width: 1170px;
-    margin: 0px auto;
-
+        width: 1400px;
+    }
     @media @mobile {
 
         width: 100%;
     }
 }
-    
-#group_Footer li {
 
-    list-style: none;
-    
-    color:#9b9b9b;
-    line-height: 22px;
-}
-    
-#group_Footer li a:link, #group_Footer li a:visited  {
-    color:#9b9b9b;
-}    
-    
-#group_Footer li a:hover, #group_Footer li a:active,
-#group_Footer .ico-poi:link, #group_Footer .ico-poi:visited {
-    color:#FFFFFF;
-}      
-    
-#group_Footer .head {
-    
-    color:#FFF;
-    font-family: @header-font;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing:1px;
-    margin-bottom: 15px;
+div#PH_Footer-main .col-md-4, 
+div#PH_Footer-main .col-lg-4 {
 
-    @media @mobile {
-
-        margin-top: 15px;
-    }
-}
-    
-#group_Footer .top ul { padding-top: 40px; border-top: 1px solid #dbdbdb; }
-    
-#group_Footer .top { padding: 20px 20px 40px 20px; }
-    
-#group_Footer .top li {
-    
-    float:left;
-    margin-right: 15px;
-}
-#group_Footer .top li:last-child {
-
-    margin-right: 0px;
-} 
-    
-    
-#group_Footer .mid { 
-    
-    background-color:#323133; 
-    padding: 20px 20px; 
-
-    @media @mobile {
-
-        padding: 20px 0;
-    }
-}
-    
-#group_Footer .mid li {
-    
-    float:left;
-    width: 25%;
+    float: left; 
+    overflow: hidden;
+    position: relative;
 
     @media @mobile {
 
         width: 100%;
+        margin-right: 0;
+    }
+
+    @media @desktop {
+
+        width: 100%;
+        margin-right: 0;
     }
 }
-    
-#group_Footer .bottom { background-color:#282728; padding: 10px 20px; }   
- 
-#group_Footer .bottom li {
-    
-    float:left;
-    width: 100%;
-    margin-right: 0;
-    font-family: 'Lato', sans-serif;
-    font-weight:400;
-    font-size: 14px;
+
+div#PH_Footer-main ul {
+    padding-left:0px;
+    list-style:none;
+    text-align: left;
+}
+
+div#PH_Footer-main li {
+    display:block;
     text-align: center;
 }
- /* 
-#group_Footer .bottom li:last-child {
-    
-    float:right;
-    margin-right: 0px;
+
+div#PH_Footer-main a, 
+div#PH_Footer-main li a {
+
+    color: #aaa;
 }
-*/
-    
-    
-    
-    /*
 
 
-#group_Footer .logo {
-    
-    text-align: center;
-    width:150px !important;
-    float:left;
-
-    @media @mobile {
-
-        text-align: left;
-    }
+div#PH_Footer-main p {
+    text-align : justify;
+    font-size : 12px;
 }
-    
-#group_Footer .social {   
-    float:left;
-    width: 100%;
-    height: 36px;
-    margin-top: 20px;
+
+div#PH_Footer-main h2 {
+    font-weight: 300;
 }
-    
-#group_Footer .social a:link {
-    margin: 0px 0px 0px 5px; 
-    padding: 0px;
-    float:left;
-} 
-    
-#group_Footer .ico-poi  {
-    
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    margin-top: 5px;
-    font-size: 12px;
-    float:left;
-    padding: 0px 25px 0px 0px;
-    background: url("/UserContent/images/stockport-plaza//ico-poi.png") no-repeat scroll 100% 25% rgba(0, 0, 0, 0);
+
+div#PH_Footer-main ul.footer-socialIcons li {
+
+    margin-right: 10px;
 }
-     
-    
-    
-
-
-
-*/
 
 
 
