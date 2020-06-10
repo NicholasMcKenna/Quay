@@ -105,6 +105,8 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
             $('#date').datepicker({
                 beforeShowDay: available,
+                changeMonth: true,
+                changeYear: true,
                 onSelect: function (dateText, inst) {
                     var ID = returnID(dateText);
                     $("#dateSelect").val(ID.toString()).change();
