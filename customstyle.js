@@ -19,31 +19,56 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
     if (currentScreen === "showdetails.aspx") {
 
-            var pageSizeVal = 20;
-            var showNameText = $('#PH_Show_page .showName h1').text();
-
             var showDetPagingObj = {
 
-                "27": {
+                "Standard Entry": {
+
                     interfacenum: "27",
                     showname: "Standard Entry",
                     pagesize: "50",
                     timed: "true"
-                }        
+                },
+                
+                "Standard Entry": {
+
+                    interfacenum: "32",
+                    showname: "Standard Entry",
+                    pagesize: "50",
+                    timed: "true"
+                } 
+
             }
 
-            if (currentIntNum in showDetPagingObj) {
+            var pageSizeVal = 20;
+            var showNameText = $('#PH_Show_page .showName h1').text();
 
-                if (showDetPagingObj[currentIntNum].showname == showNameText) {
+            
+            if (showNameText in showDetPagingObj) {
 
-                    pageSizeVal = showDetPagingObj[currentIntNum].pagesize;
+                if (showDetPagingObj[showNameText].interfacenum == currentIntNum) {
 
-                    if (showDetPagingObj[currentIntNum].timed == "true") { 
+                    pageSizeVal = showDetPagingObj[showNameText].pagesize;
+
+                    if (showDetPagingObj[showNameText].timed == "true") { 
 
                         $('#eventslist').addClass("timed-entry");
+                    } else {
+
+                        $('#eventslist').addClass("regular");
                     }
+
+                } else {
+
+                    $('#eventslist').addClass("regular");
                 }
+                
+            } else {
+
+                $('#eventslist').addClass("regular");
             }
+
+            // End timed entry
+
 
             //TODO: Create element in eSRO admin and position with js
             $('.ShowEventsitemsList').before($('<div class="pagingWrapper"><div class="pagingDataContainer"></div><div class="pagingControl"></div></div>'));

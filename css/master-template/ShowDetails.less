@@ -918,3 +918,232 @@ select#dateSelect {
 
     display: none;
 }
+
+
+
+
+
+
+
+
+
+// timed entry code
+
+#eventslist {
+
+    display: none;
+}
+
+#eventslist.regular,
+#eventslist.timed-entry {
+
+    display: block;
+}
+
+#eventslist.timed-entry {
+
+    .pagingDataContainer .dataItem, 
+    .ShowEventsitemsList .dataItem {
+
+        float: left;
+        margin: 2px;
+        padding: 6px 4px 6px 10px;
+        min-height: unset;
+        width: unset;
+        max-width: 23%;
+        font-size: 14px;
+        line-height: 1.3em;
+        cursor: pointer;
+
+        @media @desktop {
+
+            max-width: 23%;
+        }
+
+        @media @desktop-large {
+
+            max-width: 24%;
+        }
+
+        &:not(.sold-out):hover,
+        &:not(.sold-out):active,
+        &:not(.sold-out):focus {
+            background-color: #B2B1B1;
+        }
+    }
+
+
+
+    .item_background {
+        padding: 5px;
+    }
+
+    .ShowEventsitemsList .itemsDataContainer, 
+    .pagingDataContainer .itemsDataContainer {
+
+        width: 100%;
+    }
+
+    .ShowEventsitemsList .dataItem .extras, 
+    .pagingDataContainer .dataItem .extras,
+    .ShowEventsitemsList .itemsDataContainer .name, 
+    .pagingDataContainer .itemsDataContainer .name {
+        display: none;
+    }
+
+    .pagingDataContainer .itemsDateRange, 
+    .ShowEventsitemsList .itemsDateRange {
+
+        display: inline-block;
+        width: 100%;
+    }
+
+
+
+    .occupancy {
+
+        padding-left: 0;
+        margin: 0 0 4px 0;
+        display: table-cell;
+        height: unset;
+        background: none;
+
+        display: none;
+    }
+    /*
+    .occupancy::before {
+
+        content: "";
+        display: inline-block;
+        top: 6px;
+        position: relative;
+
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+        margin-right: 6px;
+        margin-top: 0;
+    }
+
+    .HighSeatsOccupancy::before {
+        background-color: #B81820;
+    }
+
+    .MediumSeatsOccupancy::before {
+        background-color: #F7BD11;
+    }
+
+    .LowSeatsOccupation::before {
+        background-color: #479233;
+    }
+
+    .SoldOut::before {
+        background-color: #DDDDDD;
+    }
+
+    */
+
+
+    .pagingDataContainer .itemsDateRange > div, 
+    .ShowEventsitemsList .itemsDateRange > div, 
+    .pagingDataContainer .itemsDateRange > span,
+    .ShowEventsitemsList .itemsDateRange > span {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    #eventslist .itemsButtonsContainer {
+
+        max-height: unset;
+        width: 100% !important;
+        min-width: unset;
+        right: 0;
+        top: 0;
+        position: absolute;
+        margin: 0;
+        height: 100%;
+        padding: 0;
+        z-index: 10;
+    }
+
+    #eventslist .itemsButtonsContainer .button {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button.small_button_a.addToBasket {
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ShowEventsitemsList .button.small_button_a A, 
+    .pagingDataContainer .button.small_button_a A {
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            width: 100%;
+            opacity: 0;
+            padding: 0;
+            height: 100%;
+            transition: none;
+            transform: unset;
+        }
+
+    }
+
+
+    .dataItem::before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .dataItem.high-seats::before {
+
+        border-color: #B81820 transparent transparent transparent;
+    }
+
+    .dataItem.medium-seats::before {
+
+        border-color: #F7BD11 transparent transparent transparent;
+    }
+
+    .dataItem.low-seats::before {
+
+        border-color: #479233 transparent transparent transparent;
+    }
+
+    .dataItem.sold-out {
+
+        opacity:.35;
+        cursor: default;
+    }
+
+    .dataItem.sold-out::before {
+
+        border-color: #000000 transparent transparent transparent;
+
+
+    }
+
+
+}
+
+// END Timed Entry 
