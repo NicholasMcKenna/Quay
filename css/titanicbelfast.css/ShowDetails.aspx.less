@@ -27,6 +27,9 @@
 }
 
 
+
+
+
 .carousel .itemsDataContainer::before {
     background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
 }
@@ -73,19 +76,24 @@
     color           : #FFFFFF;
 }
 
+
+
+
 .pagingDataContainer .dataItem,
 .ShowEventsitemsList .dataItem {
-    background-color: #FFFFFF;
-
-    border: 1px solid #f1f1f1;
-    box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+    background-color: @box-bgcolor;
 }
-.pagingDataContainer .itemsDataContainer,
-.ShowEventsitemsList .itemsDataContainer,
-.pagingDataContainer .itemsDateRange SPAN,
-.ShowEventsitemsList .itemsDateRange SPAN {
 
+.pagingDataContainer .itemsDataContainer,
+.pagingDataContainer .itemsDateRange,
+.ShowEventsitemsList .itemsDataContainer,
+.ShowEventsitemsList .itemsDateRange {
     color: @font-dark-color;
 }
 
+.pagingDataContainer .itemsDateRange SPAN,
+.ShowEventsitemsList .itemsDateRange SPAN {
+
+    color: @button-color;
+}
 
