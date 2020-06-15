@@ -33,7 +33,13 @@ p {
     font-family: @main-font;
 }
 
-button { background-color: transparent; }
+button { 
+    
+    @media @desktop {
+        
+        background-color: transparent; 
+    }
+}
 
 .main-logo,
 img.logo-image {
