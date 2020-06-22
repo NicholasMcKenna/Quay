@@ -29,10 +29,10 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     timed: "true"
                 },
                 
-                "Standard Entry": {
+                "Titanic Museum Entry": {
 
                     interfacenum: "32",
-                    showname: "Standard Entry",
+                    showname: "Titanic Museum Entry",
                     pagesize: "50",
                     timed: "true"
                 },
@@ -60,7 +60,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     showname: "Going to the Match tours",
                     pagesize: "50",
                     timed: "true"
-                }
+                },
                 // 
 
             }
