@@ -35,7 +35,33 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     showname: "Standard Entry",
                     pagesize: "50",
                     timed: "true"
-                } 
+                },
+                
+                // Nat Football Museum
+                "Admission to the Museum": {
+
+                    interfacenum: "30",
+                    showname: "Admission to the Museum",
+                    pagesize: "50",
+                    timed: "true"
+                },
+                
+                "Guided Tour + Admission": {
+
+                    interfacenum: "30",
+                    showname: "Guided Tour + Admission",
+                    pagesize: "50",
+                    timed: "true"
+                },
+                
+                "Going to the Match tours": {
+
+                    interfacenum: "30",
+                    showname: "Going to the Match tours",
+                    pagesize: "50",
+                    timed: "true"
+                }
+                // 
 
             }
 
