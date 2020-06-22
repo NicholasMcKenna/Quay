@@ -36,7 +36,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     pagesize: "50",
                     timed: "true"
                 },
-                
+
                 // Nat Football Museum
                 "Admission to the Museum": {
 
@@ -81,16 +81,19 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     } else {
 
                         $('#eventslist').addClass("regular");
+                        console.log("timed entry: not timed entry event");
                     }
 
                 } else {
 
                     $('#eventslist').addClass("regular");
+                    console.log("timed entry: interface num do not match");
                 }
                 
             } else {
 
                 $('#eventslist').addClass("regular");
+                console.log("timed entry: event not found in obj");
             }
 
             // End timed entry
