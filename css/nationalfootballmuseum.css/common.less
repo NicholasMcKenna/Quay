@@ -21,8 +21,9 @@ body {
     background-image: @background-image;
     font-family     : @main-font;
 
-    background-size    : cover;
-    background-position: top center;
+    background-size: 110% auto;
+    background-position: top 200px center;
+    background-attachment: fixed;
 }
 
 
@@ -47,7 +48,7 @@ body #group_Header-fixed,
 
 .main-logo,
 img.logo-image {
-    max-width : 200px;
+    max-width : 150px;
     width     : 100%;
     height    : auto;
     margin-top: 0;
@@ -320,7 +321,7 @@ div#PH_Video {
 
 
 .bottom-menu {
-    padding-top : 0px;
+    padding-top: 9px;
     padding-left: 3%;
     height      : @header-bottom-height;
     display     : flex;
@@ -333,7 +334,7 @@ div#PH_Video {
     @media @mobile {
         padding-left: 5%;
         height      : @header-bottom-height-mobile;
-        padding-top : 10px;
+        padding-top : 9px;
         width       : 57%;
     }
 }
