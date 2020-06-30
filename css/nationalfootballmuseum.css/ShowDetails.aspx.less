@@ -1,0 +1,97 @@
+@import 'variables';
+@import '../master-template/ShowDetails';
+
+
+
+.screen-content {
+
+    @media @desktop {
+
+        margin-top: 80px;
+    }
+
+    @media @mobile {
+
+        margin-top: 120px;
+    }
+
+
+}
+
+#eventslist {
+
+    @media @desktop {
+
+        margin-top: -50px;
+    }
+}
+
+/*
+.carousel .itemsDataContainer::before {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-back.svg);
+}
+
+.carousel .itemsDataContainer::after {
+    background-image: url(https://thelowry.com/themes/childtheme/assets/images/green-triangle-front.svg);
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    width             : 100px;
+    content           : "";
+    height            : 130px;
+    position          : absolute;
+    bottom            : 10px;
+    right             : 10px;
+    background-size   : contain;
+    background-repeat : no-repeat;
+    opacity           : 0.1;
+    z-index           : 1;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition   : all 250ms ease-in-out;
+    -ms-transition    : all 250ms ease-in-out;
+    -o-transition     : all 250ms ease-in-out;
+    transition        : all 250ms ease-in-out;
+}
+
+.carousel .itemsDataContainer::after,
+.carousel .itemsDataContainer::before {
+    opacity: 1;
+}
+*/
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+
+    background-color: #FFFFFF;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+
+    background-color: @button-color;
+    color           : #FFFFFF;
+}
+
+.ui-widget-content .ui-datepicker-today .ui-state-default {
+
+    background-color: @button-hover-color;
+    color           : #FFFFFF;
+}
+
+
+
+.pagingDataContainer .dataItem,
+.ShowEventsitemsList .dataItem {
+    background-color: #FFFFFF;
+
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+}
+.pagingDataContainer .itemsDataContainer,
+.pagingDataContainer .itemsDateRange SPAN,
+.ShowEventsitemsList .itemsDataContainer,
+.ShowEventsitemsList .itemsDateRange SPAN {
+
+    color: @font-dark-color;
+}
+
+
