@@ -21,9 +21,14 @@ body {
     background-image: @background-image;
     font-family     : @main-font;
 
-    background-size: 110% auto;
-    background-position: top 200px center;
+    //background-size: 110% auto;
+    //background-position: top 200px center;
+    //background-attachment: fixed;
+
+    background-size: 50% auto;
+    background-position: top center;
     background-attachment: fixed;
+    background-repeat: repeat-x;
 }
 
 
@@ -171,7 +176,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child::after,
 #siteMenuBar.hasclient #customerBox::before,
 #navMenu_Float_Search_item>span::before {
 
-    color: #FFFFFF;
+    color: @button-color;
     text-transform: uppercase;
 }
 
@@ -270,7 +275,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child::after,
         order: 4;
 
         &:before {
-            color: #26B5BB;
+            color: @button-color;
         }
     }
 }
@@ -283,7 +288,7 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child::after,
         content     : '\f291';
 
         @media @desktop {
-            color: #26B5BB;
+            color: @button-color;
         }
     }
 
@@ -645,7 +650,7 @@ a#navMenu_Float_TimeRemaining_item,
 a#navMenu_Float_Search_item {
     font-size  : 16px;
     font-weight: 600;
-    color      : #FFFFFF;
+    color      : @button-color;
     text-transform: uppercase;
 }
 
