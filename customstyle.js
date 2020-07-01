@@ -45,7 +45,14 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     pagesize: "50",
                     timed: "true"
                 },
-                
+                "National Football Museum Entry": {
+
+                    interfacenum: "33",
+                    showname: "National Football Museum Entry",
+                    pagesize: "50",
+                    timed: "true"
+                },
+                                
                 "Guided Tour + Admission": {
 
                     interfacenum: "30",
