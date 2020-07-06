@@ -17,7 +17,6 @@ div#PH_breadcrumbs {
 }
 
 
-
 .bottomButtonsBar {
     
     background-color: @background-color;
@@ -29,19 +28,49 @@ div#PH_breadcrumbs {
 
 
 
+
+
+
+
+.ui-dialog .ui-dialog-title {
+
+    font-size: 16px;
+}
+
+
 .itemExtraDonBasketMessage { margin-bottom: 15px; }
 
-.itemExtraDonBasketMessage a { font-weight: bold; }
+.itemExtraDonBasketMessage a { 
+    
+    font-weight: bold; 
+    color: @button-color; 
+
+    &:hover,
+    &:active,
+    &:focus {
+
+        color: @button-hover-color;
+    }
+}
 
 
+.itemExtraDonation {
+
+    .subtitle { margin-bottom: 15px; }
+
+    .fieldRow { margin-bottom: 10px; }
+
+    #DonationDetails {
+        
+        th { text-align: left; }
+
+        td { padding: 10px 0 0 0; vertical-align: top; }
+    }
+
+}
 
 
 .itemExtraDataDialog {
-
-    .ui-dialog .ui-dialog-title {
-
-        font-size: 16px;
-    }
 
     #itemsExtraDataDialog #extraDataForms .formCaptionColumn {
         font-weight: bold;
@@ -71,11 +100,6 @@ div#PH_breadcrumbs {
     .title { display: none; }
 
     .subtitle { font-weight: bold; }
-
-    .ui-dialog .ui-dialog-title {
-
-        font-size: 16px;
-    }
 
     img.giftaidit { margin: 10px 0; }
 
