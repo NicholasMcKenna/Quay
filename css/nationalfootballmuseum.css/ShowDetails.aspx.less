@@ -22,7 +22,7 @@
 
     @media @desktop {
 
-        margin-top: -50px;
+        margin-top: -40px;
     }
 }
 
@@ -86,6 +86,22 @@
     border: 1px solid @box-bgcolor;
     box-shadow: none;
 }
+
+
+#eventslist.timed-entry {
+
+    .pagingDataContainer .dataItem, 
+    .ShowEventsitemsList .dataItem {
+
+        &:not(.sold-out):hover,
+        &:not(.sold-out):active,
+        &:not(.sold-out):focus {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+
+
 .pagingDataContainer .itemsDataContainer,
 .pagingDataContainer .itemsDateRange SPAN,
 .ShowEventsitemsList .itemsDataContainer,
@@ -93,5 +109,10 @@
 
     color: @font-dark-color;
 }
+
+
+
+
+
 
 
