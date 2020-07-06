@@ -64,7 +64,7 @@ img.logo-image {
 
     @media @mobile {
 
-        max-width: 80px;
+        max-width: 65px;
     }
 }
 
@@ -179,9 +179,13 @@ body.dir-LTR #siteMenuBar.hasclient #customerBox>a:first-child::after,
 #siteMenuBar [id="my basket"]>span::before,
 #siteMenuBar.hasclient #customerBox::before,
 #navMenu_Float_Search_item>span::before {
-
-    color: @button-color;
+    
     text-transform: uppercase;
+
+    @media @desktop {
+
+        color: @button-color;
+    }
 }
 
 .top-menu {
@@ -344,7 +348,7 @@ div#PH_Video {
     @media @mobile {
         padding-left: 5%;
         height      : @header-bottom-height-mobile;
-        padding-top : 9px;
+        padding-top : 12px;
         width       : 57%;
     }
 }
