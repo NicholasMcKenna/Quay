@@ -4517,7 +4517,8 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
         29:"The Old Courts",
         30:"Quaytickets",
         31:"The Old Courts",
-        32:"Titanic Belfast"
+        32:"Titanic Belfast",
+        33:"National Football Museum"
     };
 
     var currentIntNum = $eSRO.currentInterface;
