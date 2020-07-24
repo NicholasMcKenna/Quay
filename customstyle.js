@@ -4406,7 +4406,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     
             $("body").addClass("event-ladyboys");
 
-        } else if ($eSRO.currentInterface === 20 ) {
+        } else if (currentIntNum === "20" ) {
 
             $("body").addClass("event-avr");
 
