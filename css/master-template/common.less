@@ -1895,7 +1895,7 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
 
 
-// Hiding Row / Seat
+// Hiding Row / Seat for LadyBoys
 
 .event-ladyboys {
 
@@ -1931,9 +1931,43 @@ html .searchManager .ui-button.ui-state-disabled:active {
 
 }
 
-//#eventPage .selectTickets .tickets > .row {
-//    padding: .3em .5em .5em 2em;
-//}
+
+
+// Hiding Row / Seat for AVR microsite
+
+.event-avr {
+
+    .seat-tooltip .row.label,
+    //.seat-tooltip .seat.label,
+    //.seat-tooltip .seat.number,
+    .seat-tooltip .row.number::after {
+
+        display: none;
+    } 
+
+    .selectTickets .row .seat .rowName,
+    //.selectTickets .row .seat .seatName,
+    .selectTickets .row .seat > span.rowName + span::after {
+
+        display:none;
+    }
+
+    .selectTickets .row .seat span:last-of-type {
+
+        // display: none;
+    }
+
+    .seat-tooltip .row.number::before,
+    .selectTickets .row .seat::before {
+        content: "Table ";
+        display: inline-block;
+    }
+    .seat-tooltip .row.number::before {
+
+        margin-right: 2px;
+    }
+
+}
 
 
 

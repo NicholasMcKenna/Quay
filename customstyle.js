@@ -4405,8 +4405,14 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
         if (showName.includes("Lady Boys of Bangkok")) {
     
             $("body").addClass("event-ladyboys");
+
+        } else if ($eSRO.currentInterface === 20 ) {
+
+            $("body").addClass("event-avr");
+
         } else {
             $("body").removeClass("event-ladyboys");
+            $("body").removeClass("event-avr");
         }
     }
     
