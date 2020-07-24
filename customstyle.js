@@ -4518,6 +4518,13 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
             });
 */
             }
+
+            if (currentIntNum === "20" ) { // AVR
+    
+                var eventDetails = basketEvent.find('.details');
+
+                eventDetails.hide();
+            }
         
         });
     }
