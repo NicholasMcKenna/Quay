@@ -21,14 +21,31 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
 
             var showDetPagingObj = {
 
-                "Standard Entry": {
+                // Wordsworth Trust
+                "Dove Cottage Preview Experience": {
+
+                    interfacenum: "27",
+                    showname: "Dove Cottage Preview Experience",
+                    pagesize: "50",
+                    timed: "true"
+                },        
+                "Dove Cottage Preview Experience": {
+
+                    interfacenum: "30",
+                    showname: "Dove Cottage Preview Experience",
+                    pagesize: "50",
+                    timed: "true"
+                },
+                "Standard Entry": { // demo for WT
 
                     interfacenum: "27",
                     showname: "Standard Entry",
                     pagesize: "50",
                     timed: "true"
                 },
-                
+                //
+
+                // Demo - Titanic Belfast
                 "Titanic Museum Entry": {
 
                     interfacenum: "32",
@@ -36,6 +53,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     pagesize: "50",
                     timed: "true"
                 },
+                //
 
                 // Nat Football Museum
                 "National Football Museum Entry": {
