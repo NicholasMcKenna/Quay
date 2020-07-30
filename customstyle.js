@@ -16,7 +16,6 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
     console.log(currentScreen);
 
 
-
     if (currentScreen === "showdetails.aspx") {
 
             var showDetPagingObj = {
