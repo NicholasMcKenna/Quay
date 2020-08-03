@@ -10,6 +10,7 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
         basketProp.parent().parent().hide();
     }
 
+
     
     var currentScreen = $eSRO.currentScreen;
     var currentIntNum = $eSRO.currentInterface;
@@ -28,13 +29,13 @@ $("div#insurance>h2").css({"background": "-moz-linear-gradient(left, #d1eff4 0%,
                     pagesize: "50",
                     timed: "true"
                 },        
-                "Dove Cottage Preview Experience": {
+              /*  "Dove Cottage Preview Experience": {
 
                     interfacenum: "30",
                     showname: "Dove Cottage Preview Experience",
                     pagesize: "50",
                     timed: "true"
-                },
+                },*/
                 "Standard Entry": { // demo for WT
 
                     interfacenum: "27",
